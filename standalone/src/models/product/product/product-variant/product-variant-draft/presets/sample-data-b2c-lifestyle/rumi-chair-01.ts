@@ -41,24 +41,8 @@ const rumiChair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Dry clean only',
         'de-DE': '- Nur chemische Reinigung',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Pink',
-            'en-GB': 'Pink',
-            'de-DE': 'Rosa',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gold',
-            'en-GB': 'Gold',
-            'de-DE': 'Gold',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('pink'),
+      AttributeDraft.random().name('search-finish').value('gold'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Lavender Blush',
         'de-DE': 'Lavendel',

@@ -50,15 +50,7 @@ const geometricPillowCase02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Pink',
-            'en-GB': 'Pink',
-            'de-DE': 'Rosa',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('pink'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Pink',
         'de-DE': 'Hell rosa',

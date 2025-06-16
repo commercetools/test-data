@@ -47,15 +47,7 @@ const modernBlackCoaster01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Das Set enthält 4 Untersetzer',
         'en-US': '- Set includes 4 coasters',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Black',
         'de-DE': 'Schwarz',

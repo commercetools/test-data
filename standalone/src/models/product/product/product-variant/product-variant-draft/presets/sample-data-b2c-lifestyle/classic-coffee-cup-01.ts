@@ -50,15 +50,7 @@ const classicCoffeeCup01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Includes a matching saucer\n- Set includes 4 cups and saucers',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'White',
         'de-DE': 'Weiß',

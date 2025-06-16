@@ -47,15 +47,7 @@ const cloudQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Die Montage ist im Preis inbegriffen',
         'en-US': '- Assembly is included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Blue',
-            'en-GB': 'Blue',
-            'de-DE': 'Blau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('blue'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Blue',
         'de-DE': 'Hell blau',

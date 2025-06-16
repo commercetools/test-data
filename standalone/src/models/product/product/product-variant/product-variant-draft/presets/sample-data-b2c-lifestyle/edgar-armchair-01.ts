@@ -41,24 +41,8 @@ const edgarArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Montage bei Lieferung',
         'en-US': '- Assembly on delivery',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Olive',
         'de-DE': 'Helles Oliv',

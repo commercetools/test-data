@@ -42,15 +42,7 @@ const luxePillowCover01 = (): TBuilder<TProductVariantDraft> =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Black',
         'de-DE': 'Schwarz',

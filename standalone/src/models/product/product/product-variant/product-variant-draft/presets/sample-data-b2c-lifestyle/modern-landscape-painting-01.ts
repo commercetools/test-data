@@ -42,15 +42,7 @@ const modernLandscapePainting01 = (): TBuilder<TProductVariantDraft> =>
           '- Öl auf Leinwand\n- Rahmen nicht im Lieferumfang enthalten\n- 3 Fuß mal 4 Fuß',
         'en-US': '- Oil on canvas\n- Frame not included\n- 3ft by 4ft',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Blue',
-            'en-GB': 'Blue',
-            'de-DE': 'Blau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('blue'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Sky Blue',
         'de-DE': 'Himmel blau',

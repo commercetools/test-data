@@ -62,24 +62,8 @@ const goldRimmedChampagneGlasses01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Transparent',
-            'en-GB': 'Transparent',
-            'de-DE': 'Transparent',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gold',
-            'en-GB': 'Gold',
-            'de-DE': 'Gold',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('transparent'),
+      AttributeDraft.random().name('search-finish').value('gold'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Transparent',
         'de-DE': 'Transparent',

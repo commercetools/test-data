@@ -41,24 +41,8 @@ const stoutBeerGlass01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Set includes 6 glasses',
         'de-DE': '- Das Set enthält 6 Gläser',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Transparent',
-            'en-GB': 'Transparent',
-            'de-DE': 'Transparent',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Glass',
-            'en-GB': 'Glass',
-            'de-DE': 'Glas',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('transparent'),
+      AttributeDraft.random().name('search-finish').value('glass'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Transparent',
         'de-DE': 'Transparent',

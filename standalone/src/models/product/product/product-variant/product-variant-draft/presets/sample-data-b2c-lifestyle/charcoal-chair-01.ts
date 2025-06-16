@@ -47,24 +47,8 @@ const charcoalChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Dark Slate Grey',
         'de-DE': 'Dunkles Schiefer grau',

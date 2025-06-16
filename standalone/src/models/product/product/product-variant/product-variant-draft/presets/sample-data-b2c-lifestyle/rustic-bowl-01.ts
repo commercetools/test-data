@@ -41,15 +41,7 @@ const rusticBowl01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 1 bowl',
         'de-DE': '- Enthält 1 Schüssel',
       }),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('finish-label').value({
         'en-GB': 'Brown',
         'de-DE': 'Braun',

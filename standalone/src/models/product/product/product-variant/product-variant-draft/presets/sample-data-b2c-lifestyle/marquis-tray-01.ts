@@ -41,15 +41,7 @@ const marquisTray01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Enthält 1 Tablett',
         'en-US': '- Includes 1 tray',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Golden Rod',
         'de-DE': 'Goldene Rute',

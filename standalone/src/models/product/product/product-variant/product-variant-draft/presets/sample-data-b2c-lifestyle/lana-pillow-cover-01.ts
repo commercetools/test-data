@@ -44,15 +44,7 @@ const lanaPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Machine washable\n- Pillow not included\n- Has a zip enclosure',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Grey',
         'de-DE': 'Hell grau',

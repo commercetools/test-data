@@ -47,15 +47,7 @@ const greenServingPlate01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Enthält 1 Teller',
         'en-US': '- Includes 1 plate',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Green',
         'de-DE': 'Grün',

@@ -47,24 +47,8 @@ const artDecoCoffeeTable01 = (): TBuilder<TProductVariantDraft> =>
         'en-GB': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
         'de-DE': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gold',
-            'en-GB': 'Gold',
-            'de-DE': 'Gold',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('black'),
+      AttributeDraft.random().name('search-finish').value('gold'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Black',
         'de-DE': 'Schwarz',

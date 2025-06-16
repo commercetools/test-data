@@ -41,15 +41,7 @@ const cobblestoneRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 5 Fuß x 3 Fuß',
         'en-US': '- 5ft x 3ft',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Grey',
         'de-DE': 'Hell grau',

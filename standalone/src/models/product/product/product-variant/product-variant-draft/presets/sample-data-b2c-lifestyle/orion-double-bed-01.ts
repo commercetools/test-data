@@ -42,24 +42,8 @@ const orionDoubleBed01 = (): TBuilder<TProductVariantDraft> =>
           '- Montage im Lieferumfang enthalten\n- Matratze nicht im Lieferumfang enthalten',
         'en-US': '- Assembly included at delivery\n- Mattress not included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Silver',
-            'en-GB': 'Silver',
-            'de-DE': 'Silber',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('silver'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Sage',
         'de-DE': 'Salbei',

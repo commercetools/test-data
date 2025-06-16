@@ -60,24 +60,8 @@ const vanillaCandle01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Comes in glass jar\n- 300 grams',
         'de-DE': '- Wird im Glas geliefert\n- 300 Gramm',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Glass',
-            'en-GB': 'Glass',
-            'de-DE': 'Glas',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('glass'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Beige',
         'de-DE': 'Beige',

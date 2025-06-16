@@ -41,15 +41,7 @@ const teakServingPlatter01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Made of natural teak\n- Hand wash only',
         'de-DE': '- Hergestellt aus natürlichem Teakholz\n- Handwäsche nur',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Brown',
         'de-DE': 'Braun',

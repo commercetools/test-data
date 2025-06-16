@@ -41,24 +41,8 @@ const sallyArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Comes with matching throw pillow',
         'de-DE': '- Wird mit passendem Dekokissen geliefert',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Pink',
-            'en-GB': 'Pink',
-            'de-DE': 'Rosa',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('pink'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Pink',
         'de-DE': 'Rosa',

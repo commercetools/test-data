@@ -48,15 +48,7 @@ const evergreenCandle01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 4480, h: 6720 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Olive',
         'de-DE': 'Helles Oliv',

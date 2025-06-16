@@ -57,24 +57,8 @@ const abigailLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Wird mit passendem Kissen geliefert\n- Samtpolsterung\n- Wird zusammengebaut geliefert',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Pink',
-            'en-GB': 'Pink',
-            'de-DE': 'Rosa',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gold',
-            'en-GB': 'Gold',
-            'de-DE': 'Gold',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('pink'),
+      AttributeDraft.random().name('search-finish').value('gold'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Light Pink',
         'de-DE': 'Hell rosa',

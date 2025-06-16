@@ -41,24 +41,8 @@ const minimalistModernSideTable01 = (): TBuilder<TProductVariantDraft> =>
         'en-GB': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
         'de-DE': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Weiß',
         'de-DE': 'White',

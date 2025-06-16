@@ -41,24 +41,8 @@ const fawnArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Leder erfordert besondere Pflege',
         'en-US': '- Leather requires special care',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Tan',
         'de-DE': 'Bräunen',

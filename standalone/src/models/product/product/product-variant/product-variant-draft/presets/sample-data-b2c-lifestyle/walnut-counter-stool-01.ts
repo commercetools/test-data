@@ -41,15 +41,7 @@ const walnutCounterStool01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 1 stool',
         'de-DE': '- Beinhaltet 1 Hocker',
       }),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('finish-label').value({
         'en-GB': 'Saddle Brown',
         'de-DE': 'Sattel braun',

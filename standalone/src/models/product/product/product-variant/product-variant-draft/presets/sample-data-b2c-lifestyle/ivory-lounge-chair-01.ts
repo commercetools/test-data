@@ -54,15 +54,7 @@ const ivoryLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
           '- Nur chemische Reinigung\n- Montage im Lieferumfang enthalten',
         'en-US': '- Dry clean only\n- Assembly included in delivery',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Ivory',
         'de-DE': 'Elfenbein',

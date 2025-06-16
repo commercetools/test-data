@@ -42,24 +42,8 @@ const nalaTwoSeaterSofa06 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Dark Sea Green',
         'de-DE': 'Dunkles See grün',

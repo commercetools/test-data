@@ -41,15 +41,7 @@ const redModernPainting01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
         'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Red',
-            'en-GB': 'Red',
-            'de-DE': 'Rot',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('red'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Red',
         'de-DE': 'Rot',

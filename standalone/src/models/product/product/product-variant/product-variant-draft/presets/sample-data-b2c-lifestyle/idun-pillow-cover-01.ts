@@ -55,15 +55,7 @@ const idunPillowCover01 = (): TBuilder<TProductVariantDraft> =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Siena',
         'de-DE': 'Siena',

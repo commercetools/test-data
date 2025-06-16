@@ -48,15 +48,7 @@ const cottonTwoSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'White',
         'de-DE': 'Weiß',

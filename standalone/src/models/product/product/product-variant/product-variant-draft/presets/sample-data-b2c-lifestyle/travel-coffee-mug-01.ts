@@ -42,24 +42,8 @@ const travelCoffeeMug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Isoliert\n- Sowohl für kalte als auch heiße Getränke geeignet',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Silver',
-            'en-GB': 'Silver',
-            'de-DE': 'Silber',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('search-finish').value('silver'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'White',
         'de-DE': 'Weiß',

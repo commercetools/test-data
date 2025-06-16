@@ -45,15 +45,7 @@ const cottonSilkBedsheet03 = (): TBuilder<TProductVariantDraft> =>
           '- Machine washable\n- 600 thread count\n- Includes 1 fitted sheet',
       }),
       AttributeDraft.random().name('size').value({ 'en-GB': 'King' }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'White',
         'de-DE': 'Weiß',

@@ -53,24 +53,8 @@ const traditionalThreeSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'en-GB': '- Three seater sofa\n- Velvet upholstery\n- Assembly on site',
         'de-DE': '- Dreisitzer\n- Samtbezug\n- Selbstmontage',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Green',
-            'en-GB': 'Green',
-            'de-DE': 'Grün',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Medium Sea Green',
         'de-DE': 'Mittel meer grün',

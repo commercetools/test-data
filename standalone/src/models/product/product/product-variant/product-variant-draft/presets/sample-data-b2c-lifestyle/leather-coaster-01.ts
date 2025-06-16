@@ -41,15 +41,7 @@ const leatherCoaster01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Enthält 4 Untersetzer',
         'en-US': '- Includes 4 coasters',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Black',
         'de-DE': 'Schwarz',

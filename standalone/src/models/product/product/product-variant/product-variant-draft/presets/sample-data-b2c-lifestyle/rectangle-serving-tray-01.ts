@@ -41,15 +41,7 @@ const rectangleServingTray01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Hand wash only\n- Natural wood',
         'de-DE': '- Handwäsche nur\n- Naturholz',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Brown',
         'de-DE': 'Braun',

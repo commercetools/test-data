@@ -59,24 +59,8 @@ const modernThreeSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'en-GB': '- Velvet upholstery\n- 3-seater sofa\n- Assembled on site',
         'de-DE': '- Velvet upholstery\n- 3-seater sofa\n- Assembled on site',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Dark Slate Grey',
         'de-DE': 'Dunkles Schiefer grau',

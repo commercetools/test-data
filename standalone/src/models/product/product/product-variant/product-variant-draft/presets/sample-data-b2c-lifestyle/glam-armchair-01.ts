@@ -41,24 +41,8 @@ const glamArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung\n- Kissen inklusive',
         'en-US': '- Dry clean only\n- Pillow included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gold',
-            'en-GB': 'Gold',
-            'de-DE': 'Gold',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('gold'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Golden Rod',
         'de-DE': 'Goldene Rute',

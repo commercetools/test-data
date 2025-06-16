@@ -47,24 +47,8 @@ const rattanLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 2 cushions for seat and backrest',
         'de-DE': '- Inklusive 2 Kissen für Sitz und Rückenlehne',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Antique White',
         'de-DE': 'Antik-weiß',

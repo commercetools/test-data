@@ -46,15 +46,7 @@ const cottonSilkBedsheet01 = (): TBuilder<TProductVariantDraft> =>
       }),
       AttributeDraft.random().name('new-arrival').value(false),
       AttributeDraft.random().name('size').value({ 'en-GB': 'Queen' }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'White',
         'de-DE': 'Weiß',

@@ -41,15 +41,7 @@ const ecruDoubleBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Mit gepolstertem Kopfteil\n- Montage inklusive',
         'en-US': '- Comes with pillow-top headboard\n- Assembly included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Gainsboro',
         'de-DE': 'Gainsboro',

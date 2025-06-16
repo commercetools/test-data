@@ -44,15 +44,7 @@ const benPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Machine-washable\n- Cover is removable\n- Does not include pillow',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Tan',
         'de-DE': 'Bräunen',

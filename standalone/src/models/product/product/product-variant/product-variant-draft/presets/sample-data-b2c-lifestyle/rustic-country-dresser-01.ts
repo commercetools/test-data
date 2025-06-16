@@ -62,15 +62,7 @@ const rusticCountryDresser01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- 3 small drawers and 4 large drawers\n- Nickel drawer handles\n- Assembled on site',
       }),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
+      AttributeDraft.random().name('search-finish').value('gray'),
       AttributeDraft.random().name('finish-label').value({
         'en-GB': 'Light Gray',
         'de-DE': 'Hell grau',

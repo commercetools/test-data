@@ -48,24 +48,8 @@ const nalaTwoSeaterSofa03 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('search-finish').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Peru',
         'de-DE': 'Peru',

@@ -47,24 +47,8 @@ const wilmaChair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Cushion covers are removable and machine washable',
         'de-DE': '- Kissenbezüge sind abnehmbar und maschinenwaschbar',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'White',
-            'en-GB': 'White',
-            'de-DE': 'Weiß',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('search-finish').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Floral White',
         'de-DE': 'Blumen weiß',

@@ -60,15 +60,7 @@ const walnutCabinet01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Assembly included in delivery',
         'de-DE': '- Montage im Lieferumfang enthalten',
       }),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('finish-label').value({
         'en-GB': 'Brown',
         'de-DE': 'Braun',

@@ -41,15 +41,7 @@ const rusticOvenCasserole01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Does not include lid',
         'de-DE': '- Ohne Deckel',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Peru',
         'de-DE': 'Peru',

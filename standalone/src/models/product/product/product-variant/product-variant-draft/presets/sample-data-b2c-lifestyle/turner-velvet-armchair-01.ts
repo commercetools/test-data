@@ -47,15 +47,7 @@ const turnerVelvetArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Dry clean only',
         'de-DE': '- Nur chemische Reinigung',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Blue',
-            'en-GB': 'Blue',
-            'de-DE': 'Blau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('blue'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Royal Blue',
         'de-DE': 'Königs blau',

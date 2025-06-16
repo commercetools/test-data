@@ -41,15 +41,7 @@ const meadowRug03 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 3 Fuß x 5 Fuß',
         'en-US': '- 3ft x 5ft',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Blue',
-            'en-GB': 'Blue',
-            'de-DE': 'Blau',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('blue'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Sky Blue',
         'de-DE': 'Himmel blau',

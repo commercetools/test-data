@@ -56,15 +56,7 @@ const modernGlamDresser01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- 3 large drawers\n- suede  and nickel finish on drawer handles\n- assembly on site',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Brown',
         'de-DE': 'Braun',

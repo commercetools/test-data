@@ -41,24 +41,8 @@ const brunoChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Blue',
-            'en-GB': 'Blue',
-            'de-DE': 'Blau',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('blue'),
+      AttributeDraft.random().name('search-finish').value('brown'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Royal Blue',
         'de-DE': 'Königs blau',

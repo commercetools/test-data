@@ -47,24 +47,8 @@ const canelaThreeSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Lederpolsterung\n- 3-Sitzer',
         'en-US': '- Leather upholstery \n- 3 seater',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Brown',
-            'en-GB': 'Brown',
-            'de-DE': 'Braun',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Peru',
         'de-DE': 'Peru',

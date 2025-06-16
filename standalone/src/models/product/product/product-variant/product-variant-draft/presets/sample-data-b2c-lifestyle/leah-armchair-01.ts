@@ -41,24 +41,8 @@ const leahArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Gray',
-            'en-GB': 'Grey',
-            'de-DE': 'Grau',
-          },
-        ]),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Yellow',
-            'en-GB': 'Yellow',
-            'de-DE': 'Gelb',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('gray'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Grey',
         'de-DE': 'Grau',

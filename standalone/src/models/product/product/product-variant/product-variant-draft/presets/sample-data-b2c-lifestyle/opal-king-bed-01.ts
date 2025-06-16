@@ -41,15 +41,7 @@ const opalKingBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Montage inklusive',
         'en-US': '- Assembly included',
       }),
-      AttributeDraft.random()
-        .name('search-color')
-        .value([
-          {
-            'en-US': 'Black',
-            'en-GB': 'Black',
-            'de-DE': 'Schwarz',
-          },
-        ]),
+      AttributeDraft.random().name('search-color').value('black'),
       AttributeDraft.random().name('color-label').value({
         'en-GB': 'Black',
         'de-DE': 'Schwarz',

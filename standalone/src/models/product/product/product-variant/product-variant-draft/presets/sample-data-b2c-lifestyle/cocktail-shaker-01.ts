@@ -50,15 +50,7 @@ const cocktailShaker01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Includes built in strainer\n- Stainless steel\n- Dishwasher safe',
       }),
-      AttributeDraft.random()
-        .name('search-finish')
-        .value([
-          {
-            'en-US': 'Silver',
-            'en-GB': 'Silver',
-            'de-DE': 'Silber',
-          },
-        ]),
+      AttributeDraft.random().name('search-finish').value('silver'),
       AttributeDraft.random().name('finish-label').value({
         'en-GB': 'Silver',
         'de-DE': 'Silber',
