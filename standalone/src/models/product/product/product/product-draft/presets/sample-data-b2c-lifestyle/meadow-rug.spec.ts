@@ -43,13 +43,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grau",
-                  "en-GB": "Grey",
-                  "en-US": "Gray",
-                },
-              ],
+              "value": "gray",
             },
             {
               "name": "color-label",
@@ -172,13 +166,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Schwarz",
-                    "en-GB": "Black",
-                    "en-US": "Black",
-                  },
-                ],
+                "value": "black",
               },
               {
                 "name": "color-label",
@@ -269,13 +257,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Blau",
-                    "en-GB": "Blue",
-                    "en-US": "Blue",
-                  },
-                ],
+                "value": "blue",
               },
               {
                 "name": "color-label",
@@ -402,7 +384,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+              "value": ""gray"",
             },
             {
               "name": "color-label",
@@ -535,7 +517,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+                "value": ""black"",
               },
               {
                 "name": "color-label",
@@ -624,7 +606,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
+                "value": ""blue"",
               },
               {
                 "name": "color-label",

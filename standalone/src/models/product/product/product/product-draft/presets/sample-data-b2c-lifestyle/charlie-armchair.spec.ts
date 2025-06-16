@@ -43,23 +43,11 @@ describe(`with charlieArmchair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Gelb",
-                  "en-GB": "Yellow",
-                  "en-US": "Yellow",
-                },
-              ],
+              "value": "yellow",
             },
             {
               "name": "color-label",
@@ -230,11 +218,11 @@ describe(`with charlieArmchair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+              "value": ""brown"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+              "value": ""yellow"",
             },
             {
               "name": "color-label",

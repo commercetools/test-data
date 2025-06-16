@@ -35,13 +35,7 @@ describe(`with cottonTwoSeaterSofa preset`, () => {
           "attributes": [
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Weiß",
-                  "en-GB": "White",
-                  "en-US": "White",
-                },
-              ],
+              "value": "white",
             },
             {
               "name": "color-label",

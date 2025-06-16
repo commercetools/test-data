@@ -25,23 +25,11 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Grün",
-                "en-GB": "Green",
-                "en-US": "Green",
-              },
-            ],
+            "value": "green",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Silber",
-                "en-GB": "Silver",
-                "en-US": "Silver",
-              },
-            ],
+            "value": "silver",
           },
           {
             "name": "color-label",
@@ -147,11 +135,11 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+            "value": ""green"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+            "value": ""silver"",
           },
           {
             "name": "color-label",

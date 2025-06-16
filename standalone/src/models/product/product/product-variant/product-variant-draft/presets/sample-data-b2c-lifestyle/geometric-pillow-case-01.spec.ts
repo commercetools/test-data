@@ -32,13 +32,7 @@ describe(`with geometricPillowCase01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Silber",
-                "en-GB": "Silver",
-                "en-US": "Silver",
-              },
-            ],
+            "value": "silver",
           },
           {
             "name": "color-label",
@@ -140,7 +134,7 @@ describe(`with geometricPillowCase01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+            "value": ""silver"",
           },
           {
             "name": "color-label",

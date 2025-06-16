@@ -42,13 +42,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Violett",
-                  "en-GB": "Purple",
-                  "en-US": "Purple",
-                },
-              ],
+              "value": "purple",
             },
             {
               "name": "color-label",
@@ -174,13 +168,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Gelb",
-                    "en-GB": "Yellow",
-                    "en-US": "Yellow",
-                  },
-                ],
+                "value": "yellow",
               },
               {
                 "name": "color-label",
@@ -304,7 +292,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
+              "value": ""purple"",
             },
             {
               "name": "color-label",
@@ -437,7 +425,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+                "value": ""yellow"",
               },
               {
                 "name": "color-label",

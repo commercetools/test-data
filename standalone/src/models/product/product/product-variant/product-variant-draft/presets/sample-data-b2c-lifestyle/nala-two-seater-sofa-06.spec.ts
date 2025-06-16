@@ -29,23 +29,11 @@ describe(`with nalaTwoSeaterSofa06 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Grün",
-                "en-GB": "Green",
-                "en-US": "Green",
-              },
-            ],
+            "value": "green",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Schwarz",
-                "en-GB": "Black",
-                "en-US": "Black",
-              },
-            ],
+            "value": "black",
           },
           {
             "name": "color-label",
@@ -155,11 +143,11 @@ describe(`with nalaTwoSeaterSofa06 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+            "value": ""green"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+            "value": ""black"",
           },
           {
             "name": "color-label",

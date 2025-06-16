@@ -50,23 +50,11 @@ describe(`with artDecoCoffeeTable preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Schwarz",
-                  "en-GB": "Black",
-                  "en-US": "Black",
-                },
-              ],
+              "value": "black",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Gold",
-                  "en-GB": "Gold",
-                  "en-US": "Gold",
-                },
-              ],
+              "value": "gold",
             },
             {
               "name": "color-label",
@@ -245,11 +233,11 @@ describe(`with artDecoCoffeeTable preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+              "value": ""black"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+              "value": ""gold"",
             },
             {
               "name": "color-label",

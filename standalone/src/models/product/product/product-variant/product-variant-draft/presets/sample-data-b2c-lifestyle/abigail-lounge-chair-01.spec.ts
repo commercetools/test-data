@@ -25,23 +25,11 @@ describe(`with abigailLoungeChair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Rosa",
-                "en-GB": "Pink",
-                "en-US": "Pink",
-              },
-            ],
+            "value": "pink",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Gold",
-                "en-GB": "Gold",
-                "en-US": "Gold",
-              },
-            ],
+            "value": "gold",
           },
           {
             "name": "color-label",
@@ -166,11 +154,11 @@ describe(`with abigailLoungeChair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+            "value": ""pink"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            "value": ""gold"",
           },
           {
             "name": "color-label",

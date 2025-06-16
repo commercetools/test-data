@@ -43,23 +43,11 @@ describe(`with brunoChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Blau",
-                  "en-GB": "Blue",
-                  "en-US": "Blue",
-                },
-              ],
+              "value": "blue",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "color-label",
@@ -229,11 +217,11 @@ describe(`with brunoChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
+              "value": ""blue"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+              "value": ""brown"",
             },
             {
               "name": "color-label",

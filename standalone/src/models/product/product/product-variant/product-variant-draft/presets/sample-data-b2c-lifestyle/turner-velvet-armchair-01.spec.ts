@@ -22,13 +22,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Blau",
-                "en-GB": "Blue",
-                "en-US": "Blue",
-              },
-            ],
+            "value": "blue",
           },
           {
             "name": "color-label",
@@ -130,7 +124,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
+            "value": ""blue"",
           },
           {
             "name": "color-label",

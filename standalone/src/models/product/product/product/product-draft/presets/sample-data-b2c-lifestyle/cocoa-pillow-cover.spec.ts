@@ -41,13 +41,7 @@ describe(`with cocoaPillowCover preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Gelb",
-                  "en-GB": "Yellow",
-                  "en-US": "Yellow",
-                },
-              ],
+              "value": "yellow",
             },
             {
               "name": "color-label",

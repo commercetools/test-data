@@ -28,13 +28,7 @@ describe(`with purpleLandscapePainting01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Violett",
-                "en-GB": "Purple",
-                "en-US": "Purple",
-              },
-            ],
+            "value": "purple",
           },
           {
             "name": "color-label",
@@ -128,7 +122,7 @@ describe(`with purpleLandscapePainting01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
+            "value": ""purple"",
           },
           {
             "name": "color-label",

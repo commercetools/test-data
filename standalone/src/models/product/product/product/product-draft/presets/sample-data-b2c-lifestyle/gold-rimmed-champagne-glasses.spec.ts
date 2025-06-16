@@ -50,23 +50,11 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Transparent",
-                  "en-GB": "Transparent",
-                  "en-US": "Transparent",
-                },
-              ],
+              "value": "transparent",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Gold",
-                  "en-GB": "Gold",
-                  "en-US": "Gold",
-                },
-              ],
+              "value": "gold",
             },
             {
               "name": "color-label",
@@ -261,11 +249,11 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
+              "value": ""transparent"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+              "value": ""gold"",
             },
             {
               "name": "color-label",

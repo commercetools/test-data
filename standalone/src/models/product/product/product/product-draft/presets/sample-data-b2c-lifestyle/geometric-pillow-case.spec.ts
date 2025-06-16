@@ -57,13 +57,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Silber",
-                  "en-GB": "Silver",
-                  "en-US": "Silver",
-                },
-              ],
+              "value": "silver",
             },
             {
               "name": "color-label",
@@ -207,13 +201,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Rosa",
-                    "en-GB": "Pink",
-                    "en-US": "Pink",
-                  },
-                ],
+                "value": "pink",
               },
               {
                 "name": "color-label",
@@ -325,13 +313,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Gelb",
-                    "en-GB": "Yellow",
-                    "en-US": "Yellow",
-                  },
-                ],
+                "value": "yellow",
               },
               {
                 "name": "color-label",
@@ -467,7 +449,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+              "value": ""silver"",
             },
             {
               "name": "color-label",
@@ -608,7 +590,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+                "value": ""pink"",
               },
               {
                 "name": "color-label",
@@ -705,7 +687,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+                "value": ""yellow"",
               },
               {
                 "name": "color-label",

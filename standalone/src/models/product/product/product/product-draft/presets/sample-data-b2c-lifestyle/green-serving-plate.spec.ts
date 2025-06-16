@@ -47,13 +47,7 @@ describe(`with greenServingPlate preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grün",
-                  "en-GB": "Green",
-                  "en-US": "Green",
-                },
-              ],
+              "value": "green",
             },
             {
               "name": "color-label",
@@ -224,7 +218,7 @@ describe(`with greenServingPlate preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+              "value": ""green"",
             },
             {
               "name": "color-label",

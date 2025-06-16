@@ -58,23 +58,11 @@ describe(`with modernThreeSeaterSofa preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grau",
-                  "en-GB": "Grey",
-                  "en-US": "Gray",
-                },
-              ],
+              "value": "gray",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "color-label",
@@ -277,11 +265,11 @@ describe(`with modernThreeSeaterSofa preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+              "value": ""gray"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+              "value": ""brown"",
             },
             {
               "name": "color-label",

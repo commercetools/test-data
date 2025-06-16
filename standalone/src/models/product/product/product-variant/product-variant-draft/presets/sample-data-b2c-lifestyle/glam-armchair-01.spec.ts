@@ -21,23 +21,11 @@ describe(`with glamArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Gelb",
-                "en-GB": "Yellow",
-                "en-US": "Yellow",
-              },
-            ],
+            "value": "yellow",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Gold",
-                "en-GB": "Gold",
-                "en-US": "Gold",
-              },
-            ],
+            "value": "gold",
           },
           {
             "name": "color-label",
@@ -143,11 +131,11 @@ describe(`with glamArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            "value": ""yellow"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            "value": ""gold"",
           },
           {
             "name": "color-label",

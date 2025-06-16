@@ -31,13 +31,7 @@ describe(`with rusticOvenCasserole preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "color-label",
@@ -183,7 +177,7 @@ describe(`with rusticOvenCasserole preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+              "value": ""brown"",
             },
             {
               "name": "color-label",

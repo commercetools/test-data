@@ -34,13 +34,7 @@ describe(`with evergreenCandle preset`, () => {
           "attributes": [
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grün",
-                  "en-GB": "Green",
-                  "en-US": "Green",
-                },
-              ],
+              "value": "green",
             },
             {
               "name": "color-label",

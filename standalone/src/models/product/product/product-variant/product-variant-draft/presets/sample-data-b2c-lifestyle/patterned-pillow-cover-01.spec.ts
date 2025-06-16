@@ -25,13 +25,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Rosa",
-                "en-GB": "Pink",
-                "en-US": "Pink",
-              },
-            ],
+            "value": "pink",
           },
           {
             "name": "color-label",
@@ -125,7 +119,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+            "value": ""pink"",
           },
           {
             "name": "color-label",

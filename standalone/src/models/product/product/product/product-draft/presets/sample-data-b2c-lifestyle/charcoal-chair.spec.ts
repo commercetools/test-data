@@ -43,23 +43,11 @@ describe(`with charcoalChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grau",
-                  "en-GB": "Grey",
-                  "en-US": "Gray",
-                },
-              ],
+              "value": "gray",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Gelb",
-                  "en-GB": "Yellow",
-                  "en-US": "Yellow",
-                },
-              ],
+              "value": "yellow",
             },
             {
               "name": "color-label",
@@ -238,11 +226,11 @@ describe(`with charcoalChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+              "value": ""gray"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+              "value": ""yellow"",
             },
             {
               "name": "color-label",

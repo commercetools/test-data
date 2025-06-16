@@ -46,23 +46,11 @@ describe(`with vanillaCandle preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Gelb",
-                  "en-GB": "Yellow",
-                  "en-US": "Yellow",
-                },
-              ],
+              "value": "yellow",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Glas",
-                  "en-GB": "Glass",
-                  "en-US": "Glass",
-                },
-              ],
+              "value": "glass",
             },
             {
               "name": "color-label",
@@ -260,11 +248,11 @@ describe(`with vanillaCandle preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+              "value": ""yellow"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
+              "value": ""glass"",
             },
             {
               "name": "color-label",

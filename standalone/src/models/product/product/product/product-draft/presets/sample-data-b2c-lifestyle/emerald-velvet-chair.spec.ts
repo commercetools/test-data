@@ -43,23 +43,11 @@ describe(`with emeraldVelvetChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grün",
-                  "en-GB": "Green",
-                  "en-US": "Green",
-                },
-              ],
+              "value": "green",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "color-label",

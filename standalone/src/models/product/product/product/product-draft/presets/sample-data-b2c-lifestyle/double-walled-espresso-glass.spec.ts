@@ -43,23 +43,11 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Transparent",
-                  "en-GB": "Transparent",
-                  "en-US": "Transparent",
-                },
-              ],
+              "value": "transparent",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Glas",
-                  "en-GB": "Glass",
-                  "en-US": "Glass",
-                },
-              ],
+              "value": "glass",
             },
             {
               "name": "color-label",

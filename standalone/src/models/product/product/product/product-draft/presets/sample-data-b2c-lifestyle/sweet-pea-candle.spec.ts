@@ -46,23 +46,11 @@ describe(`with sweetPeaCandle preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Rosa",
-                  "en-GB": "Pink",
-                  "en-US": "Pink",
-                },
-              ],
+              "value": "pink",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Glas",
-                  "en-GB": "Glass",
-                  "en-US": "Glass",
-                },
-              ],
+              "value": "glass",
             },
             {
               "name": "color-label",
@@ -249,11 +237,11 @@ describe(`with sweetPeaCandle preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+              "value": ""pink"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
+              "value": ""glass"",
             },
             {
               "name": "color-label",

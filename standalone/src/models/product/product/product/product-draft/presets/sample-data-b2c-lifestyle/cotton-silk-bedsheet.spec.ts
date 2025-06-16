@@ -55,13 +55,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Weiß",
-                  "en-GB": "White",
-                  "en-US": "White",
-                },
-              ],
+              "value": "white",
             },
             {
               "name": "color-label",
@@ -196,13 +190,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Weiß",
-                    "en-GB": "White",
-                    "en-US": "White",
-                  },
-                ],
+                "value": "white",
               },
               {
                 "name": "color-label",
@@ -305,13 +293,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Weiß",
-                    "en-GB": "White",
-                    "en-US": "White",
-                  },
-                ],
+                "value": "white",
               },
               {
                 "name": "color-label",
@@ -414,13 +396,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Rosa",
-                    "en-GB": "Pink",
-                    "en-US": "Pink",
-                  },
-                ],
+                "value": "pink",
               },
               {
                 "name": "color-label",
@@ -531,13 +507,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Rosa",
-                    "en-GB": "Pink",
-                    "en-US": "Pink",
-                  },
-                ],
+                "value": "pink",
               },
               {
                 "name": "color-label",
@@ -648,13 +618,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Rosa",
-                    "en-GB": "Pink",
-                    "en-US": "Pink",
-                  },
-                ],
+                "value": "pink",
               },
               {
                 "name": "color-label",
@@ -765,13 +729,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Grau",
-                    "en-GB": "Grey",
-                    "en-US": "Gray",
-                  },
-                ],
+                "value": "gray",
               },
               {
                 "name": "color-label",
@@ -874,13 +832,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Grau",
-                    "en-GB": "Grey",
-                    "en-US": "Gray",
-                  },
-                ],
+                "value": "gray",
               },
               {
                 "name": "color-label",
@@ -983,13 +935,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": [
-                  {
-                    "de-DE": "Grau",
-                    "en-GB": "Grey",
-                    "en-US": "Gray",
-                  },
-                ],
+                "value": "gray",
               },
               {
                 "name": "color-label",

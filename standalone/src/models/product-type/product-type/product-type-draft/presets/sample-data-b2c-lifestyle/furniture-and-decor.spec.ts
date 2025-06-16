@@ -127,10 +127,174 @@ describe(`with furnitureAndDecor preset`, () => {
             },
             "name": "search-color",
             "type": {
-              "elementType": {
-                "name": "ltext",
-              },
-              "name": "set",
+              "name": "lenum",
+              "values": [
+                {
+                  "key": "black",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Schwarz",
+                    "en": undefined,
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "gray",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Grau",
+                    "en": undefined,
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "white",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Weiß",
+                    "en": undefined,
+                    "en-GB": "White",
+                    "en-US": "White",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "blue",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Blau",
+                    "en": undefined,
+                    "en-GB": "Blue",
+                    "en-US": "Blue",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "brown",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Braun",
+                    "en": undefined,
+                    "en-GB": "Brown",
+                    "en-US": "Brown",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "green",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Grün",
+                    "en": undefined,
+                    "en-GB": "Green",
+                    "en-US": "Green",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "red",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Rot",
+                    "en": undefined,
+                    "en-GB": "Red",
+                    "en-US": "Red",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "purple",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Violett",
+                    "en": undefined,
+                    "en-GB": "Purple",
+                    "en-US": "Purple",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "pink",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Rosa",
+                    "en": undefined,
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "yellow",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Gelb",
+                    "en": undefined,
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "gold",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Gold",
+                    "en": undefined,
+                    "en-GB": "Gold",
+                    "en-US": "Gold",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "silver",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Silber",
+                    "en": undefined,
+                    "en-GB": "Silver",
+                    "en-US": "Silver",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "multicolored",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Mehrfarbig",
+                    "en": undefined,
+                    "en-GB": "Multicoloured",
+                    "en-US": "Multicolored",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "transparent",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Transparent",
+                    "en": undefined,
+                    "en-GB": "Transparent",
+                    "en-US": "Transparent",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "glass",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Glas",
+                    "en": undefined,
+                    "en-GB": "Glass",
+                    "en-US": "Glass",
+                    "fr": undefined,
+                  },
+                },
+              ],
             },
           },
           {
@@ -156,10 +320,174 @@ describe(`with furnitureAndDecor preset`, () => {
             },
             "name": "search-finish",
             "type": {
-              "elementType": {
-                "name": "ltext",
-              },
-              "name": "set",
+              "name": "lenum",
+              "values": [
+                {
+                  "key": "black",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Schwarz",
+                    "en": undefined,
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "gray",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Grau",
+                    "en": undefined,
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "white",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Weiß",
+                    "en": undefined,
+                    "en-GB": "White",
+                    "en-US": "White",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "blue",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Blau",
+                    "en": undefined,
+                    "en-GB": "Blue",
+                    "en-US": "Blue",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "brown",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Braun",
+                    "en": undefined,
+                    "en-GB": "Brown",
+                    "en-US": "Brown",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "green",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Grün",
+                    "en": undefined,
+                    "en-GB": "Green",
+                    "en-US": "Green",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "red",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Rot",
+                    "en": undefined,
+                    "en-GB": "Red",
+                    "en-US": "Red",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "purple",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Violett",
+                    "en": undefined,
+                    "en-GB": "Purple",
+                    "en-US": "Purple",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "pink",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Rosa",
+                    "en": undefined,
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "yellow",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Gelb",
+                    "en": undefined,
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "gold",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Gold",
+                    "en": undefined,
+                    "en-GB": "Gold",
+                    "en-US": "Gold",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "silver",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Silber",
+                    "en": undefined,
+                    "en-GB": "Silver",
+                    "en-US": "Silver",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "multicolored",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Mehrfarbig",
+                    "en": undefined,
+                    "en-GB": "Multicoloured",
+                    "en-US": "Multicolored",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "transparent",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Transparent",
+                    "en": undefined,
+                    "en-GB": "Transparent",
+                    "en-US": "Transparent",
+                    "fr": undefined,
+                  },
+                },
+                {
+                  "key": "glass",
+                  "label": {
+                    "de": undefined,
+                    "de-DE": "Glas",
+                    "en": undefined,
+                    "en-GB": "Glass",
+                    "en-US": "Glass",
+                    "fr": undefined,
+                  },
+                },
+              ],
             },
           },
           {
@@ -449,12 +777,264 @@ describe(`with furnitureAndDecor preset`, () => {
             "level": "Variant",
             "name": "search-color",
             "type": {
-              "set": {
-                "elementType": {
-                  "ltext": {
-                    "dummy": null,
+              "lenum": {
+                "values": [
+                  {
+                    "key": "black",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Black",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Black",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Schwarz",
+                      },
+                    ],
                   },
-                },
+                  {
+                    "key": "gray",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Gray",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Grey",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Grau",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "white",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "White",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "White",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Weiß",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "blue",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Blue",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Blue",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Blau",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "brown",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Brown",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Brown",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Braun",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "green",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Green",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Green",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Grün",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "red",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Red",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Red",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Rot",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "purple",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Purple",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Purple",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Violett",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "pink",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Pink",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Pink",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Rosa",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "yellow",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Yellow",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Yellow",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Gelb",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "gold",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Gold",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Gold",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Gold",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "silver",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Silver",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Silver",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Silber",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "multicolored",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Multicolored",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Multicoloured",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Mehrfarbig",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "transparent",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Transparent",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Transparent",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Transparent",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "glass",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Glass",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Glass",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Glas",
+                      },
+                    ],
+                  },
+                ],
               },
             },
           },
@@ -494,12 +1074,264 @@ describe(`with furnitureAndDecor preset`, () => {
             "level": "Variant",
             "name": "search-finish",
             "type": {
-              "set": {
-                "elementType": {
-                  "ltext": {
-                    "dummy": null,
+              "lenum": {
+                "values": [
+                  {
+                    "key": "black",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Black",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Black",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Schwarz",
+                      },
+                    ],
                   },
-                },
+                  {
+                    "key": "gray",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Gray",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Grey",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Grau",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "white",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "White",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "White",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Weiß",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "blue",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Blue",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Blue",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Blau",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "brown",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Brown",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Brown",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Braun",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "green",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Green",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Green",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Grün",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "red",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Red",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Red",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Rot",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "purple",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Purple",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Purple",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Violett",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "pink",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Pink",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Pink",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Rosa",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "yellow",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Yellow",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Yellow",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Gelb",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "gold",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Gold",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Gold",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Gold",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "silver",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Silver",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Silver",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Silber",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "multicolored",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Multicolored",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Multicoloured",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Mehrfarbig",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "transparent",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Transparent",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Transparent",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Transparent",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "glass",
+                    "label": [
+                      {
+                        "locale": "en-US",
+                        "value": "Glass",
+                      },
+                      {
+                        "locale": "en-GB",
+                        "value": "Glass",
+                      },
+                      {
+                        "locale": "de-DE",
+                        "value": "Glas",
+                      },
+                    ],
+                  },
+                ],
               },
             },
           },

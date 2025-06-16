@@ -21,23 +21,11 @@ describe(`with fawnArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Gelb",
-                "en-GB": "Yellow",
-                "en-US": "Yellow",
-              },
-            ],
+            "value": "yellow",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Schwarz",
-                "en-GB": "Black",
-                "en-US": "Black",
-              },
-            ],
+            "value": "black",
           },
           {
             "name": "color-label",
@@ -143,11 +131,11 @@ describe(`with fawnArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            "value": ""yellow"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+            "value": ""black"",
           },
           {
             "name": "color-label",

@@ -46,13 +46,7 @@ describe(`with doubleSidedShotGlass preset`, () => {
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Silber",
-                  "en-GB": "Silver",
-                  "en-US": "Silver",
-                },
-              ],
+              "value": "silver",
             },
             {
               "name": "finish-label",

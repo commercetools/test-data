@@ -37,23 +37,11 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Weiß",
-                "en-GB": "White",
-                "en-US": "White",
-              },
-            ],
+            "value": "white",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Gold",
-                "en-GB": "Gold",
-                "en-US": "Gold",
-              },
-            ],
+            "value": "gold",
           },
           {
             "name": "color-label",
@@ -183,11 +171,11 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+            "value": ""white"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            "value": ""gold"",
           },
           {
             "name": "color-label",

@@ -46,23 +46,11 @@ describe(`with edgarArmchair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Grün",
-                  "en-GB": "Green",
-                  "en-US": "Green",
-                },
-              ],
+              "value": "green",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Schwarz",
-                  "en-GB": "Black",
-                  "en-US": "Black",
-                },
-              ],
+              "value": "black",
             },
             {
               "name": "color-label",

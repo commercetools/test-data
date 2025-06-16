@@ -22,13 +22,7 @@ describe(`with crystalDrinkingGlass01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Transparent",
-                "en-GB": "Transparent",
-                "en-US": "Transparent",
-              },
-            ],
+            "value": "transparent",
           },
           {
             "name": "color-label",
@@ -122,7 +116,7 @@ describe(`with crystalDrinkingGlass01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
+            "value": ""transparent"",
           },
           {
             "name": "color-label",

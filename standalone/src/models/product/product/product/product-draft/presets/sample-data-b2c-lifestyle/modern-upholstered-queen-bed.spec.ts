@@ -58,23 +58,11 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Weiß",
-                  "en-GB": "White",
-                  "en-US": "White",
-                },
-              ],
+              "value": "white",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Schwarz",
-                  "en-GB": "Black",
-                  "en-US": "Black",
-                },
-              ],
+              "value": "black",
             },
             {
               "name": "color-label",
@@ -253,11 +241,11 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+              "value": ""white"",
             },
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+              "value": ""black"",
             },
             {
               "name": "color-label",

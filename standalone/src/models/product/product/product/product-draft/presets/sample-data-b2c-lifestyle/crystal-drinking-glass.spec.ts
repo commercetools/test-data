@@ -43,13 +43,7 @@ describe(`with crystalDrinkingGlass preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Transparent",
-                  "en-GB": "Transparent",
-                  "en-US": "Transparent",
-                },
-              ],
+              "value": "transparent",
             },
             {
               "name": "color-label",

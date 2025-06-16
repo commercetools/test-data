@@ -46,13 +46,7 @@ describe(`with redModernPainting preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Rot",
-                  "en-GB": "Red",
-                  "en-US": "Red",
-                },
-              ],
+              "value": "red",
             },
             {
               "name": "color-label",
@@ -211,7 +205,7 @@ describe(`with redModernPainting preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"Red","en-GB":"Red","de-DE":"Rot"}]",
+              "value": ""red"",
             },
             {
               "name": "color-label",

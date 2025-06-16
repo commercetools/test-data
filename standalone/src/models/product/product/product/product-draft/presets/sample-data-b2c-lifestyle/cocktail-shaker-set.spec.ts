@@ -45,13 +45,7 @@ describe(`with cocktailShakerSet preset`, () => {
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Gold",
-                  "en-GB": "Gold",
-                  "en-US": "Gold",
-                },
-              ],
+              "value": "gold",
             },
             {
               "name": "finish-label",

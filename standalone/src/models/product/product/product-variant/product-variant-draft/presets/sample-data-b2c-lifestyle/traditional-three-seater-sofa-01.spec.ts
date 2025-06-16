@@ -28,23 +28,11 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": [
-              {
-                "de-DE": "Grün",
-                "en-GB": "Green",
-                "en-US": "Green",
-              },
-            ],
+            "value": "green",
           },
           {
             "name": "search-finish",
-            "value": [
-              {
-                "de-DE": "Braun",
-                "en-GB": "Brown",
-                "en-US": "Brown",
-              },
-            ],
+            "value": "brown",
           },
           {
             "name": "color-label",
@@ -166,11 +154,11 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+            "value": ""green"",
           },
           {
             "name": "search-finish",
-            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+            "value": ""brown"",
           },
           {
             "name": "color-label",

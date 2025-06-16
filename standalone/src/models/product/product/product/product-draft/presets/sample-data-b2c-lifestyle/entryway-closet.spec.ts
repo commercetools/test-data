@@ -42,23 +42,11 @@ describe(`with entrywayCloset preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Gelb",
-                  "en-GB": "Yellow",
-                  "en-US": "Yellow",
-                },
-              ],
+              "value": "yellow",
             },
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Braun",
-                  "en-GB": "Brown",
-                  "en-US": "Brown",
-                },
-              ],
+              "value": "brown",
             },
             {
               "name": "color-label",

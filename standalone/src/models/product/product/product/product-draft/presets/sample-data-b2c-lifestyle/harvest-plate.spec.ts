@@ -51,13 +51,7 @@ describe(`with harvestPlate preset`, () => {
             },
             {
               "name": "search-color",
-              "value": [
-                {
-                  "de-DE": "Weiß",
-                  "en-GB": "White",
-                  "en-US": "White",
-                },
-              ],
+              "value": "white",
             },
             {
               "name": "color-label",
@@ -224,7 +218,7 @@ describe(`with harvestPlate preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+              "value": ""white"",
             },
             {
               "name": "color-label",

@@ -52,13 +52,7 @@ describe(`with minimalistCedarNightstand preset`, () => {
           "attributes": [
             {
               "name": "search-finish",
-              "value": [
-                {
-                  "de-DE": "Grau",
-                  "en-GB": "Grey",
-                  "en-US": "Gray",
-                },
-              ],
+              "value": "gray",
             },
             {
               "name": "finish-label",
@@ -245,7 +239,7 @@ describe(`with minimalistCedarNightstand preset`, () => {
           "attributes": [
             {
               "name": "search-finish",
-              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+              "value": ""gray"",
             },
             {
               "name": "finish-label",
