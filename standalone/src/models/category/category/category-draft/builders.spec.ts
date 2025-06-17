@@ -11,12 +11,12 @@ const validateModel = (model: TCategoryDraftGraphql | TCategoryDraftRest) => {
       assets: null,
       custom: null,
       description: null,
-      externalId: expect.any(String),
-      key: expect.any(String),
+      externalId: null,
+      key: null,
       metaDescription: null,
       metaKeywords: null,
       metaTitle: null,
-      orderHint: expect.any(String),
+      orderHint: null,
       parent: null,
     })
   );

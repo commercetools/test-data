@@ -8,12 +8,12 @@ const commonFields = {
   assets: null,
   custom: null,
   description: null,
-  externalId: fake((f) => f.string.uuid()),
-  key: fake((f) => f.lorem.slug(3)),
+  externalId: null,
+  key: null,
   metaDescription: null,
   metaKeywords: null,
   metaTitle: null,
-  orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
+  orderHint: null,
   parent: null,
 };
 
