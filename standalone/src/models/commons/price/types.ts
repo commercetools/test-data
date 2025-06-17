@@ -1,4 +1,9 @@
-import type { Price, PriceDraft, Reference } from '@commercetools/platform-sdk';
+import type {
+  IReference,
+  IResourceIdentifier,
+  Price,
+  PriceDraft,
+} from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import { TCtpProductPrice, TCtpProductPriceDataInput } from '@/graphql-types';
 
@@ -8,10 +13,10 @@ import { TCtpProductPrice, TCtpProductPriceDataInput } from '@/graphql-types';
 // These should be removed once the official SDK provides support for recurrencePolicy.
 
 export type TPrice = Price & {
-  recurrencePolicy?: Reference;
+  recurrencePolicy?: IReference;
 };
 export type TPriceDraft = PriceDraft & {
-  recurrencePolicy?: Reference;
+  recurrencePolicy?: IResourceIdentifier;
 };
 
 export type TPriceGraphql = TCtpProductPrice;
