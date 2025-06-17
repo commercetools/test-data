@@ -16,10 +16,42 @@ const validateModel = (model: TCategoryDraftGraphql | TCategoryDraftRest) => {
       metaDescription: null,
       metaKeywords: null,
       metaTitle: null,
-      name: null,
       orderHint: expect.any(String),
       parent: null,
-      slug: null,
+    })
+  );
+};
+
+const validateGraphqlModel = (model: TCategoryDraftGraphql) => {
+  validateModel(model);
+  expect(model).toEqual(
+    expect.objectContaining({
+      name: expect.arrayContaining([
+        expect.objectContaining({
+          locale: expect.any(String),
+          value: expect.any(String),
+        }),
+      ]),
+      slug: expect.arrayContaining([
+        expect.objectContaining({
+          locale: expect.any(String),
+          value: expect.any(String),
+        }),
+      ]),
+    })
+  );
+};
+
+const validateRestModel = (model: TCategoryDraftRest) => {
+  validateModel(model);
+  expect(model).toEqual(
+    expect.objectContaining({
+      name: expect.objectContaining({
+        en: expect.any(String),
+      }),
+      slug: expect.objectContaining({
+        en: expect.any(String),
+      }),
     })
   );
 };
@@ -28,13 +60,13 @@ describe('CategoryDraft builders', () => {
   it('should create a REST model object', () => {
     const restCategoryDraft = CategoryDraftRest.random().build();
 
-    validateModel(restCategoryDraft);
+    validateRestModel(restCategoryDraft);
   });
 
   it('should create a GraphQL model object', () => {
     const graphqlCategoryDraft = CategoryDraftGraphql.random().build();
 
-    validateModel(graphqlCategoryDraft);
+    validateGraphqlModel(graphqlCategoryDraft);
   });
 });
 
@@ -42,18 +74,19 @@ describe('CategoryDraft compatibility builders', () => {
   it('should create a default compatibility model object', () => {
     const categoryDraft = CategoryDraft.random().build();
 
-    validateModel(categoryDraft);
+    validateRestModel(categoryDraft);
   });
 
   it('should create a REST compatibility model object', () => {
     const categoryDraft = CategoryDraft.random().buildRest();
 
-    validateModel(categoryDraft);
+    validateRestModel(categoryDraft);
   });
 
   it('should create a GraphQL compatibility model object', () => {
-    const categoryDraft = CategoryDraft.random().buildGraphql();
+    const categoryDraft =
+      CategoryDraft.random().buildGraphql<TCategoryDraftGraphql>();
 
-    validateModel(categoryDraft);
+    validateGraphqlModel(categoryDraft);
   });
 });
