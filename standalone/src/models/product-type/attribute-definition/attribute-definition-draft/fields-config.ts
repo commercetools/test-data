@@ -84,6 +84,18 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
       // the `type` field of this model.
       // We need to inspect the value of the `type` field in order to transform it into the expected format.
       // That's why we have to ignore the typescript warnings.
+      // @ts-expect-error Simple attribute types have `dummy` field
+      if (model.type.dummy) {
+        return {
+          ...model,
+          type: {
+            // @ts-expect-error Simple attribute types have `dummy` field
+            [model.type.dummy]: {
+              dummy: null,
+            },
+          },
+        };
+      }
       // @ts-expect-error AttributeEnumTypeDraftGraphql and AttributeLocalizedEnumTypeDraftGraphql types have a `name` field
       if (model.type.name) {
         // @ts-expect-error AttributeEnumTypeDraftGraphql and AttributeLocalizedEnumTypeDraftGraphql types have a `name` field
@@ -115,18 +127,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
             set: {
               // @ts-expect-error AttributeSetTypeDraftGraphql type has a `elementType` field
               elementType: model.type.elementType,
-            },
-          },
-        };
-      }
-      // @ts-expect-error Simple attribute types have `dummy` field
-      if (model.type.dummy) {
-        return {
-          ...model,
-          type: {
-            // @ts-expect-error Simple attribute types have `dummy` field
-            [model.type.dummy]: {
-              dummy: null,
             },
           },
         };

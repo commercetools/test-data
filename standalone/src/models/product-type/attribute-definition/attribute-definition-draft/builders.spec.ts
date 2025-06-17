@@ -1,3 +1,6 @@
+import { AttributeEnumTypeDraft } from '../../attribute-enum-type/attribute-enum-type-draft';
+import { AttributePlainEnumValueDraft } from '../../attribute-plain-enum-value/attribute-plain-enum-value-draft';
+import { AttributeTextTypeDraft } from '../../attribute-text-type/attribute-text-type-draft';
 import * as constants from '../constants';
 import {
   TAttributeDefinitionDraftGraphql,
@@ -100,5 +103,39 @@ describe('AttributeDefinitionDraft model compatibility builders', () => {
       AttributeDefinitionDraft.random().buildGraphql<TAttributeDefinitionDraftGraphql>();
 
     validateGraphqlModel(graphqlModel);
+  });
+
+  it('builds a GraphQL model with a text type', () => {
+    const graphqlModel = AttributeDefinitionDraft.random()
+      .type(AttributeTextTypeDraft.random().name('text'))
+      .buildGraphql<TAttributeDefinitionDraftGraphql>();
+
+    console.log('graphqlModel', graphqlModel);
+
+    validateGraphqlModel(graphqlModel);
+    expect(graphqlModel.type).toEqual({
+      text: { dummy: null },
+    });
+  });
+
+  it('builds a GraphQL model with an enum type', () => {
+    const graphqlModel = AttributeDefinitionDraft.random()
+      .type(
+        AttributeEnumTypeDraft.random()
+          .name('enum')
+          .values([AttributePlainEnumValueDraft.random()])
+      )
+      .buildGraphql<TAttributeDefinitionDraftGraphql>();
+
+    console.log('graphqlModel', graphqlModel);
+
+    validateGraphqlModel(graphqlModel);
+    expect(graphqlModel.type).toEqual(
+      expect.objectContaining({
+        enum: expect.objectContaining({
+          values: expect.any(Array),
+        }),
+      })
+    );
   });
 });
