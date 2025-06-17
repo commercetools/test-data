@@ -3,7 +3,8 @@ import {
   StandalonePriceDraft,
   CustomerGroup,
   Channel,
-  Reference,
+  IReference,
+  IResourceIdentifier,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import {
@@ -24,16 +25,16 @@ export type TStandalonePrice = Omit<
   customerGroup: CustomerGroup | null;
   channel: Channel | null;
   expiresAt: string | null;
-  recurrencePolicy: Reference | null;
+  recurrencePolicy: IReference | null;
 };
 
 export type TStandalonePriceDraft = StandalonePriceDraft & {
-  recurrencePolicy?: Reference;
+  recurrencePolicy?: IResourceIdentifier;
 };
 
 // REST representation
 export type TStandalonePriceRest = StandalonePrice & {
-  recurrencePolicy?: Reference;
+  recurrencePolicy?: IReference;
 };
 
 // Graphql representation
