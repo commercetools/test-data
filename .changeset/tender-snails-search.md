@@ -4,6 +4,8 @@
 
 We're introducing a new models named `RecurringOrder` and `Counter` that can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
 
+Please note that we have added only `Graphql` models and `REST` models will be added once `Recurring Order` is available in Public Beta.
+
 This is how the new model could be used:
 
 ```ts

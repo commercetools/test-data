@@ -4,7 +4,7 @@ import type { TCreateCounterBuilder, TCounterGraphql } from './types';
 
 export const GraphqlModelBuilder: TCreateCounterBuilder<TCounterGraphql> = () =>
   createSpecializedBuilder({
-    name: 'counterGraphqlBuilder',
+    name: 'CounterGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

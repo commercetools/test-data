@@ -6,7 +6,7 @@ export const GraphqlModelBuilder: TCreateCounterBuilder<
   TCounterDraftGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'counterDraftGraphqlBuilder',
+    name: 'CounterDraftGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

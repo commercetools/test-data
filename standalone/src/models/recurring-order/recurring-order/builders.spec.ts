@@ -1,7 +1,7 @@
 import { Company } from '@/models/business-unit';
 import { Customer } from '@/models/customer/customer';
 import { State } from '@/models/state';
-import { recurringOrderState } from './constants';
+import { recurringOrderStateGraphql } from './constants';
 import { RecurringOrderGraphql } from './index';
 
 describe('RecurringOrder Builder', () => {
@@ -26,7 +26,6 @@ describe('RecurringOrder Builder', () => {
         skipConfiguration: null,
         businessUnit: expect.objectContaining({
           id: expect.any(String),
-          unitType: 'Company',
           __typename: 'BusinessUnit',
         }),
         businessUnitRef: expect.objectContaining({
@@ -43,7 +42,7 @@ describe('RecurringOrder Builder', () => {
           __typename: 'Reference',
         }),
         recurringOrderState: expect.toBeOneOf(
-          Object.values(recurringOrderState)
+          Object.values(recurringOrderStateGraphql)
         ),
         customer: expect.objectContaining({
           id: expect.any(String),
