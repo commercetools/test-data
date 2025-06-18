@@ -1,5 +1,9 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { AddressDraft, ReferenceDraft } from '@/models/commons';
+import {
+  AddressDraft,
+  ReferenceDraftGraphql,
+  ReferenceDraftRest,
+} from '@/models/commons';
 import type { TShippingDraftGraphql, TShippingDraftRest } from '../types';
 
 const commonFieldsConfig = {
@@ -15,7 +19,7 @@ export const restFieldsConfig: TModelFieldsConfig<TShippingDraftRest> = {
   fields: {
     ...commonFieldsConfig,
     shippingMethod: fake(() =>
-      ReferenceDraft.random().typeId('shipping-method')
+      ReferenceDraftRest.presets.shippingMethodReference()
     ),
   },
 };
@@ -24,7 +28,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingDraftGraphql> = {
   fields: {
     ...commonFieldsConfig,
     shippingMethod: fake(() =>
-      ReferenceDraft.random().typeId('shipping-method')
+      ReferenceDraftGraphql.presets.shippingMethodReference()
     ),
   },
 };

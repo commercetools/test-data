@@ -34,11 +34,13 @@ const validateGraphqlModel = (model: TItemShippingDetailsGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
       valid: expect.any(Boolean),
+      __typename: 'ItemShippingDetails',
       targets: expect.arrayContaining([
         expect.objectContaining({
           addressKey: expect.any(String),
           quantity: expect.any(Number),
           shippingMethodKey: null,
+          __typename: 'ItemShippingTarget',
         }),
       ]),
     })

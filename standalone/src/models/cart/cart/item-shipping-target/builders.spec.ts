@@ -27,6 +27,7 @@ const validateGraphqlModel = (model: TItemShippingTargetGraphql) => {
       addressKey: expect.any(String),
       quantity: expect.any(Number),
       shippingMethodKey: null,
+      __typename: 'ItemShippingTarget',
     })
   );
 };
