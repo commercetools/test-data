@@ -1,4 +1,5 @@
 import { TBuilder } from '@/core';
+import { TCtpCustomFieldInput } from '@/graphql-types';
 import { ReferenceDraftRest, ReferenceDraftGraphql } from '@/models/commons';
 import type {
   TCustomFieldsDraftRest,
@@ -24,7 +25,8 @@ const populateGraphqlModel = (model: TBuilder<TCustomFieldsDraftGraphql>) =>
       { name: 'numberField', value: 123 },
       // post build will stringify the values so they match the expected stringified values
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ] as Array<{ name: string; value: any }>);
+    ] as TCtpCustomFieldInput[]);
+// ] as Array<{ name: string; value: any }>);
 
 const validateRestModel = (model: TCustomFieldsDraftRest) => {
   expect(model).toEqual(

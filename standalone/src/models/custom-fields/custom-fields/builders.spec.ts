@@ -1,7 +1,7 @@
 import { TBuilder } from '@/core';
-import { TCtpRawCustomField } from '@/graphql-types';
 import { ReferenceRest } from '@/models/commons';
 import { Type } from '@/models/type';
+import { RawCustomFieldGraphql } from '../raw-custom-field';
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import type { TCustomFieldsRest, TCustomFieldsGraphql } from './types';
 
@@ -13,11 +13,13 @@ const populateRestModel = (model: TBuilder<TCustomFieldsRest>) =>
   });
 
 const populateGraphqlModel = (model: TBuilder<TCustomFieldsGraphql>) =>
-  model.type(Type.random()).customFieldsRaw([
-    { name: 'stringField', value: 'test value' },
-    { name: 'booleanField', value: true },
-    { name: 'numberField', value: 42 },
-  ] as unknown as TCtpRawCustomField[]);
+  model
+    .type(Type.random())
+    .customFieldsRaw([
+      RawCustomFieldGraphql.random().name('stringField').value('test value'),
+      RawCustomFieldGraphql.random().name('booleanField').value(true),
+      RawCustomFieldGraphql.random().name('numberField').value(42),
+    ]);
 
 const validateRestModel = (model: TCustomFieldsRest) => {
   expect(model).toEqual(
@@ -39,6 +41,7 @@ const validateGraphqlModel = (model: TCustomFieldsGraphql) => {
         id: expect.any(String),
         key: expect.any(String),
         name: expect.any(Object),
+        __typename: 'TypeDefinition',
       }),
       typeRef: expect.objectContaining({
         typeId: 'type',
@@ -49,6 +52,7 @@ const validateGraphqlModel = (model: TCustomFieldsGraphql) => {
         expect.objectContaining({
           name: expect.any(String),
           value: expect.anything(),
+          __typename: 'RawCustomField',
         }),
       ]),
     })
