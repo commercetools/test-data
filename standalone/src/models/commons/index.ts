@@ -38,3 +38,4 @@ export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
 export * from './geometry';
 export * from './reference';
+export * from './resource-identifier';
