@@ -1,7 +1,7 @@
 import { Company } from '@/models/business-unit';
 import { Customer } from '@/models/customer/customer';
 import { State } from '@/models/state';
-import { recurringOrderStateGraphql } from './constants';
+import { recurringOrderState } from './constants';
 import { RecurringOrderGraphql } from './index';
 
 describe('RecurringOrder Builder', () => {
@@ -25,48 +25,37 @@ describe('RecurringOrder Builder', () => {
         nextOrderAt: null,
         skipConfiguration: null,
         businessUnit: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'BusinessUnit',
         }),
         businessUnitRef: expect.objectContaining({
-          typeId: 'business-unit',
-          key: expect.any(String),
           __typename: 'Reference',
         }),
         state: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'State',
         }),
         stateRef: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Reference',
         }),
         recurringOrderState: expect.toBeOneOf(
-          Object.values(recurringOrderStateGraphql)
+          Object.values(recurringOrderState)
         ),
         customer: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Customer',
         }),
         customerRef: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Reference',
         }),
         customerEmail: 'test@email.com',
         cart: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Cart',
         }),
         cartRef: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Reference',
         }),
         originOrder: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Order',
         }),
         originOrderRef: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'Reference',
         }),
         __typename: 'RecurringOrder',

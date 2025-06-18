@@ -4,7 +4,7 @@ import { KeyReference, ReferenceGraphql } from '@/models/commons';
 import { Order } from '@/models/order';
 import { createRelatedDates } from '@/utils';
 import { StandardScheduleGraphql } from '../index';
-import { recurringOrderStateGraphql } from './constants';
+import { recurringOrderState } from './constants';
 import type { TRecurringOrderGraphql } from './types';
 
 const [getOlderDate, getNewerDate, getFutureDate] = createRelatedDates();
@@ -34,7 +34,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
   fields: {
     cart: fake(() => CartGraphql.random()),
     schedule: fake(() => StandardScheduleGraphql.random()),
-    recurringOrderState: oneOf(...Object.values(recurringOrderStateGraphql)),
+    recurringOrderState: oneOf(...Object.values(recurringOrderState)),
     originOrder: fake(() => Order.random()),
     cartRef: null,
     customerRef: null,
