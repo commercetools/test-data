@@ -110,8 +110,6 @@ describe('AttributeDefinitionDraft model compatibility builders', () => {
       .type(AttributeTextTypeDraft.random().name('text'))
       .buildGraphql<TAttributeDefinitionDraftGraphql>();
 
-    console.log('graphqlModel', graphqlModel);
-
     validateGraphqlModel(graphqlModel);
     expect(graphqlModel.type).toEqual({
       text: { dummy: null },
@@ -126,8 +124,6 @@ describe('AttributeDefinitionDraft model compatibility builders', () => {
           .values([AttributePlainEnumValueDraft.random()])
       )
       .buildGraphql<TAttributeDefinitionDraftGraphql>();
-
-    console.log('graphqlModel', graphqlModel);
 
     validateGraphqlModel(graphqlModel);
     expect(graphqlModel.type).toEqual(
