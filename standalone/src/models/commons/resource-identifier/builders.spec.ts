@@ -29,13 +29,13 @@ const validateGraphqlModel = (graphqlModel: TResourceIdentifierGraphql) => {
 };
 
 describe('ResourceIdentifier model builders', () => {
-  it('builds a REST model', () => {
+  it('builds a REST model with default values', () => {
     const restModel = ResourceIdentifierRest.random().build();
 
     validateRestModel(restModel);
   });
 
-  it('builds a populated REST model', () => {
+  it('builds a REST model with custom values', () => {
     const restModel = ResourceIdentifierRest.random()
       .id('12345')
       .key('test-key')
@@ -47,13 +47,13 @@ describe('ResourceIdentifier model builders', () => {
     expect(restModel.typeId).toEqual('foo');
   });
 
-  it('builds a GraphQL model', () => {
+  it('builds a GraphQL model with default values', () => {
     const graphqlModel = ResourceIdentifierGraphql.random().build();
 
     validateGraphqlModel(graphqlModel);
   });
 
-  it('builds a populated GraphQL model', () => {
+  it('builds a GraphQL model with custom values', () => {
     const graphqlModel = ResourceIdentifierGraphql.random()
       .id('12345')
       .key('test-key')
@@ -63,23 +63,6 @@ describe('ResourceIdentifier model builders', () => {
     expect(graphqlModel.id).toEqual('12345');
     expect(graphqlModel.key).toEqual('test-key');
     expect(graphqlModel.typeId).toEqual('foo');
-    expect(graphqlModel.__typename).toEqual('ResourceIdentifier');
-  });
-
-  it('builds REST model with custom typeId', () => {
-    const restModel = ResourceIdentifierRest.random()
-      .typeId('custom-type')
-      .build();
-
-    validateRestModel(restModel, 'custom-type');
-  });
-
-  it('builds GraphQL model with custom typeId', () => {
-    const graphqlModel = ResourceIdentifierGraphql.random()
-      .typeId('custom-type')
-      .build();
-
-    expect(graphqlModel.typeId).toEqual('custom-type');
     expect(graphqlModel.__typename).toEqual('ResourceIdentifier');
   });
 });
