@@ -1,2 +1,7 @@
-export { default as withParent } from './with-parent';
-export { default as withParentAndAncestors } from './with-parent-and-ancestors';
+import withParentPreset from './with-parent';
+import withParentAndAncestors from './with-parent-and-ancestors';
+
+export const graphqlPresets = {
+  withParent: withParentPreset,
+  withParentAndAncestors: withParentAndAncestors,
+};

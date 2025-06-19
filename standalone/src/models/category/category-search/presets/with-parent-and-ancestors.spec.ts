@@ -1,27 +1,33 @@
-import { TCategorySearch } from '../../types';
+import type { TCategorySearchGraphql } from '../types';
 import withParentAndAncestors from './with-parent-and-ancestors';
 
 it('should set the label only for en locale', () => {
-  const categoryWithParentAndAncestors: TCategorySearch =
+  const categoryWithParentAndAncestors: TCategorySearchGraphql =
     withParentAndAncestors().build();
   expect(categoryWithParentAndAncestors).toEqual(
     expect.objectContaining({
       parent: expect.objectContaining({
         id: expect.any(String),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
+        name: expect.any(String),
+        nameAllLocales: expect.arrayContaining([
+          {
+            locale: expect.any(String),
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          },
+        ]),
       }),
       ancestors: expect.arrayContaining([
         expect.objectContaining({
           id: expect.any(String),
-          name: expect.objectContaining({
-            en: expect.any(String),
-            de: expect.any(String),
-            fr: expect.any(String),
-          }),
+          name: expect.any(String),
+          nameAllLocales: expect.arrayContaining([
+            {
+              locale: expect.any(String),
+              value: expect.any(String),
+              __typename: 'LocalizedString',
+            },
+          ]),
         }),
       ]),
     })
