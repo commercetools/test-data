@@ -2,14 +2,8 @@ import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
-} from '../../../../../commons';
+} from '@/models/commons';
 import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
-import {
-  OrderFromCartDraft,
-  OrderFromQuoteDraft,
-  TOrderFromCartDraft,
-  TOrderFromQuoteDraft,
-} from '../../../../../order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';
@@ -18,10 +12,6 @@ import * as PaymentDraft from '../../index';
 const camilleLefevre = CustomerDraft.presets.sampleDataB2B
   .camilleLefevre()
   .build<TCustomerDraft>();
-
-const order = OrderFromCartDraft.presets.sampleDataB2B
-  .lifttechSolutionsLtdFrCart2(1)
-  .build<TOrderFromCartDraft>();
 
 const lifttechSolutionsLtdFrPayment2Payment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
