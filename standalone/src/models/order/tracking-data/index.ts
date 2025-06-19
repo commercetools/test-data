@@ -1,2 +1,5 @@
-export { default as random } from './builder';
-export * as TrackingData from '.';
+import LegacyBuilder from './builder';
+
+export const TrackingData = {
+  random: LegacyBuilder,
+};

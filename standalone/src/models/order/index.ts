@@ -1,17 +1,25 @@
-export * as ReturnInfo from './return-info';
-export * as LineItemReturnItem from './line-item-return-item';
-export * as Delivery from './delivery';
-export * as DeliveryItem from './delivery-item';
-export * as Parcel from './parcel';
-export * as ParcelMeasurements from './parcel-measurements';
-export * as TrackingData from './tracking-data';
-export * as OrderFromCartDraft from './order-from-cart-draft';
-export * as OrderFromQuoteDraft from './order-from-quote-draft';
-export * as Order from '.';
+export * from './return-info/types';
+export * from './return-info';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './order-from-cart-draft/presets';
+export * from './delivery/types';
+export * from './delivery';
 
-export * from './types';
-export * as constants from './constants';
+export * from './delivery-item/types';
+export * from './delivery-item';
+
+export * from './parcel/types';
+export * from './parcel';
+
+export * from './parcel-measurements/types';
+export * from './parcel-measurements';
+
+export * from './tracking-data/types';
+export * from './tracking-data';
+
+export * from './line-item-return-item/types';
+export * from './line-item-return-item';
+
+export * from './order/types';
+export * from './order';
+export * from './order/order-from-cart-draft';
+export * from './order/order-from-quote-draft';

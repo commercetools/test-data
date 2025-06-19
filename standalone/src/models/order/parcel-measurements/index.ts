@@ -1,2 +1,5 @@
-export { default as random } from './builder';
-export * as ParcelMeasurements from '.';
+import LegacyBuilder from './builder';
+
+export const ParcelMeasurements = {
+  random: LegacyBuilder,
+};

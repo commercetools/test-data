@@ -1,3 +1,7 @@
-export { default as random } from './builder';
-export * as LineItemReturnItem from '.';
-export * as constants from './constants';
+import LegacyBuilder from './builder';
+import * as constants from './constants';
+
+export const LineItemReturnItem = {
+  constants,
+  random: LegacyBuilder,
+};
