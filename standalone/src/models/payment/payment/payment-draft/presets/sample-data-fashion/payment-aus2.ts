@@ -2,9 +2,9 @@ import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
-} from '../../../../../commons';
+} from '@/models/commons';
 import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
-import { OrderFromCartDraft, TOrderFromCartDraft } from '../../../../../order';
+import { OrderFromCartDraft, TOrderFromCartDraft } from '@/models/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft, constants } from '../../../../transaction';

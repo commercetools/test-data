@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@/core/test-utils';
 import { TDeliveryItem, TDeliveryItemGraphql } from './types';
-import * as DeliveryItem from '.';
+import { DeliveryItem } from '.';
 
 describe('builder', () => {
   const defaultDeliveryItemSpec = {

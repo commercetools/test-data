@@ -3,7 +3,7 @@
 
 import { Address } from '@/models/commons';
 import { TDelivery, TDeliveryGraphql } from './types';
-import * as Delivery from '.';
+import { Delivery } from '.';
 
 describe('Delviery builder', () => {
   const deliveryMockBuilder = Delivery.random()

@@ -1,2 +1,5 @@
-export { default as random } from './builder';
-export * as ReturnInfo from '.';
+import LegacyBuilder from './builder';
+
+export const ReturnInfo = {
+  random: LegacyBuilder,
+};
