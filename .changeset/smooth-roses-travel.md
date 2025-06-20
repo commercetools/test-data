@@ -2,9 +2,9 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We're introducing a new model named `ParcelMeasurementsGraphql` that can be consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+We're migrating the model `ParcelMeasurements` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
 
-This is how the new models could be used:
+This is how the migrated model could be used:
 
 ```ts
 import { ParcelMeasurementsGraphql } from '@commercetools/composable-commerce-test-data/order';
