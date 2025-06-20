@@ -7,10 +7,12 @@ import * as modelPresets from './presets';
 
 export const ParcelMeasurementsRest = {
   random: RestModelBuilder,
+  presets: modelPresets.restPresets,
 };
 
 export const ParcelMeasurementsGraphql = {
   random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
 };
 
 /**
@@ -18,5 +20,5 @@ export const ParcelMeasurementsGraphql = {
  */
 export const ParcelMeasurements = {
   random: CompatParcelMeasurementsModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.compatPresets,
 };
