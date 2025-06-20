@@ -1,5 +1,42 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.6.0
+
+### Minor Changes
+
+- [#864](https://github.com/commercetools/test-data/pull/864) [`297dadb`](https://github.com/commercetools/test-data/commit/297dadb77eab2baf456ffc057aa9aeacee7e90e3) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing a new models named `RecurringOrder` and `Counter` that can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
+
+  Please note that we have added only `Graphql` models and `REST` models will be added once `Recurring Order` is available in Public Beta.
+
+  This is how the new model could be used:
+
+  ```ts
+  import {
+    RecurringOrderGraphql,
+    RecurringOrderDraftGraphql,
+    CounterGraphql,
+    CounterDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/recurring-order';
+
+  const recurringOrder = RecurringOrderGraphql.random().build();
+  const recurringOrderDraft = RecurringOrderDraftGraphql.random().build();
+
+  const counter = CounterGraphql.random().build();
+  const counterDraft = CounterDraftGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#871](https://github.com/commercetools/test-data/pull/871) [`8ee9cda`](https://github.com/commercetools/test-data/commit/8ee9cda7715874ac49720cd891360d16b942cd2f) Thanks [@nima-ct](https://github.com/nima-ct)! - Update SP and Price models with the right types for recurrence policy
+
+- [#868](https://github.com/commercetools/test-data/pull/868) [`28cb834`](https://github.com/commercetools/test-data/commit/28cb83490ef81860755aafb2e0db5cf7debb16fe) Thanks [@mario-priceless](https://github.com/mario-priceless)! - We've updated the `Category` and `CategorySearch` test data models implementation to accommodate to the new patterns.
+
+  This change does not have any impact in consumers.
+
+- [#876](https://github.com/commercetools/test-data/pull/876) [`a64428b`](https://github.com/commercetools/test-data/commit/a64428b1be431fd138c54ad557aa71ad22896f84) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're updating the internal directory layout for the order models to facilitate their future migrations.
+
+  This changes are transparent for consumers.
+
 ## 11.5.1
 
 ### Patch Changes
