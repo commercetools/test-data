@@ -7,12 +7,12 @@ import * as modelPresets from './presets';
 
 export const TrackingDataRest = {
   random: RestModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.restPresets,
 };
 
 export const TrackingDataGraphql = {
   random: GraphqlModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.graphqlPresets,
 };
 
 /**
@@ -20,5 +20,5 @@ export const TrackingDataGraphql = {
  */
 export const TrackingData = {
   random: CompatTrackingDataModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.compatPresets,
 };
