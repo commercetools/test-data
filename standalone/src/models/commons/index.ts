@@ -13,6 +13,7 @@ export * from './money/types';
 export * from './price/types';
 export * from './price-tier/types';
 export * from './reference/types';
+export * from './resource-identifier/types';
 
 // Export models
 export * as Address from './address';
@@ -38,3 +39,4 @@ export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
 export * from './geometry';
 export * from './reference';
+export * from './resource-identifier';
