@@ -2,18 +2,12 @@ import { TBuilder } from '@/core';
 import { TCustomFieldsDraftGraphql, TCustomFieldsDraftRest } from '../../types';
 import { CustomFieldsDraftRest, CustomFieldsDraftGraphql } from '../index';
 
-export const restPreset = (
-  stringFieldName: string = 'stringField',
-  stringValue: string = 'test value'
-): TBuilder<TCustomFieldsDraftRest> =>
+export const restPreset = (): TBuilder<TCustomFieldsDraftRest> =>
   CustomFieldsDraftRest.random().fields({
-    [stringFieldName]: stringValue,
+    stringField: 'test value',
   });
 
-export const graphqlPreset = (
-  stringFieldName: string = 'stringField',
-  stringValue: string = 'test value'
-): TBuilder<TCustomFieldsDraftGraphql> =>
+export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
   CustomFieldsDraftGraphql.random().fields([
-    { name: stringFieldName, value: stringValue },
+    { name: 'stringField', value: JSON.stringify('test value') },
   ]);

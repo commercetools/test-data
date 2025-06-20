@@ -17,16 +17,4 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomFieldsDraftGraphql> 
       typeId: null,
       typeKey: null,
     },
-    postBuild: (model) => {
-      const fields = model.fields?.map((field) => ({
-        name: field.name,
-        // Unlike the HTTP API, the GraphQL API only accepts strings for `value`.
-        value: JSON.stringify(field.value),
-      }));
-
-      return {
-        ...model,
-        fields,
-      };
-    },
   };

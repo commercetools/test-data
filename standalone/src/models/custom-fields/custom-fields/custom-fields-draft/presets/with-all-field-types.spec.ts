@@ -135,10 +135,13 @@ const customFieldsGraphqlExpectation = (
   const setBooleanField = customFields.fields?.find(
     (f) => f.name === 'set-of-boolean-field'
   );
-  expect(Array.isArray(JSON.parse(setBooleanField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setBooleanField?.value ?? '')).toHaveLength(3);
-  expect(JSON.parse(setBooleanField?.value ?? '')).toEqual(
-    expect.arrayContaining([expect.any(Boolean)])
+  expect(Array.isArray(setBooleanField?.value)).toBe(true);
+  expect(setBooleanField?.value ?? '').toHaveLength(3);
+  expect(setBooleanField?.value ?? '').toEqual(
+    expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setBooleanField?.value[0] ?? '')).toEqual(
+    expect.any(Boolean)
   );
 
   const stringField = customFields.fields?.find(
@@ -149,10 +152,13 @@ const customFieldsGraphqlExpectation = (
   const setStringField = customFields.fields?.find(
     (f) => f.name === 'set-of-string-field'
   );
-  expect(Array.isArray(JSON.parse(setStringField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setStringField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setStringField?.value ?? '')).toEqual(
+  expect(Array.isArray(setStringField?.value)).toBe(true);
+  expect(setStringField?.value).toHaveLength(2);
+  expect(setStringField?.value).toEqual(
     expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setStringField?.value[0] ?? '')).toEqual(
+    expect.any(String)
   );
 
   const localizedStringField = customFields.fields?.find(
@@ -165,12 +171,16 @@ const customFieldsGraphqlExpectation = (
   const setLocalizedStringField = customFields.fields?.find(
     (f) => f.name === 'set-of-localized-string-field'
   );
-  expect(Array.isArray(JSON.parse(setLocalizedStringField?.value ?? ''))).toBe(
-    true
+  expect(Array.isArray(setLocalizedStringField?.value)).toBe(true);
+  expect(setLocalizedStringField?.value).toHaveLength(2);
+  expect(setLocalizedStringField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
   );
-  expect(JSON.parse(setLocalizedStringField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setLocalizedStringField?.value ?? '')).toEqual(
-    expect.arrayContaining([expect.any(Object)])
+  expect(JSON.parse(setLocalizedStringField?.value[0] ?? '')).toEqual(
+    expect.objectContaining({
+      en: expect.any(String),
+      es: expect.any(String),
+    })
   );
 
   const enumField = customFields.fields?.find((f) => f.name === 'enum-field');
@@ -179,9 +189,9 @@ const customFieldsGraphqlExpectation = (
   const setEnumField = customFields.fields?.find(
     (f) => f.name === 'set-of-enum-field'
   );
-  expect(Array.isArray(JSON.parse(setEnumField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setEnumField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setEnumField?.value ?? '')).toEqual(
+  expect(Array.isArray(setEnumField?.value)).toBe(true);
+  expect(setEnumField?.value).toHaveLength(2);
+  expect(setEnumField?.value).toEqual(
     expect.arrayContaining([expect.any(String)])
   );
 
@@ -193,10 +203,10 @@ const customFieldsGraphqlExpectation = (
   const setNumberField = customFields.fields?.find(
     (f) => f.name === 'set-of-number-field'
   );
-  expect(Array.isArray(JSON.parse(setNumberField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setNumberField?.value ?? '')).toHaveLength(3);
-  expect(JSON.parse(setNumberField?.value ?? '')).toEqual(
-    expect.arrayContaining([expect.any(Number)])
+  expect(Array.isArray(setNumberField?.value)).toBe(true);
+  expect(setNumberField?.value).toHaveLength(3);
+  expect(setNumberField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
   );
 
   const moneyField = customFields.fields?.find((f) => f.name === 'money-field');
@@ -210,15 +220,16 @@ const customFieldsGraphqlExpectation = (
   const setMoneyField = customFields.fields?.find(
     (f) => f.name === 'set-of-money-field'
   );
-  expect(Array.isArray(JSON.parse(setMoneyField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setMoneyField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setMoneyField?.value ?? '')).toEqual(
-    expect.arrayContaining([
-      expect.objectContaining({
-        currencyCode: expect.any(String),
-        centAmount: expect.any(Number),
-      }),
-    ])
+  expect(Array.isArray(setMoneyField?.value)).toBe(true);
+  expect(setMoneyField?.value).toHaveLength(2);
+  expect(setNumberField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setMoneyField?.value[0] ?? '')).toEqual(
+    expect.objectContaining({
+      currencyCode: expect.any(String),
+      centAmount: expect.any(Number),
+    })
   );
 
   const dateField = customFields.fields?.find((f) => f.name === 'date-field');
@@ -227,11 +238,12 @@ const customFieldsGraphqlExpectation = (
   const setDateField = customFields.fields?.find(
     (f) => f.name === 'set-of-date-field'
   );
-  expect(Array.isArray(JSON.parse(setDateField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setDateField?.value ?? '')).toHaveLength(3);
-  expect(JSON.parse(setDateField?.value ?? '')).toEqual(
-    expect.arrayContaining(['2015-03-14'])
+  expect(Array.isArray(setDateField?.value)).toBe(true);
+  expect(setDateField?.value).toHaveLength(3);
+  expect(setDateField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
   );
+  expect(JSON.parse(setDateField?.value[0] ?? '')).toEqual('2001-10-12');
 
   const timeField = customFields.fields?.find((f) => f.name === 'time-field');
   expect(JSON.parse(timeField?.value ?? '')).toBe('14:00:00.000');
@@ -239,12 +251,13 @@ const customFieldsGraphqlExpectation = (
   const setTimeField = customFields.fields?.find(
     (f) => f.name === 'set-of-time-field'
   );
-  expect(Array.isArray(JSON.parse(setTimeField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setTimeField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setTimeField?.value ?? '')).toEqual([
-    '14:00:00.000',
-    '14:30:00.000',
-  ]);
+  expect(Array.isArray(setTimeField?.value)).toBe(true);
+  expect(setTimeField?.value).toHaveLength(2);
+  expect(setTimeField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setTimeField?.value[0] ?? '')).toEqual('14:00:00.000');
+  expect(JSON.parse(setTimeField?.value[1] ?? '')).toEqual('14:30:00.000');
 
   const datetimeField = customFields.fields?.find(
     (f) => f.name === 'datetime-field'
@@ -256,10 +269,16 @@ const customFieldsGraphqlExpectation = (
   const setDatetimeField = customFields.fields?.find(
     (f) => f.name === 'set-of-datetime-field'
   );
-  expect(Array.isArray(JSON.parse(setDatetimeField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setDatetimeField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setDatetimeField?.value ?? '')).toEqual(
-    expect.arrayContaining(['2025-10-14T14:00:00.000Z'])
+  expect(Array.isArray(setDatetimeField?.value)).toBe(true);
+  expect(setDatetimeField?.value).toHaveLength(2);
+  expect(setDatetimeField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setDatetimeField?.value[0] ?? '')).toEqual(
+    '2018-10-14T14:00:00.000Z'
+  );
+  expect(JSON.parse(setDatetimeField?.value[1] ?? '')).toEqual(
+    '2025-10-14T14:00:00.000Z'
   );
 
   const referenceField = customFields.fields?.find(
@@ -275,15 +294,16 @@ const customFieldsGraphqlExpectation = (
   const setReferenceField = customFields.fields?.find(
     (f) => f.name === 'set-of-reference-field'
   );
-  expect(Array.isArray(JSON.parse(setReferenceField?.value ?? ''))).toBe(true);
-  expect(JSON.parse(setReferenceField?.value ?? '')).toHaveLength(2);
-  expect(JSON.parse(setReferenceField?.value ?? '')).toEqual(
-    expect.arrayContaining([
-      expect.objectContaining({
-        typeId: expect.any(String),
-        id: expect.any(String),
-      }),
-    ])
+  expect(Array.isArray(setReferenceField?.value)).toBe(true);
+  expect(setReferenceField?.value).toHaveLength(2);
+  expect(setReferenceField?.value).toEqual(
+    expect.arrayContaining([expect.any(String)])
+  );
+  expect(JSON.parse(setReferenceField?.value[0] ?? '')).toEqual(
+    expect.objectContaining({
+      typeId: expect.any(String),
+      id: expect.any(String),
+    })
   );
 };
 

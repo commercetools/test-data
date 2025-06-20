@@ -20,13 +20,10 @@ const populateGraphqlModel = (model: TBuilder<TCustomFieldsDraftGraphql>) =>
     .typeId('test-type-id')
     .typeKey('test-type-key')
     .fields([
-      { name: 'stringField', value: 'draft test value' },
-      { name: 'booleanField', value: false },
-      { name: 'numberField', value: 123 },
-      // post build will stringify the values so they match the expected stringified values
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      { name: 'stringField', value: JSON.stringify('draft test value') },
+      { name: 'booleanField', value: JSON.stringify(false) },
+      { name: 'numberField', value: JSON.stringify(123) },
     ] as TCtpCustomFieldInput[]);
-// ] as Array<{ name: string; value: any }>);
 
 const validateRestModel = (model: TCustomFieldsDraftRest) => {
   expect(model).toEqual(
@@ -52,7 +49,7 @@ const validateGraphqlModel = (model: TCustomFieldsDraftGraphql) => {
       fields: expect.arrayContaining([
         expect.objectContaining({
           name: expect.any(String),
-          value: expect.anything(),
+          value: expect.any(String),
         }),
       ]),
     })

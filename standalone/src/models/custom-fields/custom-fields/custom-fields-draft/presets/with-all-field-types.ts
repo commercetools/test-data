@@ -1,4 +1,5 @@
 import { TBuilder } from '@/core';
+import type { TCtpCustomFieldInput } from '@/graphql-types';
 import { TCustomFieldsDraftGraphql, TCustomFieldsDraftRest } from '../../types';
 import { CustomFieldsDraftRest, CustomFieldsDraftGraphql } from '../index';
 
@@ -76,19 +77,24 @@ export const restPreset = (): TBuilder<TCustomFieldsDraftRest> =>
 
 export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
   CustomFieldsDraftGraphql.random().fields([
-    { name: 'boolean-field', value: true },
-    { name: 'set-of-boolean-field', value: [true, false, true] },
-    { name: 'string-field', value: 'Any String value' },
+    { name: 'boolean-field', value: JSON.stringify(true) },
+    {
+      name: 'set-of-boolean-field',
+      value: [true, false, true].map((value) => JSON.stringify(value)),
+    },
+    { name: 'string-field', value: JSON.stringify('Any String value') },
     {
       name: 'set-of-string-field',
-      value: ['Some String value', 'Another String value'],
+      value: ['Some String value', 'Another String value'].map((value) =>
+        JSON.stringify(value)
+      ),
     },
     {
       name: 'localized-string-field',
-      value: {
+      value: JSON.stringify({
         en: 'English text',
         es: 'texto en español',
-      },
+      }),
     },
     {
       name: 'set-of-localized-string-field',
@@ -101,26 +107,32 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
           en: 'English text 2',
           es: 'texto en español 2',
         },
-      ],
+      ].map((value) => JSON.stringify(value)),
     },
-    { name: 'enum-field', value: 'enum key defined in FieldDefinition' },
+    {
+      name: 'enum-field',
+      value: JSON.stringify('enum key defined in FieldDefinition'),
+    },
     {
       name: 'set-of-enum-field',
       value: [
         'enum key defined in FieldDefinition-1',
         'enum key defined in FieldDefinition-2',
-      ],
+      ].map((value) => JSON.stringify(value)),
     },
-    { name: 'number-field', value: 42 },
-    { name: 'set-of-number-field', value: [1, 2, 7] },
+    { name: 'number-field', value: JSON.stringify(42) },
+    {
+      name: 'set-of-number-field',
+      value: [1, 2, 7].map((value) => JSON.stringify(value)),
+    },
     {
       name: 'money-field',
-      value: {
+      value: JSON.stringify({
         type: 'centPrecision',
         currencyCode: 'USD',
         centAmount: 124500,
         fractionDigits: 2,
-      },
+      }),
     },
     {
       name: 'set-of-money-field',
@@ -137,26 +149,38 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
           centAmount: 1000,
           fractionDigits: 2,
         },
-      ],
+      ].map((value) => JSON.stringify(value)),
     },
-    { name: 'date-field', value: '2001-10-12' },
+    { name: 'date-field', value: JSON.stringify('2001-10-12') },
     {
       name: 'set-of-date-field',
-      value: ['2001-10-12', '2015-03-14', '2003-05-15'],
+      value: ['2001-10-12', '2015-03-14', '2003-05-15'].map((value) =>
+        JSON.stringify(value)
+      ),
     },
-    { name: 'time-field', value: '14:00:00.000' },
-    { name: 'set-of-time-field', value: ['14:00:00.000', '14:30:00.000'] },
-    { name: 'datetime-field', value: '2018-10-14T14:00:00.000Z' },
+    { name: 'time-field', value: JSON.stringify('14:00:00.000') },
+    {
+      name: 'set-of-time-field',
+      value: ['14:00:00.000', '14:30:00.000'].map((value) =>
+        JSON.stringify(value)
+      ),
+    },
+    {
+      name: 'datetime-field',
+      value: JSON.stringify('2018-10-14T14:00:00.000Z'),
+    },
     {
       name: 'set-of-datetime-field',
-      value: ['2018-10-14T14:00:00.000Z', '2025-10-14T14:00:00.000Z'],
+      value: ['2018-10-14T14:00:00.000Z', '2025-10-14T14:00:00.000Z'].map(
+        (value) => JSON.stringify(value)
+      ),
     },
     {
       name: 'reference-field',
-      value: {
+      value: JSON.stringify({
         typeId: 'product',
         id: 'd1229e6f-2b79-441e-b419-180311e52754',
-      },
+      }),
     },
     {
       name: 'set-of-reference-field',
@@ -169,8 +193,6 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
           typeId: 'customer',
           id: 'e1549e6f-3b79-441e-c486-957480r23744',
         },
-      ],
+      ].map((value) => JSON.stringify(value)),
     },
-    // post build will stringify the values so they match the expected stringified values
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ] as Array<{ name: string; value: any }>);
+  ] as TCtpCustomFieldInput[]);
