@@ -7,10 +7,12 @@ import * as modelPresets from './presets';
 
 export const DeliveryItemRest = {
   random: RestModelBuilder,
+  presets: modelPresets.restPresets,
 };
 
 export const DeliveryItemGraphql = {
   random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
 };
 
 /**
@@ -18,5 +20,5 @@ export const DeliveryItemGraphql = {
  */
 export const DeliveryItem = {
   random: CompatDeliveryItemModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.compatPresets,
 };
