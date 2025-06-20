@@ -1,5 +1,19 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.7.0
+
+### Minor Changes
+
+- [#878](https://github.com/commercetools/test-data/pull/878) [`fe9833c`](https://github.com/commercetools/test-data/commit/fe9833c035f55e740b48741d2d20789ef001af22) Thanks [@NickDevG](https://github.com/NickDevG)! - We're migrating the model `TrackingData` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  This is how the migrated model could be used:
+
+  ```ts
+  import { TrackingDataGraphql } from '@commercetools/composable-commerce-test-data/order';
+
+  const model = TrackingDataGraphql.random().build();
+  ```
+
 ## 11.6.0
 
 ### Minor Changes
