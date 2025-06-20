@@ -1,5 +1,11 @@
 # @commercetools-test-data/generators
 
+## 10.19.1
+
+### Patch Changes
+
+- [#877](https://github.com/commercetools/test-data/pull/877) [`dfa6850`](https://github.com/commercetools/test-data/commit/dfa6850447799fbc0121463a275bd4d98571478b) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed an issue in the `AttributeDefinitionDraft` compatibility model where it could generate an invalid `type` field value when building a GraphQL object.
+
 ## 10.19.0
 
 ### Minor Changes
