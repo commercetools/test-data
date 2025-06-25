@@ -1,5 +1,3 @@
-import sampleDataFashion from './sample-data-fashion';
-
-const presets = { sampleDataFashion };
+const presets = {};
 
 export default presets;
