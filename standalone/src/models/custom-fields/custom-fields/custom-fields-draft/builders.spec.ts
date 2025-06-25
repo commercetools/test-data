@@ -20,9 +20,9 @@ const populateGraphqlModel = (model: TBuilder<TCustomFieldsDraftGraphql>) =>
     .typeId('test-type-id')
     .typeKey('test-type-key')
     .fields([
-      { name: 'stringField', value: JSON.stringify('draft test value') },
-      { name: 'booleanField', value: JSON.stringify(false) },
-      { name: 'numberField', value: JSON.stringify(123) },
+      { name: 'stringField', value: 'draft test value' },
+      { name: 'booleanField', value: false },
+      { name: 'numberField', value: 123 },
     ] as TCtpCustomFieldInput[]);
 
 const validateRestModel = (model: TCustomFieldsDraftRest) => {

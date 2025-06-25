@@ -9,5 +9,5 @@ export const restPreset = (): TBuilder<TCustomFieldsDraftRest> =>
 
 export const graphqlPreset = (): TBuilder<TCustomFieldsDraftGraphql> =>
   CustomFieldsDraftGraphql.random().fields([
-    { name: 'stringField', value: JSON.stringify('test value') },
+    { name: 'stringField', value: 'test value' },
   ]);

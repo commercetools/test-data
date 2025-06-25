@@ -17,4 +17,16 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomFieldsDraftGraphql> 
       typeId: null,
       typeKey: null,
     },
+    postBuild: (model) => {
+      if (model.fields) {
+        return {
+          ...model,
+          fields: model.fields.map((field) => ({
+            ...field,
+            value: JSON.stringify(field.value),
+          })),
+        };
+      }
+      return model;
+    },
   };
