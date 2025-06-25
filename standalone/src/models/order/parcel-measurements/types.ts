@@ -1,11 +1,16 @@
 import type { ParcelMeasurements } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import type { TCtpParcelMeasurements } from '@/graphql-types';
 
+/**
+ * @deprecated use `TParcelMeasurementsRest` instead
+ */
 export type TParcelMeasurements = ParcelMeasurements;
+export type TParcelMeasurementsRest = ParcelMeasurements;
+export type TParcelMeasurementsGraphql = TCtpParcelMeasurements;
 
-export type TParcelMeasurementsGraphql = TParcelMeasurements & {
-  __typename: 'ParcelMeasurements';
-};
-
-export type TParcelMeasurementsBuilder = TBuilder<ParcelMeasurements>;
-export type TCreateParcelMeasurementsBuilder = () => TParcelMeasurementsBuilder;
+export type TCreateParcelMeasurementsBuilder<
+  TParcelMeasurementsModel extends
+    | TParcelMeasurementsRest
+    | TParcelMeasurementsGraphql,
+> = () => TBuilder<TParcelMeasurementsModel>;

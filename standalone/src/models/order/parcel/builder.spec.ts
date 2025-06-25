@@ -67,8 +67,9 @@ describe('builder', () => {
     const parcelMock = Parcel.random()
       .id(id)
       .key(key)
-      .measurements(measurements)
       // Parcel will be migrated and this file won't exist anymore
+      // @ts-expect-error - TrackingData is not a valid type for Parcel
+      .measurements(measurements)
       // @ts-expect-error - TrackingData is not a valid type for Parcel
       .trackingData(trackingData)
       .items([deliveryItem])
