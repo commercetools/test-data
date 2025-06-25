@@ -21,7 +21,7 @@ export const restFieldsConfig: TModelFieldsConfig<TCategoryDraftRest> = {
   fields: {
     ...commonFields,
     name: fake(() => LocalizedString.random()),
-    slug: fake((f) => LocalizedString.random().en(f.lorem.slug(3))),
+    slug: fake((f) => LocalizedString.presets.ofSlugs()),
   },
 };
 
@@ -29,6 +29,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCategoryDraftGraphql> = {
   fields: {
     ...commonFields,
     name: fake(() => LocalizedStringDraft.random()),
-    slug: fake((f) => LocalizedStringDraft.random().en(f.lorem.slug(3))),
+    slug: fake((f) => LocalizedStringDraft.presets.ofSlugs()),
   },
 };
