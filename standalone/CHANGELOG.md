@@ -1,5 +1,44 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.7.0
+
+### Minor Changes
+
+- [#878](https://github.com/commercetools/test-data/pull/878) [`fe9833c`](https://github.com/commercetools/test-data/commit/fe9833c035f55e740b48741d2d20789ef001af22) Thanks [@NickDevG](https://github.com/NickDevG)! - We're migrating the model `TrackingData` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  This is how the migrated model could be used:
+
+  ```ts
+  import { TrackingDataGraphql } from '@commercetools/composable-commerce-test-data/order';
+
+  const model = TrackingDataGraphql.random().build();
+  ```
+
+- [#880](https://github.com/commercetools/test-data/pull/880) [`d8b63b7`](https://github.com/commercetools/test-data/commit/d8b63b7cbbde269cb8f16e6f248ff478b80fe04d) Thanks [@NickDevG](https://github.com/NickDevG)! - We're migrating the model `ParcelMeasurements` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  This is how the migrated model could be used:
+
+  ```ts
+  import { ParcelMeasurementsGraphql } from '@commercetools/composable-commerce-test-data/order';
+
+  const model = ParcelMeasurementsGraphql.random().build();
+  ```
+
+- [#879](https://github.com/commercetools/test-data/pull/879) [`78a867d`](https://github.com/commercetools/test-data/commit/78a867df92f2efc694d9c0512f596a19e633c493) Thanks [@NickDevG](https://github.com/NickDevG)! - We're migrating the model `DeliveryItem` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  This is how the migrated model could be used:
+
+  ```ts
+  import { DeliveryItemGraphql } from '@commercetools/composable-commerce-test-data/order';
+
+  const model = DeliveryItemGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#881](https://github.com/commercetools/test-data/pull/881) [`d9488ca`](https://github.com/commercetools/test-data/commit/d9488ca4a47784b1dfd2d0a661bd753fbea6df32) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're fixing the `CategoryDraft` model as it was populating the `slug` field incorrectly by default.
+  It was including three slugs in three different languages (`de`, `en` and `fr`) but two of them were including spaces in the values, which is not allowed.
+
 ## 11.6.0
 
 ### Minor Changes
