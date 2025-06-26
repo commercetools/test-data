@@ -9,6 +9,18 @@ const validateCommonFields = (model: TDeliveryRest | TDeliveryGraphql) => {
       address: null,
       custom: null,
       createdAt: expect.any(String),
+      items: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          quantity: expect.any(Number),
+        }),
+      ]),
+      parcels: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          createdAt: expect.any(String),
+        }),
+      ]),
     })
   );
 };
@@ -22,6 +34,16 @@ const validateGraphqlFields = (model: TDeliveryGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
       __typename: 'Delivery',
+      items: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'DeliveryItem',
+        }),
+      ]),
+      parcels: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'Parcel',
+        }),
+      ]),
     })
   );
 };

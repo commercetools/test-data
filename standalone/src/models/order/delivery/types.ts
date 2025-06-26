@@ -3,7 +3,7 @@ import type { TBuilder } from '@/core';
 import type { TCtpDelivery } from '@/graphql-types';
 
 /**
- * @deprecated use `TDeliveryRest` instead
+ * @deprecated use `TDeliveryRest` or `TDeliveryGraphql` instead
  */
 export type TDelivery = Delivery;
 export type TDeliveryRest = Delivery;
