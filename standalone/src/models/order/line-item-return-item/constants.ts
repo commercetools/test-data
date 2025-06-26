@@ -1,7 +1,10 @@
-import { TCtpShipmentState, TCtpPaymentState } from '@/graphql-types';
+import {
+  TCtpReturnShipmentState,
+  TCtpReturnPaymentState,
+} from '@/graphql-types';
 
-export const shipmentState = TCtpShipmentState;
+export const shipmentState = TCtpReturnShipmentState;
 
-export const paymentState = TCtpPaymentState;
+export const paymentState = TCtpReturnPaymentState;
 
 export const LineItemReturnItemType = 'LineItemReturnItem' as const;
