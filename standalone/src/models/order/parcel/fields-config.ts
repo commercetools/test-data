@@ -15,23 +15,20 @@ const commonFieldsConfig = {
   key: null,
   custom: null,
   createdAt: fake(getOlderDate),
+  measurements: null,
+  trackingData: null,
+  items: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TParcelRest> = {
   fields: {
     ...commonFieldsConfig,
-    measurements: fake(() => ParcelMeasurementsRest.random().build()),
-    trackingData: fake(() => TrackingDataRest.random().build()),
-    items: [fake(() => DeliveryItemRest.random().build())],
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TParcelGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    measurements: fake(() => ParcelMeasurementsGraphql.random().build()),
-    trackingData: fake(() => TrackingDataGraphql.random().build()),
-    items: [fake(() => DeliveryItemGraphql.random().build())],
     __typename: 'Parcel',
   },
 };

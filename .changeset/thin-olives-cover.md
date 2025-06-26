@@ -2,12 +2,6 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We're migrating the model `Parcel` that can be now consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+We've migrated the model `Parcel` to accommodate to the new pattern.
 
-This is how the migrated model could be used:
-
-```ts
-import { ParcelGraphql } from '@commercetools/composable-commerce-test-data/order';
-
-const model = ParcelGraphql.random().build();
-```
+This change does not have any impact over consumers.
