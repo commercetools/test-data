@@ -42,6 +42,7 @@ describe('builder', () => {
     const lineItemReturnItem = LineItemReturnItem.random().comment(comment);
 
     const customReturnInfo = ReturnInfo.random()
+      // @ts-expect-error - this is the next (sub)model to be migrated and this will be fixed in the next PR
       .items([lineItemReturnItem])
       .returnTrackingId(returnTrackingId)
       .returnDate(returnDate)
