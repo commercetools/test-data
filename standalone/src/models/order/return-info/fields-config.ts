@@ -16,18 +16,14 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TReturnInfoRest> = {
   fields: {
     ...commonFieldsConfig,
-    items: fake((f) =>
-      f.helpers.arrayElement([LineItemReturnItemRest.random()])
-    ),
+    items: fake((f) => [LineItemReturnItemRest.random()]),
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TReturnInfoGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    items: fake((f) =>
-      f.helpers.arrayElement([LineItemReturnItemGraphql.random()])
-    ),
+    items: fake((f) => [LineItemReturnItemGraphql.random()]),
     __typename: 'ReturnInfo',
   },
 };
