@@ -72,12 +72,12 @@ describe('Parcel with all fields presets', () => {
 
   describe('Parcel compatibility builder', () => {
     it('builds a DEFAULT model', () => {
-      const compatDefaultModelFromPreset = compatPreset().build();
+      const compatDefaultModelFromPreset = compatPreset().build<TParcel>();
       validateRestFields(compatDefaultModelFromPreset);
     });
 
     it('builds a REST model', () => {
-      const compatRestModelFromPreset = compatPreset().buildRest();
+      const compatRestModelFromPreset = compatPreset().buildRest<TParcelRest>();
       validateRestFields(compatRestModelFromPreset);
     });
 
