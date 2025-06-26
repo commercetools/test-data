@@ -1,12 +1,21 @@
 import { TBuilder } from '@/core';
-import { DeliveryItemRest, DeliveryItemGraphql } from '../../delivery-item';
 import {
+  DeliveryItem,
+  DeliveryItemRest,
+  DeliveryItemGraphql,
+} from '../../delivery-item';
+import {
+  ParcelMeasurements,
   ParcelMeasurementsRest,
   ParcelMeasurementsGraphql,
 } from '../../parcel-measurements';
-import { TrackingDataRest, TrackingDataGraphql } from '../../tracking-data';
-import { ParcelRest, ParcelGraphql } from '../index';
-import { TParcel, TParcelRest, TParcelGraphql } from '../types';
+import {
+  TrackingData,
+  TrackingDataRest,
+  TrackingDataGraphql,
+} from '../../tracking-data';
+import { Parcel, ParcelRest, ParcelGraphql } from '../index';
+import { TParcelRest, TParcelGraphql } from '../types';
 
 export const restPreset = (): TBuilder<TParcelRest> =>
   ParcelRest.random()
@@ -21,9 +30,9 @@ export const graphqlPreset = (): TBuilder<TParcelGraphql> => {
     .items([DeliveryItemGraphql.random()]);
 };
 
-export const compatPreset = (): TBuilder<TParcel> => {
-  return ParcelRest.random()
-    .measurements(ParcelMeasurementsRest.random())
-    .trackingData(TrackingDataRest.random())
-    .items([DeliveryItemRest.random()]);
+export const compatPreset = (): TBuilder<TParcelRest | TParcelGraphql> => {
+  return Parcel.random()
+    .measurements(ParcelMeasurements.random())
+    .trackingData(TrackingData.random())
+    .items([DeliveryItem.random()]);
 };
