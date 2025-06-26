@@ -6,6 +6,15 @@ const validateCommonFields = (model: TReturnInfoRest | TReturnInfoGraphql) => {
     expect.objectContaining({
       returnTrackingId: expect.any(String),
       returnDate: expect.any(String),
+      items: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          key: null,
+          quantity: expect.any(Number),
+          type: expect.any(String),
+          comment: null,
+        }),
+      ]),
     })
   );
 };
@@ -19,6 +28,11 @@ const validateGraphqlFields = (model: TReturnInfoGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
       __typename: 'ReturnInfo',
+      items: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'LineItemReturnItem',
+        }),
+      ]),
     })
   );
 };

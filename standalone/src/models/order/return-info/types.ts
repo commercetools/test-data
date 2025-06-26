@@ -3,7 +3,7 @@ import type { TBuilder } from '@/core';
 import type { TCtpReturnInfo } from '@/graphql-types';
 
 /**
- * @deprecated use `TReturnInfoRest` instead
+ * @deprecated use `TReturnInfoRest` or `TReturnInfoGraphql` instead
  */
 export type TReturnInfo = ReturnInfo;
 export type TReturnInfoRest = ReturnInfo;
