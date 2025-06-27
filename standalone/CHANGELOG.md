@@ -1,5 +1,18 @@
 # @commercetools/composable-commerce-test-data
 
+## 12.0.0
+
+### Major Changes
+
+- [#885](https://github.com/commercetools/test-data/pull/885) [`65c738c`](https://github.com/commercetools/test-data/commit/65c738c890b4a780ad034c30ca228e1bc5c08152) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're removing all the **sample data presets** from the test data models:
+
+  - sample-data-b2b
+  - sample-data-b2c
+  - sample-data-b2c-lifestyle
+  - sample-data-fashion
+
+  We now how a new package (`@commercetools/composable-commerce-test-data-sample-presets`) where you can find them should you need them.
+
 ## 11.8.0
 
 ### Minor Changes
