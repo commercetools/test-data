@@ -1,7 +1,13 @@
-import empty from './empty';
+import * as empty from './empty';
 
-const presets = {
-  empty,
+export const restPresets = {
+  empty: empty.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  empty: empty.graphqlPreset,
+};
+
+export const compatPresets = {
+  empty: empty.compatPreset,
+};
