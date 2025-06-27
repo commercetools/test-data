@@ -1,15 +1,10 @@
-export const shipmentState = {
-  advised: 'Advised',
-  returned: 'Returned',
-  backInStock: 'BackInStock',
-  unusable: 'Unusable',
-};
+import {
+  TCtpReturnShipmentState,
+  TCtpReturnPaymentState,
+} from '@/graphql-types';
 
-export const paymentState = {
-  nonRefundable: 'NonRefundable',
-  initial: 'Initial',
-  refunded: 'Refunded',
-  notRefunded: 'NotRefunded',
-};
+export const shipmentState = TCtpReturnShipmentState;
 
-export const LineItemReturnItemType = 'LineItemReturnItem';
+export const paymentState = TCtpReturnPaymentState;
+
+export const LineItemReturnItemType = 'LineItemReturnItem' as const;
