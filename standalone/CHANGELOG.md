@@ -1,5 +1,69 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.8.0
+
+### Minor Changes
+
+- [#863](https://github.com/commercetools/test-data/pull/863) [`8199b6d`](https://github.com/commercetools/test-data/commit/8199b6d81f99fac6eeaf573bc61392aee377bb46) Thanks [@NickDevG](https://github.com/NickDevG)! - We're introducing a new models named `CustomFieldsRest`, `CustomFieldsGraphql` and `RawCustomFieldGraphql` that can be consumed from the `@commercetools/composable-commerce-test-data/custom-fields` entry point.
+
+  This is how the new models could be used:
+
+  ```ts
+  import { CustomFieldsRest } from '@commercetools/composable-commerce-test-data/custom-fields';
+
+  const model = CustomFieldsRest.random().build();
+  ```
+
+  ```ts
+  import { CustomFieldsGraphql } from '@commercetools/composable-commerce-test-data/custom-fields';
+
+  const model = CustomFieldsGraphql.random().build();
+  ```
+
+  ```ts
+  import { RawCustomFieldGraphql } from '@commercetools/composable-commerce-test-data/custom-fields';
+
+  const model = RawCustomFieldGraphql.random().build();
+  ```
+
+- [#863](https://github.com/commercetools/test-data/pull/863) [`8199b6d`](https://github.com/commercetools/test-data/commit/8199b6d81f99fac6eeaf573bc61392aee377bb46) Thanks [@NickDevG](https://github.com/NickDevG)! - We're introducing a new models named `ItemShippingDetailsGraphql`, `ItemShippingTargetGraphql` and `ShippingGraphql` that can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.
+
+  This is how the new models could be used:
+
+  ```ts
+  import { ItemShippingDetailsGraphql } from '@commercetools/composable-commerce-test-data/cart';
+
+  const model = ItemShippingDetailsGraphql.random().build();
+  ```
+
+  ```ts
+  import { ItemShippingTargetGraphql } from '@commercetools/composable-commerce-test-data/cart';
+
+  const model = ItemShippingTargetGraphql.random().build();
+  ```
+
+  ```ts
+  import { ShippingGraphql } from '@commercetools/composable-commerce-test-data/cart';
+
+  const model = ShippingGraphql.random().build();
+  ```
+
+- [#892](https://github.com/commercetools/test-data/pull/892) [`56c2839`](https://github.com/commercetools/test-data/commit/56c28395efab71cc91b600c3b3faa624b30d1474) Thanks [@NickDevG](https://github.com/NickDevG)! - We've migrated the model `ReturnInfo` to accommodate to the new pattern.
+
+  This change does not have any impact over consumers.
+
+- [#891](https://github.com/commercetools/test-data/pull/891) [`eae27b1`](https://github.com/commercetools/test-data/commit/eae27b11e995230c553189ff2018c73eaeeb94d5) Thanks [@NickDevG](https://github.com/NickDevG)! - We've migrated the model `LineItemReturnItem` to accommodate to the new pattern.
+
+  This change does not have any impact over consumers.
+
+- [#894](https://github.com/commercetools/test-data/pull/894) [`c4fd290`](https://github.com/commercetools/test-data/commit/c4fd29030aea6fa08b874dce4256c6f93f1ceecb) Thanks [@NickDevG](https://github.com/NickDevG)! - We've migrated the model `Delivery` to accommodate to the new pattern.
+
+  This change does not have any impact over consumers.
+
+- [#883](https://github.com/commercetools/test-data/pull/883) [`967d6da`](https://github.com/commercetools/test-data/commit/967d6da4b4a59e199e9c60ad120137e7b30bec70) Thanks [@NickDevG](https://github.com/NickDevG)! - We've migrated the model `Parcel` to accommodate to the new pattern.
+
+  This change does not have any impact over consumers.
+
 ## 11.7.0
 
 ### Minor Changes
