@@ -23,11 +23,11 @@
     "lodash": "4.17.21",
     "prompts": "2.4.2",
     "squirrelly": "9.1.0",
-    "tsx": "4.19.4"
+    "tsx": "4.20.3"
   },
   "devDependencies": {
-    "@types/lodash": "4.17.16",
-    "@types/mustache": "4.2.5",
+    "@types/lodash": "4.17.19",
+    "@types/mustache": "4.2.6",
     "@types/prompts": "2.4.9"
   }
 }
