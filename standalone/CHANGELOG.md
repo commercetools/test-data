@@ -1,5 +1,33 @@
 # @commercetools/composable-commerce-test-data
 
+## 12.1.0
+
+### Minor Changes
+
+- [#897](https://github.com/commercetools/test-data/pull/897) [`1295b54`](https://github.com/commercetools/test-data/commit/1295b54446c895f246326387ebdc80078ccbe15c) Thanks [@NickDevG](https://github.com/NickDevG)! - We've migrated the models `Order`, `OrderFromCartDraft` and `OrderFromQuoteDraft` to accommodate to the new implementation patterns.
+
+  This change does not have any impact over consumers.
+
+- [#896](https://github.com/commercetools/test-data/pull/896) [`732c4a0`](https://github.com/commercetools/test-data/commit/732c4a0a2805dcad8578cc2d7c971212abf81a7e) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new model named `VariantPricesListView` can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+
+  There's only a GraphQL version for this model as it only exists in the MC Settings services which only expose a GraphQL API.
+
+  This is how the new model could be used:
+
+  ```
+  import {
+    VariantPricesListViewGraphql,
+  } from '@commercetools/composable-commerce-test-data/my-view';
+
+  const variantPricesListView = VariantPricesListViewGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#898](https://github.com/commercetools/test-data/pull/898) [`602b75a`](https://github.com/commercetools/test-data/commit/602b75a2a1829e76d06eaa2e2d98e83384215e1d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed `CustomFieldsRest` test data model as the default generated version was not populating the `fields` property but that's a required property.
+
+  Now we populate it with an empty object.
+
 ## 12.0.0
 
 ### Major Changes
