@@ -129,8 +129,8 @@ importers:
         specifier: 7.26.10
         version: 7.26.10
       '@babel/runtime-corejs3':
-        specifier: 7.26.0
-        version: 7.26.0
+        specifier: 7.26.10
+        version: 7.26.10
       '@manypkg/find-root':
         specifier: 3.0.0
         version: 3.0.0
@@ -828,6 +828,10 @@ packages:
 
   '@babel/runtime-corejs3@7.26.0':
     resolution: {integrity: sha512-YXHu5lN8kJCb1LOb9PgV6pvak43X2h4HvRApcN5SdWeaItQOzfn1hgP6jasD6KWQyJDBxrVmA9o9OivlnNJK/w==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime-corejs3@7.26.10':
+    resolution: {integrity: sha512-uITFQYO68pMEYR46AHgQoyBg7KPPJDAbGn4jUTIRgCFJIp88MIBUianVOplhZDEec07bp9zIyr4Kp0FCyQzmWg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.26.0':
@@ -6233,6 +6237,11 @@ snapshots:
       core-js-pure: 3.41.0
       regenerator-runtime: 0.14.1
 
+  '@babel/runtime-corejs3@7.26.10':
+    dependencies:
+      core-js-pure: 3.41.0
+      regenerator-runtime: 0.14.1
+
   '@babel/runtime@7.26.0':
     dependencies:
       regenerator-runtime: 0.14.1
@@ -6428,7 +6437,7 @@ snapshots:
       '@babel/core': 7.26.10
       '@babel/register': 7.25.9(@babel/core@7.26.10)
       '@babel/runtime': 7.26.10
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
       '@commercetools-frontend/constants': 24.2.1
       '@types/lodash': 4.17.16
       '@types/react': 19.1.8
@@ -6466,7 +6475,7 @@ snapshots:
       '@babel/preset-react': 7.26.3(@babel/core@7.26.10)
       '@babel/preset-typescript': 7.27.0(@babel/core@7.26.10)
       '@babel/runtime': 7.26.10
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
       '@emotion/babel-plugin': 11.13.5
       '@emotion/babel-preset-css-prop': 11.12.0(@babel/core@7.26.10)
       babel-plugin-dev-expression: 0.2.3(@babel/core@7.26.10)
@@ -6483,7 +6492,7 @@ snapshots:
   '@commercetools-frontend/constants@24.2.1':
     dependencies:
       '@babel/runtime': 7.26.10
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
 
   '@commercetools-frontend/eslint-config-mc-app@24.2.1(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.32)(babel-plugin-macros@3.1.0))':
     dependencies:
@@ -10841,7 +10850,7 @@ snapshots:
   omit-empty-es@1.2.0:
     dependencies:
       '@babel/runtime': 7.26.10
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
 
   once@1.4.0:
     dependencies:
