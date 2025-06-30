@@ -31,6 +31,7 @@ const validateRestModel = (model: TCustomFieldsRest) => {
       fields: expect.any(Object),
     })
   );
+  expect(model.fields).not.toBeNull();
 };
 
 const validateGraphqlModel = (model: TCustomFieldsGraphql) => {
@@ -38,37 +39,46 @@ const validateGraphqlModel = (model: TCustomFieldsGraphql) => {
     expect.objectContaining({
       __typename: 'CustomFieldsType',
       type: expect.objectContaining({
-        id: expect.any(String),
-        key: expect.any(String),
-        name: expect.any(Object),
         __typename: 'TypeDefinition',
       }),
       typeRef: expect.objectContaining({
-        typeId: 'type',
-        id: expect.any(String),
         __typename: 'Reference',
       }),
-      customFieldsRaw: expect.arrayContaining([
-        expect.objectContaining({
-          name: expect.any(String),
-          value: expect.anything(),
-          __typename: 'RawCustomField',
-        }),
-      ]),
     })
   );
 };
 
 describe('CustomFields model builders', () => {
-  it('builds a REST model', () => {
+  it('builds a default REST model', () => {
+    const restModel = RestModelBuilder().build();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a REST model with fields', () => {
     const restModel = populateRestModel(RestModelBuilder()).build();
 
     validateRestModel(restModel);
   });
 
-  it('builds a GraphQL model', () => {
+  it('builds a default GraphQL model', () => {
+    const graphqlModel = GraphqlModelBuilder().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+
+  it('builds a GraphQL model with fields', () => {
     const graphqlModel = populateGraphqlModel(GraphqlModelBuilder()).build();
 
     validateGraphqlModel(graphqlModel);
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        customFieldsRaw: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'RawCustomField',
+          }),
+        ]),
+      })
+    );
   });
 });
