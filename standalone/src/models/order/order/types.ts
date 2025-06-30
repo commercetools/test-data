@@ -1,63 +1,42 @@
 import {
-  BusinessUnit,
-  Cart,
-  CartDiscount,
-  CustomerGroup,
   Order,
   OrderFromCartDraft,
   OrderFromQuoteDraft,
-  Quote,
-  State,
-  Store,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TReferenceGraphql } from '@/models/commons';
-import type { TCustomer } from '@/models/customer/customer';
+import {
+  TCtpOrder,
+  TCtpOrderCartCommand,
+  TCtpOrderQuoteCommand,
+} from '@/graphql-types';
 
-export type TOrder = Omit<
-  Order,
-  | 'customerGroup'
-  | 'refusedGifts'
-  | 'store'
-  | 'businessUnit'
-  | 'state'
-  | 'cart'
-  | 'quote'
-> & {
-  customerGroup: CustomerGroup;
-  refusedGifts: Array<CartDiscount>;
-  store: Store;
-  businessUnit: BusinessUnit;
-  state: State;
-  cart: Cart;
-  quote: Quote;
-  customer: TCustomer | null;
-};
-
+/**
+ * @deprecated use `TOrderRest` instead
+ */
+export type TOrder = TCtpOrder;
 export type TOrderRest = Order;
+export type TOrderGraphql = TCtpOrder;
 
-export type TOrderGraphql = TOrder & {
-  customerGroupRef: TReferenceGraphql | null;
-  refusedGiftsRefs: Array<TReferenceGraphql> | null;
-  storeRef: TReferenceGraphql | null;
-  businessUnitRef: TReferenceGraphql | null;
-  stateRef: TReferenceGraphql | null;
-  cartRef: TReferenceGraphql | null;
-  quoteRef: TReferenceGraphql | null;
-  __typename: 'Order';
-};
-
+/**
+ * @deprecated use `TOrderFromCartDraftRest` instead
+ */
 export type TOrderFromCartDraft = OrderFromCartDraft;
+export type TOrderFromCartDraftRest = OrderFromCartDraft;
+export type TOrderFromCartDraftGraphql = TCtpOrderCartCommand;
+
+/**
+ * @deprecated use `TOrderFromQuoteDraftRest` instead
+ */
 export type TOrderFromQuoteDraft = OrderFromQuoteDraft;
+export type TOrderFromQuoteDraftRest = OrderFromQuoteDraft;
+export type TOrderFromQuoteDraftGraphql = TCtpOrderQuoteCommand;
 
-export type TOrderFromCartDraftGraphql = TOrderFromCartDraft;
-export type TOrderFromQuoteDraftGraphql = TOrderFromQuoteDraft;
-
-export type TOrderBuilder = TBuilder<TOrder>;
-export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraft>;
-export type TOrderFromQuoteDraftBuilder = TBuilder<TOrderFromQuoteDraft>;
-
-export type TCreateOrderBuilder = () => TOrderBuilder;
-export type TCreateOrderFromCartDraftBuilder = () => TOrderFromCartDraftBuilder;
-export type TCreateOrderFromQuoteDraftBuilder =
-  () => TOrderFromQuoteDraftBuilder;
+export type TCreateOrderBuilder<
+  TOrderModel extends
+    | TOrderRest
+    | TOrderGraphql
+    | TOrderFromCartDraftRest
+    | TOrderFromCartDraftGraphql
+    | TOrderFromQuoteDraftRest
+    | TOrderFromQuoteDraftGraphql,
+> = () => TBuilder<TOrderModel>;
