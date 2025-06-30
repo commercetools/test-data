@@ -12,10 +12,10 @@ import {
 } from '@/models/commons';
 import { Customer } from '@/models/customer/customer';
 import * as CustomerGroup from '@/models/customer/customer-group';
-import { StoreGraphql } from '@/models/store';
 import { createRelatedDates } from '@/utils';
 import {
   inventoryMode,
+  orderOrigin,
   orderState,
   paymentState,
   shipmentState,
@@ -25,6 +25,8 @@ import {
   taxRoundingMode,
 } from './constants';
 import { TOrderRest, TOrderGraphql } from './types';
+
+// Reference docs: https://docs.commercetools.com/api/projects/orders#order
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -60,7 +62,7 @@ const commonFieldsConfig = {
   paymentInfo: null,
   country: fake((f) => f.location.countryCode()),
   locale: oneOf('en-US', 'de-DE', 'es-ES'),
-  origin: null,
+  origin: orderOrigin.Customer,
   quote: null,
   orderState: oneOf(...Object.values(orderState)),
   shipmentState: oneOf(...Object.values(shipmentState)),
@@ -86,7 +88,6 @@ export const restFieldsConfig: TModelFieldsConfig<TOrderRest> = {
     cart: fake(() => ReferenceRest.presets.cartReference()),
     customerGroup: fake(() => ReferenceRest.presets.customerGroupReference()),
     lineItems: fake(() => [LineItemRest.random()]),
-    store: fake(() => KeyReference.presets.store()),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
   },
 };
@@ -106,11 +107,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TOrderGraphql> = {
     recurringOrderRef: null,
     refusedGifts: fake(() => [CartDiscount.random()]),
     refusedGiftsRefs: null,
-    store: fake(() => StoreGraphql.random()),
+    storeRef: null,
     placement: null,
     quoteRef: null,
     stateRef: null,
-    storeRef: null,
   },
   postBuild: (model) => {
     const businessUnitRef = model.businessUnit
@@ -131,12 +131,30 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TOrderGraphql> = {
           .id(model.customerGroup.id)
           .buildGraphql()
       : null;
+    const quoteRef = model.quote
+      ? ReferenceGraphql.presets
+          .quoteReference()
+          .id(model.quote.id)
+          .buildGraphql()
+      : null;
+    const recurringOrderRef = model.recurringOrder
+      ? ReferenceGraphql.random()
+          .typeId('recurring-order')
+          .id(model.recurringOrder.id)
+          .buildGraphql()
+      : null;
     const refusedGiftsRefs = model.refusedGifts.map((refusedGift) =>
       ReferenceGraphql.presets
         .cartDiscountReference()
         .id(refusedGift.id)
         .buildGraphql()
     );
+    const stateRef = model.state
+      ? ReferenceGraphql.presets
+          .stateReference()
+          .id(model.state.id)
+          .buildGraphql()
+      : null;
     const storeRef = model.store
       ? KeyReference.presets.store().key(model.store.key).buildGraphql()
       : null;
@@ -146,7 +164,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TOrderGraphql> = {
       businessUnitRef,
       cartRef,
       customerGroupRef,
+      quoteRef,
+      recurringOrderRef,
       refusedGiftsRefs,
+      stateRef,
       storeRef,
     };
   },

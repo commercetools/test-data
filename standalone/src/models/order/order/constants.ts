@@ -7,6 +7,7 @@ import {
   TCtpShippingMode,
   TCtpTaxCalculationMode,
   TCtpTaxMode,
+  TCtpCartOrigin,
 } from '@/graphql-types';
 
 export const paymentState = TCtpPaymentState;
@@ -24,3 +25,5 @@ export const taxRoundingMode = TCtpRoundingMode;
 export const taxCalculationMode = TCtpTaxCalculationMode;
 
 export const inventoryMode = TCtpInventoryMode;
+
+export const orderOrigin = TCtpCartOrigin;

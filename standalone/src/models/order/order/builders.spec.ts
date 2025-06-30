@@ -4,7 +4,12 @@ import { LineItem, LineItemRest, LineItemGraphql } from '@/models/cart/cart';
 import { KeyReference, Reference } from '@/models/commons';
 import { CustomerGroup } from '@/models/customer/customer-group';
 import { CustomFieldBooleanType } from '@/models/type';
-import { orderState, paymentState, shipmentState } from './constants';
+import {
+  orderOrigin,
+  orderState,
+  paymentState,
+  shipmentState,
+} from './constants';
 import type { TOrderGraphql, TOrderRest } from './types';
 import { Order, OrderGraphql, OrderRest } from './index';
 
@@ -44,7 +49,7 @@ const validateCommonFields = (model: TOrderRest | TOrderGraphql) => {
       taxCalculationMode: expect.any(String),
       customLineItems: expect.arrayContaining([]),
       locale: expect.any(String),
-      origin: null,
+      origin: orderOrigin.Customer,
       shippingMode: expect.any(String),
       shipping: expect.arrayContaining([]),
       discountCodes: expect.arrayContaining([]),
@@ -62,6 +67,7 @@ const validateCommonFields = (model: TOrderRest | TOrderGraphql) => {
       completedAt: null,
       quote: null,
       state: null,
+      store: null,
       syncInfo: expect.arrayContaining([]),
       returnInfo: expect.arrayContaining([]),
       discountTypeCombination: null,
@@ -85,10 +91,6 @@ const validateRestModel = (model: TOrderRest) => {
       }),
       cart: expect.objectContaining({
         typeId: 'cart',
-      }),
-      store: expect.objectContaining({
-        key: expect.any(String),
-        typeId: 'store',
       }),
       businessUnit: expect.objectContaining({
         key: expect.any(String),
@@ -185,14 +187,7 @@ const validateGraphqlModel = (model: TOrderGraphql) => {
       shippingAddress: expect.objectContaining({
         __typename: 'Address',
       }),
-      store: expect.objectContaining({
-        id: expect.any(String),
-        __typename: 'Store',
-      }),
-      storeRef: expect.objectContaining({
-        typeId: 'store',
-        __typename: 'Reference',
-      }),
+      storeRef: null,
       totalPrice: expect.objectContaining({
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
