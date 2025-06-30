@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "7.26.0",
-    "@babel/runtime-corejs3": "7.26.0",
+    "@babel/runtime-corejs3": "7.26.10",
     "@manypkg/find-root": "3.0.0",
     "lodash": "4.17.21",
     "prompts": "2.4.2",
