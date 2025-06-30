@@ -6,8 +6,8 @@ import { TCustomFieldsRest, TCustomFieldsGraphql } from './types';
 export const restFieldsConfig: TModelFieldsConfig<TCustomFieldsRest> = {
   fields: {
     type: fake(() => ReferenceRest.presets.typeReference()),
-    // Use an array ofRawCustomFieldGraphql to create the fields.
-    fields: null,
+    // This is a field container, which is a simple object with string keys and values of any type.
+    fields: {},
   },
 };
 
