@@ -11,14 +11,6 @@ const commonFieldsConfig = {
   state: null,
 };
 
-// readonly id?: string;
-// readonly key?: string;
-// readonly name: string;
-// readonly amount: number;
-// readonly includedInPrice: boolean;
-// readonly country: string;
-// readonly state?: string;
-// readonly subRates?: SubRate[];
 export const restFieldsConfig: TModelFieldsConfig<TTaxRateRest> = {
   fields: {
     ...commonFieldsConfig,
@@ -26,14 +18,6 @@ export const restFieldsConfig: TModelFieldsConfig<TTaxRateRest> = {
   },
 };
 
-// amount: Scalars['Float']['output'];
-// country: Scalars['Country']['output'];
-// id?: Maybe<Scalars['String']['output']>;
-// includedInPrice: Scalars['Boolean']['output'];
-// key?: Maybe<Scalars['String']['output']>;
-// name: Scalars['String']['output'];
-// state?: Maybe<Scalars['String']['output']>;
-// subRates: Array<TCtpSubRate>;
 export const graphqlFieldsConfig: TModelFieldsConfig<TTaxRateGraphql> = {
   fields: {
     ...commonFieldsConfig,
