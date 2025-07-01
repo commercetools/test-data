@@ -1,15 +1,65 @@
-import type { TState } from '../../../types';
-import withTypeLineItemState from './with-type-line-item-state';
+import { TStateDraftGraphql, TStateDraftRest } from '../../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-type-line-item-state';
 
-describe('State with type of LineItemState and role of Return', () => {
-  it('should return a State containing a type of LineItemState and role of Return', () => {
-    const typeLineItemState = withTypeLineItemState().build<TState>();
+const validateRestModel = (model: TStateDraftRest): void => {
+  expect(model).toMatchObject({
+    type: expect.any(String),
+    roles: expect.arrayContaining([expect.any(String)]),
+    key: expect.any(String),
+    name: expect.objectContaining({
+      en: expect.any(String),
+    }),
+  });
+};
 
-    expect(typeLineItemState).toEqual(
+const validateGraphqlModel = (model: TStateDraftGraphql): void => {
+  expect(model).toMatchObject({
+    type: expect.any(String),
+    roles: expect.arrayContaining([expect.any(String)]),
+    key: expect.any(String),
+    name: expect.arrayContaining([
       expect.objectContaining({
-        type: 'LineItemState',
-        roles: ['Return'],
-      })
-    );
+        locale: 'en',
+        value: expect.any(String),
+      }),
+    ]),
+  });
+};
+
+describe('StateDraft with type LineItemState presets', () => {
+  it('builds a REST model', () => {
+    const restModel = restPreset().build();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = graphqlPreset().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('StateDraft with type LineItemState compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const restModel = compatPreset().build();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = compatPreset().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = compatPreset().buildGraphql<TStateDraftGraphql>();
+
+    validateGraphqlModel(graphqlModel);
   });
 });

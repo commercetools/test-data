@@ -1,7 +1,24 @@
-export * as StateDraft from './state-draft';
-export * as State from '.';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as modelPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
-export * as constants from './constants';
+export const StateRest = {
+  random: RestModelBuilder,
+  presets: modelPresets.restPresets,
+};
+
+export const StateGraphql = {
+  random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `StateRest` or `StateGraphql` exported models instead of `State`.
+ */
+export const State = {
+  random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
+};

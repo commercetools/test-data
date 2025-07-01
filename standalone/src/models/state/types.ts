@@ -1,20 +1,24 @@
 import type { State, StateDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TLocalizedStringGraphql } from '@/models/commons';
+import type { TCtpState, TCtpStateDraft } from '@/graphql-types';
 
+/**
+ * @deprecated use 'TStateRest' or 'TStateGraphql' instead
+ */
 export type TState = State;
+export type TStateRest = State;
+export type TStateGraphql = TCtpState;
+
+/**
+ * @deprecated use 'TStateDraftRest' or 'TStateDraftGraphql' instead
+ */
 export type TStateDraft = StateDraft;
+export type TStateDraftRest = StateDraft;
+export type TStateDraftGraphql = TCtpStateDraft;
 
-export type TStateGraphql = Omit<TState, 'name' | 'description'> & {
-  name?: string | null;
-  description?: string | null;
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
-  __typename: 'State';
-};
-export type TStateDraftGraphql = TStateDraft;
-
-export type TStateBuilder = TBuilder<TState>;
-export type TStateDraftBuilder = TBuilder<TStateDraft>;
-export type TCreateStateBuilder = () => TStateBuilder;
-export type TCreateStateDraftBuilder = () => TStateDraftBuilder;
+export type TCreateStateBuilder<
+  TStateModel extends TStateRest | TStateGraphql,
+> = () => TBuilder<TStateModel>;
+export type TCreateStateDraftBuilder<
+  TStateDraftModel extends TStateDraftRest | TStateDraftGraphql,
+> = () => TBuilder<TStateDraftModel>;

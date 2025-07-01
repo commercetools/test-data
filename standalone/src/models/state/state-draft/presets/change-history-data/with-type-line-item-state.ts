@@ -1,7 +1,27 @@
-import State from '../../builder';
+import { TBuilder } from '@/core';
+import { TCtpStateType, TCtpStateRole } from '@/graphql-types';
+import {
+  TStateDraft,
+  TStateDraftGraphql,
+  TStateDraftRest,
+} from '../../../types';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../../builders';
 
-//`LineItemState` requires a role of `Return`
-const withTypeLineItemState = () =>
-  State().type('LineItemState').roles(['Return']);
+export const restPreset = (): TBuilder<TStateDraftRest> =>
+  RestModelBuilder()
+    .type(TCtpStateType.LineItemState)
+    .roles([TCtpStateRole.Return]);
 
-export default withTypeLineItemState;
+export const graphqlPreset = (): TBuilder<TStateDraftGraphql> =>
+  GraphqlModelBuilder()
+    .type(TCtpStateType.LineItemState)
+    .roles([TCtpStateRole.Return]);
+
+export const compatPreset = (): TBuilder<TStateDraft> =>
+  CompatModelBuilder()
+    .type(TCtpStateType.LineItemState)
+    .roles([TCtpStateRole.Return]);
