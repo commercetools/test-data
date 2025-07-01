@@ -1,9 +1,20 @@
-import withCountryCodeUsNoState from './with-country-code-us-no-state';
-import withCountryCodeUsNoStateIncludedInPrice from './with-country-code-us-no-state-included-in-price';
+import * as withCountryCodeUsNoStatePresets from './with-country-code-us-no-state';
+import * as withCountryCodeUsNoStateIncludedInPricePresets from './with-country-code-us-no-state-included-in-price';
 
-const presets = {
-  withCountryCodeUsNoState,
-  withCountryCodeUsNoStateIncludedInPrice,
+export const restPresets = {
+  withCountryCodeUsNoState: withCountryCodeUsNoStatePresets.restPreset,
+  withCountryCodeUsNoStateIncludedInPrice:
+    withCountryCodeUsNoStateIncludedInPricePresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withCountryCodeUsNoState: withCountryCodeUsNoStatePresets.graphqlPreset,
+  withCountryCodeUsNoStateIncludedInPrice:
+    withCountryCodeUsNoStateIncludedInPricePresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  withCountryCodeUsNoState: withCountryCodeUsNoStatePresets.compatPreset,
+  withCountryCodeUsNoStateIncludedInPrice:
+    withCountryCodeUsNoStateIncludedInPricePresets.compatPreset,
+};

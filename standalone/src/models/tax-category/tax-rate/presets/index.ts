@@ -1,7 +1,11 @@
-import withAllFields from './with-all-fields/with-all-fields-preset';
+import * as withAllFieldsPresets from './with-all-fields/with-all-fields-preset';
 
-const presets = {
-  withAllFields,
+export const restPresets = {
+  withAllFields: withAllFieldsPresets.restPreset,
 };
-
-export default presets;
+export const graphqlPresets = {
+  withAllFields: withAllFieldsPresets.graphqlPreset,
+};
+export const compatPresets = {
+  withAllFields: withAllFieldsPresets.compatPreset,
+};

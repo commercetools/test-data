@@ -1,15 +1,49 @@
-import type { TTaxRateDraft } from '../../../types';
-import withCountryCodeUsNoState from './with-country-code-us-no-state';
+import { TTaxRateDraftGraphql, TTaxRateDraftRest } from '../../../types';
+import * as withCountryCodeUsNoStatePresets from './with-country-code-us-no-state';
 
-describe('Tax rate with country code US and no state', () => {
-  it('should return a tax rate containing the country code of US and no state', () => {
-    const countryUsNoState = withCountryCodeUsNoState().build<TTaxRateDraft>();
+const validateModel = (model: TTaxRateDraftGraphql | TTaxRateDraftRest) => {
+  expect(model).toMatchObject({
+    country: 'US',
+    state: null,
+  });
+};
 
-    expect(countryUsNoState).toEqual(
-      expect.objectContaining({
-        country: expect.stringContaining('US'),
-        state: null,
-      })
-    );
+describe('TaxRateDraft withCountryCodeUsNoState preset builders', () => {
+  it('builds a REST model', () => {
+    const restModel = withCountryCodeUsNoStatePresets.restPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = withCountryCodeUsNoStatePresets
+      .graphqlPreset()
+      .build();
+
+    validateModel(graphqlModel);
+  });
+});
+
+describe('TaxRateDraft withCountryCodeUsNoState preset compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const restModel = withCountryCodeUsNoStatePresets.compatPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = withCountryCodeUsNoStatePresets
+      .compatPreset()
+      .buildRest();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = withCountryCodeUsNoStatePresets
+      .compatPreset()
+      .buildGraphql<TTaxRateDraftGraphql>();
+
+    validateModel(graphqlModel);
   });
 });
