@@ -1,3 +1,4 @@
+import * as constants from '../constants';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
@@ -6,11 +7,13 @@ import {
 import * as modelPresets from './presets';
 
 export const StateDraftRest = {
+  constants,
   random: RestModelBuilder,
   presets: modelPresets.restPresets,
 };
 
 export const StateDraftGraphql = {
+  constants,
   random: GraphqlModelBuilder,
   presets: modelPresets.graphqlPresets,
 };
@@ -19,6 +22,7 @@ export const StateDraftGraphql = {
  * @deprecated Use `StateDraftRest` or `StateDraftGraphql` exported models instead of `StateDraft`.
  */
 export const StateDraft = {
+  constants,
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
 };

@@ -1,7 +1,7 @@
 import { fake, oneOf, sequence, TModelFieldsConfig } from '@/core';
-import { TCtpStateRole, TCtpStateType } from '@/graphql-types';
 import { createRelatedDates } from '@/utils';
 import { ClientLogging, LocalizedString } from '../commons';
+import { roles, types } from './constants';
 import { TStateGraphql, TStateRest } from './types';
 
 const [getNewerDate, getOlderDate] = createRelatedDates();
@@ -10,10 +10,10 @@ const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   version: sequence(),
   key: fake((f) => f.lorem.slug(2)),
-  type: oneOf(...Object.values(TCtpStateType)),
+  type: oneOf(...Object.values(types)),
   initial: fake((f) => f.datatype.boolean()),
   builtIn: fake((f) => f.datatype.boolean()),
-  roles: [oneOf(...Object.values(TCtpStateRole))],
+  roles: [oneOf(...Object.values(roles))],
   transitions: null,
   createdAt: fake(getOlderDate),
   createdBy: fake(() => ClientLogging.random()),

@@ -1,5 +1,5 @@
 import { TBuilder } from '@/core';
-import { TCtpStateType, TCtpStateRole } from '@/graphql-types';
+import { types, roles } from '../../../constants';
 import {
   TStateDraft,
   TStateDraftGraphql,
@@ -12,16 +12,10 @@ import {
 } from '../../builders';
 
 export const restPreset = (): TBuilder<TStateDraftRest> =>
-  RestModelBuilder()
-    .type(TCtpStateType.LineItemState)
-    .roles([TCtpStateRole.Return]);
+  RestModelBuilder().type(types.LineItemState).roles([roles.Return]);
 
 export const graphqlPreset = (): TBuilder<TStateDraftGraphql> =>
-  GraphqlModelBuilder()
-    .type(TCtpStateType.LineItemState)
-    .roles([TCtpStateRole.Return]);
+  GraphqlModelBuilder().type(types.LineItemState).roles([roles.Return]);
 
 export const compatPreset = (): TBuilder<TStateDraft> =>
-  CompatModelBuilder()
-    .type(TCtpStateType.LineItemState)
-    .roles([TCtpStateRole.Return]);
+  CompatModelBuilder().type(types.LineItemState).roles([roles.Return]);
