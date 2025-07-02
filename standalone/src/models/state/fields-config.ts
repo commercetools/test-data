@@ -4,6 +4,8 @@ import { ClientLogging, LocalizedString, ReferenceGraphql } from '../commons';
 import { types } from './constants';
 import { TStateGraphql, TStateRest } from './types';
 
+// Public docs: https://docs.commercetools.com/api/projects/states#state
+
 const [getNewerDate, getOlderDate] = createRelatedDates();
 
 const commonFieldsConfig = {
