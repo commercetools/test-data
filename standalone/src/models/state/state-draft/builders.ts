@@ -4,20 +4,20 @@ import {
   TModelFieldsConfig,
 } from '@/core';
 import type {
-  TCreateStateDraftBuilder,
+  TCreateStateBuilder,
   TStateDraftGraphql,
   TStateDraftRest,
 } from '../types';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
-export const RestModelBuilder: TCreateStateDraftBuilder<TStateDraftRest> = () =>
+export const RestModelBuilder: TCreateStateBuilder<TStateDraftRest> = () =>
   createSpecializedBuilder({
     name: 'StateDraftRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCreateStateDraftBuilder<
+export const GraphqlModelBuilder: TCreateStateBuilder<
   TStateDraftGraphql
 > = () =>
   createSpecializedBuilder({

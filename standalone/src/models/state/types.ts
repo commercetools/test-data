@@ -17,8 +17,9 @@ export type TStateDraftRest = StateDraft;
 export type TStateDraftGraphql = TCtpStateDraft;
 
 export type TCreateStateBuilder<
-  TStateModel extends TStateRest | TStateGraphql,
+  TStateModel extends
+    | TStateRest
+    | TStateGraphql
+    | TStateDraftRest
+    | TStateDraftGraphql,
 > = () => TBuilder<TStateModel>;
-export type TCreateStateDraftBuilder<
-  TStateDraftModel extends TStateDraftRest | TStateDraftGraphql,
-> = () => TBuilder<TStateDraftModel>;
