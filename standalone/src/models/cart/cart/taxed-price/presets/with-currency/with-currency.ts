@@ -4,7 +4,7 @@ import { TaxPortionGraphql, TaxPortionRest } from '../../../tax-portion';
 import { GraphqlModelBuilder, RestModelBuilder } from '../../builders';
 import { TTaxedPriceGraphql, TTaxedPriceRest } from '../../types';
 
-export const restPreset = (currencyCode: string): TBuilder<TTaxedPriceRest> =>
+export const restPreset = (currencyCode = 'EUR'): TBuilder<TTaxedPriceRest> =>
   RestModelBuilder()
     .totalNet(CentPrecisionMoney.random().currencyCode(currencyCode))
     .totalGross(CentPrecisionMoney.random().currencyCode(currencyCode))
@@ -15,7 +15,7 @@ export const restPreset = (currencyCode: string): TBuilder<TTaxedPriceRest> =>
     ]);
 
 export const graphqlPreset = (
-  currencyCode: string
+  currencyCode = 'EUR'
 ): TBuilder<TTaxedPriceGraphql> =>
   GraphqlModelBuilder()
     .totalNet(Money.presets.withCurrency(currencyCode))

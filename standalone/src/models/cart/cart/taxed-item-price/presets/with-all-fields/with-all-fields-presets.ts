@@ -11,7 +11,9 @@ export const restPreset = (
     .totalNet(Money.presets.withCurrency(currencyCode))
     .totalGross(Money.presets.withCurrency(currencyCode))
     .totalTax(Money.presets.withCurrency(currencyCode))
-    .taxPortions([TaxPortionRest.random()]);
+    .taxPortions([
+      TaxPortionRest.random().amount(Money.presets.withCurrency(currencyCode)),
+    ]);
 
 export const graphqlPreset = (
   currencyCode = 'EUR'
@@ -20,4 +22,8 @@ export const graphqlPreset = (
     .totalNet(Money.presets.withCurrency(currencyCode))
     .totalGross(Money.presets.withCurrency(currencyCode))
     .totalTax(Money.presets.withCurrency(currencyCode))
-    .taxPortions([TaxPortionGraphql.random()]);
+    .taxPortions([
+      TaxPortionGraphql.random().amount(
+        Money.presets.withCurrency(currencyCode)
+      ),
+    ]);

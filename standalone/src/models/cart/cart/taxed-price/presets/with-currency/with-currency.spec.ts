@@ -65,8 +65,9 @@ const validateGraphqlFields = (
 
 describe('TaxedPrice withCurrency presets builders', () => {
   it('should build properties for the REST representation', () => {
-    const restModel = withCurrencyPresets.restPreset('EUR').build();
+    const restModel = withCurrencyPresets.restPreset().build();
 
+    // default currency is EUR
     validateRestFields(restModel, 'EUR');
   });
 
