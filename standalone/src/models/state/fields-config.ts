@@ -1,7 +1,7 @@
 import { fake, oneOf, sequence, TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
-import { ClientLogging, LocalizedString } from '../commons';
-import { roles, types } from './constants';
+import { ClientLogging, LocalizedString, ReferenceGraphql } from '../commons';
+import { types } from './constants';
 import { TStateGraphql, TStateRest } from './types';
 
 const [getNewerDate, getOlderDate] = createRelatedDates();
@@ -13,8 +13,8 @@ const commonFieldsConfig = {
   type: oneOf(...Object.values(types)),
   initial: fake((f) => f.datatype.boolean()),
   builtIn: fake((f) => f.datatype.boolean()),
-  roles: [oneOf(...Object.values(roles))],
-  transitions: null,
+  roles: [],
+  transitions: [],
   createdAt: fake(getOlderDate),
   createdBy: fake(() => ClientLogging.random()),
   lastModifiedAt: fake(getNewerDate),
@@ -24,33 +24,51 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TStateRest> = {
   fields: {
     ...commonFieldsConfig,
-    name: fake(() => LocalizedString.random()),
-    description: fake(() => LocalizedString.random()),
+    name: null,
+    description: null,
   },
 };
+
 export const graphqlFieldsConfig: TModelFieldsConfig<TStateGraphql> = {
   fields: {
     ...commonFieldsConfig,
     __typename: 'State',
-    transitionsRef: null,
-    name: null,
     description: null,
-    nameAllLocales: fake(() => LocalizedString.random().buildGraphql()),
-    descriptionAllLocales: fake(() => LocalizedString.random().buildGraphql()),
+    descriptionAllLocales: null,
+    key: null,
+    name: null,
+    nameAllLocales: null,
+    transitionsRef: null,
   },
-  postBuild: (model) => {
+  postBuild: (model, context) => {
+    if (context?.isCompatMode) {
+      // @ts-expect-error - This is needed for the compat mode as the model is built using the REST properties
+      model.nameAllLocales = model.name;
+      // @ts-expect-error - This is needed for the compat mode as the model is built using the REST properties
+      model.descriptionAllLocales = model.description;
+    }
+
     const name = model.nameAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
-      : undefined;
+      : model.name;
+
     const description = model.descriptionAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(
           model.descriptionAllLocales
         )
-      : undefined;
+      : model.description;
+
+    const transitionsRef = model.transitions
+      ? model.transitions.map((transition) =>
+          ReferenceGraphql.presets.stateReference().id(transition.id).build()
+        )
+      : model.transitions;
+
     return {
       ...model,
-      name,
       description,
+      name,
+      transitionsRef,
     };
   },
 };

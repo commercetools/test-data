@@ -1,3 +1,4 @@
+import { types } from './constants';
 import type { TStateGraphql, TStateRest } from './types';
 import { State, StateGraphql, StateRest } from './index';
 
@@ -7,21 +8,13 @@ const validateRestModel = (model: TStateRest): void => {
       id: expect.any(String),
       version: expect.any(Number),
       key: expect.any(String),
-      type: expect.any(String),
-      name: expect.objectContaining({
-        de: expect.any(String),
-        en: expect.any(String),
-        fr: expect.any(String),
-      }),
-      description: expect.objectContaining({
-        de: expect.any(String),
-        en: expect.any(String),
-        fr: expect.any(String),
-      }),
+      type: expect.stringFromArray(Object.values(types)),
+      name: null,
+      description: null,
       initial: expect.any(Boolean),
       builtIn: expect.any(Boolean),
-      roles: expect.any(Array),
-      transitions: null,
+      roles: [],
+      transitions: [],
       createdAt: expect.any(String),
       createdBy: expect.objectContaining({
         customer: expect.objectContaining({ typeId: 'customer' }),
@@ -39,38 +32,24 @@ const validateGraphqlModel = (model: TStateGraphql): void => {
     expect.objectContaining({
       id: expect.any(String),
       version: expect.any(Number),
-      key: expect.any(String),
-      type: expect.any(String),
-      name: expect.any(String),
-      description: expect.any(String),
+      key: null,
+      type: expect.stringFromArray(Object.values(types)),
+      name: null,
+      nameAllLocales: null,
+      description: null,
+      descriptionAllLocales: null,
       initial: expect.any(Boolean),
       builtIn: expect.any(Boolean),
-      roles: expect.any(Array),
-      transitions: null,
-      transitionsRef: null,
+      roles: [],
+      transitions: [],
+      transitionsRef: [],
       createdAt: expect.any(String),
       createdBy: expect.objectContaining({
         __typename: 'Initiator',
-        customerRef: expect.objectContaining({
-          typeId: 'customer',
-          __typename: 'Reference',
-        }),
-        userRef: expect.objectContaining({
-          typeId: 'user',
-          __typename: 'Reference',
-        }),
       }),
       lastModifiedAt: expect.any(String),
       lastModifiedBy: expect.objectContaining({
         __typename: 'Initiator',
-        customerRef: expect.objectContaining({
-          typeId: 'customer',
-          __typename: 'Reference',
-        }),
-        userRef: expect.objectContaining({
-          typeId: 'user',
-          __typename: 'Reference',
-        }),
       }),
       __typename: 'State',
     })

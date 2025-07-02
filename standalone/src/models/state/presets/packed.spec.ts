@@ -3,38 +3,30 @@ import { restPreset, graphqlPreset, compatPreset } from './packed';
 
 const validateRestModel = (model: TStateRest): void => {
   expect(model).toMatchObject({
-    id: expect.any(String),
-    version: expect.any(Number),
-    createdAt: expect.any(String),
-    lastModifiedAt: expect.any(String),
-    key: expect.any(String),
-    type: expect.any(String),
+    key: 'packed-state',
     name: expect.objectContaining({
-      en: expect.any(String),
+      en: 'Packed',
+      de: 'Verpackt',
     }),
-    builtIn: expect.any(Boolean),
-    initial: expect.any(Boolean),
-    roles: expect.arrayContaining([expect.any(String)]),
   });
 };
 
 const validateGraphqlModel = (model: TStateGraphql): void => {
   expect(model).toMatchObject({
-    id: expect.any(String),
-    version: expect.any(Number),
-    createdAt: expect.any(String),
-    lastModifiedAt: expect.any(String),
-    key: expect.any(String),
-    type: expect.any(String),
+    key: 'packed-state',
+    name: 'Packed',
     nameAllLocales: expect.arrayContaining([
       expect.objectContaining({
+        locale: 'en',
+        value: 'Packed',
+        __typename: 'LocalizedString',
+      }),
+      expect.objectContaining({
+        locale: 'de',
+        value: 'Verpackt',
         __typename: 'LocalizedString',
       }),
     ]),
-    builtIn: expect.any(Boolean),
-    initial: expect.any(Boolean),
-    roles: expect.arrayContaining([expect.any(String)]),
-    __typename: 'State',
   });
 };
 
