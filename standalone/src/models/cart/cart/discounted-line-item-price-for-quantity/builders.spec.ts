@@ -1,11 +1,8 @@
-import {
-  DiscountedLineItemPriceForQuantityRest,
-  DiscountedLineItemPriceForQuantityGraphql,
-} from './index';
+import { GraphqlModelBuilder, RestModelBuilder } from './builders';
 
 describe('DiscountedLineItemPriceForQuantity Builder', () => {
   it('should build properties for the REST representation', () => {
-    const restModel = DiscountedLineItemPriceForQuantityRest.random().build();
+    const restModel = RestModelBuilder().build();
 
     expect(restModel).toEqual(
       expect.objectContaining({
@@ -32,8 +29,7 @@ describe('DiscountedLineItemPriceForQuantity Builder', () => {
     );
   });
   it('should build properties for the GraphQL representation', () => {
-    const graphqlModel =
-      DiscountedLineItemPriceForQuantityGraphql.random().build();
+    const graphqlModel = GraphqlModelBuilder().build();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({

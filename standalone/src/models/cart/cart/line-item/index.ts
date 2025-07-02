@@ -7,22 +7,20 @@ import * as constants from './constants';
 import * as modelPresets from './presets';
 
 export const LineItemRest = {
+  constants,
   random: RestModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.restPresets,
 };
 
 export const LineItemGraphql = {
+  constants,
   random: GraphqlModelBuilder,
-  presets: modelPresets.default,
+  presets: modelPresets.graphqlPresets,
 };
 /**
  * @deprecated Use `LineItemRest` or `LineItemGraphql` instead.
  */
 export const LineItem = {
-  random: CompatLineItemModelBuilder,
-  presets: modelPresets.default,
-  /**
-   * @deprecated Import `constants` directly from this package root instead of accessing them via the `LineItem` model.
-   */
   constants,
+  random: CompatLineItemModelBuilder,
 };

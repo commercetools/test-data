@@ -34,12 +34,15 @@ describe('with all fields', () => {
     expect(graphqlExamplePreset).toEqual(
       expect.objectContaining({
         totalNet: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         totalGross: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         totalTax: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         taxPortions: [
