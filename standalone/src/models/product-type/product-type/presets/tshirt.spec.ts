@@ -1,7 +1,3 @@
-import {
-  attributeConstraints,
-  inputHints,
-} from '../../attribute-definition/constants';
 import { TProductTypeGraphql, TProductTypeRest } from '../types';
 import * as presets from './tshirt';
 

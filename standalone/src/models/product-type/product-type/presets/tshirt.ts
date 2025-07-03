@@ -1,5 +1,9 @@
 import { type TBuilder } from '@/core';
-import { AttributeDefinitionRest, AttributeDefinitionGraphql } from '../..';
+import {
+  AttributeDefinitionRest,
+  AttributeDefinitionGraphql,
+  AttributeDefinition,
+} from '../..';
 import {
   CompatModelBuilder,
   GraphqlModelBuilder,
@@ -36,6 +40,6 @@ export const compatPreset = (): TBuilder<TProductType> =>
   CompatModelBuilder()
     .name('T-shirt Product Type')
     .attributes([
-      AttributeDefinitionRest.presets.countryOfOrigin().buildRest(),
-      AttributeDefinitionRest.presets.size().buildRest(),
+      AttributeDefinition.presets.countryOfOrigin().buildRest(),
+      AttributeDefinition.presets.size().buildRest(),
     ]);
