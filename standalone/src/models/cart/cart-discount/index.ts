@@ -12,6 +12,7 @@ export * from './cart-discount-value-absolute/types';
 export * from './cart-discount-value-fixed/types';
 export * from './cart-discount-value-gift-line-item/types';
 export * from './cart-discount-value-relative/types';
+export * from './cart-discount-target/types';
 
 // Export models
 export * as CartDiscount from './cart-discount';
@@ -44,3 +45,5 @@ export * from './cart-discount-pattern-target';
 export * from './cart-discount-total-price-target';
 export * from './count-on-line-item-units';
 export * from './count-on-custom-line-item-units';
+
+export * from './cart-discount-target';
