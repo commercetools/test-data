@@ -1,5 +1,5 @@
 ---
-'@commercetools/composable-commerce-test-data': patch
+'@commercetools/composable-commerce-test-data': minor
 ---
 
 We're introducing a new test data model named `ItemState` which can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.

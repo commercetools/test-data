@@ -1,15 +1,48 @@
-import type { TState } from '../../../types';
-import withTypeLineItemState from './with-type-line-item-state';
+import { types, roles } from '../../../constants';
+import { TStateDraftGraphql, TStateDraftRest } from '../../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-type-line-item-state';
 
-describe('State with type of LineItemState and role of Return', () => {
-  it('should return a State containing a type of LineItemState and role of Return', () => {
-    const typeLineItemState = withTypeLineItemState().build<TState>();
+const validateModel = (model: TStateDraftRest | TStateDraftGraphql): void => {
+  expect(model).toMatchObject({
+    type: types.LineItemState,
+    roles: [roles.Return],
+  });
+};
 
-    expect(typeLineItemState).toEqual(
-      expect.objectContaining({
-        type: 'LineItemState',
-        roles: ['Return'],
-      })
-    );
+describe('StateDraft with type LineItemState presets', () => {
+  it('builds a REST model', () => {
+    const restModel = restPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = graphqlPreset().build();
+
+    validateModel(graphqlModel);
+  });
+});
+
+describe('StateDraft with type LineItemState compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const restModel = compatPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = compatPreset().buildRest();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = compatPreset().buildGraphql<TStateDraftGraphql>();
+
+    validateModel(graphqlModel);
   });
 });

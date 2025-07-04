@@ -1,7 +1,13 @@
-import withTypeLineItemState from './with-type-line-item-state';
+import * as withTypeLineItemState from './with-type-line-item-state';
 
-const presets = {
-  withTypeLineItemState,
+export const restPresets = {
+  withTypeLineItem: withTypeLineItemState.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withTypeLineItem: withTypeLineItemState.graphqlPreset,
+};
+
+export const compatPresets = {
+  withTypeLineItem: withTypeLineItemState.compatPreset,
+};
