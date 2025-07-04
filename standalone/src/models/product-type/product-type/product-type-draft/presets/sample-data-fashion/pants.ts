@@ -53,9 +53,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(true)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Product),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('fit')
@@ -77,9 +76,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(true)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Variant),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('color')
@@ -101,9 +99,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(true)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Product),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('length')
@@ -125,9 +122,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(false)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Variant),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>

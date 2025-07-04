@@ -27,6 +27,7 @@ describe(`with accessories preset`, () => {
               "en-US": "Type",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "type",
             "type": {
               "name": "enum",
@@ -63,6 +64,7 @@ describe(`with accessories preset`, () => {
               "en-US": "Engraving",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "engraving",
             "type": {
               "name": "text",

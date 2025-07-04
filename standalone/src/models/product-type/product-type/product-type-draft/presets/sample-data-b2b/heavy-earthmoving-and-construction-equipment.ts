@@ -13,6 +13,7 @@ import {
 import {
   attributeConstraints,
   inputHints,
+  levels,
 } from '../../../../attribute-definition/constants';
 import {
   AttributeEnumTypeDraft,
@@ -80,7 +81,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('iso45001')
@@ -102,7 +104,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('relatedProducts')
@@ -128,7 +131,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('mobility')
@@ -165,7 +169,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('model')
@@ -187,7 +192,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(true)
         .attributeConstraint(attributeConstraints.Unique)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>

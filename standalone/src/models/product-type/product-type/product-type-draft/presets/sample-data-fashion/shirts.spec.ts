@@ -30,6 +30,7 @@ describe(`with shirts preset`, () => {
               "en-US": "Size",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "size",
             "type": {
               "name": "enum",
@@ -66,6 +67,7 @@ describe(`with shirts preset`, () => {
               "en-US": "Color",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "color",
             "type": {
               "name": "enum",

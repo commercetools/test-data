@@ -30,6 +30,7 @@ describe(`with dresses preset`, () => {
               "en-US": "Length",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "length",
             "type": {
               "name": "enum",
@@ -66,6 +67,7 @@ describe(`with dresses preset`, () => {
               "en-US": "Color",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "color",
             "type": {
               "name": "enum",

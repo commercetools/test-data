@@ -12,7 +12,7 @@ import {
   QUOTE_STATE,
   INVENTORY_MODE,
   TAX_MODE,
-  TAX_ROUNDING_MODE,
+  ROUNDING_MODE,
   TAX_CALCULATION_MODE,
 } from './constants';
 import type { TQuote } from './types';
@@ -42,7 +42,7 @@ const generator = Generator<TQuote>({
     billingAddress: fake(() => Address.random()),
     inventoryMode: oneOf(...Object.values(INVENTORY_MODE)),
     taxMode: oneOf(...Object.values(TAX_MODE)),
-    taxRoundingMode: oneOf(...Object.values(TAX_ROUNDING_MODE)),
+    taxRoundingMode: oneOf(...Object.values(ROUNDING_MODE)),
     taxCalculationMode: oneOf(...Object.values(TAX_CALCULATION_MODE)),
     country: fake((f) => f.location.countryCode()),
     shippingInfo: null,
@@ -59,6 +59,7 @@ const generator = Generator<TQuote>({
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
+    priceRoundingMode: oneOf(...Object.values(ROUNDING_MODE)),
   },
 });
 

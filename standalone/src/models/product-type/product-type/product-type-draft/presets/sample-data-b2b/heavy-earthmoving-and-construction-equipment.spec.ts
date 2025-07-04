@@ -32,6 +32,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
               "nl-NL": "Capaciteit",
               "pt-PT": "Capacidade",
             },
+            "level": "Variant",
             "name": "capacity",
             "type": {
               "name": "number",
@@ -58,6 +59,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
               "nl-NL": "ISO 45001 gecertificeerd",
               "pt-PT": "Certificado ISO 45001",
             },
+            "level": "Product",
             "name": "iso45001",
             "type": {
               "name": "boolean",
@@ -84,6 +86,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
               "nl-NL": "Gerelateerde producten",
               "pt-PT": "Produtos relacionados",
             },
+            "level": "Variant",
             "name": "relatedProducts",
             "type": {
               "elementType": {
@@ -114,6 +117,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
               "nl-NL": "Mobiliteit",
               "pt-PT": "Mobilidade",
             },
+            "level": "Product",
             "name": "mobility",
             "type": {
               "name": "enum",
@@ -158,6 +162,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
               "nl-NL": "Model",
               "pt-PT": "Modelo",
             },
+            "level": "Variant",
             "name": "model",
             "type": {
               "name": "number",

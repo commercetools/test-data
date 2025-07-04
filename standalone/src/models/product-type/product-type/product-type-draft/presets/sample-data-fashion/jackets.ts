@@ -55,9 +55,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(false)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Variant),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('cotton')
@@ -69,9 +68,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
           AttributeDefinitionDraftRest.constants.attributeConstraints.None
         )
         .isSearchable(false)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Product),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>

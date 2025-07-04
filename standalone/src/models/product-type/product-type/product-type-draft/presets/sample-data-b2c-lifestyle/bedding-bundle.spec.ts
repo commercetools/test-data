@@ -30,6 +30,7 @@ describe(`with beddingBundle preset`, () => {
               "en-US": "product-description",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "product-description",
             "type": {
               "name": "ltext",
@@ -48,6 +49,7 @@ describe(`with beddingBundle preset`, () => {
               "en-US": "Product Spec",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "product-spec",
             "type": {
               "name": "ltext",
@@ -67,6 +69,7 @@ describe(`with beddingBundle preset`, () => {
               "en-US": "Products of this bundle",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "product-ref",
             "type": {
               "elementType": {

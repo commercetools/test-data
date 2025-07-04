@@ -31,6 +31,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
               "nl-NL": "Capaciteit",
               "pt-PT": "Capacidade",
             },
+            "level": "Product",
             "name": "capacity",
             "type": {
               "name": "number",
@@ -57,6 +58,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
               "nl-NL": "ISO 45001 gecertificeerd",
               "pt-PT": "Certificado ISO 45001",
             },
+            "level": "Variant",
             "name": "iso45001",
             "type": {
               "name": "boolean",
@@ -83,6 +85,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
               "nl-NL": "Gerelateerde producten",
               "pt-PT": "Produtos relacionados",
             },
+            "level": "Product",
             "name": "relatedProducts",
             "type": {
               "elementType": {
@@ -113,6 +116,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
               "nl-NL": "Mobiliteit",
               "pt-PT": "Mobilidade",
             },
+            "level": "Product",
             "name": "mobility",
             "type": {
               "name": "enum",
@@ -157,6 +161,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
               "nl-NL": "Kleur",
               "pt-PT": "Cor",
             },
+            "level": "Variant",
             "name": "color",
             "type": {
               "name": "lenum",
