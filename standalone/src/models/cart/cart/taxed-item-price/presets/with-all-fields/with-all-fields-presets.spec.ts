@@ -20,7 +20,7 @@ describe('with all fields', () => {
             name: null,
             rate: expect.any(Number),
             amount: expect.objectContaining({
-              currencyCode: expect.any(String),
+              currencyCode: 'EUR',
               centAmount: expect.any(Number),
             }),
           }),
@@ -34,16 +34,23 @@ describe('with all fields', () => {
     expect(graphqlExamplePreset).toEqual(
       expect.objectContaining({
         totalNet: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         totalGross: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         totalTax: expect.objectContaining({
+          currencyCode: 'EUR',
           __typename: 'Money',
         }),
         taxPortions: [
           expect.objectContaining({
+            amount: expect.objectContaining({
+              currencyCode: 'EUR',
+              __typename: 'Money',
+            }),
             __typename: 'TaxPortion',
           }),
         ],

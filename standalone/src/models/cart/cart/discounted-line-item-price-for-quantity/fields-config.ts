@@ -9,7 +9,7 @@ import type {
 } from './types';
 
 const commonFieldsConfig = {
-  quantity: fake((f) => f.number.int()),
+  quantity: fake((f) => f.number.int({ min: 1, max: 10 })),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPriceForQuantityRest> =

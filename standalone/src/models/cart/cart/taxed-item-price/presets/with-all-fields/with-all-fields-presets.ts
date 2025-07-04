@@ -4,16 +4,26 @@ import { TaxPortionGraphql, TaxPortionRest } from '../../../tax-portion';
 import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../../index';
 import type { TTaxedItemPriceGraphql, TTaxedItemPriceRest } from '../../types';
 
-export const restPreset = (): TBuilder<TTaxedItemPriceRest> =>
+export const restPreset = (
+  currencyCode = 'EUR'
+): TBuilder<TTaxedItemPriceRest> =>
   TaxedItemPriceRest.random()
-    .totalNet(Money.presets.withCurrency('EUR'))
-    .totalGross(Money.presets.withCurrency('EUR'))
-    .totalTax(Money.presets.withCurrency('EUR'))
-    .taxPortions([TaxPortionRest.random()]);
+    .totalNet(Money.presets.withCurrency(currencyCode))
+    .totalGross(Money.presets.withCurrency(currencyCode))
+    .totalTax(Money.presets.withCurrency(currencyCode))
+    .taxPortions([
+      TaxPortionRest.random().amount(Money.presets.withCurrency(currencyCode)),
+    ]);
 
-export const graphqlPreset = (): TBuilder<TTaxedItemPriceGraphql> =>
+export const graphqlPreset = (
+  currencyCode = 'EUR'
+): TBuilder<TTaxedItemPriceGraphql> =>
   TaxedItemPriceGraphql.random()
-    .totalNet(Money.presets.withCurrency('EUR'))
-    .totalGross(Money.presets.withCurrency('EUR'))
-    .totalTax(Money.presets.withCurrency('EUR'))
-    .taxPortions([TaxPortionGraphql.random()]);
+    .totalNet(Money.presets.withCurrency(currencyCode))
+    .totalGross(Money.presets.withCurrency(currencyCode))
+    .totalTax(Money.presets.withCurrency(currencyCode))
+    .taxPortions([
+      TaxPortionGraphql.random().amount(
+        Money.presets.withCurrency(currencyCode)
+      ),
+    ]);

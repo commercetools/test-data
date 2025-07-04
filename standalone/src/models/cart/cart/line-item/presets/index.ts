@@ -1,3 +1,9 @@
-const presets = {};
+import * as withAllFieldsPreset from './with-all-fields/with-all-fields';
 
-export default presets;
+export const restPresets = {
+  withAllFields: withAllFieldsPreset.restPreset,
+};
+
+export const graphqlPresets = {
+  withAllFields: withAllFieldsPreset.graphqlPreset,
+};
