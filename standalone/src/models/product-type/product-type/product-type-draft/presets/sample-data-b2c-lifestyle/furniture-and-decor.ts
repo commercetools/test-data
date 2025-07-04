@@ -3,6 +3,7 @@ import { LocalizedStringDraft } from '../../../../../commons';
 import {
   attributeConstraints,
   inputHints,
+  levels,
 } from '../../../../attribute-definition/constants';
 import {
   AttributeDefinitionDraft,
@@ -68,7 +69,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint(inputHints.MultiLine),
+        .inputHint(inputHints.MultiLine)
+        .level(levels.Product),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -85,7 +87,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .type(AttributeBooleanTypeDraftRest.random())
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -103,7 +106,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -128,7 +132,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -291,7 +296,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -454,7 +460,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -477,7 +484,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -504,7 +512,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -533,7 +542,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Product),
 
       AttributeDefinitionDraftRest.presets
         .empty()
@@ -562,7 +572,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint(inputHints.SingleLine),
+        .inputHint(inputHints.SingleLine)
+        .level(levels.Variant),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>

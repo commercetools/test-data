@@ -53,9 +53,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
             .CombinationUnique
         )
         .isSearchable(false)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Product),
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('color')
@@ -81,9 +80,8 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
             .CombinationUnique
         )
         .isSearchable(false)
-        .inputHint(
-          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
-        ),
+        .inputHint(AttributeDefinitionDraftRest.constants.inputHints.SingleLine)
+        .level(AttributeDefinitionDraftRest.constants.levels.Variant),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>

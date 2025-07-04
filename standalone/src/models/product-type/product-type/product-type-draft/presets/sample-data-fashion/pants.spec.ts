@@ -30,6 +30,7 @@ describe(`with pants preset`, () => {
               "en-US": "Size",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "size",
             "type": {
               "name": "enum",
@@ -66,6 +67,7 @@ describe(`with pants preset`, () => {
               "en-US": "Fit",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "fit",
             "type": {
               "name": "enum",
@@ -102,6 +104,7 @@ describe(`with pants preset`, () => {
               "en-US": "Color",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "color",
             "type": {
               "name": "enum",
@@ -138,6 +141,7 @@ describe(`with pants preset`, () => {
               "en-US": "Length",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "length",
             "type": {
               "name": "enum",

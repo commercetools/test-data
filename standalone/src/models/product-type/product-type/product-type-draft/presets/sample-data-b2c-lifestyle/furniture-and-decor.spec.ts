@@ -32,6 +32,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Product Specifications",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "productspec",
             "type": {
               "name": "ltext",
@@ -51,6 +52,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "New Arrival",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "new-arrival",
             "type": {
               "name": "boolean",
@@ -75,6 +77,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Size",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "size",
             "type": {
               "name": "ltext",
@@ -99,6 +102,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Product Description",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "product-description",
             "type": {
               "name": "ltext",
@@ -125,6 +129,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Search Color",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "search-color",
             "type": {
               "name": "lenum",
@@ -318,6 +323,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Search Finish",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "search-finish",
             "type": {
               "name": "lenum",
@@ -511,6 +517,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Color Label",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "color-label",
             "type": {
               "name": "ltext",
@@ -537,6 +544,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Finish Label",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "finish-label",
             "type": {
               "name": "ltext",
@@ -563,6 +571,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Color Code",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "color-code",
             "type": {
               "name": "text",
@@ -589,6 +598,7 @@ describe(`with furnitureAndDecor preset`, () => {
               "en-US": "Finish Color Code",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "finish-code",
             "type": {
               "name": "text",

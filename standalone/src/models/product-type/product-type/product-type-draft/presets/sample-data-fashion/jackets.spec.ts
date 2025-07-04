@@ -30,6 +30,7 @@ describe(`with jackets preset`, () => {
               "en-US": "sleeve_length",
               "fr": undefined,
             },
+            "level": "Variant",
             "name": "sleeve_length",
             "type": {
               "name": "enum",
@@ -66,6 +67,7 @@ describe(`with jackets preset`, () => {
               "en-US": "cotton",
               "fr": undefined,
             },
+            "level": "Product",
             "name": "cotton",
             "type": {
               "name": "boolean",
