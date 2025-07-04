@@ -1,21 +1,25 @@
 import { TBuilder } from '@/core';
 import type { TTaxRateDraftGraphql, TTaxRateDraftRest } from '../../../types';
-import * as withAllFieldsPresets from '../with-all-fields/with-all-fields';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../../builders';
 
 const populatePreset = <
   TModel extends TTaxRateDraftGraphql | TTaxRateDraftRest,
 >(
   builder: TBuilder<TModel>
 ) => {
-  return builder.country('US').includedInPrice(true).state(null);
+  return builder.amount(undefined).state(undefined).subRates(undefined);
 };
 
 export const restPreset = (): TBuilder<TTaxRateDraftRest> =>
-  populatePreset(withAllFieldsPresets.restPreset());
+  populatePreset(RestModelBuilder());
 
 export const graphqlPreset = (): TBuilder<TTaxRateDraftGraphql> =>
-  populatePreset(withAllFieldsPresets.graphqlPreset());
+  populatePreset(GraphqlModelBuilder());
 
 export const compatPreset = (): TBuilder<
   TTaxRateDraftRest | TTaxRateDraftGraphql
-> => populatePreset(withAllFieldsPresets.compatPreset());
+> => populatePreset(CompatModelBuilder());

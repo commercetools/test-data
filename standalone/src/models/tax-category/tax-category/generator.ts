@@ -1,7 +1,7 @@
 import { sequence, fake, Generator } from '@/core';
 import { ClientLogging } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import * as TaxRate from '../tax-rate';
+import { TaxRate } from '../tax-rate';
 import type { TTaxCategory } from './types';
 
 //https://docs.commercetools.com/api/projects/taxCategories#taxcategory

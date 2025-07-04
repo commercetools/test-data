@@ -1,5 +1,24 @@
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './tax-rate-draft/presets';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as modelPresets from './presets';
 
-export * from './types';
+export const TaxRateRest = {
+  random: RestModelBuilder,
+  presets: modelPresets.restPresets,
+};
+
+export const TaxRateGraphql = {
+  random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `TaxRateRest` or `TaxRateGraphql` exported models instead of `TaxRate`.
+ */
+export const TaxRate = {
+  random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
+};

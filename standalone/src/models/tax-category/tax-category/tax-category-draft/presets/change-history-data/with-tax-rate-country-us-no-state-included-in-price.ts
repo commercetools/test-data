@@ -1,4 +1,4 @@
-import * as TaxRateDraft from '../../../../tax-rate/tax-rate-draft';
+import { TaxRateDraft } from '../../../../tax-rate/tax-rate-draft';
 import TaxCategoryDraft from '../../builder';
 
 const withTaxRateCountryUsNoStateIncludedInPrice = () =>

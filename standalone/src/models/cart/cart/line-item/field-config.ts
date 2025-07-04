@@ -13,7 +13,7 @@ import {
   ProductVariantGraphql,
 } from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
-import { TaxRate } from '@/models/tax-category';
+import { TaxRateGraphql, TaxRateRest } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';
 import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
 import { TLineItemRest, TLineItemGraphql } from './types';
@@ -35,7 +35,6 @@ const commonFieldsConfig = {
   taxedPrice: null,
   taxedPricePortions: [],
   state: [],
-  taxRate: fake(() => TaxRate.random()),
   perMethodTaxRate: [],
   priceMode: oneOf(...Object.values(priceMode)),
   lineItemMode: oneOf(...Object.values(lineItemMode)),
@@ -53,6 +52,7 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
     productSlug: fake(() => LocalizedString.presets.ofSlugs()),
     productType: fake(() => ReferenceRest.presets.productTypeReference()),
     variant: fake(() => ProductVariantRest.random()),
+    taxRate: fake(() => TaxRateRest.presets.withAllFields()),
     totalPrice: fake(() => CentPrecisionMoney.random()),
     supplyChannel: fake(() => ReferenceRest.presets.channelReference()),
     distributionChannel: fake(() => ReferenceRest.presets.channelReference()),
@@ -74,8 +74,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     productSlugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
     productTypeRef: null,
     supplyChannelRef: null,
-    __typename: 'LineItem',
+    taxRate: fake(() => TaxRateGraphql.presets.withAllFields()),
     recurrenceInfo: null,
+    __typename: 'LineItem',
   },
   postBuild: (model) => {
     const name = model.nameAllLocales
