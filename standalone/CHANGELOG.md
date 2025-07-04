@@ -1,5 +1,122 @@
 # @commercetools/composable-commerce-test-data
 
+## 12.2.0
+
+### Minor Changes
+
+- [#906](https://github.com/commercetools/test-data/pull/906) [`edee5c4`](https://github.com/commercetools/test-data/commit/edee5c4845eaad6e7387625aad42bab8bb377596) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - We've included two new presets to the `State` model:
+
+  - `packed`
+  - `shipped`
+
+  We've also took the opportunity to migrate both the `State` and `StateDraft` models to the new pattern.
+
+  Here are examples on how the new presets can be consumed:
+
+  ```ts
+  import {
+    StateGraphql,
+    StateRest,
+  } from '@commercetools/composable-commerce-test-data/state';
+
+  const packedGraphqlModel = StateGraphql.presets.packed();
+  const shippedRestModel = StateRest.presets.shipped();
+  ```
+
+- [#907](https://github.com/commercetools/test-data/pull/907) [`a9cd3ef`](https://github.com/commercetools/test-data/commit/a9cd3efbb9a6102e176141a40d0b7ecb85e38238) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - ### Additions
+
+  We're introducing some presets in `Cart` related test data models which should help consumers building objects.
+
+  #### LineItem
+
+  New `withAllFields` preset which populates all the model properties.
+  Example:
+
+  ```ts
+  import { LineItemGraphql } from '@commercetools/composable-commerce-test-data/cart';
+
+  const fullModel = LineItemGraphql.presets.withAllFields();
+  ```
+
+  #### TaxedPrice
+
+  New `withCurrency` preset which populates the `totalNet`, `totalGross` and `taxPortions` properties with `Money` objects using a specific currency code. `EUR` is used by default.
+  Example:
+
+  ```ts
+  import { TaxedItemPrice } from '@commercetools/composable-commerce-test-data/cart';
+
+  const fullModel = TaxedItemPrice.presets.withAllFields();
+  ```
+
+  ### Updates
+
+  #### TaxedItemPrice
+
+  We're updating the existing `withAllFields` preset in the `TaxedItemPrice` test data model.
+  This preset was populating the `totalNet`, `totalGross`, `totalTax` and `taxPortions` with `Money` objects using always `EUR` as the `currencyCode`.
+  Now the preset allows consumers to provide a different currency code using `EUR` as its default.
+
+  ### DiscountedLineItemPriceForQuantity
+
+  We're adjusting the way the `quantity` property is populated. This property represents "_Number of Line Items or Custom Line Items in the Cart_" (https://docs.commercetools.com/api/projects/carts#discountedlineitempriceforquantity) but we were using any integer value which was yielding values like 12342423, which does not make sense.
+  Now we populate this property by default with a number between 1 and 10.
+
+- [#902](https://github.com/commercetools/test-data/pull/902) [`e60b094`](https://github.com/commercetools/test-data/commit/e60b0944ed4c0eb12e4ac75409bc8806723f14c4) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new test data model named `ItemState` which can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.
+
+  This is how it can be used:
+
+  ```ts
+  import {
+    ItemStateGraphql,
+    ItemStateRest,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const graphqlModel = ItemStateGraphql.random().build();
+  const restModel = ItemStateRest.random().build();
+  ```
+
+- [#903](https://github.com/commercetools/test-data/pull/903) [`1f51e6d`](https://github.com/commercetools/test-data/commit/1f51e6dcee338f90726c8f4c1a7582756865ee4f) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new test data model named `CartDiscountTarget` which can be consumed from the `@commercetools/composable-commerce-test-data/cart-discount` entry point.
+
+  This is how it can be used:
+
+  ```ts
+  import {
+    CartDiscountTargetGraphql,
+    CartDiscountTargetRest,
+  } from '@commercetools/composable-commerce-test-data/cart-discount';
+
+  const graphqlModel = CartDiscountTargetGraphql.random()
+    .type(CartDiscountTargetGraphql.constants.targetTypes.lineItems)
+    .build();
+
+  const restModel = CartDiscountTargetRest.random()
+    .type(CartDiscountTargetGraphql.constants.targetTypes.shipping)
+    .build();
+  ```
+
+- [#904](https://github.com/commercetools/test-data/pull/904) [`1730441`](https://github.com/commercetools/test-data/commit/1730441a73c14d652c255b4dbabb912a19150c4f) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new test data model named `SyncInfo` which can be consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  [Here](https://docs.commercetools.com/api/projects/orders#syncinfo) are the official docs for this resource.
+
+  This is how it can be used:
+
+  ```ts
+  import {
+    SyncInfoGraphql,
+    SyncInfoRest,
+  } from '@commercetools/composable-commerce-test-data/order';
+
+  const graphqlModel = SyncInfoGraphql.random().build();
+  const restModel = SyncInfoRest.random().build();
+  ```
+
+### Patch Changes
+
+- [#905](https://github.com/commercetools/test-data/pull/905) [`d111985`](https://github.com/commercetools/test-data/commit/d111985c9679c9a9a224b99b335676d7e8fbdf45) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `TaxRate` model to the new implementation patterns.
+
+  This change does not have any impact on consumers.
+
 ## 12.1.0
 
 ### Minor Changes
