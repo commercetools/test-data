@@ -25,6 +25,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
     masterVariant: fake(() => ProductVariantRest.random()),
     variants: fake(() => [ProductVariantRest.random()]),
     searchKeywords: fake(() => SearchKeywordsRest.random()),
+    attributes: [],
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {

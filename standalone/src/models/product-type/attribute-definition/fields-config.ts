@@ -1,4 +1,4 @@
-import { fake, TModelFieldsConfig } from '@/core';
+import { fake, oneOf, TModelFieldsConfig } from '@/core';
 import { LocalizedString } from '@/models/commons';
 import {
   AttributeBooleanTypeGraphql,
@@ -39,6 +39,7 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDefinitionRest> = {
     ),
     label: fake(() => LocalizedString.random()),
     inputTip: fake(() => LocalizedString.random()),
+    level: oneOf(...Object.values(levels)),
   },
 };
 
