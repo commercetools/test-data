@@ -22,7 +22,7 @@ import {
   shippingMode,
   taxCalculationMode,
   taxMode,
-  taxRoundingMode,
+  roundingMode,
 } from './constants';
 import { TOrderRest, TOrderGraphql } from './types';
 
@@ -45,7 +45,7 @@ const commonFieldsConfig = {
   taxedShippingPrice: null,
   discountOnTotalPrice: null,
   taxMode: oneOf(...Object.values(taxMode)),
-  taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
+  taxRoundingMode: oneOf(...Object.values(roundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   billingAddress: fake(() => Address.random()),
@@ -89,6 +89,7 @@ export const restFieldsConfig: TModelFieldsConfig<TOrderRest> = {
     customerGroup: fake(() => ReferenceRest.presets.customerGroupReference()),
     lineItems: fake(() => [LineItemRest.random()]),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
+    priceRoundingMode: oneOf(...Object.values(roundingMode)),
   },
 };
 

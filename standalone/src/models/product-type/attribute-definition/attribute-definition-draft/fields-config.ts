@@ -1,4 +1,4 @@
-import { fake, TModelFieldsConfig } from '@/core';
+import { fake, oneOf, TModelFieldsConfig } from '@/core';
 import { LocalizedString, LocalizedStringDraft } from '@/models/commons';
 import {
   AttributeBooleanTypeDraftGraphql,
@@ -52,6 +52,7 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftRest>
           AttributeEnumTypeDraftRest.random(),
         ])
       ),
+      level: oneOf(...Object.values(levels)),
     },
   };
 

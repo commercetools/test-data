@@ -41,6 +41,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductProjectionRest> = {
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
+    attributes: [],
   },
 };
 

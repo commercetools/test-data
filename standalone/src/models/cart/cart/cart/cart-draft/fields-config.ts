@@ -7,7 +7,7 @@ import {
   shippingMode,
   taxCalculationMode,
   taxMode,
-  taxRoundingMode,
+  roundingMode,
 } from '../constants';
 import { TCartDraftGraphql, TCartDraftRest } from '../types';
 
@@ -23,7 +23,7 @@ const commonFieldsConfig = {
   country: fake((f) => f.location.countryCode()),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   taxMode: oneOf(...Object.values(taxMode)),
-  taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
+  taxRoundingMode: oneOf(...Object.values(roundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
   lineItems: fake(() => [LineItemDraft.random()]),
   customLineItems: [],
@@ -46,6 +46,7 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TCartDraftRest> = {
   fields: {
     ...commonFieldsConfig,
+    priceRoundingMode: oneOf(...Object.values(roundingMode)),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TCartDraftGraphql> = {
