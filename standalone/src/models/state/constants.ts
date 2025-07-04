@@ -1,17 +1,5 @@
-const roles = {
-  ReviewIncludedInStatistics: 'ReviewIncludedInStatistics',
-  Return: 'Return',
-} as const;
+import { TCtpStateRole, TCtpStateType } from '@/graphql-types';
 
-const type = {
-  OrderState: 'OrderState',
-  LineItemState: 'LineItemState',
-  ProductState: 'ProductState',
-  ReviewState: 'ReviewState',
-  PaymentState: 'PaymentState',
-  QuoteRequestState: 'QuoteRequestState',
-  StagedQuoteState: 'StagedQuoteState',
-  QuoteState: 'QuoteState',
-} as const;
+export const roles = TCtpStateRole;
 
-export { roles, type };
+export const types = TCtpStateType;
