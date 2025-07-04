@@ -1,6 +1,10 @@
 import type { TBuilder } from '@/core';
 import { ReferenceRest } from '@/models/commons';
-import { ProductType } from '@/models/product-type';
+import {
+  ProductType,
+  ProductTypeGraphql,
+  ProductTypeRest,
+} from '@/models/product-type';
 import {
   ProductCatalogDataRest,
   ProductCatalogDataGraphql,
@@ -16,7 +20,7 @@ export const restPreset = (): TBuilder<TProductRest> => {
     .productType(
       ReferenceRest.presets
         .productTypeReference()
-        .obj(ProductType.presets.milk())
+        .obj(ProductTypeRest.presets.milk())
     );
 };
 
@@ -26,7 +30,7 @@ export const graphqlPreset = (): TBuilder<TProductGraphql> => {
     .masterData(
       ProductCatalogDataGraphql.presets.happyCowMilkProductCatalogData()
     )
-    .productType(ProductType.presets.milk());
+    .productType(ProductTypeGraphql.presets.milk());
 };
 
 export const compatPreset = (): TBuilder<TProduct> => {

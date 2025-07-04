@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@/core/test-utils';
 import { Category } from '@/models/category';
 import { LocalizedString } from '@/models/commons';
 import { ProductVariant } from '@/models/product/product';
-import { ProductType } from '@/models/product-type';
+import { ProductTypeGraphql } from '@/models/product-type';
 import { State } from '@/models/state';
 import { TaxCategory } from '@/models/tax-category';
 import { TProductProjectionGraphql, TProductProjectionRest } from './types';
@@ -175,7 +175,7 @@ describe('builder', () => {
         .id('happy-cow-milk-id')
         .key('happy-cow-milk-key')
         .metaKeywordsAllLocales(LocalizedString.presets.empty().en('happy'))
-        .productType(ProductType.presets.milk().id('product-type-id'))
+        .productType(ProductTypeGraphql.presets.milk().id('product-type-id'))
         .reviewRatingStatistics({
           averageRating: 3.12345,
           highestRating: 4.9,
