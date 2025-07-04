@@ -23,3 +23,6 @@ export * from './order/types';
 export * from './order';
 export * from './order/order-from-cart-draft';
 export * from './order/order-from-quote-draft';
+
+export * from './sync-info/types';
+export * from './sync-info';
