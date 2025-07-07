@@ -1,7 +1,7 @@
 import { TBuilder } from '@/core';
 import { LocalizedString, Reference } from '@/models/commons';
 import { ProductVariant } from '@/models/product/product';
-import { ProductType } from '@/models/product-type';
+import { ProductTypeGraphql, ProductTypeRest } from '@/models/product-type';
 import { RestModelBuilder, GraphqlModelBuilder } from '../builders';
 import { TProductProjectionGraphql, TProductProjectionRest } from '../types';
 
@@ -37,7 +37,9 @@ export const restPreset = (): TBuilder<TProductProjectionRest> => {
     .metaTitle(productName)
     .metaDescription(productDescription)
     .productType(
-      Reference.presets.productTypeReference().obj(ProductType.presets.milk())
+      Reference.presets
+        .productTypeReference()
+        .obj(ProductTypeRest.presets.milk())
     );
 };
 
@@ -48,5 +50,5 @@ export const graphqlPreset = (): TBuilder<TProductProjectionGraphql> => {
     .descriptionAllLocales(productDescription)
     .metaTitleAllLocales(productName)
     .metaDescriptionAllLocales(productDescription)
-    .productType(ProductType.presets.milk());
+    .productType(ProductTypeGraphql.presets.milk());
 };
