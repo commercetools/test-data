@@ -164,7 +164,7 @@ importers:
         version: 7.26.0
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.26.0
+        version: 7.26.10
       '@commercetools-frontend/application-config':
         specifier: ^24.0.0
         version: 24.2.1(@types/node@22.13.14)(typescript@5.8.3)
@@ -826,12 +826,12 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/runtime-corejs3@7.26.0':
-    resolution: {integrity: sha512-YXHu5lN8kJCb1LOb9PgV6pvak43X2h4HvRApcN5SdWeaItQOzfn1hgP6jasD6KWQyJDBxrVmA9o9OivlnNJK/w==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/runtime-corejs3@7.26.10':
     resolution: {integrity: sha512-uITFQYO68pMEYR46AHgQoyBg7KPPJDAbGn4jUTIRgCFJIp88MIBUianVOplhZDEec07bp9zIyr4Kp0FCyQzmWg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime-corejs3@7.28.0':
+    resolution: {integrity: sha512-nlIXnSqLcBij8K8TtkxbBJgfzfvi75V1pAKSM7dUXejGw12vJAqez74jZrHTsJ3Z+Aczc5Q/6JgNjKRMsVU44g==}
     engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.26.0':
@@ -2478,8 +2478,8 @@ packages:
   core-js-compat@3.41.0:
     resolution: {integrity: sha512-RFsU9LySVue9RTwdDVX/T0e2Y6jRYWXERKElIjpuEOEnxaXffI0X7RUwVzfYLfzuLXSNJDYoRYUAmRUcyln20A==}
 
-  core-js-pure@3.41.0:
-    resolution: {integrity: sha512-71Gzp96T9YPk63aUvE5Q5qP+DryB4ZloUZPSOebGM88VNw8VNfvdA7z6kGA8iGOTEzAomsRidp4jXSmUIJsL+Q==}
+  core-js-pure@3.43.0:
+    resolution: {integrity: sha512-i/AgxU2+A+BbJdMxh3v7/vxi2SbFqxiFmg6VsDwYB4jkucrd1BZNA9a9gphC0fYMG5IBSgQcbQnk865VCLe7xA==}
 
   core-js@3.41.0:
     resolution: {integrity: sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==}
@@ -6236,15 +6236,14 @@ snapshots:
       pirates: 4.0.7
       source-map-support: 0.5.21
 
-  '@babel/runtime-corejs3@7.26.0':
-    dependencies:
-      core-js-pure: 3.41.0
-      regenerator-runtime: 0.14.1
-
   '@babel/runtime-corejs3@7.26.10':
     dependencies:
-      core-js-pure: 3.41.0
+      core-js-pure: 3.43.0
       regenerator-runtime: 0.14.1
+
+  '@babel/runtime-corejs3@7.28.0':
+    dependencies:
+      core-js-pure: 3.43.0
 
   '@babel/runtime@7.26.0':
     dependencies:
@@ -6479,7 +6478,7 @@ snapshots:
       '@babel/preset-react': 7.26.3(@babel/core@7.26.10)
       '@babel/preset-typescript': 7.27.0(@babel/core@7.26.10)
       '@babel/runtime': 7.26.10
-      '@babel/runtime-corejs3': 7.26.10
+      '@babel/runtime-corejs3': 7.28.0
       '@emotion/babel-plugin': 11.13.5
       '@emotion/babel-preset-css-prop': 11.12.0(@babel/core@7.26.10)
       babel-plugin-dev-expression: 0.2.3(@babel/core@7.26.10)
@@ -8608,7 +8607,7 @@ snapshots:
     dependencies:
       browserslist: 4.24.4
 
-  core-js-pure@3.41.0: {}
+  core-js-pure@3.43.0: {}
 
   core-js@3.41.0: {}
 
