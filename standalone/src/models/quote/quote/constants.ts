@@ -14,7 +14,7 @@ export const TAX_MODE = {
   Disabled: 'Disabled',
 } as const;
 
-export const ROUNDING_MODE = {
+export const TAX_ROUNDING_MODE = {
   HalfEven: 'HalfEven',
   HalfUp: 'HalfUp',
   HalfDown: 'HalfDown',

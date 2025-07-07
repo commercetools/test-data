@@ -20,7 +20,7 @@ export const shippingMode = TCtpShippingMode;
 
 export const taxMode = TCtpTaxMode;
 
-export const roundingMode = TCtpRoundingMode;
+export const taxRoundingMode = TCtpRoundingMode;
 
 export const taxCalculationMode = TCtpTaxCalculationMode;
 
