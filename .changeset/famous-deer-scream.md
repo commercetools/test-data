@@ -21,7 +21,7 @@ import {
   ProjectPermission,
 } from '@commercetools/composable-commerce-test-data/oauth-client';
 
-const aouthClientModel = OAuthClientGraphql.random().permissions([
+const oAuthClientModel = OAuthClientGraphql.random().permissions([
   ProjectPermissionGraphql.random().projectKey('my-project-key'),
 ]);
 
