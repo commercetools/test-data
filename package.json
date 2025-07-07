@@ -63,7 +63,7 @@
     "jest-watch-typeahead": "2.2.2",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
-    "prettier-jest": "npm:prettier@^2",
+    "prettier-jest": "npm:prettier@^3.0.0",
     "tsc-files": "^1.1.3",
     "typescript": "5.8.3"
   },
