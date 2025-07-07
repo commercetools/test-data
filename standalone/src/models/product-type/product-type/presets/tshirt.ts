@@ -19,8 +19,8 @@ export const restPreset = (): TBuilder<TProductTypeRest> =>
   RestModelBuilder()
     .name('T-shirt Product Type')
     .attributes([
-      AttributeDefinitionRest.presets.countryOfOrigin().buildRest(),
-      AttributeDefinitionRest.presets.size().buildRest(),
+      AttributeDefinitionRest.presets.countryOfOrigin().build(),
+      AttributeDefinitionRest.presets.size().build(),
     ]);
 
 export const graphqlPreset = (): TBuilder<TProductTypeGraphql> =>
@@ -28,8 +28,8 @@ export const graphqlPreset = (): TBuilder<TProductTypeGraphql> =>
     .name('T-shirt Product Type')
     .attributeDefinitions({
       results: [
-        AttributeDefinitionGraphql.presets.countryOfOrigin().buildGraphql(),
-        AttributeDefinitionGraphql.presets.size().buildGraphql(),
+        AttributeDefinitionGraphql.presets.countryOfOrigin().build(),
+        AttributeDefinitionGraphql.presets.size().build(),
       ],
       total: 1,
       offset: 0,

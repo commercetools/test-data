@@ -2,17 +2,11 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-### Additions
+We're introducing a new preset in `ProductType` test data model called `tshirt` which should help consumers building objects.
 
-We're introducing a new preset in `Product Type` test data model which should help consumers building objects.
-
-#### LineItem
-
-New `tshirt` preset which populates all the model properties.
-Example:
+Here's an example on how it could be used:
 
 ```ts
-import { ProductTypeGraphQl } from '@commercetools/composable-commerce-test-data/product-type';
+import { ProductTypeGraphql } from '@commercetools/composable-commerce-test-data/product-type';
 
-const tshirt = ProductType.presets.tshirt().buildGraphql();
-```
+const tshirt = ProductTypeGraphql.presets.tshirt().build();
