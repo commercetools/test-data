@@ -1,5 +1,54 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.0.0
+
+### Major Changes
+
+- [#913](https://github.com/commercetools/test-data/pull/913) [`2a9426b`](https://github.com/commercetools/test-data/commit/2a9426b49a903cafee1e050bdb20620e62ac01e6) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're removing the **sample data presets** from the `ProductType` model.
+  There are files we missed when we tried to remove all the sample data presets from this repository back in [this release](https://github.com/commercetools/test-data/releases/tag/%40commercetools%2Fcomposable-commerce-test-data%4012.0.0).
+
+  Remember we now how a new package (`@commercetools/composable-commerce-test-data-sample-presets`) where you can find them should you need them.
+
+### Minor Changes
+
+- [#912](https://github.com/commercetools/test-data/pull/912) [`41fd2a1`](https://github.com/commercetools/test-data/commit/41fd2a1418d83999bd2f6d1c9f0a781962baba6d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Three new models have been added related to MC Gateway `OAuthClient` entity:
+
+  - `OAuthClient`
+  - `OAuthScope`
+  - `ProjectPermission`
+
+  They all can be consumed from this new entry point: `@commercetools/composable-commerce-test-data/oauth-client`.
+
+  They only have a GraphQL representation as the MC Gateway only exposes a GraphQL API.
+
+  Here's an example of how to use them:
+
+  ```ts
+  import {
+    OAuthClientGraphql,
+    OAuthScopeGraphql,
+    ProjectPermission,
+  } from '@commercetools/composable-commerce-test-data/oauth-client';
+
+  const oAuthClientModel = OAuthClientGraphql.random().permissions([
+    ProjectPermissionGraphql.random().projectKey('my-project-key'),
+  ]);
+
+  const oAuthScopeModel = OAuthScopeGraphql.random().name(
+    OAuthScopeGraphql.constants.presets.viewCategories
+  );
+  ```
+
+- [#911](https://github.com/commercetools/test-data/pull/911) [`99a4e6c`](https://github.com/commercetools/test-data/commit/99a4e6c681c45d22879422954b1ab262dabf8a29) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - We're introducing a new preset in `ProductType` test data model called `tshirt` which should help consumers building objects.
+
+  Here's an example on how it could be used:
+
+  ```ts
+  import { ProductTypeGraphql } from '@commercetools/composable-commerce-test-data/product-type';
+
+  const tshirt = ProductTypeGraphql.presets.tshirt().build();
+  ```
+
 ## 12.2.0
 
 ### Minor Changes
