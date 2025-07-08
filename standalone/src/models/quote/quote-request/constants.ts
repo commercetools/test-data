@@ -29,3 +29,9 @@ export const INVENTORY_MODE = {
   ReserveOnOrder: 'ReserveOnOrder',
   None: 'None',
 } as const;
+
+export const PRICE_ROUNDING_MODE = {
+  HalfEven: 'HalfEven',
+  HalfUp: 'HalfUp',
+  HalfDown: 'HalfDown',
+} as const;

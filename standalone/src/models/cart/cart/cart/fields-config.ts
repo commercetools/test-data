@@ -16,6 +16,7 @@ import {
   cartState,
   inventoryMode,
   origin,
+  priceRoundingMode,
   shippingMode,
   taxCalculationMode,
   taxMode,
@@ -75,7 +76,7 @@ export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
     businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
     store: fake(() => KeyReference.random().typeId('store')),
     refusedGifts: fake(() => [Reference.random().typeId('cart-discount')]),
-    priceRoundingMode: oneOf(...Object.values(taxRoundingMode)),
+    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 

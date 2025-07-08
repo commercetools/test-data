@@ -17,6 +17,7 @@ import {
   TAX_MODE,
   TAX_ROUNDING_MODE,
   TAX_CALCULATION_MODE,
+  PRICE_ROUNDING_MODE,
 } from './constants';
 import type { TQuoteRequest } from './types';
 
@@ -59,7 +60,7 @@ const generator = Generator<TQuoteRequest>({
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
-    priceRoundingMode: oneOf(...Object.values(TAX_ROUNDING_MODE)),
+    priceRoundingMode: oneOf(...Object.values(PRICE_ROUNDING_MODE)),
   },
 });
 

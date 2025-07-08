@@ -27,3 +27,5 @@ export const taxCalculationMode = TCtpTaxCalculationMode;
 export const inventoryMode = TCtpInventoryMode;
 
 export const orderOrigin = TCtpCartOrigin;
+
+export const priceRoundingMode = TCtpRoundingMode;
