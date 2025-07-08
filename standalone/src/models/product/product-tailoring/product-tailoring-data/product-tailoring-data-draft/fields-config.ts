@@ -32,6 +32,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataDraftG
     fields: {
       ...commonFieldsConfig,
       product: fake(() => ReferenceRest.presets.productReference()),
-      attributes: [],
+      attributes: null,
     },
   };
