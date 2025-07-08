@@ -52,7 +52,7 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftRest>
           AttributeEnumTypeDraftRest.random(),
         ])
       ),
-      level: oneOf(...Object.values(levels)),
+      level: levels.Variant,
     },
   };
 
