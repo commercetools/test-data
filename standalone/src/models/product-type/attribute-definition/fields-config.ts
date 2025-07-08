@@ -1,4 +1,4 @@
-import { fake, oneOf, TModelFieldsConfig } from '@/core';
+import { fake, TModelFieldsConfig } from '@/core';
 import { LocalizedString } from '@/models/commons';
 import {
   AttributeBooleanTypeGraphql,
