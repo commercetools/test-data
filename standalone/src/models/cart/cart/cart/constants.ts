@@ -51,6 +51,12 @@ export const priceMode = {
   ExternalTotal: 'ExternalTotal',
 } as const;
 
+export const priceRoundingMode = {
+  HalfEven: 'HalfEven',
+  HalfUp: 'HalfUp',
+  HalfDown: 'HalfDown',
+} as const;
+
 export const lineItemMode = {
   Standard: 'Standard',
   GiftLineItem: 'GiftLineItem',

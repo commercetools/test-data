@@ -4,6 +4,7 @@ import { LineItemDraft } from '../../index';
 import {
   inventoryMode,
   origin,
+  priceRoundingMode,
   shippingMode,
   taxCalculationMode,
   taxMode,
@@ -46,6 +47,7 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TCartDraftRest> = {
   fields: {
     ...commonFieldsConfig,
+    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TCartDraftGraphql> = {

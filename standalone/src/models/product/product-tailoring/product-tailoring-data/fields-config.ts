@@ -19,6 +19,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductTailoringDataRest> = {
   fields: {
     ...commonFieldsConfig,
     name: fake(() => LocalizedString.random()),
+    attributes: [],
   },
 };
 

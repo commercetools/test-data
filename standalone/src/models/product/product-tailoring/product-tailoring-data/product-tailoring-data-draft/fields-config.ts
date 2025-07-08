@@ -23,6 +23,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductTailoringDataDraftRest
       ...commonFieldsConfig,
       product: fake(() => ReferenceRest.presets.productReference()),
       store: fake(() => ReferenceRest.presets.storeReference()),
+      attributes: [],
     },
   };
 

@@ -18,6 +18,7 @@ import {
   orderOrigin,
   orderState,
   paymentState,
+  priceRoundingMode,
   shipmentState,
   shippingMode,
   taxCalculationMode,
@@ -89,6 +90,7 @@ export const restFieldsConfig: TModelFieldsConfig<TOrderRest> = {
     customerGroup: fake(() => ReferenceRest.presets.customerGroupReference()),
     lineItems: fake(() => [LineItemRest.random()]),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
+    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 

@@ -39,6 +39,7 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDefinitionRest> = {
     ),
     label: fake(() => LocalizedString.random()),
     inputTip: fake(() => LocalizedString.random()),
+    level: levels.Variant,
   },
 };
 

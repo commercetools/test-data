@@ -35,6 +35,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductDraftRest> = {
     state: fake(() => ReferenceRest.presets.stateReference()),
     taxCategory: fake(() => ReferenceRest.presets.taxCategoryReference()),
     variants: fake(() => [ProductVariantDraftRest.random()]),
+    attributes: [],
   },
 };
 
