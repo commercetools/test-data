@@ -35,6 +35,8 @@ export * from './attribute-localized-enum-value';
 export * from './attribute-localized-enum-value/attribute-localized-enum-value-draft';
 export * from './attribute-localizable-text-type';
 export * from './attribute-localizable-text-type/attribute-localized-text-type-draft';
+export * from './attribute-nested-type';
+export * from './attribute-nested-type/attribute-nested-type-draft';
 export * from './attribute-number-type';
 export * from './attribute-number-type/attribute-number-type-draft';
 export * from './attribute-money-type';
