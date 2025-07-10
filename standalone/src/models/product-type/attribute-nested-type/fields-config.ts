@@ -5,7 +5,7 @@ import { TAttributeNestedTypeGraphql, TAttributeNestedTypeRest } from './types';
 // https://docs.commercetools.com/api/projects/productTypes#attributenestedtype
 
 const commonFieldsConfig = {
-  name: fake(() => 'nested'),
+  name: 'nested',
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TAttributeNestedTypeRest> = {
@@ -19,7 +19,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeNestedTypeGraphql
   {
     fields: {
       ...commonFieldsConfig,
-      typeRef: fake(() => ReferenceGraphql.presets.productReference()),
+      typeRef: fake(() => ReferenceGraphql.presets.productTypeReference()),
       __typename: 'NestedAttributeDefinitionType',
     },
   };
