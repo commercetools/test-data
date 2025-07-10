@@ -2,18 +2,16 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We're introducing new models named `AttributeNestedTypeRest` and `AttributeNestedTypeGraphQl` that can be consumed from the `@commercetools/composable-commerce-test-data/product-type` entry point.
+We're introducing a new test data model named `AttributeNestedType` that can be consumed from the `@commercetools/composable-commerce-test-data/product-type` entry point.
 
-This is how the new models could be used:
-
-```ts
-import { AttributeNestedTypeRest } from '@commercetools/composable-commerce-test-data/product-type';
-
-const model = AttributeNestedTypeRest.random().build();
-```
+This is how it could be used:
 
 ```ts
-import { AttributeNestedTypeGraphql } from '@commercetools/composable-commerce-test-data/product-type';
+import {
+  AttributeNestedTypeGraphql,
+  AttributeNestedTypeRest,
+} from '@commercetools/composable-commerce-test-data/product-type';
 
-const model = AttributeNestedTypeGraphql.random().build();
+const restModel = AttributeNestedTypeRest.random().build();
+const graphqlModel = AttributeNestedTypeGraphql.random().build();
 ```
