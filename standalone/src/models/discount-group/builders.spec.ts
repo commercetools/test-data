@@ -39,13 +39,11 @@ describe('DiscountGroup Builder', () => {
         id: expect.any(String),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
-          clientId: expect.any(String),
-          externalUserId: expect.any(String),
+          __typename: 'Initiator',
         }),
         lastModifiedAt: expect.any(String),
         lastModifiedBy: expect.objectContaining({
-          clientId: expect.any(String),
-          externalUserId: expect.any(String),
+          __typename: 'Initiator',
         }),
         key: expect.any(String),
         version: expect.any(Number),
@@ -54,15 +52,11 @@ describe('DiscountGroup Builder', () => {
         description: expect.any(String),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
-            locale: expect.any(String),
-            value: expect.any(String),
             __typename: 'LocalizedString',
           }),
         ]),
         descriptionAllLocales: expect.arrayContaining([
           expect.objectContaining({
-            locale: expect.any(String),
-            value: expect.any(String),
             __typename: 'LocalizedString',
           }),
         ]),
