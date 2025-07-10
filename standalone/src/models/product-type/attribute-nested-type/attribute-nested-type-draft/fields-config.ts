@@ -1,5 +1,5 @@
 import { fake, TModelFieldsConfig } from '@/core';
-import { ReferenceDraftRest, ReferenceDraftGraphql } from '@/models/commons';
+import { ReferenceDraftRest } from '@/models/commons';
 import {
   TAttributeNestedTypeDraftGraphql,
   TAttributeNestedTypeDraftRest,
