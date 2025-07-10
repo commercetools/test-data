@@ -43,6 +43,7 @@ commercetools test-data uses [changesets](https://github.com/atlassian/changeset
 
 As a contributor you need to add a changeset by running `pnpm changeset`.
 The command will prompt to select the packages that should be bumped, their associated semver bump types and some markdown which will be inserted into the changelogs.
+You can find some guidelines on how to write the contents for the changesets [here](./docs/guidelines/writing-changesets.md).
 
 When opening a Pull Request, a `changeset-bot` checks that the Pull Request contains a changeset. A changeset is **not required**, as things like documentation or other changes in the repository itself generally don't need a changeset.
 
