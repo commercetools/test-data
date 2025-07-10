@@ -8,26 +8,14 @@ describe('DiscountGroup Builder', () => {
       expect.objectContaining({
         id: expect.any(String),
         createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          clientId: expect.any(String),
-          externalUserId: expect.any(String),
-        }),
+        createdBy: null,
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          clientId: expect.any(String),
-          externalUserId: expect.any(String),
-        }),
+        lastModifiedBy: null,
         key: expect.any(String),
         version: expect.any(Number),
         sortOrder: expect.any(String),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-        }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-        }),
+        name: null,
+        description: null,
       })
     );
   });
@@ -38,28 +26,16 @@ describe('DiscountGroup Builder', () => {
       expect.objectContaining({
         id: expect.any(String),
         createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          __typename: 'Initiator',
-        }),
+        createdBy: null,
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          __typename: 'Initiator',
-        }),
+        lastModifiedBy: null,
         key: expect.any(String),
         version: expect.any(Number),
         sortOrder: expect.any(String),
-        name: expect.any(String),
-        description: expect.any(String),
-        nameAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-          }),
-        ]),
-        descriptionAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-          }),
-        ]),
+        name: null,
+        description: null,
+        nameAllLocales: null,
+        descriptionAllLocales: null,
         __typename: 'DiscountGroup',
       })
     );

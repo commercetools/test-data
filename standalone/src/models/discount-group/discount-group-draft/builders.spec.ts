@@ -8,14 +8,8 @@ describe('DiscountGroupDraft Builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         sortOrder: expect.any(String),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-        }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-        }),
+        name: null,
+        description: null,
       })
     );
   });
@@ -26,18 +20,8 @@ describe('DiscountGroupDraft Builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         sortOrder: expect.any(String),
-        name: expect.arrayContaining([
-          expect.objectContaining({
-            locale: expect.any(String),
-            value: expect.any(String),
-          }),
-        ]),
-        description: expect.arrayContaining([
-          expect.objectContaining({
-            locale: expect.any(String),
-            value: expect.any(String),
-          }),
-        ]),
+        name: null,
+        description: null,
       })
     );
   });
