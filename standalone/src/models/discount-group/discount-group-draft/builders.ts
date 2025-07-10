@@ -1,12 +1,12 @@
 import { createSpecializedBuilder } from '@/core';
-import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TCreateDiscountGroupDraftBuilder,
+  TCreateDiscountGroupBuilder,
   TDiscountGroupDraftGraphql,
   TDiscountGroupDraftRest,
-} from './types';
+} from '../types';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
-export const RestModelBuilder: TCreateDiscountGroupDraftBuilder<
+export const RestModelBuilder: TCreateDiscountGroupBuilder<
   TDiscountGroupDraftRest
 > = () =>
   createSpecializedBuilder({
@@ -15,7 +15,7 @@ export const RestModelBuilder: TCreateDiscountGroupDraftBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCreateDiscountGroupDraftBuilder<
+export const GraphqlModelBuilder: TCreateDiscountGroupBuilder<
   TDiscountGroupDraftGraphql
 > = () =>
   createSpecializedBuilder({
