@@ -1,16 +1,29 @@
-import AssociateRole from '../builder';
+import { TBuilder } from '@/core';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
 import { QUOTE_PERMISSIONS } from '../constants';
+import {
+  TAssociateRole,
+  TAssociateRoleGraphql,
+  TAssociateRoleRest,
+} from '../types';
 
-const withAllQuotePermissions = () =>
-  AssociateRole().permissions([
-    QUOTE_PERMISSIONS.VIEW_MY_QUOTES,
-    QUOTE_PERMISSIONS.VIEW_OTHERS_QUOTES,
-    QUOTE_PERMISSIONS.ACCEPT_MY_QUOTES,
-    QUOTE_PERMISSIONS.ACCEPT_OTHERS_QUOTES,
-    QUOTE_PERMISSIONS.DECLINE_MY_QUOTES,
-    QUOTE_PERMISSIONS.DECLINE_OTHERS_QUOTES,
-    QUOTE_PERMISSIONS.RENEGOTIATE_MY_QUOTES,
-    QUOTE_PERMISSIONS.RENEGOTIATE_OTHERS_QUOTES,
-  ]);
+const populatePreset = <
+  TModel extends TAssociateRoleGraphql | TAssociateRoleRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder.permissions(Object.values(QUOTE_PERMISSIONS));
+};
 
-export default withAllQuotePermissions;
+export const restPreset = (): TBuilder<TAssociateRoleRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TAssociateRoleGraphql> =>
+  populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TAssociateRole> =>
+  populatePreset(CompatModelBuilder());

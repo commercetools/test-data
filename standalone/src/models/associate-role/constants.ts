@@ -1,3 +1,7 @@
+import { TCtpPermission } from '@/graphql-types';
+
+const ALL_PERMISSIONS = TCtpPermission;
+
 const BUSINESS_UNIT_PERMISSIONS = {
   ADD_CHILD_UNITS: 'AddChildUnits',
   UPDATE_ASSOCIATES: 'UpdateAssociates',
@@ -48,6 +52,7 @@ const QUOTE_REQUEST_PERMISSIONS = {
 };
 
 export {
+  ALL_PERMISSIONS,
   BUSINESS_UNIT_PERMISSIONS,
   CART_PERMISSIONS,
   ORDER_PERMISSIONS,

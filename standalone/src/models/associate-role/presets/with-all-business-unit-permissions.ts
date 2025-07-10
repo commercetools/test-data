@@ -1,12 +1,29 @@
-import AssociateRole from '../builder';
+import { TBuilder } from '@/core';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
 import { BUSINESS_UNIT_PERMISSIONS } from '../constants';
+import {
+  TAssociateRole,
+  TAssociateRoleGraphql,
+  TAssociateRoleRest,
+} from '../types';
 
-const withAllBusinessUnitPermissions = () =>
-  AssociateRole().permissions([
-    BUSINESS_UNIT_PERMISSIONS.ADD_CHILD_UNITS,
-    BUSINESS_UNIT_PERMISSIONS.UPDATE_ASSOCIATES,
-    BUSINESS_UNIT_PERMISSIONS.UPDATE_BUSINESS_UNIT_DETAILS,
-    BUSINESS_UNIT_PERMISSIONS.UPDATE_PARENT_UNIT,
-  ]);
+const populatePreset = <
+  TModel extends TAssociateRoleGraphql | TAssociateRoleRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder.permissions(Object.values(BUSINESS_UNIT_PERMISSIONS));
+};
 
-export default withAllBusinessUnitPermissions;
+export const restPreset = (): TBuilder<TAssociateRoleRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TAssociateRoleGraphql> =>
+  populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TAssociateRole> =>
+  populatePreset(CompatModelBuilder());
