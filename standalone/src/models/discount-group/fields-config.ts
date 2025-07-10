@@ -29,10 +29,27 @@ export const restFieldsConfig: TModelFieldsConfig<TDiscountGroupRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountGroupGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    name: fake((f) => f.lorem.words(3)),
-    description: fake((f) => f.lorem.words(5)),
+    name: null,
+    description: null,
     nameAllLocales: fake(() => LocalizedString.random()),
     descriptionAllLocales: fake(() => LocalizedString.random()),
     __typename: 'DiscountGroup',
+  },
+  postBuild: (model) => {
+    const name = model.nameAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
+      : null;
+
+    const description = model.descriptionAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(
+          model.descriptionAllLocales
+        )
+      : null;
+
+    return {
+      ...model,
+      name,
+      description,
+    };
   },
 };
