@@ -7,6 +7,7 @@ export * from './attribute-enum-type/types';
 export * from './attribute-localized-enum-type/types';
 export * from './attribute-localized-enum-value/types';
 export * from './attribute-localizable-text-type/types';
+export * from './attribute-nested-type/types';
 export * from './attribute-number-type/types';
 export * from './attribute-money-type/types';
 export * from './attribute-plain-enum-value/types';
