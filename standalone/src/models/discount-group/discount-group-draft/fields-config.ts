@@ -14,14 +14,12 @@ const commonFieldsConfig = {
   ),
 };
 
-// TODO: You just need to place here fields initializers that don't match with the REST API
 export const restFieldsConfig: TModelFieldsConfig<TDiscountGroupDraftRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-// TODO: You just need to place here fields initializers that don't match with the GraphQL API
 export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountGroupDraftGraphql> =
   {
     fields: {
