@@ -23,6 +23,7 @@ const validateCommonFields = (
       }),
       id: expect.any(String),
       productId: expect.any(String),
+      published: expect.any(Boolean),
       quantity: expect.any(Number),
       variantId: expect.any(Number),
     })

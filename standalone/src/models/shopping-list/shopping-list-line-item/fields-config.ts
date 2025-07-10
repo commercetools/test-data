@@ -24,6 +24,7 @@ const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   key: null,
   productId: fake((f) => f.string.uuid()),
+  published: fake((f) => f.datatype.boolean()),
   quantity: fake((f) =>
     f.number.int({
       min: 1,
@@ -52,7 +53,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShoppingListLineItemGraphq
       productSlugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
       productType: fake(() => ProductTypeGraphql.random()),
       productTypeRef: null,
-      published: fake((f) => f.datatype.boolean()),
       variant: fake(() => ProductVariantGraphql.random()),
       __typename: 'ShoppingListLineItem',
     },
