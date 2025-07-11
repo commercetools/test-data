@@ -17,6 +17,16 @@ That command will guide you with some questions to provide the necessary informa
 
 When actually writing the contents of the change description, please think about the consumers of this library. We need to provide clear information. This informs them what has changed and most importantly, if they need to make a change on their end now or later.
 
+## Guidelines
+
+The idea is that we provide reader with the relevant information about what has been changed.
+
+The key items could be:
+
+1. What have changed (addition, refactoring, fixing)
+2. Where the change happened (which model or models)
+3. When adding something, provide a code snippet showcasing how it should be used
+
 ## Examples
 
 Here we list some example for some common use cases.
