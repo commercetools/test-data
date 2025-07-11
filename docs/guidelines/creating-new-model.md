@@ -138,8 +138,8 @@ The next step can involve creating the `fields-config` file where we need to imp
 
 Since we have two representations for it (REST and GraphQL), we need to export two objects.
 
-When deciding which model's fields to populate, the rule of thumb is **to only assign values to the required properties**.
-If you think consumers will most likely need a full-populated version of the model, just create a new preset (`withAllFields`) for it.
+When deciding which model's fields to populate, the rule of thumb is **to only assign values to required properties**.
+If you expect consumers to need a fully populated version of the model, just create a preset called `withAllFields` for this use case.
 
 Here's an example:
 
@@ -235,7 +235,7 @@ expect(model).toEqual(
 );
 ```
 
-For the GraphQL version we can rely on the `__typename` property of the built value. If that value is what we expect, we don't need to check for other properties as that property is already indicating the type of the built nested model.
+For the GraphQL version, we can rely on the `__typename` property of the built value. If that value is what we expect, we don't need to check for other properties, as that property is already indicating the type of the built nested model.
 Example:
 
 ```ts

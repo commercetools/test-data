@@ -1,7 +1,7 @@
 # Writing changesets
 
-In this repository we use the [changeset](https://github.com/changesets/changesets) package to manage releases.
-Using this tool helps with the process of figuring out which changes should be included in each new release and what version type we should use (_major_, _minor_ or _patch_).
+In this repository we use the [changesets](https://github.com/changesets/changesets) package to manage releases.
+Using this tool helps with the process of keeping track of which changes will be included in each new release and what version type we should use (_major_, _minor_ or _patch_).
 
 It relies on the existance of changeset files which describe the changes we make in the repository.
 
@@ -15,7 +15,7 @@ pnpm changeset
 
 That command will guide you with some questions to provide the necessary information.
 
-When actually writing the contents of the change description, please think about the consumers of this library. We need to provide clear information so they can understand what happened and, most importantly, what they need to do about it now or in the future.
+When actually writing the contents of the change description, please think about the consumers of this library. We need to provide clear information. This informs them what has changed and most importantly, if they need to make a change on their end now or later.
 
 ## Examples
 
@@ -56,10 +56,9 @@ There's only a GraphQL version for this model as it only exists in the MC Settin
 
 This is how the new model could be used:
 
-```
-import {
-  OrdersListViewGraphql,
-} from '@commercetools/composable-commerce-test-data/my-view';
+```ts
+import { OrdersListViewGraphql } from '@commercetools/composable-commerce-test-data/my-view';
+
 const ordersListView = OrdersListViewGraphql.random().build();
 ```
 
@@ -70,3 +69,17 @@ const ordersListView = OrdersListViewGraphql.random().build();
 We've migrated the `TaxRate` model to the new implementation patterns.
 
 This change does not have any impact on consumers.
+
+### If you are adding a new preset to a model
+
+---
+
+We're introducing a new preset to the `LiteItem` test data model named `withAllFields`.
+
+This is how you could use it:
+
+```ts
+import { LineItemGraphql } from '@commercetools/composable-commerce-test-data/cart';
+
+const ordersListView = LineItemGraphql.presets.withAllFields();
+```
