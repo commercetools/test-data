@@ -3,17 +3,29 @@ import type {
   AssociateRoleDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import type {
+  TCtpAssociateRole,
+  TCtpAssociateRoleDraft,
+} from '@/graphql-types';
 
-//AssociateRoleDraft
-export type TAssociateRoleDraft = AssociateRoleDraft;
-export type TAssociateRoleDraftBuilder = TBuilder<TAssociateRoleDraft>;
-export type TCreateAssociateRoleDraftBuilder = () => TAssociateRoleDraftBuilder;
-export type TAssociateRoleDraftGraphql = TAssociateRoleDraft;
-
-//AssociateRole
+/**
+ * @deprecated Use `TAssociateRoleRest` or `TAssociateRoleGraphql` instead.
+ */
 export type TAssociateRole = AssociateRole;
-export type TAssociateRoleBuilder = TBuilder<TAssociateRole>;
-export type TCreateAssociateRoleBuilder = () => TAssociateRoleBuilder;
-export type TAssociateRoleGraphql = TAssociateRole & {
-  __typename: 'AssociateRole';
-};
+export type TAssociateRoleRest = AssociateRole;
+export type TAssociateRoleGraphql = TCtpAssociateRole;
+
+/**
+ * @deprecated Use `TAssociateRoleDraftRest` or `TAssociateRoleDraftGraphql` instead.
+ */
+export type TAssociateRoleDraft = AssociateRoleDraft;
+export type TAssociateRoleDraftRest = AssociateRoleDraft;
+export type TAssociateRoleDraftGraphql = TCtpAssociateRoleDraft;
+
+export type TCreateAssociateRoleBuilder<
+  TModel extends
+    | TAssociateRoleRest
+    | TAssociateRoleGraphql
+    | TAssociateRoleDraftRest
+    | TAssociateRoleDraftGraphql,
+> = () => TBuilder<TModel>;
