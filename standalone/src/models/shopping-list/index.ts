@@ -1,6 +1,9 @@
-export * as ShoppingListDraft from './shopping-list-draft';
-export * as ShoppingList from '.';
+// Export types
+export * from './shopping-list/types';
+export * from './shopping-list-line-item/types';
+export * from './text-line-item/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+// Export models
+export * as ShoppingList from './shopping-list';
+export * as ShoppingListLineItem from './shopping-list-line-item';
+export * as TextLineItem from './text-line-item';
