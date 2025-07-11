@@ -7,7 +7,6 @@ import {
 const commonFieldsConfig = {
   addedAt: null,
   custom: null,
-  deactivatedAt: null,
   key: null,
   productId: fake((f) => f.string.uuid()),
   quantity: fake((f) => f.number.int({ min: 1 })),

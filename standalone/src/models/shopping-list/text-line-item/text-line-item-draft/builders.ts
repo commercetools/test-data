@@ -10,7 +10,7 @@ export const RestModelBuilder: TCreateTextLineItemBuilder<
   TTextLineItemDraftRest
 > = () =>
   createSpecializedBuilder({
-    name: 'TextLineItemRestBuilder',
+    name: 'TextLineItemDraftRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
@@ -19,7 +19,7 @@ export const GraphqlModelBuilder: TCreateTextLineItemBuilder<
   TTextLineItemDraftGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'TextLineItemGraphqlBuilder',
+    name: 'TextLineItemDraftGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

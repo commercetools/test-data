@@ -10,7 +10,7 @@ export const RestModelBuilder: TCreateShoppingListLineItemBuilder<
   TShoppingListLineItemDraftRest
 > = () =>
   createSpecializedBuilder({
-    name: 'ShoppingListLineItemRestBuilder',
+    name: 'ShoppingListLineItemDraftRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
@@ -19,7 +19,7 @@ export const GraphqlModelBuilder: TCreateShoppingListLineItemBuilder<
   TShoppingListLineItemDraftGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'ShoppingListLineItemGraphqlBuilder',
+    name: 'ShoppingListLineItemDraftGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });
