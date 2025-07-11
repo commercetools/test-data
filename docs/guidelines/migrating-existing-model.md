@@ -158,9 +158,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 };
 ```
 
-Some fields will have the same values in both representations so we can extract them to a common helper, but the file will export two configuration (`restFieldsConfig` and `graphqlFieldsConfig`).
+Some fields will have the same values in both representations so we can extract them to a common helper, but the file will export two configurations (`restFieldsConfig` and `graphqlFieldsConfig`).
 
-So after we create and implement the `fields-config.ts` file, we will be removing the `generator.ts` one.
+> ⚠️ **Required-fields-only** rule
+>
+> • Populate **only** properties marked `required: true` in the REST or GraphQL API reference.
+> • Everything else **must** be set to `null` (or omitted if the representation lacks the field).
+> • Always cross-check against the official docs link you add at the top of `fields-config.ts`.
+
+After we create and implement the `fields-config.ts` file, we will be removing the `generator.ts` one.
 
 ### Transformers
 

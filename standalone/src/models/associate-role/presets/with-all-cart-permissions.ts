@@ -1,8 +1,22 @@
-import AssociateRole from '../builder';
+import type { TBuilder } from '@/core';
 import { CART_PERMISSIONS } from '../constants';
+import {
+  AssociateRoleRest,
+  AssociateRoleGraphql,
+  AssociateRole,
+} from '../index';
+import type {
+  TAssociateRoleRest,
+  TAssociateRoleGraphql,
+  TAssociateRole,
+} from '../types';
 
-const withAllCartPermissions = () =>
-  AssociateRole().permissions([
+const applyPermissions = <
+  TModel extends TAssociateRoleRest | TAssociateRoleGraphql,
+>(
+  builder: TBuilder<TModel>
+) =>
+  builder.permissions([
     CART_PERMISSIONS.CREATE_MY_CARTS,
     CART_PERMISSIONS.CREATE_OTHERS_CARTS,
     CART_PERMISSIONS.DELETE_MY_CARTS,
@@ -13,4 +27,9 @@ const withAllCartPermissions = () =>
     CART_PERMISSIONS.VIEW_OTHERS_CARTS,
   ]);
 
-export default withAllCartPermissions;
+export const restPreset = (): TBuilder<TAssociateRoleRest> =>
+  applyPermissions(AssociateRoleRest.random());
+export const graphqlPreset = (): TBuilder<TAssociateRoleGraphql> =>
+  applyPermissions(AssociateRoleGraphql.random());
+export const compatPreset = (): TBuilder<TAssociateRole> =>
+  applyPermissions(AssociateRole.random());
