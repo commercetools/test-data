@@ -1,6 +1,6 @@
 import { fake, sequence, type TModelFieldsConfig } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import { LocalizedString } from '../commons';
 import type { TDiscountGroupGraphql, TDiscountGroupRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

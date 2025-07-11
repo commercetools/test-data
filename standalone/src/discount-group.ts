@@ -1,1 +1,1 @@
-export * from './models/discount-group';
+export * from './models/discount/discount-group';
