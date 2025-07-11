@@ -68,8 +68,9 @@ repo-root: `<my_path>/test-data`
 3. **Field configuration** (`fields-config.ts`)  
    • Introduce `commonFieldsConfig` for shared properties.  
    • Export **`restFieldsConfig`** & **`graphqlFieldsConfig`** (plural).  
-   • Required properties → generate fake/sequence values.  
-   • Optional properties → **`null`** (or omit if not present in that representation).  
+   • REQUIRED properties (listed as `required: true` in REST/GQL schema) → generate fake/sequence values.  
+   • OPTIONAL properties → **`null`** (or omit if that representation doesn't have the field).  
+   • If in doubt, open the API reference and confirm the `required` flag before populating.  
    • Add official API doc link comment after all the import statements with the prefix "Reference REST docs:".
    • Use `postBuild` **only** for dependent values (e.g. `*AllLocales`, `*Ref`, `attributesRaw`, etc.).  
    • Delete legacy `generator.ts` & `transformers.ts` once logic is ported.
@@ -88,6 +89,8 @@ repo-root: `<my_path>/test-data`
 6. **Presets**  
    • For each existing preset create `restPreset`, `graphqlPreset`, `compatPreset`. If one representation isn't supported, do not create a preset for that (rest or graphQl) representation.
    • Adhere to “required-fields-only” rule – set non-required fields to `null`.
+
+✅ After finishing `fields-config.ts`, pause and verify that no optional fields are populated before proceeding.
 
 7. **Constants**  
    • Do **not** duplicate enum values that exist in SDK / generated GQL types. Set constant values to an imported value if it exists elsewhere.
