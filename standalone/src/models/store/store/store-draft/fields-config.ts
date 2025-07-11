@@ -15,13 +15,13 @@ const commonFieldsConfig = {
   custom: null,
 };
 
-export const restFieldConfig: TModelFieldsConfig<TStoreDraftRest> = {
+export const restFieldsConfig: TModelFieldsConfig<TStoreDraftRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-export const graphqlFieldConfig: TModelFieldsConfig<TStoreDraftGraphql> = {
+export const graphqlFieldsConfig: TModelFieldsConfig<TStoreDraftGraphql> = {
   fields: {
     ...commonFieldsConfig,
   },

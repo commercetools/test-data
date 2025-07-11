@@ -158,9 +158,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 };
 ```
 
-Some fields will have the same values in both representations so we can extract them to a common helper, but the file will export two configuration (`restFieldsConfig` and `graphqlFieldsConfig`).
+Some fields will have the same values in both representations so we can extract them to a common helper, but the file will export two configurations (`restFieldsConfig` and `graphqlFieldsConfig`).
 
-So after we create and implement the `fields-config.ts` file, we will be removing the `generator.ts` one.
+After we create and implement the `fields-config.ts` file, we will be removing the `generator.ts` one.
 
 ### Transformers
 
@@ -476,9 +476,6 @@ export const compatPreset = (): TBuilder<TChannel> =>
 ```
 
 Bear in mind you might find different requirements for the GraphQL version where you might need to tailor a bit that preset generator. In this case, we can still manage population with a helper function using an optional parameter.
-
-Also, there are data models which have generated presets for sample data (B2B and B2C). In that case, you should be using the [test-data-generation](https://github.com/commercetools/test-data-generation) repository to rebuild those presets.
-That repository has already been setup to support generating sample data presets for both legacy and new versions of the data models.
 
 Here's an example on how a preset generator looks like right now:
 
