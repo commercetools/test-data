@@ -33,7 +33,7 @@
 /standalone/src/models/custom-view @commercetools/bots-team-engineers
 /standalone/src/models/customer @commercetools/customers-team-fe
 /standalone/src/models/customer-group @commercetools/customers-team-fe
-/standalone/src/models/discount-code @commercetools/priceless-team-fe
+/standalone/src/models/discount @commercetools/priceless-team-fe
 /standalone/src/models/discounts-custom-view @commercetools/priceless-team-fe
 /standalone/src/models/filter-values @commercetools/priceless-team-fe
 /standalone/src/models/inventory-entry @commercetools/pdm-team-fe
