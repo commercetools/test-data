@@ -82,6 +82,7 @@ dist
 # Editor/IDE
 .idea
 .cursor/*
+!.cursor/prompts
 .vscode/*
 #!.vscode/settings.json
 !.vscode/spellright.dict
