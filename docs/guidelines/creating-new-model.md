@@ -138,6 +138,9 @@ The next step can involve creating the `fields-config` file where we need to imp
 
 Since we have two representations for it (REST and GraphQL), we need to export two objects.
 
+When deciding which model's fields to populate, the rule of thumb is **to only assign values to required properties**.
+If you expect consumers to need a fully populated version of the model, just create a preset called `withAllFields` for this use case.
+
 Here's an example:
 
 ```ts
@@ -209,20 +212,42 @@ In this case, `name` and `description` depend on the values from `nameAllLocales
 
 ## Testing
 
-You are expected to implement tests for the builders (REST and GraphQL) that cover the generation of the default version of the data model as well as customized ones.
+You are expected to implement tests for the builders (REST and GraphQL) that cover the generation of the default version of the data model.
+If you have created any preset, please also make sure to write a test file for it validating the properties that the preset populates.
 
-Examples of code to test:
+### Validating nested models
+
+If your model has nested models, we need to validate they are correctly populated.
+
+For the REST model we need to use some kind of [Duck typing pattern](https://en.wikipedia.org/wiki/Duck_typing) checking whether the built field has some properties of the expected model.
+Example:
 
 ```ts
-// Default version
-const restChannel: TChannelRest = ChannelRest.random().build();
+expect(model).toEqual(
+  expect.objectContaining({
+    id: expect.any(String),
+    key: expect.any(String),
+    label: expect.objectContaining({
+      en: expect.any(String),
+      de: expect.any(String),
+    }),
+  })
+);
+```
 
-// Customized version
-const graphqlChannel: TChannelGraphql = ChannelGraphql.random()
-  .nameAllLocales(LocalizedString.random().en('Channel name'))
-  .descriptionAllLocales(LocalizedString.random().en('Channel description'))
-  .geometry(GeometryGraphql.random().coordinates([10, 20]))
-  .build();
+For the GraphQL version, we can rely on the `__typename` property of the built value. If that value is what we expect, we don't need to check for other properties, as that property is already indicating the type of the built nested model.
+Example:
+
+```ts
+expect(model).toEqual(
+  expect.objectContaining({
+    id: expect.any(String),
+    key: expect.any(String),
+    label: expect.objectContaining({
+      __typename: 'LocalizedString',
+    }),
+  })
+);
 ```
 
 ## CLI
