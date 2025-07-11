@@ -1,9 +1,13 @@
-import withCountryNoState from './with-country-no-state';
-import withCountryUsNoState from './with-country-us-no-state';
+import * as withCountryUsNoState from './with-country-us-no-state';
 
-const presets = {
-  withCountryNoState,
-  withCountryUsNoState,
+export const restPresets = {
+  withCountryUsNoState: withCountryUsNoState.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withCountryUsNoState: withCountryUsNoState.graphqlPreset,
+};
+
+export const compatPresets = {
+  withCountryUsNoState: withCountryUsNoState.compatPreset,
+};

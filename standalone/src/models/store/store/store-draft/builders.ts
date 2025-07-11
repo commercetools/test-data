@@ -8,31 +8,31 @@ import type {
   TStoreDraftRest,
   TStoreDraftGraphql,
 } from '../types';
-import { restFieldConfig, graphqlFieldConfig } from './fields-config';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
 export const RestModelBuilder: TCreateStoreBuilder<TStoreDraftRest> = () =>
   createSpecializedBuilder({
-    modelFieldsConfig: restFieldConfig,
+    modelFieldsConfig: restFieldsConfig,
     type: 'rest',
-    name: 'storeDraftRestBuilder',
+    name: 'StoreDraftRestBuilder',
   });
 
 export const GraphqlModelBuilder: TCreateStoreBuilder<
   TStoreDraftGraphql
 > = () =>
   createSpecializedBuilder({
-    modelFieldsConfig: graphqlFieldConfig,
+    modelFieldsConfig: graphqlFieldsConfig,
     type: 'graphql',
-    name: 'storeDraftGraphqlBuilder',
+    name: 'StoreDraftGraphqlBuilder',
   });
 
 export const CompatModelBuilder = <
   TStoreDraftModel extends TStoreDraftRest | TStoreDraftGraphql,
 >() =>
   createCompatibilityBuilder<TStoreDraftModel>({
-    name: 'storeDraftCompatBuilder',
+    name: 'StoreDraftCompatBuilder',
     modelFieldsConfig: {
-      rest: restFieldConfig as TModelFieldsConfig<TStoreDraftModel>,
-      graphql: graphqlFieldConfig as TModelFieldsConfig<TStoreDraftModel>,
+      rest: restFieldsConfig as TModelFieldsConfig<TStoreDraftModel>,
+      graphql: graphqlFieldsConfig as TModelFieldsConfig<TStoreDraftModel>,
     },
   });
