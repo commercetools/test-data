@@ -2,11 +2,15 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-Migrated the `Location` test-data model (under `zone`) to the **v2 builder pattern**.
+We've migrated the `Location` model to the new implementation patterns.
 
-Highlights:
-• Introduced separate REST (`LocationRest`) and GraphQL (`LocationGraphql`) builders plus a compatibility builder (`Location`) for full backwards-compatibility.
-• Added representation-specific field configs; required `country` now always generated, optional `state` defaults to `null`.
-• Converted presets and tests to `restPreset`, `graphqlPreset`, and `compatPreset` structure.
+The model was populating the `state` property by default which goes against the rule of only populating required fields by default.
+We've changed that property to not be populated by default and also included a new preset which can be used when consumers need to generate a fully populated object.
 
-This is a backward-compatible change; existing `Location.random()` usages keep working, but consumers are encouraged to adopt the new explicit builders.
+Example:
+
+```ts
+import { LocationGraphql } from '@commercetools/composable-commerce-test-data/zone';
+
+const fullLocation = LocationGraphql.presets.withAllFields();
+```
