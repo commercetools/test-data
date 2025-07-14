@@ -35,32 +35,63 @@ Let's review each one of them and what we need to do.
 In the legacy data models we were supporting three representations of a data model. Example:
 
 ```ts
-import type { Channel } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpChannel } from '@commercetools-test-data/graphql-types';
+import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
+import type {
+  TCtpChannel,
+  TCtpChannelDraft,
+} from '@commercetools-test-data/graphql-types';
 
 export type TChannel = Channel;
 export type TChannelRest = Channel;
+export type TChannelDraftRest = ChannelDraft;
 export type TChannelGraphql = TCtpChannel;
+export type TChannelDraftGraphql = TCtpChannelDraft;
 ```
 
 In the new implementation patterns, we don't want to keep three representations of the data model so the first one (`TChannel` in this case) should no longer be used. You can see that it is the same as the `TChannelRest` type.
 We can't remove it though as we need to be backwards compatible so we will just mark it as deprecated:
 
 ```ts
-import type { Channel } from '@commercetools/platform-sdk';
-import type {
-  TClientLoggingGraphql,
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@commercetools-test-data/commons';
+import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
+import type { TCtpChannel, TCtpChannelDraft } from '@commercetools-test-data/graphql-types';
 
 /**
  * @deprecated use `TChannelRest` instead
  */
 export type TChannel = Channel;
+
+/**
+ * @deprecated use `TChannelRest` instead
+ */
+export type TChannelDraft = ChannelDraft;
+
+// REST types
 export type TChannelRest = Channel;
+export type TChannelDraftRest = ChannelDraft;
+
+// GraphQL types
+export type TChannelGraphql = TCtpChannel;
+export type TChannelDraftGraphql = TCtpChannelDraft;
 ...
+```
+
+Also, we had different builders for each model type but that's redundant and can be simplified like this:
+
+```ts
+// BEFORE
+export type TChannelBuilder = TBuilder<TChannel>;
+export type TChannelDraftBuilder = TBuilder<TChannelDraft>;
+export type TCreateChannelBuilder = () => TChannelBuilder;
+export type TCreateChannelDraftBuilder = () => TChannelDraftBuilder;
+
+// AFTER
+export type TCreateChannelBuilder<
+  TChannelModel extends
+    | TChannelRest
+    | TChannelGraphql
+    | TChannelDraftRest
+    | TChannelDraftGraphql,
+> = () => TBuilder<TChannelModel>;
 ```
 
 ### Generator
@@ -159,6 +190,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 ```
 
 Some fields will have the same values in both representations so we can extract them to a common helper, but the file will export two configurations (`restFieldsConfig` and `graphqlFieldsConfig`).
+
+When deciding which model's fields to populate, the rule of thumb is **to only assign values to required properties** based on the Typescript types.
 
 After we create and implement the `fields-config.ts` file, we will be removing the `generator.ts` one.
 
@@ -294,7 +327,7 @@ export const GraphqlModelBuilder: TCreateChannelBuilder<TChannelGraphql> = () =>
     modelFieldsConfig: graphqlFieldsConfig,
   });
 
-export const CompatChannelModelBuilder = <
+export const CompatModelBuilder = <
   TChannelModel extends TChannelRest | TChannelGraphql = TChannelRest,
 >() =>
   createCompatibilityBuilder<TChannelModel>({
@@ -354,20 +387,20 @@ import {
   GraphqlModelBuilder,
   CompatChannelModelBuilder,
 } from './builders';
+import * as constants from './constants';
 import * as modelPresets from './presets';
 
 export * from './channel-draft';
-export * as Channel from '.';
-
-export * as constants from './constants';
 export * from './types';
 
 export const ChannelRest = {
+  constants,
   random: RestModelBuilder,
   presets: modelPresets.restPresets,
 };
 
 export const ChannelGraphql = {
+  constants,
   random: GraphqlModelBuilder,
   presets: modelPresets.graphqlPresets,
 };
@@ -375,8 +408,11 @@ export const ChannelGraphql = {
 /**
  * @deprecated Use `ChannelRest` or `ChannelGraphql` exported models instead of `Channel`.
  */
-export const random = CompatChannelModelBuilder;
-export const presets = modelPresets.restPresets;
+export const Channel = {
+  constants,
+  random: CompatChannelModelBuilder,
+  presets: modelPresets.compatPresets,
+};
 ```
 
 And here is how consumers would use it:
@@ -423,6 +459,150 @@ const newGraphqlFoodStoreChannel: TChannelGraphql = ChannelGraphql.presets.
 ### Testing
 
 We need to keep the current tests passing (using the compatibility builder) but we also need to add tests for the new specialized builders as well (REST and GraphQL).
+
+We also want to refactor the tests to make them more clear to read and to make sure we test all the builders while keeping the consistency in terms of what we validate.
+
+We want to validate all the properties that are populated in the corresponding "fields-config.ts" file really exist in the object generated by the builder.
+
+Here's an example of the tests for a non-migrated model:
+
+```ts
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '@/core/test-utils';
+import { TTaxRate, TTaxRateGraphql } from './types';
+import * as TaxRate from './index';
+
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TTaxRate, TTaxRate>(
+      'default',
+      TaxRate.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        name: expect.any(String),
+        amount: expect.any(Number),
+        includedInPrice: expect.any(Boolean),
+        country: expect.any(String),
+        state: expect.any(String),
+        subRates: null,
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TTaxRate, TTaxRate>(
+      'rest',
+      TaxRate.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        name: expect.any(String),
+        amount: expect.any(Number),
+        includedInPrice: expect.any(Boolean),
+        country: expect.any(String),
+        state: expect.any(String),
+        subRates: null,
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TTaxRate, TTaxRateGraphql>(
+      'graphql',
+      TaxRate.random(),
+      expect.objectContaining({
+        __typename: 'TaxRate',
+        id: expect.any(String),
+        name: expect.any(String),
+        amount: expect.any(Number),
+        includedInPrice: expect.any(Boolean),
+        country: expect.any(String),
+        state: expect.any(String),
+        subRates: null,
+      })
+    )
+  );
+});
+```
+
+Since now we will have three builders, we want to make sure each one of them works as expected so we validate the new ones directly, but for the compatibility one we need to make sure it works for the default, rest and graphql types.
+Here's an example of how the test would look like after the migration:
+
+```ts
+import { TTaxRateGraphql, TTaxRateRest } from './types';
+import { TaxRate, TaxRateGraphql, TaxRateRest } from './index';
+
+const validateModel = (model: TTaxRateGraphql | TTaxRateRest) => {
+  expect(model).toMatchObject({
+    amount: expect.any(Number),
+    country: expect.any(String),
+    id: null,
+    includedInPrice: true,
+    key: null,
+    name: expect.any(String),
+    state: null,
+  });
+};
+
+describe('TaxRate model builders', () => {
+  it('builds a REST model', () => {
+    const restModel = TaxRateRest.random().build();
+
+    validateModel(restModel);
+    expect(restModel.subRates).toEqual(null);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = TaxRateGraphql.random().build();
+
+    validateModel(graphqlModel);
+    expect(graphqlModel.subRates).toEqual([]);
+  });
+});
+
+describe('TaxRate model compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const restModel = TaxRate.random().build();
+
+    validateModel(restModel);
+    expect(restModel.subRates).toEqual(null);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = TaxRate.random().buildRest();
+
+    validateModel(restModel);
+    expect(restModel.subRates).toEqual(null);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = TaxRate.random().buildGraphql<TTaxRateGraphql>();
+
+    validateModel(graphqlModel);
+    expect(graphqlModel.subRates).toEqual([]);
+  });
+});
+```
+
+Something to bear in mind is that, when validating nested models for the GraphQL builder, we don't need to check for all the nested model properties, it's enough to check the `__typename` one because it already defines the shape of that nested object.
+
+Here's a simplified example:
+
+```ts
+const validateGraphqlModel = (model: TAttributeDefinitionGraphql): void => {
+  expect(model).toEqual(
+    expect.objectContaining({
+      name: expect.any(String),
+      labelAllLocales: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'LocalizedString',
+        }),
+      ]),
+      __typename: 'AttributeDefinition',
+    })
+  );
+};
+```
 
 ### Presets
 

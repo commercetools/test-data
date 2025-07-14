@@ -158,7 +158,7 @@ export const newTestModelGenerator: CodeGenerator = {
       const filteredModelTemplatesData = modelTemplatesData.filter(
         modelTemplatesFilter({
           isPresetExampleRequired,
-          isDraftModel: false,
+          isDraftModel: true,
         })
       );
       for (const template of filteredModelTemplatesData) {
@@ -176,6 +176,7 @@ export const newTestModelGenerator: CodeGenerator = {
             isPresetExampleRequired,
             modelName: `${modelName}Draft`,
             modelCodename: `${modelCodename}-draft`,
+            baseModelName: modelName,
             graphqlTypePrefix,
           }),
           { encoding: 'utf-8' }
