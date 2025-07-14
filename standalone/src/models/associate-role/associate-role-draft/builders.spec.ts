@@ -1,8 +1,12 @@
 import type {
   TAssociateRoleDraftRest,
   TAssociateRoleDraftGraphql,
-} from '../../types';
-import { restPreset, graphqlPreset, compatPreset } from './empty';
+} from '../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
 
 const validateModel = (
   model: TAssociateRoleDraftRest | TAssociateRoleDraftGraphql
@@ -11,20 +15,20 @@ const validateModel = (
     key: expect.any(String),
     name: null,
     buyerAssignable: expect.any(Boolean),
-    permissions: [],
+    permissions: expect.any(Array),
     custom: null,
   });
 };
 
 describe('AssociateRoleDraft model builders', () => {
   it('should build a valid REST model', () => {
-    const model = restPreset().build();
+    const model = RestModelBuilder().build();
 
     validateModel(model);
   });
 
   it('should build a valid GraphQL model', () => {
-    const model = graphqlPreset().build();
+    const model = GraphqlModelBuilder().build();
 
     validateModel(model);
   });
@@ -32,20 +36,20 @@ describe('AssociateRoleDraft model builders', () => {
 
 describe('AssociateRoleDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const restModel = compatPreset().build();
+    const restModel = CompatModelBuilder().build();
 
     validateModel(restModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = compatPreset().buildRest();
+    const restModel = CompatModelBuilder().buildRest();
 
     validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
-      compatPreset().buildGraphql<TAssociateRoleDraftGraphql>();
+      CompatModelBuilder().buildGraphql<TAssociateRoleDraftGraphql>();
 
     validateModel(graphqlModel);
   });
