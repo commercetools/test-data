@@ -56,12 +56,12 @@ import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 import type { TCtpChannel, TCtpChannelDraft } from '@commercetools-test-data/graphql-types';
 
 /**
- * @deprecated use `TChannelRest` instead
+ * @deprecated use `TChannelRest` or `TChannelGraphql` instead
  */
 export type TChannel = Channel;
 
 /**
- * @deprecated use `TChannelRest` instead
+ * @deprecated use `TChannelRest` or `TChannelDraftGraphql` instead
  */
 export type TChannelDraft = ChannelDraft;
 
