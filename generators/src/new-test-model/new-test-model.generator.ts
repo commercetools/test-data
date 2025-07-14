@@ -176,7 +176,7 @@ export const newTestModelGenerator: CodeGenerator = {
             isPresetExampleRequired,
             modelName: `${modelName}Draft`,
             modelCodename: `${modelCodename}-draft`,
-            nonDraftModelName: modelName,
+            baseModelName: modelName,
             graphqlTypePrefix,
           }),
           { encoding: 'utf-8' }
