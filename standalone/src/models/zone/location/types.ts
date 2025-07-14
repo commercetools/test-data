@@ -3,7 +3,7 @@ import type { TBuilder } from '@/core';
 import type { TCtpLocation } from '@/graphql-types';
 
 /**
- * @deprecated Use `TLocationRest` instead.
+ * @deprecated Use `TLocationRest` or `TLocationGraphql` instead.
  */
 export type TLocation = Location;
 

@@ -1,5 +1,3 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
 import type { TLocationGraphql, TLocationRest } from './types';
 import { Location, LocationGraphql, LocationRest } from './index';
 

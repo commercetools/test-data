@@ -22,5 +22,3 @@ export const Location = {
   random: CompatLocationModelBuilder,
   presets: modelPresets.compatPresets,
 };
-
-export * from './types';
