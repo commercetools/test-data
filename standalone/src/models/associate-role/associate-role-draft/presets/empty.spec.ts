@@ -11,7 +11,7 @@ const validateModel = (
     key: expect.any(String),
     name: null,
     buyerAssignable: expect.any(Boolean),
-    permissions: expect.any(Array),
+    permissions: [],
     custom: null,
   });
 };
