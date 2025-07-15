@@ -184,7 +184,7 @@ const buildLimitGraphqlList = <
   return {
     limit: params.limit ?? 100,
     offset: params.offset ?? 0,
-    total: models.length,
+    total: params.total ?? models.length,
     results: models,
     __typename: params.__typename,
   };
@@ -203,7 +203,7 @@ const buildCountGraphqlList = <
     count: params.count ?? 100,
     exists: params.exists ?? models.length > 0,
     offset: params.offset ?? 0,
-    total: models.length,
+    total: params.total ?? models.length,
     results: models,
     __typename: params.__typename,
   };

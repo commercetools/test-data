@@ -36,6 +36,7 @@ export type TGraphqlBaseModel = { __typename?: string };
 export type TLimitGraphqlListParams<TypeName extends string = string> = {
   limit?: number;
   offset?: number;
+  total?: number;
   __typename: TypeName;
 };
 
@@ -54,6 +55,7 @@ export type TCountGraphqlListParams<TypeName extends string = string> = {
   count?: number;
   exists?: boolean;
   offset?: number;
+  total?: number;
   __typename: TypeName;
 };
 
