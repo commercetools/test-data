@@ -13,6 +13,11 @@ import type {
   TTransformType,
   TTransformBuildName,
   TModelFieldsConfig,
+  TGraphqlBaseModel,
+  TLimitGraphqlListParams,
+  TLimitGraphqlLisResult,
+  TCountGraphqlListParams,
+  TCountGraphqlListResult,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -165,6 +170,43 @@ const buildGraphqlList = <Model, GraphqlModel = Model>(
   );
 };
 
+const buildLimitGraphqlList = <
+  GraphqlModel extends TGraphqlBaseModel,
+  TypeName extends string,
+>(
+  builders: TBuilder<GraphqlModel>[],
+  params: TLimitGraphqlListParams<TypeName>
+): TLimitGraphqlLisResult<GraphqlModel, TypeName> => {
+  const models = buildFields<GraphqlModel>(builders, 'graphql');
+
+  return {
+    limit: params.limit ?? 100,
+    offset: params.offset ?? 0,
+    total: models.length,
+    results: models,
+    __typename: params.__typename,
+  };
+};
+
+const buildCountGraphqlList = <
+  GraphqlModel extends TGraphqlBaseModel,
+  TypeName extends string,
+>(
+  builders: TBuilder<GraphqlModel>[],
+  params: TCountGraphqlListParams<TypeName>
+): TCountGraphqlListResult<GraphqlModel, TypeName> => {
+  const models = buildFields<GraphqlModel>(builders, 'graphql');
+
+  return {
+    count: params.count ?? 100,
+    exists: params.exists ?? models.length > 0,
+    offset: params.offset ?? 0,
+    total: models.length,
+    results: models,
+    __typename: params.__typename,
+  };
+};
+
 const buildRestList = <Model, RestModel = Model>(
   builders: TBuilder<Model>[],
   { total, offset }: TPaginatedQueryResultOptions
@@ -266,6 +308,8 @@ export {
   buildField,
   buildFields,
   buildGraphqlList,
+  buildCountGraphqlList,
+  buildLimitGraphqlList,
   buildRestList,
   createSpecializedTransformers,
   createSpecializedBuilder,

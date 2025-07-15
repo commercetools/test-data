@@ -6,6 +6,8 @@ export {
   buildField,
   buildFields,
   buildGraphqlList,
+  buildCountGraphqlList,
+  buildLimitGraphqlList,
   buildRestList,
   createSpecializedTransformers,
   createSpecializedBuilder,
