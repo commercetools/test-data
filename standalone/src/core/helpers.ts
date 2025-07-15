@@ -154,7 +154,9 @@ const buildFields = <Model, TransformedModel = Model>(
     buildField<Model, TransformedModel>(builder, transformName, meta)
   );
 };
-
+/**
+ * @deprecated Use `buildLimitGraphqlList` or `buildCountGraphqlList` instead.
+ */
 const buildGraphqlList = <Model, GraphqlModel = Model>(
   builders: TBuilder<Model>[],
   { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
