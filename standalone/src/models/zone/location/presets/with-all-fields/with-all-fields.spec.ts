@@ -1,16 +1,16 @@
 import type { TLocationGraphql, TLocationRest } from '../../types';
-import * as presets from './with-country-us-no-state';
+import * as presets from './with-all-fields';
 
 const validateModel = (model: TLocationRest | TLocationGraphql): void => {
   expect(model).toEqual(
     expect.objectContaining({
-      country: 'US',
-      state: null,
+      country: expect.any(String),
+      state: expect.any(String),
     })
   );
 };
 
-describe('Location model withCountryUSNoState preset', () => {
+describe('Location model withAllFields preset', () => {
   it('builds a REST model', () => {
     const restModel = presets.restPreset().build();
 
@@ -25,7 +25,7 @@ describe('Location model withCountryUSNoState preset', () => {
   });
 });
 
-describe('Location model withCountryUSNoState compatibility preset', () => {
+describe('Location model withAllFields compatibility preset', () => {
   it('builds a default (REST) model', () => {
     const restModel = presets.compatPreset().build();
 
