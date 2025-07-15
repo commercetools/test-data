@@ -1,4 +1,4 @@
-import { type TBuilder } from '@/core';
+import { buildLimitGraphqlList, type TBuilder } from '@/core';
 import { LocalizedString } from '@/models/commons';
 import {
   AttributeBooleanTypeRest,
@@ -10,6 +10,7 @@ import {
   AttributeTextTypeGraphql,
   AttributeBooleanType,
   AttributeDefinition,
+  TAttributeDefinitionGraphql,
 } from '../..';
 import {
   attributeConstraints,
@@ -65,47 +66,50 @@ export const restPreset = (): TBuilder<TProductTypeRest> =>
 export const graphqlPreset = (): TBuilder<TProductTypeGraphql> =>
   GraphqlModelBuilder()
     .name('Milk Product Type')
-    .attributeDefinitions({
-      results: [
-        AttributeDefinitionGraphql.random()
-          .attributeConstraint(attributeConstraints.None)
-          .name('lactose-free')
-          .labelAllLocales(LocalizedString.presets.empty().en('Lactose Free'))
-          .inputTipAllLocales(
-            LocalizedString.presets
-              .empty()
-              .en('Important information for people with lactose intolerance')
-          )
-          .inputHint(inputHints.MultiLine)
-          .isRequired(true)
-          .isSearchable(true)
-          .type(AttributeBooleanTypeGraphql.random())
-          .build(),
-        AttributeDefinitionGraphql.random()
-          .attributeConstraint(attributeConstraints.SameForAll)
-          .name('cow-name')
-          .labelAllLocales(
-            LocalizedString.presets
-              .empty()
-              .en('Name of the cow producing the milk')
-          )
-          .inputTipAllLocales(
-            LocalizedString.presets
-              .empty()
-              .en(
-                'Public recognition of cow`s good deeds make it even happier!'
-              )
-          )
-          .inputHint(inputHints.SingleLine)
-          .isRequired(true)
-          .isSearchable(false)
-          .type(AttributeTextTypeGraphql.random())
-          .build(),
-      ],
-      total: 1,
-      offset: 0,
-      __typename: 'AttributeDefinitionResult',
-    });
+    .attributeDefinitions(
+      buildLimitGraphqlList<
+        TAttributeDefinitionGraphql,
+        'AttributeDefinitionResult'
+      >(
+        [
+          AttributeDefinitionGraphql.random()
+            .attributeConstraint(attributeConstraints.None)
+            .name('lactose-free')
+            .labelAllLocales(LocalizedString.presets.empty().en('Lactose Free'))
+            .inputTipAllLocales(
+              LocalizedString.presets
+                .empty()
+                .en('Important information for people with lactose intolerance')
+            )
+            .inputHint(inputHints.MultiLine)
+            .isRequired(true)
+            .isSearchable(true)
+            .type(AttributeBooleanTypeGraphql.random()),
+          AttributeDefinitionGraphql.random()
+            .attributeConstraint(attributeConstraints.SameForAll)
+            .name('cow-name')
+            .labelAllLocales(
+              LocalizedString.presets
+                .empty()
+                .en('Name of the cow producing the milk')
+            )
+            .inputTipAllLocales(
+              LocalizedString.presets
+                .empty()
+                .en(
+                  'Public recognition of cow`s good deeds make it even happier!'
+                )
+            )
+            .inputHint(inputHints.SingleLine)
+            .isRequired(true)
+            .isSearchable(false)
+            .type(AttributeTextTypeGraphql.random()),
+        ],
+        {
+          __typename: 'AttributeDefinitionResult',
+        }
+      )
+    );
 
 export const compatPreset = (): TBuilder<TProductType> =>
   CompatModelBuilder()

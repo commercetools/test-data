@@ -1,8 +1,9 @@
-import { fake, TModelFieldsConfig } from '@/core';
+import { buildLimitGraphqlList, fake, TModelFieldsConfig } from '@/core';
 import {
   AttributePlainEnumValueGraphql,
   AttributePlainEnumValueRest,
 } from '../attribute-plain-enum-value';
+import { TAttributePlainEnumValueGraphql } from '../attribute-plain-enum-value/types';
 import { TAttributeEnumTypeGraphql, TAttributeEnumTypeRest } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#AttributeEnumType
@@ -22,11 +23,14 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeEnumTypeGraphql> 
   {
     fields: {
       ...commonFieldsConfig,
-      values: fake(() => ({
-        results: [AttributePlainEnumValueGraphql.random().build()],
-        total: 1,
-        __typename: 'PlainEnumValueResult',
-      })),
+      values: fake(() => {
+        return buildLimitGraphqlList<
+          TAttributePlainEnumValueGraphql,
+          'PlainEnumValueResult'
+        >([AttributePlainEnumValueGraphql.random()], {
+          __typename: 'PlainEnumValueResult',
+        });
+      }),
       __typename: 'EnumAttributeDefinitionType',
     },
     postBuild: (model, context) => {
