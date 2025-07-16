@@ -31,7 +31,6 @@ describe('DiscountCodeInfo Builder', () => {
         }),
         state: expect.toBeOneOf(Object.values(states)),
         __typename: 'DiscountCodeInfo',
-        states,
       })
     );
   });
