@@ -1,3 +1,3 @@
 import { TCtpDiscountCodeState } from '@/graphql-types';
 
-export const discountCodeState = TCtpDiscountCodeState;
+export const state = TCtpDiscountCodeState;
