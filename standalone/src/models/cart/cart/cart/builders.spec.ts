@@ -3,6 +3,7 @@ import { Company } from '@/models/business-unit';
 import { KeyReference, Reference } from '@/models/commons';
 import { CustomerGroup } from '@/models/customer/customer-group';
 import { CustomFieldBooleanType } from '@/models/type';
+import { DiscountCodeInfoRest, DiscountCodeInfoGraphql } from '../index';
 import { LineItem } from '../line-item';
 import { cartState } from './constants';
 import type { TCart, TCartGraphql, TCartRest } from './types';
@@ -47,7 +48,6 @@ const validateCommonFields = (model: TCartRest | TCartGraphql) => {
       origin: expect.any(String),
       shippingMode: expect.any(String),
       shipping: expect.arrayContaining([]),
-      discountCodes: expect.arrayContaining([expect.any(String)]),
       createdAt: expect.any(String),
       lastModifiedAt: expect.any(String),
       cartState: expect.any(String),
@@ -78,6 +78,18 @@ const validateRestModel = (model: TCartRest) => {
         expect.objectContaining({
           id: expect.any(String),
           quantity: expect.any(Number),
+        }),
+      ]),
+      discountCodes: expect.arrayContaining([
+        expect.objectContaining({
+          discountCode: expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'discount-code',
+            obj: expect.any(Object),
+          }),
+          state: expect.toBeOneOf(
+            Object.values(DiscountCodeInfoRest.constants.states)
+          ),
         }),
       ]),
       customerGroup: expect.objectContaining({
@@ -132,6 +144,20 @@ const validateGraphqlModel = (model: TCartGraphql) => {
       lineItems: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'LineItem',
+        }),
+      ]),
+      discountCodes: expect.arrayContaining([
+        expect.objectContaining({
+          discountCode: expect.objectContaining({
+            __typename: 'DiscountCode',
+          }),
+          discountCodeRef: expect.objectContaining({
+            typeId: 'discount-code',
+            __typename: 'Reference',
+          }),
+          state: expect.toBeOneOf(
+            Object.values(DiscountCodeInfoGraphql.constants.states)
+          ),
         }),
       ]),
       shippingAddress: expect.objectContaining({

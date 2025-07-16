@@ -6,12 +6,18 @@ import {
   CentPrecisionMoney,
   ClientLogging,
   KeyReference,
-  Reference,
+  ReferenceGraphql,
+  ReferenceRest,
 } from '@/models/commons';
 import { CustomerGroup } from '@/models/customer/customer-group';
-import { Store } from '@/models/store';
+import { StoreGraphql } from '@/models/store';
 import { createRelatedDates } from '@/utils';
-import { LineItem } from '../index';
+import {
+  DiscountCodeInfoGraphql,
+  DiscountCodeInfoRest,
+  LineItemGraphql,
+  LineItemRest,
+} from '../index';
 import {
   cartState,
   inventoryMode,
@@ -38,7 +44,6 @@ const commonFieldsConfig = {
   taxMode: oneOf(...Object.values(taxMode)),
   taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
-  lineItems: fake(() => [LineItem.random()]),
   customLineItems: [],
   totalLineItemQuantity: fake((f) => f.number.int()),
   shippingAddress: fake(() => Address.random()),
@@ -52,7 +57,6 @@ const commonFieldsConfig = {
   shippingInfo: null,
   shipping: [],
   itemShippingAddresses: fake(() => [Address.random()]),
-  discountCodes: fake((f) => [f.lorem.word()]),
   directDiscounts: [],
   totalPrice: fake(() => CentPrecisionMoney.random()),
   taxedPrice: null,
@@ -72,10 +76,12 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
   fields: {
     ...commonFieldsConfig,
-    customerGroup: fake(() => Reference.random().typeId('customer-group')),
+    lineItems: fake(() => [LineItemRest.random()]),
+    discountCodes: fake((f) => [DiscountCodeInfoRest.random()]),
+    customerGroup: fake(() => ReferenceRest.presets.customerGroupReference()),
     businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
     store: fake(() => KeyReference.random().typeId('store')),
-    refusedGifts: fake(() => [Reference.random().typeId('cart-discount')]),
+    refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
     priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
@@ -84,11 +90,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
   fields: {
     ...commonFieldsConfig,
     __typename: 'Cart',
+    discountCodes: fake(() => [DiscountCodeInfoGraphql.random()]),
+    lineItems: fake(() => [LineItemGraphql.random()]),
     customerGroup: fake(() => CustomerGroup.random()),
     customerGroupRef: null,
     businessUnit: fake(() => Company.random()),
     businessUnitRef: null,
-    store: fake(() => Store.random()),
+    store: fake(() => StoreGraphql.random()),
     storeRef: null,
     refusedGifts: fake(() => [CartDiscount.random()]),
     refusedGiftsRefs: null,
@@ -106,13 +114,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
           .buildGraphql()
       : null;
     const customerGroupRef = model.customerGroup
-      ? Reference.presets
+      ? ReferenceGraphql.presets
           .customerGroupReference()
           .id(model.customerGroup.id)
           .buildGraphql()
       : null;
     const refusedGiftsRefs = model.refusedGifts.map((refusedGift) =>
-      Reference.presets
+      ReferenceGraphql.presets
         .cartDiscountReference()
         .id(refusedGift.id)
         .buildGraphql()

@@ -2,6 +2,7 @@
 export * from './cart/types';
 export * from './custom-line-item/types';
 export * from './discount-on-total-price/types';
+export * from './discount-code-info/types';
 export * from './discounted-total-price-portion/types';
 export * from './item-shipping-details/types';
 export * from './item-shipping-target/types';
@@ -15,6 +16,7 @@ export * from './cart/cart-draft';
 export * from './custom-line-item';
 export * from './custom-line-item/custom-line-item-draft';
 export * from './direct-discount';
+export * from './discount-code-info';
 export * from './discount-on-total-price';
 export * from './discounted-total-price-portion';
 export * from './discounted-line-item-portion';
