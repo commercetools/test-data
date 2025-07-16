@@ -1,4 +1,4 @@
-import { discountCodeState } from './constants';
+import { states } from './constants';
 import { DiscountCodeInfoRest, DiscountCodeInfoGraphql } from './index';
 
 describe('DiscountCodeInfo Builder', () => {
@@ -12,7 +12,7 @@ describe('DiscountCodeInfo Builder', () => {
           typeId: 'discount-code',
           obj: expect.any(Object),
         }),
-        state: expect.toBeOneOf(Object.values(discountCodeState)),
+        state: expect.toBeOneOf(Object.values(states)),
       })
     );
   });
@@ -29,8 +29,9 @@ describe('DiscountCodeInfo Builder', () => {
           typeId: 'discount-code',
           __typename: 'Reference',
         }),
-        state: expect.toBeOneOf(Object.values(discountCodeState)),
+        state: expect.toBeOneOf(Object.values(states)),
         __typename: 'DiscountCodeInfo',
+        states,
       })
     );
   });

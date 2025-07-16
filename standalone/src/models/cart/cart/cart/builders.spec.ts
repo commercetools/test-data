@@ -88,7 +88,7 @@ const validateRestModel = (model: TCartRest) => {
             obj: expect.any(Object),
           }),
           state: expect.toBeOneOf(
-            Object.values(DiscountCodeInfoRest.constants.state)
+            Object.values(DiscountCodeInfoRest.constants.states)
           ),
         }),
       ]),
@@ -156,7 +156,7 @@ const validateGraphqlModel = (model: TCartGraphql) => {
             __typename: 'Reference',
           }),
           state: expect.toBeOneOf(
-            Object.values(DiscountCodeInfoGraphql.constants.state)
+            Object.values(DiscountCodeInfoGraphql.constants.states)
           ),
         }),
       ]),

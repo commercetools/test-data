@@ -1,11 +1,11 @@
 import { fake, oneOf, type TModelFieldsConfig } from '@/core';
 import { ReferenceRest, ReferenceGraphql } from '@/models/commons';
 import { DiscountCode } from '@/models/discount/discount-code';
-import { discountCodeState } from './constants';
+import { states } from './constants';
 import type { TDiscountCodeInfoGraphql, TDiscountCodeInfoRest } from './types';
 
 const commonFieldsConfig = {
-  state: oneOf(...Object.values(discountCodeState)),
+  state: oneOf(...Object.values(states)),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TDiscountCodeInfoRest> = {
