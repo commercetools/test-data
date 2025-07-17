@@ -9,10 +9,10 @@ const validateModel = (
 ) => {
   expect(model).toMatchObject({
     key: expect.any(String),
-    name: null,
+    name: undefined,
     buyerAssignable: expect.any(Boolean),
     permissions: [],
-    custom: null,
+    custom: undefined,
   });
 };
 

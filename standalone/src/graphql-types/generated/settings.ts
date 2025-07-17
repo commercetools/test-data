@@ -9,9 +9,10 @@ type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
 type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
-type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
-  [_ in K]?: never;
-};
+type MakeEmpty<
+  T extends { [key: string]: unknown },
+  K extends keyof T,
+> = { [_ in K]?: never };
 type Incremental<T> =
   | T
   | {
@@ -1453,7 +1454,7 @@ export type TMcSettingsOidcSsoConfig = {
 export type TMcSettingsOidcSsoConfigDataInput = {
   authorityUrl: Scalars['String']['input'];
   clientId: Scalars['String']['input'];
-  clientSecret: Scalars['String']['input'];
+  clientSecret?: InputMaybe<Scalars['String']['input']>;
   logoutUrl?: InputMaybe<Scalars['String']['input']>;
   sessionTokenExpTimeSeconds?: InputMaybe<Scalars['Int']['input']>;
   teamIdForNewUsers: Scalars['String']['input'];
