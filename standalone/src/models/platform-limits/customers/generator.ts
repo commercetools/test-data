@@ -6,6 +6,7 @@ import { TCustomerLimitsProjection } from './types';
  */
 const generator = Generator<TCustomerLimitsProjection>({
   fields: {
+    maxGroupsPerCustomer: null,
     total: null,
   },
 });
