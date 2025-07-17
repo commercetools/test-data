@@ -1,9 +1,10 @@
-import { TBuilder } from '@/core';
+import { buildLimitGraphqlList, TBuilder } from '@/core';
 import {
   AttributePlainEnumValue,
   AttributePlainEnumValueGraphql,
   AttributePlainEnumValueRest,
 } from '../../attribute-plain-enum-value';
+import { TAttributePlainEnumValueGraphql } from '../../attribute-plain-enum-value/types';
 import {
   CompatModelBuilder,
   GraphqlModelBuilder,
@@ -22,14 +23,20 @@ export const restPreset = (): TBuilder<TAttributeEnumTypeRest> =>
   ]);
 
 export const graphqlPreset = (): TBuilder<TAttributeEnumTypeGraphql> =>
-  GraphqlModelBuilder().values({
-    total: 2,
-    results: [
-      AttributePlainEnumValueGraphql.presets.l().build(),
-      AttributePlainEnumValueGraphql.presets.xl().build(),
-    ],
-    __typename: 'PlainEnumValueResult',
-  });
+  GraphqlModelBuilder().values(
+    buildLimitGraphqlList<
+      TAttributePlainEnumValueGraphql,
+      'PlainEnumValueResult'
+    >(
+      [
+        AttributePlainEnumValueGraphql.presets.l(),
+        AttributePlainEnumValueGraphql.presets.xl(),
+      ],
+      {
+        __typename: 'PlainEnumValueResult',
+      }
+    )
+  );
 
 export const compatPreset = (): TBuilder<TAttributeEnumType> =>
   CompatModelBuilder().values([

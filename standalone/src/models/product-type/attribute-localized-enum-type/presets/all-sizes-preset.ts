@@ -1,9 +1,10 @@
-import { TBuilder } from '@/core';
+import { buildLimitGraphqlList, TBuilder } from '@/core';
 import {
   AttributeLocalizedEnumValue,
   AttributeLocalizedEnumValueGraphql,
   AttributeLocalizedEnumValueRest,
 } from '../../attribute-localized-enum-value';
+import { TAttributeLocalizedEnumValueGraphql } from '../../attribute-localized-enum-value/types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
@@ -24,16 +25,22 @@ export const restPreset = (): TBuilder<TAttributeLocalizedEnumTypeRest> =>
   ]);
 
 export const graphqlPreset = (): TBuilder<TAttributeLocalizedEnumTypeGraphql> =>
-  GraphqlModelBuilder().values({
-    results: [
-      AttributeLocalizedEnumValueGraphql.presets.s().build(),
-      AttributeLocalizedEnumValueGraphql.presets.m().build(),
-      AttributeLocalizedEnumValueGraphql.presets.l().build(),
-      AttributeLocalizedEnumValueGraphql.presets.xl().build(),
-    ],
-    total: 4,
-    __typename: 'LocalizableEnumValueTypeResult',
-  });
+  GraphqlModelBuilder().values(
+    buildLimitGraphqlList<
+      TAttributeLocalizedEnumValueGraphql,
+      'LocalizableEnumValueTypeResult'
+    >(
+      [
+        AttributeLocalizedEnumValueGraphql.presets.s(),
+        AttributeLocalizedEnumValueGraphql.presets.m(),
+        AttributeLocalizedEnumValueGraphql.presets.l(),
+        AttributeLocalizedEnumValueGraphql.presets.xl(),
+      ],
+      {
+        __typename: 'LocalizableEnumValueTypeResult',
+      }
+    )
+  );
 
 export const compatPreset = (): TBuilder<TAttributeLocalizedEnumType> =>
   CompatModelBuilder().values([

@@ -1,8 +1,9 @@
-import { type TBuilder } from '@/core';
+import { buildLimitGraphqlList, type TBuilder } from '@/core';
 import {
   AttributeDefinitionRest,
   AttributeDefinitionGraphql,
   AttributeDefinition,
+  TAttributeDefinitionGraphql,
 } from '../..';
 import {
   CompatModelBuilder,
@@ -26,15 +27,20 @@ export const restPreset = (): TBuilder<TProductTypeRest> =>
 export const graphqlPreset = (): TBuilder<TProductTypeGraphql> =>
   GraphqlModelBuilder()
     .name('T-shirt Product Type')
-    .attributeDefinitions({
-      results: [
-        AttributeDefinitionGraphql.presets.countryOfOrigin().build(),
-        AttributeDefinitionGraphql.presets.size().build(),
-      ],
-      total: 1,
-      offset: 0,
-      __typename: 'AttributeDefinitionResult',
-    });
+    .attributeDefinitions(
+      buildLimitGraphqlList<
+        TAttributeDefinitionGraphql,
+        'AttributeDefinitionResult'
+      >(
+        [
+          AttributeDefinitionGraphql.presets.countryOfOrigin(),
+          AttributeDefinitionGraphql.presets.size(),
+        ],
+        {
+          __typename: 'AttributeDefinitionResult',
+        }
+      )
+    );
 
 export const compatPreset = (): TBuilder<TProductType> =>
   CompatModelBuilder()

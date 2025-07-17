@@ -13,6 +13,11 @@ import type {
   TTransformType,
   TTransformBuildName,
   TModelFieldsConfig,
+  TGraphqlBaseModel,
+  TLimitGraphqlListParams,
+  TLimitGraphqlListResult,
+  TCountGraphqlListParams,
+  TCountGraphqlListResult,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -149,7 +154,9 @@ const buildFields = <Model, TransformedModel = Model>(
     buildField<Model, TransformedModel>(builder, transformName, meta)
   );
 };
-
+/**
+ * @deprecated Use `buildLimitGraphqlList` or `buildCountGraphqlList` instead.
+ */
 const buildGraphqlList = <Model, GraphqlModel = Model>(
   builders: TBuilder<Model>[],
   { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
@@ -163,6 +170,43 @@ const buildGraphqlList = <Model, GraphqlModel = Model>(
       offset,
     }
   );
+};
+
+const buildLimitGraphqlList = <
+  GraphqlModel extends TGraphqlBaseModel,
+  TypeName extends string,
+>(
+  builders: TBuilder<GraphqlModel>[],
+  params: TLimitGraphqlListParams<TypeName>
+): TLimitGraphqlListResult<GraphqlModel, TypeName> => {
+  const models = buildFields<GraphqlModel>(builders, 'graphql');
+
+  return {
+    limit: params.limit ?? 100,
+    offset: params.offset ?? 0,
+    total: params.total ?? models.length,
+    results: models,
+    __typename: params.__typename,
+  };
+};
+
+const buildCountGraphqlList = <
+  GraphqlModel extends TGraphqlBaseModel,
+  TypeName extends string,
+>(
+  builders: TBuilder<GraphqlModel>[],
+  params: TCountGraphqlListParams<TypeName>
+): TCountGraphqlListResult<GraphqlModel, TypeName> => {
+  const models = buildFields<GraphqlModel>(builders, 'graphql');
+
+  return {
+    count: params.count ?? 100,
+    exists: params.exists ?? models.length > 0,
+    offset: params.offset ?? 0,
+    total: params.total ?? models.length,
+    results: models,
+    __typename: params.__typename,
+  };
 };
 
 const buildRestList = <Model, RestModel = Model>(
@@ -266,6 +310,8 @@ export {
   buildField,
   buildFields,
   buildGraphqlList,
+  buildCountGraphqlList,
+  buildLimitGraphqlList,
   buildRestList,
   createSpecializedTransformers,
   createSpecializedBuilder,

@@ -50,15 +50,94 @@ Releases of test-data models can be created when needed by merging a respective 
 
 Using models is pretty straightforward. You import the package and build the model, which returns the data in the requested shape.
 
-For example, assuming we have an `Author` model from a `stories` package:
+Since we have REST and GraphQL APIs, you can build objects for each representation.
+
+Here's a basic example for a random `Product`:
 
 ```ts
-import type { TAuthor } from '@commercetools-test-data/stories';
+import {
+  ProductGraphql,
+  ProductRest,
+} from '@commercetools/composable-commerce-test-data/product';
 
-import { Author } from '@commercetools-test-data/stories';
+const restProduct = ProductRest.random().key('ford-t').build();
+const graphqlProduct = ProductGraphql.random().key('ford-t').build();
+```
 
-const author1 = Author.random().firstName('John').buildGraphql<TAuthor>();
-const author2 = Author.random().firstName('Rebecca').buildGraphql<TAuthor>();
+## Presets
+
+Some models also have `presets`. These are helpers which generates specific versions of a model:
+
+```ts
+import {
+  ProductGraphql,
+  ProductRest,
+} from '@commercetools/composable-commerce-test-data/product';
+
+const restProduct = ProductRest.presets.happyCowMilk().build();
+const graphqlProduct = ProductGraphql.presets.happyCowMilk().build();
+```
+
+## GraphQL lists
+
+In some scenarios you might want to generate an object that resembles a GraphQL query with a list result.
+
+There are two main types of list results:
+
+- `limit` query based
+- `count` query based
+
+We also have some helper functions that can make the process of generating such objects easier:
+
+```ts
+import {
+  buildLimitGraphqlList,
+  buildCountGraphqlList,
+} from '@commercetools/composable-commerce-test-data/core';
+import { ProductGraphql } from '@commercetools/composable-commerce-test-data/product';
+
+const limitBasedResult = buildLimitGraphqlList(
+  [ProductGraphql.random(), ProductGraphql.random()],
+  {
+    __typename: 'ProductResult',
+  }
+);
+/*
+  Return object:
+
+  {
+    limit: 100,
+    offset: 0,
+    total: 2,
+    results: [
+      { ..., __typename: 'Product' },
+      { ..., __typename: 'Product' },
+    ],
+    __typename: 'ProductResult',
+  };
+*/
+
+const countBasedResult = buildCountGraphqlList(
+  [ProductGraphql.random(), ProductGraphql.random()],
+  {
+    __typename: 'ProductResult',
+  }
+);
+/*
+  Return object:
+
+  {
+    count: 100,
+    exists: true,
+    offset: 0,
+    total: 2,
+    results: [
+      { ..., __typename: 'Product' },
+      { ..., __typename: 'Product' },
+    ],
+    __typename: 'ProductResult',
+  };
+*/
 ```
 
 # Local Development with Linked Packages

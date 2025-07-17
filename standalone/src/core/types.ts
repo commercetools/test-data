@@ -31,6 +31,46 @@ export type TGraphqlPaginatedQueryResult<Model> = {
   __typename: string;
 } & TPaginatedQueryResult<Model>;
 
+export type TGraphqlBaseModel = { __typename?: string };
+
+export type TLimitGraphqlListParams<TypeName extends string = string> = {
+  limit?: number;
+  offset?: number;
+  total?: number;
+  __typename: TypeName;
+};
+
+export type TLimitGraphqlListResult<
+  Model extends TGraphqlBaseModel,
+  TypeName extends string = string,
+> = {
+  __typename: TypeName;
+  limit: number;
+  offset: number;
+  total: number;
+  results: Model[];
+};
+
+export type TCountGraphqlListParams<TypeName extends string = string> = {
+  count?: number;
+  exists?: boolean;
+  offset?: number;
+  total?: number;
+  __typename: TypeName;
+};
+
+export type TCountGraphqlListResult<
+  Model extends TGraphqlBaseModel,
+  TypeName extends string = string,
+> = {
+  __typename: TypeName;
+  count: number;
+  exists: boolean;
+  offset: number;
+  total: number;
+  results: Model[];
+};
+
 export type TBuildFieldMeta<Model> = {
   fieldToBuild: keyof Model;
 };
