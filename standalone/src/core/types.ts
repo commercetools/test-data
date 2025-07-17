@@ -40,7 +40,7 @@ export type TLimitGraphqlListParams<TypeName extends string = string> = {
   __typename: TypeName;
 };
 
-export type TLimitGraphqlLisResult<
+export type TLimitGraphqlListResult<
   Model extends TGraphqlBaseModel,
   TypeName extends string = string,
 > = {

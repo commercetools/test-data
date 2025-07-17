@@ -15,7 +15,7 @@ import type {
   TModelFieldsConfig,
   TGraphqlBaseModel,
   TLimitGraphqlListParams,
-  TLimitGraphqlLisResult,
+  TLimitGraphqlListResult,
   TCountGraphqlListParams,
   TCountGraphqlListResult,
 } from './types';
@@ -178,7 +178,7 @@ const buildLimitGraphqlList = <
 >(
   builders: TBuilder<GraphqlModel>[],
   params: TLimitGraphqlListParams<TypeName>
-): TLimitGraphqlLisResult<GraphqlModel, TypeName> => {
+): TLimitGraphqlListResult<GraphqlModel, TypeName> => {
   const models = buildFields<GraphqlModel>(builders, 'graphql');
 
   return {
