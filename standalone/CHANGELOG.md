@@ -1,5 +1,118 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.3.0
+
+### Minor Changes
+
+- [#933](https://github.com/commercetools/test-data/pull/933) [`50f92a0`](https://github.com/commercetools/test-data/commit/50f92a09e658ba4307203baa8b8dc41576aa5bfd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing two new helper functions which helps generating GraphQL lists:
+
+  - `buildLimitGraphqlList`
+  - `buildCountGraphqlList`
+
+  both in the `@commercetools/composable-commerce-test-data/core` entry point.
+
+  When looking through the generated GraphQL types we've found we have two types of lists results:
+
+  ```ts
+  // Limit based
+  export type TCtpInterfaceInteractionsRawResult = {
+    __typename?: 'InterfaceInteractionsRawResult';
+    limit?: Maybe<Scalars['Int']['output']>;
+    offset?: Maybe<Scalars['Int']['output']>;
+    results: Array<TCtpInterfaceInteractionsRaw>;
+    total: Scalars['Int']['output'];
+  };
+
+  // Count based
+  export type TCtpInventoryEntryQueryResult = {
+    __typename?: 'InventoryEntryQueryResult';
+    count: Scalars['Int']['output'];
+    exists: Scalars['Boolean']['output'];
+    offset: Scalars['Int']['output'];
+    results: Array<TCtpInventoryEntry>;
+    total: Scalars['Long']['output'];
+  };
+  ```
+
+  With these new two helpers, consumers have a more ergonomic way of building this type of results lists.
+
+  Here's an example for a limit-based result list:
+
+  ```ts
+  import { buildLimitGraphqlList } from '@/core';
+  import {
+    AttributeDefinitionGraphql,
+    type TAttributeDefinitionGraphql,
+  } from '@commercetools/composable-commerce-test-data/product-type';
+
+  const attributeDefinitionsResultGraphql = buildLimitGraphqlList<
+    TAttributeDefinitionGraphql,
+    'AttributeDefinitionResult'
+  >(
+    [
+      AttributeDefinitionGraphql.presets.countryOfOrigin(),
+      AttributeDefinitionGraphql.presets.size(),
+    ],
+    {
+      __typename: 'AttributeDefinitionResult',
+    }
+  );
+  ```
+
+  Here's an example for a count-based result list:
+
+  ```ts
+  import { buildCountGraphqlList } from '@/core';
+  import {
+    InventoryEntryGraphql,
+    type TInventoryEntryGraphql,
+  } from '@commercetools/composable-commerce-test-data/inventory-entry';
+
+  const inventoryEntriesResultGraphql = buildCountGraphqlList<
+    TAttributeDefinitionGraphql,
+    'InventoryEntryQueryResult'
+  >(
+    [
+      InventoryEntryGraphql.random(),
+      InventoryEntryGraphql.random(),
+      InventoryEntryGraphql.random(),
+    ],
+    {
+      __typename: 'InventoryEntryQueryResult',
+    }
+  );
+  ```
+
+- [#927](https://github.com/commercetools/test-data/pull/927) [`baa8b9e`](https://github.com/commercetools/test-data/commit/baa8b9ede50959cbbec6a982ef35b4a1db62e6cc) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - We've migrated the `Location` model to the new implementation patterns.
+
+  The model was populating the `state` property by default which goes against the rule of only populating required fields by default.
+  We've changed that property to not be populated by default and also included a new preset which can be used when consumers need to generate a fully populated object.
+
+  Example:
+
+  ```ts
+  import { LocationGraphql } from '@commercetools/composable-commerce-test-data/zone';
+
+  const fullLocation = LocationGraphql.presets.withAllFields();
+  ```
+
+### Patch Changes
+
+- [#932](https://github.com/commercetools/test-data/pull/932) [`8b68cdc`](https://github.com/commercetools/test-data/commit/8b68cdc8099612984010ae4e0029a6f9292b0843) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing a new model named `DiscountCodeInfo` that can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.
+
+  This is how the new model could be used:
+
+  ```ts
+  import {
+    DiscountCodeInfoRest,
+    DiscountCodeInfoGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const restDiscountCodeInfo = DiscountCodeInfoRest.random().build();
+
+  const graphqlDiscountCodeInfo = DiscountCodeInfoGraphql.random().build();
+  ```
+
 ## 13.2.0
 
 ### Minor Changes
