@@ -3,13 +3,10 @@ export * from './payment/types';
 export * from './payment-method-info/types';
 export * from './payment-status/types';
 export * from './transaction/types';
-export * from './payment-info/types';
 
 // Export models
 export * as Payment from './payment';
 export * as PaymentDraft from './payment/payment-draft';
-
-export * from './payment-info';
 
 export * as PaymentMethodInfo from './payment-method-info';
 export * as PaymentMethodInfoDraft from './payment-method-info/payment-method-info-draft';
