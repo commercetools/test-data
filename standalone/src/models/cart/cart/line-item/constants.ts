@@ -1,16 +1,11 @@
-export const inventoryMode = {
-  TrackOnly: 'TrackOnly',
-  ReserveOnOrder: 'ReserveOnOrder',
-  None: 'None',
-} as const;
+import {
+  TCtpInventoryMode,
+  TCtpLineItemMode,
+  TCtpLineItemPriceMode,
+} from '@/graphql-types';
 
-export const priceMode = {
-  Platform: 'Platform',
-  ExternalPrice: 'ExternalPrice',
-  ExternalTotal: 'ExternalTotal',
-} as const;
+export const inventoryMode = TCtpInventoryMode;
 
-export const lineItemMode = {
-  Standard: 'Standard',
-  GiftLineItem: 'GiftLineItem',
-} as const;
+export const priceMode = TCtpLineItemPriceMode;
+
+export const lineItemMode = TCtpLineItemMode;
