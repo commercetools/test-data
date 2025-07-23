@@ -71,6 +71,7 @@ const commonFieldsConfig = {
   cartState: oneOf(...Object.values(cartState)),
   paymentInfo: null,
   discountTypeCombination: null,
+  priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
@@ -82,7 +83,6 @@ export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
     businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
     store: fake(() => KeyReference.random().typeId('store')),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
-    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 

@@ -1,63 +1,34 @@
-export const inventoryMode = {
-  TrackOnly: 'TrackOnly',
-  ReserveOnOrder: 'ReserveOnOrder',
-  None: 'None',
-} as const;
+import {
+  TCtpCartOrigin,
+  TCtpCartState,
+  TCtpCustomLineItemPriceMode,
+  TCtpInventoryMode,
+  TCtpLineItemMode,
+  TCtpLineItemPriceMode,
+  TCtpRoundingMode,
+  TCtpShippingMode,
+  TCtpTaxCalculationMode,
+  TCtpTaxMode,
+} from '@/graphql-types';
 
-export const taxMode = {
-  Platform: 'Platform',
-  External: 'External',
-  ExternalAmount: 'ExternalAmount',
-  Disabled: 'Disabled',
-} as const;
+export const inventoryMode = TCtpInventoryMode;
 
-export const taxRoundingMode = {
-  HalfEven: 'HalfEven',
-  HalfUp: 'HalfUp',
-  HalfDown: 'HalfDown',
-} as const;
+export const taxMode = TCtpTaxMode;
 
-export const taxCalculationMode = {
-  LineItemLevel: 'LineItemLevel',
-  UnitPriceLevel: 'UnitPriceLevel',
-} as const;
+export const taxRoundingMode = TCtpRoundingMode;
 
-export const origin = {
-  Customer: 'Customer',
-  Merchant: 'Merchant',
-  Quote: 'Quote',
-} as const;
+export const taxCalculationMode = TCtpTaxCalculationMode;
 
-export const shippingMode = {
-  Single: 'Single',
-  Multiple: 'Multiple',
-} as const;
+export const origin = TCtpCartOrigin;
 
-export const cartState = {
-  Active: 'Active',
-  Merged: 'Merged',
-  Ordered: 'Ordered',
-  Frozen: 'Frozen',
-} as const;
+export const shippingMode = TCtpShippingMode;
 
-export const customLineItemPriceMode = {
-  Standard: 'Standard',
-  External: 'External',
-} as const;
+export const cartState = TCtpCartState;
 
-export const priceMode = {
-  Platform: 'Platform',
-  ExternalPrice: 'ExternalPrice',
-  ExternalTotal: 'ExternalTotal',
-} as const;
+export const customLineItemPriceMode = TCtpCustomLineItemPriceMode;
 
-export const priceRoundingMode = {
-  HalfEven: 'HalfEven',
-  HalfUp: 'HalfUp',
-  HalfDown: 'HalfDown',
-} as const;
+export const priceMode = TCtpLineItemPriceMode;
 
-export const lineItemMode = {
-  Standard: 'Standard',
-  GiftLineItem: 'GiftLineItem',
-} as const;
+export const priceRoundingMode = TCtpRoundingMode;
+
+export const lineItemMode = TCtpLineItemMode;

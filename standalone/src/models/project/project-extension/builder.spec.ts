@@ -16,6 +16,7 @@ describe('builder', () => {
         applications: expect.any(Array),
         projectKey: expect.any(String),
         isRichTextEditorEnabled: expect.any(Boolean),
+        isReducedReviewModifiedProductsPaginationEnabled: expect.any(Boolean),
         installedApplications: expect.arrayContaining([
           expect.objectContaining({
             id: expect.any(String),
@@ -71,6 +72,7 @@ describe('builder', () => {
         applications: expect.any(Array),
         projectKey: expect.any(String),
         isRichTextEditorEnabled: expect.any(Boolean),
+        isReducedReviewModifiedProductsPaginationEnabled: expect.any(Boolean),
         installedApplications: expect.arrayContaining([
           expect.objectContaining({
             id: expect.any(String),
