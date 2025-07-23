@@ -1,22 +1,6 @@
 import type { TBuilder } from '@/core';
 import { TCtpReference } from '@/graphql-types';
 
-// export interface BusinessUnitReference {
-//     readonly typeId: 'business-unit';
-//     /**
-//      *	Unique identifier of the referenced [BusinessUnit](ctp:api:type:BusinessUnit).
-//      *
-//      *
-//      */
-//     readonly id: string;
-//     /**
-//      *	Contains the representation of the expanded BusinessUnit. Only present in responses to requests with [Reference Expansion](/../api/general-concepts#reference-expansion) for BusinessUnit.
-//      *
-//      *
-//      */
-//     readonly obj?: BusinessUnit;
-// }
-
 // Legacy model
 export interface TReference<TypeId = string> {
   typeId: TypeId;
@@ -58,17 +42,6 @@ export type TReferenceDraftRest<TypeId = string> = TReferenceDraft<TypeId>;
 export type TReferenceDraftGraphql<TypeId = string> = TReferenceDraft<TypeId>;
 
 // Builders
-// export type TCreateReferenceBuilder<TypeId = string> =
-//   () => TReferenceBuilder<TypeId>;
-
-// export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
-
-// export type TReferenceDraftBuilder<TypeId = string> = TBuilder<
-//   TReferenceDraft<TypeId>
-// >;
-// export type TCreateReferenceDraftBuilder<TypeId = string> =
-//   () => TReferenceDraftBuilder<TypeId>;
-
 export type TCreateReferenceBuilder<
   TReferenceModel extends
     | TReferenceRest
