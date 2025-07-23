@@ -3,13 +3,18 @@ import {
   GraphQLModelBuilder,
   RestModelBuilder,
 } from './builder';
+import * as moneyPresets from './presets';
+
+export * from './types';
 
 export const MoneyRest = {
   random: RestModelBuilder,
+  presets: moneyPresets.restPresets,
 };
 
 export const MoneyGraphql = {
   random: GraphQLModelBuilder,
+  presets: moneyPresets.graphqlPresets,
 };
 
 /**
@@ -17,4 +22,5 @@ export const MoneyGraphql = {
  */
 export const Money = {
   random: CompatMoneyModelBuilder,
+  presets: moneyPresets.compatPresets,
 };
