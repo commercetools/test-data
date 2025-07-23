@@ -6,6 +6,7 @@ import {
 import * as moneyPresets from './presets';
 
 export * from './types';
+export * from './money-draft';
 
 export const MoneyRest = {
   random: RestModelBuilder,
