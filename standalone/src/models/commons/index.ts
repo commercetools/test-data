@@ -1,5 +1,6 @@
 // Export types
 export * from './address/types';
+export * from './base-money/types';
 export * from './cent-precision-money/types';
 export * from './client-logging/types';
 export * from './discounted-line-item-portion/types';
@@ -29,12 +30,15 @@ export * as LocalizedString from './localized-string';
 export * as LocalizedStringDraft from './localized-string/localized-string-draft';
 export * as Money from './money';
 export * as MoneyDraft from './money/money-draft';
-export * as Price from './price';
-export * as PriceDraft from './price/price-draft';
+// export * as Price from './price';
+// export * as PriceDraft from './price/price-draft';
 export * as PriceTier from './price-tier';
 export * as PriceTierDraft from './price-tier/price-tier-draft';
 
+export * from './base-money/base-money-draft';
 export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
 export * from './geometry';
+export * from './price';
+export * from './price/price-draft';
 export * from './reference';

@@ -1,5 +1,9 @@
-import { TPriceDraftGraphql, TPriceDraftRest } from '../../types';
-import * as minimalPresets from './minimal';
+import { TPriceDraftGraphql, TPriceDraftRest } from '../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
 
 const validateModel = (model: TPriceDraftRest | TPriceDraftGraphql) => {
   expect(model).toEqual(
@@ -23,7 +27,7 @@ const validateRestModel = (model: TPriceDraftRest) => {
   expect(model.value).toEqual(
     expect.objectContaining({
       centAmount: expect.any(Number),
-      currencyCode: 'USD',
+      currencyCode: expect.any(String),
     })
   );
 };
@@ -34,11 +38,11 @@ const validateGraphqlModel = (model: TPriceDraftGraphql) => {
     expect.objectContaining({
       centPrecision: expect.objectContaining({
         centAmount: expect.any(Number),
-        currencyCode: 'USD',
+        currencyCode: expect.any(String),
       }),
       highPrecision: expect.objectContaining({
         type: 'highPrecision',
-        currencyCode: 'USD',
+        currencyCode: expect.any(String),
         fractionDigits: expect.any(Number),
         preciseAmount: expect.any(Number),
       }),
@@ -46,15 +50,15 @@ const validateGraphqlModel = (model: TPriceDraftGraphql) => {
   );
 };
 
-describe('PriceDraft model "minimal" presets', () => {
+describe('PriceDraft model builders', () => {
   it('builds a REST model', () => {
-    const restModel = minimalPresets.restPreset().build();
+    const restModel = RestModelBuilder().build();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = minimalPresets.graphqlPreset().build();
+    const graphqlModel = GraphqlModelBuilder().build();
 
     validateGraphqlModel(graphqlModel);
   });
@@ -62,21 +66,20 @@ describe('PriceDraft model "minimal" presets', () => {
 
 describe('Channel model compatibility builders', () => {
   it('builds a default model', () => {
-    const model = minimalPresets.compatPreset().build();
+    const model = CompatModelBuilder().build();
 
     validateRestModel(model);
   });
 
   it('builds a REST model', () => {
-    const restModel = minimalPresets.compatPreset().buildRest();
+    const restModel = CompatModelBuilder().buildRest();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = minimalPresets
-      .compatPreset()
-      .buildGraphql<TPriceDraftGraphql>();
+    const graphqlModel =
+      CompatModelBuilder().buildGraphql<TPriceDraftGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });
