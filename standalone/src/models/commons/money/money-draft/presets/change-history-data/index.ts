@@ -4,4 +4,14 @@ import {
   compatPreset,
 } from './with-usd-currency-code';
 
-export { restPreset, graphqlPreset, compatPreset };
+export const restPresets = {
+  withUsdCurrencyCode: restPreset,
+};
+
+export const graphqlPresets = {
+  withUsdCurrencyCode: graphqlPreset,
+};
+
+export const compatPresets = {
+  withUsdCurrencyCode: compatPreset,
+};
