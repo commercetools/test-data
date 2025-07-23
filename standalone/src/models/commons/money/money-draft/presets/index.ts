@@ -1,7 +1,21 @@
-import changeHistoryData from './change-history-data';
-import withCent from './with-cent';
-import withCurrency from './with-currency';
+import * as changeHistoryData from './change-history-data';
+import * as withCent from './with-cent';
+import * as withCurrency from './with-currency';
 
-const presets = { changeHistoryData, withCent, withCurrency };
+export const restPresets = {
+  withCent: withCent.restPreset,
+  withCurrency: withCurrency.restPreset,
+  changeHistoryData: changeHistoryData.restPresets,
+};
 
-export default presets;
+export const graphqlPresets = {
+  withCent: withCent.graphqlPreset,
+  withCurrency: withCurrency.graphqlPreset,
+  changeHistoryData: changeHistoryData.graphqlPresets,
+};
+
+export const compatPresets = {
+  withCent: withCent.compatPreset,
+  withCurrency: withCurrency.compatPreset,
+  changeHistoryData: changeHistoryData.compatPresets,
+};

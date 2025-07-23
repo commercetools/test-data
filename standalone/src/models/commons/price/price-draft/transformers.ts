@@ -1,5 +1,5 @@
 import { Transformer } from '@/core';
-import { MoneyDraft, TMoneyDraftGraphql } from '../../money';
+import { MoneyDraft, TMoneyDraftGraphql } from '@/models/commons';
 import type { TPriceDraft, TPriceDraftGraphql } from '../types';
 
 const transformers = {

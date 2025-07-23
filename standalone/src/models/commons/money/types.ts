@@ -2,18 +2,30 @@ import { Money } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import { TCtpMoney, TCtpMoneyDraft } from '@/graphql-types';
 
-// Base model
+/**
+ * @deprecated use `TMoneyRest` or `TMoneyGraphql` instead
+ */
 export type TMoney = Money;
-
-export type TMoneyGraphql = TCtpMoney;
-
-export type TMoneyBuilder = TBuilder<TMoney>;
-export type TCreateMoneyBuilder = () => TMoneyBuilder;
-
-// Draft model
+/**
+ * @deprecated use `TMoneyDraftRest` or `TMoneyDraftGraphql` instead
+ */
 export type TMoneyDraft = Money;
 
+// REST types
+export type TMoneyRest = Money;
+export type TMoneyDraftRest = Money;
+
+// GraphQL types
+export type TMoneyGraphql = TCtpMoney;
 export type TMoneyDraftGraphql = TCtpMoneyDraft;
 
-export type TMoneyDraftBuilder = TBuilder<TMoneyDraft>;
-export type TCreateMoneyDraftBuilder = () => TMoneyDraftBuilder;
+// Builders
+export type TCreateMoneyBuilder<
+  TModel extends
+    | TMoney
+    | TMoneyDraft
+    | TMoneyRest
+    | TMoneyGraphql
+    | TMoneyDraftRest
+    | TMoneyDraftGraphql,
+> = () => TBuilder<TModel>;

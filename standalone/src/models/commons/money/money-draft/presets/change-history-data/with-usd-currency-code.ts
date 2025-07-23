@@ -1,7 +1,17 @@
-import { TMoneyDraftBuilder } from '../../../types';
-import MoneyDraft from '../../builder';
+import { TBuilder } from '@/core';
+import type { TMoneyDraftRest, TMoneyDraftGraphql } from '../../../types';
+import {
+  GraphQLModelBuilder,
+  RestModelBuilder,
+  CompatDraftModelBuilder,
+} from '../../builders';
 
-const withUsdCurrencyCode = (): TMoneyDraftBuilder =>
-  MoneyDraft().currencyCode('USD');
+export const restPreset = (): TBuilder<TMoneyDraftRest> =>
+  RestModelBuilder().currencyCode('USD');
 
-export default withUsdCurrencyCode;
+export const graphqlPreset = (): TBuilder<TMoneyDraftGraphql> =>
+  GraphQLModelBuilder().currencyCode('USD');
+
+export const compatPreset = (): TBuilder<
+  TMoneyDraftRest | TMoneyDraftGraphql
+> => CompatDraftModelBuilder().currencyCode('USD');

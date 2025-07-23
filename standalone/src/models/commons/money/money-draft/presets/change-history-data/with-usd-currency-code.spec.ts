@@ -1,15 +1,49 @@
-import { TMoneyDraft } from '../../../types';
-import withUsdCurrencyCode from './with-usd-currency-code';
+import { TMoneyDraftRest, TMoneyDraftGraphql } from '../../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-usd-currency-code';
 
-describe('MoneyDraft with a defined `USD` currencyCode', () => {
-  it('should return a currencyCode set to `USD`', () => {
-    const usdCurrencyCode = withUsdCurrencyCode().build<TMoneyDraft>();
+function validateModel(model: TMoneyDraftRest | TMoneyDraftGraphql) {
+  expect(model).toEqual(
+    expect.objectContaining({
+      centAmount: expect.any(Number),
+      currencyCode: 'USD',
+    })
+  );
+}
 
-    expect(usdCurrencyCode).toEqual(
-      expect.objectContaining({
-        currencyCode: 'USD',
-        centAmount: expect.any(Number),
-      })
-    );
+describe('Money with a defined `USD` currencyCode', () => {
+  it('should return a currencyCode set to `USD` for REST', () => {
+    const usdCurrencyCode = restPreset().build<TMoneyDraftRest>();
+
+    validateModel(usdCurrencyCode);
+  });
+
+  it('should return a currencyCode set to `USD` for GraphQL', () => {
+    const usdCurrencyCode = graphqlPreset().build<TMoneyDraftGraphql>();
+
+    validateModel(usdCurrencyCode);
+  });
+});
+
+describe('Money with a defined `USD` currencyCode compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const usdCurrencyCode = compatPreset().build();
+
+    validateModel(usdCurrencyCode);
+  });
+
+  it('builds a REST model', () => {
+    const usdCurrencyCode = compatPreset().buildRest();
+
+    validateModel(usdCurrencyCode);
+  });
+
+  it('builds a GraphQL model', () => {
+    const usdCurrencyCode = compatPreset().buildGraphql<TMoneyDraftGraphql>();
+
+    validateModel(usdCurrencyCode);
   });
 });
