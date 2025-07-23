@@ -1,5 +1,24 @@
-export * as MoneyDraft from './money-draft';
+import {
+  CompatModelBuilder,
+  GraphQLModelBuilder,
+  RestModelBuilder,
+} from './builders';
+import * as moneyPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export const MoneyRest = {
+  random: RestModelBuilder,
+  presets: moneyPresets.restPresets,
+};
+
+export const MoneyGraphql = {
+  random: GraphQLModelBuilder,
+  presets: moneyPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `MoneyRest` or `MoneyGraphql` exported models instead of `Money`.
+ */
+export const Money = {
+  random: CompatModelBuilder,
+  presets: moneyPresets.compatPresets,
+};
