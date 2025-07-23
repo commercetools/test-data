@@ -40,6 +40,7 @@ describe('InventoryEntry model builders', () => {
           id: expect.any(String),
           __typename: 'Channel',
         }),
+        reservationExpirationInMinutes: null,
         custom: null,
       })
     );

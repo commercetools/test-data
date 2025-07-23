@@ -62,6 +62,7 @@ const commonFieldsConfig = {
   taxedPrice: null,
   taxedShippingPrice: null,
   discountOnTotalPrice: null,
+  priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   shippingKey: fake((f) => f.lorem.slug(2)),
   shippingCustomFields: null,
   createdAt: fake(getOlderDate),
@@ -82,7 +83,6 @@ export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
     businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
     store: fake(() => KeyReference.random().typeId('store')),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
-    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 

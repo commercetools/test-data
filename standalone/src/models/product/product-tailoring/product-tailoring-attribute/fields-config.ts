@@ -26,6 +26,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringAttributeG
       value: fake(() => '{}'),
       referencedResourceSet: [],
       attributeDefinition: null,
+      attributesRaw: null,
       referencedResource: null,
     },
   };

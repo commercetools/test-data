@@ -23,6 +23,9 @@ const generator = Generator<TProjectExtension>({
     ]),
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),
     isRichTextEditorEnabled: fake((f) => f.datatype.boolean()),
+    isReducedReviewModifiedProductsPaginationEnabled: fake((f) =>
+      f.datatype.boolean()
+    ),
     orderStatesVisibility: fake((f) =>
       f.helpers.arrayElements([
         'HideOrderState',
