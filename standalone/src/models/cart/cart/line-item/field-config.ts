@@ -12,7 +12,7 @@ import {
   ProductVariantRest,
   ProductVariantGraphql,
 } from '@/models/product/product';
-import { ProductType } from '@/models/product-type';
+import { ProductTypeGraphql } from '@/models/product-type';
 import { TaxRateGraphql, TaxRateRest } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';
 import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
@@ -64,13 +64,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     ...commonFieldsConfig,
     name: null,
     productSlug: null,
-    productType: fake(() => ProductType.random()),
+    productType: fake(() => ProductTypeGraphql.random()),
     variant: fake(() => ProductVariantGraphql.random()),
     totalPrice: fake(() => Money.random()),
     supplyChannel: fake(() => ChannelGraphql.random()),
     distributionChannel: fake(() => ChannelGraphql.random()),
     distributionChannelRef: null,
-    nameAllLocales: fake((f) => LocalizedString.random()),
+    nameAllLocales: fake(() => LocalizedString.random()),
     productSlugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
     productTypeRef: null,
     supplyChannelRef: null,
