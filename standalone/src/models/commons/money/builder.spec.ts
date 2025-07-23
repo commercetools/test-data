@@ -1,43 +1,57 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@/core/test-utils';
-import { TMoney, TMoneyGraphql } from './types';
-import * as Money from './index';
+import type { TMoneyGraphql, TMoneyRest } from './types';
+import { Money, MoneyRest, MoneyGraphql } from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TMoney, TMoney>(
-      'default',
-      Money.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      })
-    )
+function validateRestModel(restModel: TMoneyRest) {
+  expect(restModel).toEqual(
+    expect.objectContaining({
+      centAmount: expect.any(Number),
+      currencyCode: expect.any(String),
+    })
   );
+}
 
-  it(
-    ...createBuilderSpec<TMoney, TMoney>(
-      'rest',
-      Money.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      })
-    )
+function validateGraphqlModel(graphqlModel: TMoneyGraphql) {
+  expect(graphqlModel).toEqual(
+    expect.objectContaining({
+      __typename: 'Money',
+      centAmount: expect.any(Number),
+      currencyCode: expect.any(String),
+      type: 'centPrecision',
+      fractionDigits: 2,
+    })
   );
+}
 
-  it(
-    ...createBuilderSpec<TMoney, TMoneyGraphql>(
-      'graphql',
-      Money.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-        type: 'centPrecision',
-        fractionDigits: expect.any(Number),
-        __typename: 'Money',
-      })
-    )
-  );
+describe('Money model builders', () => {
+  it('builds a REST money model', () => {
+    const restMoneyModel = MoneyRest.random().build();
+
+    validateRestModel(restMoneyModel);
+  });
+
+  it('builds a GraphQL money model', () => {
+    const graphqlMoneyModel = MoneyGraphql.random().build();
+
+    validateGraphqlModel(graphqlMoneyModel);
+  });
+});
+
+describe('Money model compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = Money.random().build();
+
+    validateRestModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = Money.random().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = Money.random().buildGraphql<TMoneyGraphql>();
+
+    validateGraphqlModel(graphqlModel);
+  });
 });

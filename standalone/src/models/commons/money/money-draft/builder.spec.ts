@@ -1,40 +1,45 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@/core/test-utils';
-import { TMoneyDraft, TMoneyDraftGraphql } from '../types';
-import * as MoneyDraft from './index';
+import type { TMoneyDraftGraphql, TMoneyDraftRest } from '../types';
+import { MoneyDraft, MoneyDraftRest, MoneyDraftGraphql } from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TMoneyDraft, TMoneyDraft>(
-      'default',
-      MoneyDraft.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      })
-    )
+function validateModel(model: TMoneyDraftRest | TMoneyDraftGraphql) {
+  expect(model).toEqual(
+    expect.objectContaining({
+      centAmount: expect.any(Number),
+      currencyCode: expect.any(String),
+    })
   );
+}
 
-  it(
-    ...createBuilderSpec<TMoneyDraft, TMoneyDraft>(
-      'rest',
-      MoneyDraft.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      })
-    )
-  );
+describe('MoneyDraft model builders', () => {
+  it('builds a REST money draft model', () => {
+    const restMoneyDraftModel = MoneyDraftRest.random().build();
 
-  it(
-    ...createBuilderSpec<TMoneyDraft, TMoneyDraftGraphql>(
-      'graphql',
-      MoneyDraft.random(),
-      expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      })
-    )
-  );
+    validateModel(restMoneyDraftModel);
+  });
+
+  it('builds a GraphQL money draft model', () => {
+    const graphqlMoneyDraftModel = MoneyDraftGraphql.random().build();
+
+    validateModel(graphqlMoneyDraftModel);
+  });
+});
+
+describe('MoneyDraft model compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = MoneyDraft.random().build();
+
+    validateModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = MoneyDraft.random().buildRest();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = MoneyDraft.random().buildGraphql<TMoneyDraftGraphql>();
+
+    validateModel(graphqlModel);
+  });
 });

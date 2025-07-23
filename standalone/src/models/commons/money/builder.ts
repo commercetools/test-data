@@ -1,13 +1,32 @@
-import { Builder } from '@/core';
-import generator from './generator';
-import transformers from './transformers';
-import type { TMoney, TCreateMoneyBuilder } from './types';
+import {
+  createCompatibilityBuilder,
+  createSpecializedBuilder,
+  TModelFieldsConfig,
+} from '@/core';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
+import type { TCreateMoneyBuilder, TMoneyGraphql, TMoneyRest } from './types';
 
-const Model: TCreateMoneyBuilder = () =>
-  Builder<TMoney>({
-    name: 'Money',
-    generator,
-    transformers,
+export const RestModelBuilder: TCreateMoneyBuilder<TMoneyRest> = () =>
+  createSpecializedBuilder({
+    name: 'MoneyRestBuilder',
+    type: 'rest',
+    modelFieldsConfig: restFieldsConfig,
   });
 
-export default Model;
+export const GraphQLModelBuilder: TCreateMoneyBuilder<TMoneyGraphql> = () =>
+  createSpecializedBuilder({
+    name: 'MoneyGraphqlBuilder',
+    type: 'graphql',
+    modelFieldsConfig: graphqlFieldsConfig,
+  });
+
+export const CompatMoneyModelBuilder = <
+  TMoneyModel extends TMoneyRest | TMoneyGraphql = TMoneyRest,
+>() =>
+  createCompatibilityBuilder<TMoneyModel>({
+    name: 'MoneyCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TMoneyModel>,
+      graphql: graphqlFieldsConfig as TModelFieldsConfig<TMoneyModel>,
+    },
+  });

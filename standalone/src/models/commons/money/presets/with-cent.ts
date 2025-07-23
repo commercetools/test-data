@@ -1,6 +1,21 @@
-import Money from '../builder';
+import { TBuilder } from '@/core';
+import { Money, MoneyRest, MoneyGraphql } from '../index';
+import type { TMoneyRest, TMoneyGraphql } from '../types';
 
-const withCent = (centAmount = 10, currencyCode = 'USD') =>
-  Money().centAmount(centAmount).currencyCode(currencyCode);
+export const restPreset = (
+  centAmount = 10,
+  currencyCode = 'USD'
+): TBuilder<TMoneyRest> =>
+  MoneyRest.random().centAmount(centAmount).currencyCode(currencyCode);
 
-export default withCent;
+export const graphqlPreset = (
+  centAmount = 10,
+  currencyCode = 'USD'
+): TBuilder<TMoneyGraphql> =>
+  MoneyGraphql.random().centAmount(centAmount).currencyCode(currencyCode);
+
+export const compatPreset = (
+  centAmount = 10,
+  currencyCode = 'USD'
+): TBuilder<TMoneyRest | TMoneyGraphql> =>
+  Money.random().centAmount(centAmount).currencyCode(currencyCode);
