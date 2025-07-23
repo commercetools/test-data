@@ -37,7 +37,7 @@ const commonFieldsConfig = {
   state: [],
   perMethodTaxRate: [],
   priceMode: oneOf(...Object.values(priceMode)),
-  lineItemMode: oneOf(...Object.values(lineItemMode)),
+  lineItemMode: lineItemMode.Standard,
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   shippingDetails: null,
   addedAt: fake(addedAt),

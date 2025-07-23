@@ -21,6 +21,10 @@ import {
   Money,
   ReferenceRest,
 } from '@/models/commons';
+import {
+  ProductVariantGraphql,
+  ProductVariantRest,
+} from '@/models/product/product';
 import { GraphqlModelBuilder, RestModelBuilder } from '../../builders';
 import { TLineItemGraphql, TLineItemRest } from '../../types';
 
@@ -43,7 +47,8 @@ export const restPreset = (): TBuilder<TLineItemRest> => {
   return RestModelBuilder()
     .state(ItemStateRest.random())
     .taxedPrice(TaxedItemPriceRest.presets.withAllFields())
-    .discountedPricePerQuantity([discountedPricePerQuantity]);
+    .discountedPricePerQuantity([discountedPricePerQuantity])
+    .variant(ProductVariantRest.presets.withBooleanAttributeVariant());
 };
 
 export const graphqlPreset = (): TBuilder<TLineItemGraphql> => {
@@ -73,5 +78,6 @@ export const graphqlPreset = (): TBuilder<TLineItemGraphql> => {
   return GraphqlModelBuilder()
     .state(ItemStateGraphql.random())
     .taxedPrice(TaxedItemPriceGraphql.presets.withAllFields())
-    .discountedPricePerQuantity([discountedPricePerQuantity]);
+    .discountedPricePerQuantity([discountedPricePerQuantity])
+    .variant(ProductVariantGraphql.presets.withBooleanAttributeVariant());
 };

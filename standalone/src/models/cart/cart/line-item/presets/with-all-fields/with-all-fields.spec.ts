@@ -57,6 +57,13 @@ const validateRestFields = (model: TLineItemRest) => {
           }),
         }),
       ]),
+      variant: expect.objectContaining({
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: 'test-boolean-attribute',
+          }),
+        ]),
+      }),
     })
   );
 };
@@ -89,6 +96,15 @@ const validateGraphqlFields = (model: TLineItemGraphql) => {
           }),
         }),
       ]),
+      variant: expect.objectContaining({
+        attributesRaw: expect.arrayContaining([
+          expect.objectContaining({
+            name: 'test-boolean-attribute',
+            __typename: 'RawProductAttribute',
+          }),
+        ]),
+        __typename: 'ProductVariant',
+      }),
     })
   );
 };
@@ -102,6 +118,7 @@ describe('LineItem model builders', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = withAllFieldsPreset.graphqlPreset().build();
+
     validateGraphqlFields(graphqlModel);
   });
 });
