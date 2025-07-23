@@ -803,7 +803,6 @@ export type TMcSettingsMutation = {
   setProjectExtensionImageRegex?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionImportSampleDataset?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionOrderStatesVisibility?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionReviewModifiedProductsPaginationSettings?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionRichTextEditorSettings?: Maybe<TMcSettingsProjectExtension>;
   uninstallCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   uninstallCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
@@ -1181,11 +1180,6 @@ export type TMcSettingsMutation_SetProjectExtensionImportSampleDatasetArgs = {
 export type TMcSettingsMutation_SetProjectExtensionOrderStatesVisibilityArgs = {
   data?: InputMaybe<Array<InputMaybe<TMcSettingsOrderStatesVisibility>>>;
 };
-
-export type TMcSettingsMutation_SetProjectExtensionReviewModifiedProductsPaginationSettingsArgs =
-  {
-    data?: InputMaybe<TMcSettingsReviewModifiedProductsPaginationSettingsInput>;
-  };
 
 export type TMcSettingsMutation_SetProjectExtensionRichTextEditorSettingsArgs =
   {
@@ -1637,7 +1631,6 @@ export type TMcSettingsProjectExtension = {
   installedApplications: Array<TMcSettingsRestrictedCustomApplicationInstallationForProject>;
   installedCustomViews: Array<TMcSettingsRestrictedCustomViewInstallationForProject>;
   isCustomerEmailValidationDisabled: Scalars['Boolean']['output'];
-  isReducedReviewModifiedProductsPaginationEnabled: Scalars['Boolean']['output'];
   isRichTextEditorEnabled: Scalars['Boolean']['output'];
   isSingleCustomerGroupAssignmentHidden: Scalars['Boolean']['output'];
   orderStatesVisibility: Array<TMcSettingsOrderStatesVisibility>;
@@ -2122,10 +2115,6 @@ export type TMcSettingsRestrictedCustomViewInstallationForProject = {
 
 export type TMcSettingsRestrictedCustomViewInstallationForProjectWhereInput = {
   customViewId?: InputMaybe<Scalars['String']['input']>;
-};
-
-export type TMcSettingsReviewModifiedProductsPaginationSettingsInput = {
-  isReducedReviewModifiedProductsPaginationEnabled: Scalars['Boolean']['input'];
 };
 
 export type TMcSettingsRichTextEditorSettingsInput = {

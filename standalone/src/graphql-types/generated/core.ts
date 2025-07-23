@@ -193,7 +193,6 @@ export type TCoreCustomerGroupLimits = {
 export type TCoreCustomerLimits = {
   __typename?: 'CustomerLimits';
   maxCustomers?: Maybe<Scalars['Long']['output']>;
-  maxGroupsPerCustomer?: Maybe<Scalars['Long']['output']>;
 };
 
 export type TCoreCustomersDomainLimits = {
@@ -231,8 +230,6 @@ export type TCoreDbClustersConfig = {
   orders?: Maybe<TCoreDbClusterConfig>;
   products?: Maybe<TCoreDbClusterConfig>;
   recurringOrders?: Maybe<TCoreDbClusterConfig>;
-  reservations?: Maybe<TCoreDbClusterConfig>;
-  skuAvailability?: Maybe<TCoreDbClusterConfig>;
 };
 
 export type TCoreDbClustersConfigInput = {
@@ -242,8 +239,6 @@ export type TCoreDbClustersConfigInput = {
   orders?: InputMaybe<TCoreDbClusterConfigInput>;
   products?: InputMaybe<TCoreDbClusterConfigInput>;
   recurringOrders?: InputMaybe<TCoreDbClusterConfigInput>;
-  reservations?: InputMaybe<TCoreDbClusterConfigInput>;
-  skuAvailability?: InputMaybe<TCoreDbClusterConfigInput>;
 };
 
 export type TCoreDataFence = {
@@ -326,16 +321,6 @@ export type TCoreInitiator = {
   externalUserId?: Maybe<Scalars['String']['output']>;
   isPlatformClient?: Maybe<Scalars['Boolean']['output']>;
   userRef?: Maybe<TCoreReference>;
-};
-
-export type TCoreInventoryConfiguration = {
-  __typename?: 'InventoryConfiguration';
-  enableInventoryAtScale: Scalars['Boolean']['output'];
-  reservationExpirationInMinutes?: Maybe<Scalars['Int']['output']>;
-};
-
-export type TCoreInventoryConfigurationInput = {
-  reservationExpirationInMinutes?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type TCoreLocalizedString = {
@@ -559,7 +544,6 @@ export type TCoreProject = TCoreVersioned & {
   customLimits?: Maybe<TCoreProjectCustomLimits>;
   id: Scalars['String']['output'];
   initialized: Scalars['Boolean']['output'];
-  inventory?: Maybe<TCoreInventoryConfiguration>;
   isProductionProject?: Maybe<Scalars['Boolean']['output']>;
   key: Scalars['String']['output'];
   languages: Array<Scalars['Locale']['output']>;
@@ -618,7 +602,6 @@ export type TCoreProjectCustomLimits = {
 export type TCoreProjectDraftType = {
   asyncInitialization?: InputMaybe<Scalars['Boolean']['input']>;
   cdnContainerEnabled?: InputMaybe<Scalars['Boolean']['input']>;
-  checkOrgAttributeMigrationStatus?: InputMaybe<Scalars['Boolean']['input']>;
   countries?: Array<Scalars['Country']['input']>;
   currencies: Array<Scalars['Currency']['input']>;
   dbClustersConfig?: InputMaybe<TCoreDbClustersConfigInput>;
@@ -626,7 +609,6 @@ export type TCoreProjectDraftType = {
   esCluster?: InputMaybe<TCoreEsClusterInput>;
   externalOAuth?: InputMaybe<TCoreExternalOAuthInput>;
   forceAttributeMigrationStatus?: InputMaybe<TCoreInitialAttributeMigrationStatus>;
-  inventory?: InputMaybe<TCoreInventoryConfigurationInput>;
   key: Scalars['String']['input'];
   languages: Array<Scalars['Locale']['input']>;
   messagesEnabled?: InputMaybe<Scalars['Boolean']['input']>;
@@ -658,8 +640,8 @@ export type TCoreProjectSuspendData = {
 };
 
 export enum TCoreProjectSuspensionReason {
-  /** Project data is being restored. */
-  DataRestoration = 'DataRestoration',
+  /** A database migration is running. */
+  DbMigration = 'DbMigration',
   /** Other reasons like copy project. */
   Other = 'Other',
   /** The usage of the project is not paid. */

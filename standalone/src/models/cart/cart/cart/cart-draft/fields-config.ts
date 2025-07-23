@@ -38,7 +38,6 @@ const commonFieldsConfig = {
   shippingRateInput: null,
   origin: oneOf(...Object.values(origin)),
   shippingMode: oneOf(...Object.values(shippingMode)),
-  priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   customShipping: [],
   shipping: [],
   itemShippingAddresses: [],
@@ -48,6 +47,7 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TCartDraftRest> = {
   fields: {
     ...commonFieldsConfig,
+    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TCartDraftGraphql> = {

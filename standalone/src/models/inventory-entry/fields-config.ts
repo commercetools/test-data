@@ -29,9 +29,8 @@ export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    supplyChannelRef: null,
-    reservationExpirationInMinutes: null,
     __typename: 'InventoryEntry',
+    supplyChannelRef: null,
   },
   postBuild: (model) => {
     const supplyChannelRef = model.supplyChannel

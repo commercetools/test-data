@@ -1,5 +1,4 @@
 import { CustomFieldBooleanType } from '@/models/type';
-import { priceRoundingMode } from '../constants';
 import { TCartDraftGraphql, TCartDraftRest } from '../types';
 import { CartDraft, CartDraftGraphql, CartDraftRest } from './index';
 
@@ -57,9 +56,6 @@ const validateCommonFields = (model: TCartDraftRest | TCartDraftGraphql) => {
       shipping: expect.any(Array),
       itemShippingAddresses: expect.any(Array),
       discountCodes: expect.any(Array),
-      priceRoundingMode: expect.stringFromArray(
-        Object.values(priceRoundingMode)
-      ),
     })
   );
 };

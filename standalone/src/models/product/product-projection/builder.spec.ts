@@ -114,7 +114,6 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        attributesRaw: [],
         productType: expect.objectContaining({
           __typename: 'ProductTypeDefinition',
           id: expect.any(String),

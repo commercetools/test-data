@@ -33,7 +33,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountGroupGraphql> = {
     description: null,
     nameAllLocales: null,
     descriptionAllLocales: null,
-    type: fake((f) => f.lorem.slug(2)),
     __typename: 'DiscountGroup',
   },
   postBuild: (model) => {

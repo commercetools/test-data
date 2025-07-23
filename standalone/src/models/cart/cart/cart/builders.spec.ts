@@ -5,7 +5,7 @@ import { CustomerGroup } from '@/models/customer/customer-group';
 import { CustomFieldBooleanType } from '@/models/type';
 import { DiscountCodeInfoRest, DiscountCodeInfoGraphql } from '../index';
 import { LineItem } from '../line-item';
-import { cartState, priceRoundingMode } from './constants';
+import { cartState } from './constants';
 import type { TCart, TCartGraphql, TCartRest } from './types';
 import { Cart, CartGraphql, CartRest } from './index';
 
@@ -58,9 +58,6 @@ const validateCommonFields = (model: TCartRest | TCartGraphql) => {
       taxedShippingPrice: null,
       paymentInfo: null,
       discountTypeCombination: null,
-      priceRoundingMode: expect.stringFromArray(
-        Object.values(priceRoundingMode)
-      ),
     })
   );
 };

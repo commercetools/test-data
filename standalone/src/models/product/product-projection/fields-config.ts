@@ -51,7 +51,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductProjectionGraphql> 
       ...commonFieldsConfig.fields,
       __typename: 'ProductProjection',
       allVariants: [],
-      attributesRaw: [],
       categoriesRef: [],
       categoryOrderHints: [],
       description: null,

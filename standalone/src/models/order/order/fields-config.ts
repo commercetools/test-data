@@ -113,7 +113,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TOrderGraphql> = {
     placement: null,
     quoteRef: null,
     stateRef: null,
-    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
   postBuild: (model) => {
     const businessUnitRef = model.businessUnit
