@@ -19,7 +19,6 @@ describe('DiscountCodeInfo Builder', () => {
   it('should build properties for the GraphQL representation', () => {
     const graphqlModel = DiscountCodeInfoGraphql.random().build();
 
-    console.log(graphqlModel);
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         discountCode: expect.objectContaining({
