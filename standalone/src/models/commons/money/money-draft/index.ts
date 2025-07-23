@@ -1,8 +1,8 @@
 import {
-  CompatMoneyDraftModelBuilder,
+  CompatDraftModelBuilder,
   GraphQLModelBuilder,
   RestModelBuilder,
-} from './builder';
+} from './builders';
 import * as moneyDraftPresets from './presets';
 
 export const MoneyDraftRest = {
@@ -19,6 +19,6 @@ export const MoneyDraftGraphql = {
  * @deprecated Use `MoneyDraftRest` or `MoneyDraftGraphql` exported models instead of `MoneyDraft`.
  */
 export const MoneyDraft = {
-  random: CompatMoneyDraftModelBuilder,
+  random: CompatDraftModelBuilder,
   presets: moneyDraftPresets.compatPresets,
 };

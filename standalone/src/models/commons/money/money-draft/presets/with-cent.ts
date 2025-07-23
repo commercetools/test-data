@@ -1,21 +1,25 @@
 import { TBuilder } from '@/core';
 import type { TMoneyDraftRest, TMoneyDraftGraphql } from '../../types';
-import { MoneyDraft, MoneyDraftRest, MoneyDraftGraphql } from '../index';
+import {
+  GraphQLModelBuilder,
+  RestModelBuilder,
+  CompatDraftModelBuilder,
+} from '../builders';
 
 export const restPreset = (
   centAmount = 10,
   currencyCode = 'USD'
 ): TBuilder<TMoneyDraftRest> =>
-  MoneyDraftRest.random().centAmount(centAmount).currencyCode(currencyCode);
+  RestModelBuilder().centAmount(centAmount).currencyCode(currencyCode);
 
 export const graphqlPreset = (
   centAmount = 10,
   currencyCode = 'USD'
 ): TBuilder<TMoneyDraftGraphql> =>
-  MoneyDraftGraphql.random().centAmount(centAmount).currencyCode(currencyCode);
+  GraphQLModelBuilder().centAmount(centAmount).currencyCode(currencyCode);
 
 export const compatPreset = (
   centAmount = 10,
   currencyCode = 'USD'
 ): TBuilder<TMoneyDraftRest | TMoneyDraftGraphql> =>
-  MoneyDraft.random().centAmount(centAmount).currencyCode(currencyCode);
+  CompatDraftModelBuilder().centAmount(centAmount).currencyCode(currencyCode);

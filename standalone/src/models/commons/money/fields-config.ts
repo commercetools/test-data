@@ -6,17 +6,24 @@ const commonFieldsConfig = {
   currencyCode: oneOf('EUR', 'USD'),
 };
 
+// readonly centAmount: number;
+// readonly currencyCode: string;
 export const restFieldsConfig: TModelFieldsConfig<TMoneyRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
+// __typename?: 'Money';
+// centAmount: Scalars['Long']['output'];
+// currencyCode: Scalars['Currency']['output'];
+// fractionDigits: Scalars['Int']['output'];
+// type: Scalars['String']['output'];
 export const graphqlFieldsConfig: TModelFieldsConfig<TMoneyGraphql> = {
   fields: {
-    __typename: 'Money',
     ...commonFieldsConfig,
     type: 'centPrecision',
     fractionDigits: 2,
+    __typename: 'Money',
   },
 };

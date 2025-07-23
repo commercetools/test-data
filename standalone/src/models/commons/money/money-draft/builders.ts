@@ -26,7 +26,7 @@ export const GraphQLModelBuilder: TCreateMoneyBuilder<
     modelFieldsConfig: graphqlFieldsConfig,
   });
 
-export const CompatMoneyDraftModelBuilder = <
+export const CompatDraftModelBuilder = <
   TMoneyDraftModel extends
     | TMoneyDraftRest
     | TMoneyDraftGraphql = TMoneyDraftRest,

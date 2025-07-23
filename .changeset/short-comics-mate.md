@@ -2,22 +2,13 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We've migrated `Money` and `MoneyDraft` models to the new implementation patterns.
+We've migrated the `Money` model to the new implementation patterns.
 
-There's a REST (Composable commerce HTTP API) and a GraphQL (Composable Commerce GraphQL API) version for these two models.
-
-This is how the new models could be used:
+This change does not have any impact on consumers, however the `Money` model is now deprecated and you're expected to start using the `MoneyGraphql` or `MoneyRest` models instead depending of the type of API you're mocking.
 
 ```ts
-import {
-  MoneyRest,
-  MoneyGraphql,
-  MoneyDraftRest,
-  MoneyDraftGraphql,
-} from '@commercetools/composable-commerce-test-data/money';
+import { MoneyGraphql, MoneyRest } form '@commercetools/composable-commerce-test-data/commons';
 
-const moneyRest = MoneyRest.random().build();
-const moneyGraphql = MoneyGraphql.random().build();
-const moneyDraftRest = MoneyDraftRest.random().build();
-const moneyDraftGraphql = MoneyDraftGraphql.random().build();
+const graphqlMoney = MoneyGraphql.random().build();
+const restMoney = MoneyRest.random().build();
 ```

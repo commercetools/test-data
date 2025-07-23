@@ -1,12 +1,16 @@
 import { TBuilder } from '@/core';
-import { Money, MoneyRest, MoneyGraphql } from '../../index';
+import {
+  GraphQLModelBuilder,
+  RestModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
 import type { TMoneyRest, TMoneyGraphql } from '../../types';
 
 export const restPreset = (): TBuilder<TMoneyRest> =>
-  MoneyRest.random().currencyCode('USD');
+  RestModelBuilder().currencyCode('USD');
 
 export const graphqlPreset = (): TBuilder<TMoneyGraphql> =>
-  MoneyGraphql.random().currencyCode('USD');
+  GraphQLModelBuilder().currencyCode('USD');
 
 export const compatPreset = (): TBuilder<TMoneyRest | TMoneyGraphql> =>
-  Money.random().currencyCode('USD');
+  CompatModelBuilder().currencyCode('USD');

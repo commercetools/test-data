@@ -13,11 +13,11 @@ function validateRestModel(restModel: TMoneyRest) {
 function validateGraphqlModel(graphqlModel: TMoneyGraphql) {
   expect(graphqlModel).toEqual(
     expect.objectContaining({
-      __typename: 'Money',
       centAmount: expect.any(Number),
       currencyCode: expect.any(String),
       type: 'centPrecision',
       fractionDigits: 2,
+      __typename: 'Money',
     })
   );
 }

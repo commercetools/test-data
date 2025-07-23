@@ -20,7 +20,7 @@ export const GraphQLModelBuilder: TCreateMoneyBuilder<TMoneyGraphql> = () =>
     modelFieldsConfig: graphqlFieldsConfig,
   });
 
-export const CompatMoneyModelBuilder = <
+export const CompatModelBuilder = <
   TMoneyModel extends TMoneyRest | TMoneyGraphql = TMoneyRest,
 >() =>
   createCompatibilityBuilder<TMoneyModel>({
