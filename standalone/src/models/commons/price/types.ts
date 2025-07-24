@@ -32,16 +32,6 @@ export type TPriceDraftRest = TPriceDraft;
 export type TPriceGraphql = TCtpProductPrice;
 export type TPriceDraftGraphql = TCtpProductPriceDataInput;
 
-// export type TPriceBuilder = TBuilder<
-//   | TPrice
-//   | TPriceDraft
-//   | TPriceRest
-//   | TPriceDraftRest
-//   | TPriceGraphql
-//   | TPriceDraftGraphql
-// >;
-// export type TCreatePriceBuilder = () => TPriceBuilder;
-
 export type TCreatePriceBuilder<
   TPriceModel extends
     | TPrice
