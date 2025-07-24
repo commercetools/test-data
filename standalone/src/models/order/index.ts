@@ -26,3 +26,6 @@ export * from './order/order-from-quote-draft';
 
 export * from './sync-info/types';
 export * from './sync-info';
+
+export * from './payment-info/types';
+export * from './payment-info';
