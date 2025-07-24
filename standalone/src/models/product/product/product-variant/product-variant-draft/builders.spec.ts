@@ -70,6 +70,7 @@ function validateGraphqlModel(graphqlModel: TProductVariantDraftGraphql) {
         expect.objectContaining({
           value: {
             centPrecision: expect.any(Object),
+            highPrecision: expect.any(Object),
           },
         }),
       ]),
