@@ -1,5 +1,5 @@
 import { type TModelFieldsConfig, fake } from '@/core';
-import { BaseMoneyDraftGraphql, MoneyDraft } from '@/models/commons';
+import { BaseMoneyDraftGraphql, MoneyDraftRest } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { TPriceDraftGraphql, TPriceDraftRest } from '../types';
 
@@ -20,35 +20,13 @@ const commonFieldsConfig = {
   },
 };
 
-// readonly key?: string;
-// readonly value: _Money;
-// readonly country?: string;
-// readonly customerGroup?: CustomerGroupResourceIdentifier;
-// readonly channel?: ChannelResourceIdentifier;
-// readonly validFrom?: string;
-// readonly validUntil?: string;
-// readonly discounted?: DiscountedPriceDraft;
-// readonly tiers?: PriceTierDraft[];
-// readonly custom?: CustomFieldsDraft;
-// recurrencePolicy?: IReference;
 export const restFieldsConfig: TModelFieldsConfig<TPriceDraftRest> = {
   fields: {
     ...commonFieldsConfig.fields,
-    value: fake(() => MoneyDraft.random()),
+    value: fake(() => MoneyDraftRest.random()),
   },
 };
 
-// channel?: InputMaybe<TCtpResourceIdentifierInput>;
-// country?: InputMaybe<Scalars['Country']['input']>;
-// custom?: InputMaybe<TCtpCustomFieldsDraft>;
-// customerGroup?: InputMaybe<TCtpReferenceInput>;
-// discounted?: InputMaybe<TCtpDiscountedProductPriceValueInput>;
-// key?: InputMaybe<Scalars['String']['input']>;
-// recurrencePolicy?: InputMaybe<TCtpResourceIdentifierInput>;
-// tiers?: InputMaybe<Array<TCtpProductPriceTierInput>>;
-// validFrom?: InputMaybe<Scalars['DateTime']['input']>;
-// validUntil?: InputMaybe<Scalars['DateTime']['input']>;
-// value: TCtpBaseMoneyInput;
 export const graphqlFieldsConfig: TModelFieldsConfig<TPriceDraftGraphql> = {
   fields: {
     ...commonFieldsConfig.fields,

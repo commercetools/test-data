@@ -1,4 +1,4 @@
-import { MoneyDraft } from '@/models/commons';
+import { MoneyDraftRest } from '@/models/commons';
 import { BaseMoneyDraftGraphql } from '@/models/commons/base-money/base-money-draft';
 import {
   GraphqlModelBuilder,
@@ -13,9 +13,9 @@ export const graphqlPreset = () => {
 };
 
 export const restPreset = () => {
-  return RestModelBuilder().value(MoneyDraft.presets.withCurrency('USD'));
+  return RestModelBuilder().value(MoneyDraftRest.presets.withCurrency('USD'));
 };
 
 export const compatPreset = () => {
-  return CompatModelBuilder().value(MoneyDraft.presets.withCurrency('USD'));
+  return CompatModelBuilder().value(MoneyDraftRest.presets.withCurrency('USD'));
 };
