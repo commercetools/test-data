@@ -28,10 +28,6 @@ export * as KeyReferenceDraft from './key-reference/key-reference-draft';
 export * as LocalizedField from './localized-field';
 export * as LocalizedString from './localized-string';
 export * as LocalizedStringDraft from './localized-string/localized-string-draft';
-export * as Money from './money';
-export * as MoneyDraft from './money/money-draft';
-// export * as Price from './price';
-// export * as PriceDraft from './price/price-draft';
 export * as PriceTier from './price-tier';
 export * as PriceTierDraft from './price-tier/price-tier-draft';
 
@@ -42,3 +38,5 @@ export * from './geometry';
 export * from './price';
 export * from './price/price-draft';
 export * from './reference';
+export * from './money/money-draft';
+export * from './money';

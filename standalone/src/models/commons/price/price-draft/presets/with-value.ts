@@ -6,8 +6,8 @@
 
 // export default withValue;
 
+import { MoneyDraft } from '@/models/commons';
 import { BaseMoneyDraftGraphql } from '@/models/commons/base-money/base-money-draft';
-import { MoneyDraft } from '@/models/commons/money';
 import {
   GraphqlModelBuilder,
   RestModelBuilder,
