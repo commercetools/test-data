@@ -1108,6 +1108,18 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "maxGroupsPerCustomer",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Long",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -1388,6 +1400,30 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "reservations",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "DBClusterConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "skuAvailability",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "DBClusterConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -1468,6 +1504,30 @@
           },
           {
             "name": "recurringOrders",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DBClusterConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reservations",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DBClusterConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "skuAvailability",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -2149,6 +2209,70 @@
         "isOneOf": null,
         "fields": null,
         "inputFields": null,
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "InventoryConfiguration",
+        "description": null,
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "enableInventoryAtScale",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reservationExpirationInMinutes",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "InventoryConfigurationInput",
+        "description": null,
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "reservationExpirationInMinutes",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "interfaces": null,
         "enumValues": null,
         "possibleTypes": null
@@ -4157,6 +4281,18 @@
             "deprecationReason": null
           },
           {
+            "name": "inventory",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "InventoryConfiguration",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "isProductionProject",
             "description": null,
             "args": [],
@@ -4804,6 +4940,18 @@
             "deprecationReason": null
           },
           {
+            "name": "checkOrgAttributeMigrationStatus",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": "true",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "countries",
             "description": null,
             "type": {
@@ -4908,6 +5056,18 @@
               "ofType": null
             },
             "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "inventory",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "InventoryConfigurationInput",
+              "ofType": null
+            },
+            "defaultValue": "{reservationExpirationInMinutes: null}",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -5214,8 +5374,8 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "DbMigration",
-            "description": "A database migration is running.",
+            "name": "DataRestoration",
+            "description": "Project data is being restored.",
             "isDeprecated": false,
             "deprecationReason": null
           },

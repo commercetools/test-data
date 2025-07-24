@@ -42,12 +42,12 @@ const commonFieldsConfig = {
   shipping: [],
   itemShippingAddresses: [],
   discountCodes: fake((f) => [f.lorem.word()]),
+  priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartDraftRest> = {
   fields: {
     ...commonFieldsConfig,
-    priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TCartDraftGraphql> = {

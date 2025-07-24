@@ -36,6 +36,7 @@ describe('InventoryEntry model builders', () => {
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
         expectedDelivery: expect.any(String),
+        reservationExpirationInMinutes: null,
         supplyChannel: expect.objectContaining({
           id: expect.any(String),
           __typename: 'Channel',

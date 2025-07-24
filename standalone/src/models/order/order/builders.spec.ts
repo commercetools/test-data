@@ -8,6 +8,7 @@ import {
   orderOrigin,
   orderState,
   paymentState,
+  priceRoundingMode,
   shipmentState,
 } from './constants';
 import type { TOrderGraphql, TOrderRest } from './types';
@@ -172,6 +173,9 @@ const validateGraphqlModel = (model: TOrderGraphql) => {
           __typename: 'LineItem',
         }),
       ]),
+      priceRoundingMode: expect.stringFromArray(
+        Object.values(priceRoundingMode)
+      ),
       refusedGifts: expect.arrayContaining([
         expect.objectContaining({
           id: expect.any(String),
