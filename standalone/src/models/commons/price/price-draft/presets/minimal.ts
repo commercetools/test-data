@@ -1,4 +1,4 @@
-import { MoneyDraft } from '../../../money';
+import { MoneyDraft } from '@/models/commons';
 import PriceDraft from '../builder';
 
 const minimal = () =>

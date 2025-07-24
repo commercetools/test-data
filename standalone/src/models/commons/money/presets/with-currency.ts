@@ -1,5 +1,18 @@
-import Money from '../builder';
+import { TBuilder } from '@/core';
+import {
+  GraphQLModelBuilder,
+  RestModelBuilder,
+  CompatModelBuilder,
+} from '../builders';
+import type { TMoneyRest, TMoneyGraphql } from '../types';
 
-const withCurrency = (currency = 'USD') => Money().currencyCode(currency);
+export const restPreset = (currencyCode = 'USD'): TBuilder<TMoneyRest> =>
+  RestModelBuilder().currencyCode(currencyCode);
 
-export default withCurrency;
+export const graphqlPreset = (currencyCode = 'USD'): TBuilder<TMoneyGraphql> =>
+  GraphQLModelBuilder().currencyCode(currencyCode);
+
+export const compatPreset = (
+  currencyCode = 'USD'
+): TBuilder<TMoneyRest | TMoneyGraphql> =>
+  CompatModelBuilder().currencyCode(currencyCode);
