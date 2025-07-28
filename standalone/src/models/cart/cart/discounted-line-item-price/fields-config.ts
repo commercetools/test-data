@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { Money } from '@/models/commons';
+import { MoneyGraphql, MoneyRest } from '@/models/commons';
 import {
   DiscountedLineItemPortionRest,
   DiscountedLineItemPortionGraphql,
@@ -12,7 +12,7 @@ import type {
 export const restFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPriceRest> =
   {
     fields: {
-      value: fake(() => Money.random()),
+      value: fake(() => MoneyRest.random()),
       includedDiscounts: fake(() => [DiscountedLineItemPortionRest.random()]),
     },
   };
@@ -20,7 +20,7 @@ export const restFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPriceRest> 
 export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPriceGraphql> =
   {
     fields: {
-      value: fake(() => Money.random()),
+      value: fake(() => MoneyGraphql.random()),
       includedDiscounts: fake(() => [
         DiscountedLineItemPortionGraphql.random(),
       ]),

@@ -10,16 +10,16 @@ const populateModel = <TModel extends TPriceDraftRest | TPriceDraftGraphql>(
   model: TBuilder<TModel>
 ): TBuilder<TModel> =>
   model
-    .key(undefined)
-    .country(undefined)
-    .customerGroup(undefined)
-    .channel(undefined)
-    .validFrom(undefined)
-    .validUntil(undefined)
-    .tiers(undefined)
-    .discounted(undefined)
-    .custom(undefined)
-    .recurrencePolicy(undefined);
+    .key(null)
+    .country(null)
+    .customerGroup(null)
+    .channel(null)
+    .validFrom(null)
+    .validUntil(null)
+    .tiers(null)
+    .discounted(null)
+    .custom(null)
+    .recurrencePolicy(null);
 
 export const graphqlPreset = () => {
   return populateModel(GraphqlModelBuilder());

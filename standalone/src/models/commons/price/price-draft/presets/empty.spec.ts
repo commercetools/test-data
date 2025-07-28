@@ -4,16 +4,16 @@ import * as emptyPresets from './empty';
 const validateModel = (model: TPriceDraftRest | TPriceDraftGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
-      channel: undefined,
-      country: undefined,
-      custom: undefined,
-      customerGroup: undefined,
-      discounted: undefined,
-      key: undefined,
-      recurrencePolicy: undefined,
-      tiers: undefined,
-      validFrom: undefined,
-      validUntil: undefined,
+      channel: null,
+      country: null,
+      custom: null,
+      customerGroup: null,
+      discounted: null,
+      key: null,
+      recurrencePolicy: null,
+      tiers: null,
+      validFrom: null,
+      validUntil: null,
     })
   );
 };
