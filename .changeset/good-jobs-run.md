@@ -22,3 +22,19 @@ const graphqlPrice = PriceGraphql.random().build();
 const restPriceDraft = PriceDraftRest.random().build();
 const graphqlPriceDraft = PriceDraftGraphql.random().build();
 ```
+
+We're also introducing a new sub-model for the `PriceDraft` one which is called `BaseMoneyDraft` and only exists in the GraphQL API.
+You can use it to set a specific `value` in a price draft.
+
+Example:
+
+```ts
+import {
+  BaseMoneyDraftGraphql,
+  PriceDraftGraphql,
+} from '@commercetools/composable-commerce-test-data/commons';
+
+const graphqlPriceDraft = PriceDraftGraphql.random()
+  .value(BaseMoneyDraftGraphql.presets.withAllFields({ currencyCode: 'USD' }))
+  .build();
+```
