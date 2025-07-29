@@ -39,12 +39,6 @@ const validateGraphqlModel = (
         centAmount: expect.any(Number),
         currencyCode,
       }),
-      highPrecision: expect.objectContaining({
-        type: 'highPrecision',
-        currencyCode,
-        fractionDigits: expect.any(Number),
-        preciseAmount: expect.any(Number),
-      }),
     })
   );
 };

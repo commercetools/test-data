@@ -36,12 +36,6 @@ const validateGraphqlModel = (model: TPriceDraftGraphql) => {
         centAmount: expect.any(Number),
         currencyCode: 'USD',
       }),
-      highPrecision: expect.objectContaining({
-        type: 'highPrecision',
-        currencyCode: 'USD',
-        fractionDigits: expect.any(Number),
-        preciseAmount: expect.any(Number),
-      }),
     })
   );
 };

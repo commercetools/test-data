@@ -30,12 +30,12 @@ export const restFieldsConfig: TModelFieldsConfig<TPriceDraftRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TPriceDraftGraphql> = {
   fields: {
     ...commonFieldsConfig.fields,
-    value: fake(() => BaseMoneyDraftGraphql.presets.withAllFields()),
+    value: fake(() => BaseMoneyDraftGraphql.presets.withCentPrecision()),
   },
   postBuild: (model, context) => {
     if (context?.isCompatMode && model.value) {
       model.value = BaseMoneyDraftGraphql.presets
-        .withAllFields({
+        .withCentPrecision({
           // @ts-expect-error - The compat models is initialized with REST data we need to convert to GraphQL
           currencyCode: model.value.currencyCode,
         })

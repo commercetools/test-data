@@ -1,5 +1,7 @@
-import * as withAllFieldsPresets from './with-all-fields/with-all-fields';
+import * as withCentPrecisionPresets from './with-cent-precision/with-cent-precision';
+import * as withHighPrecisionPresets from './with-high-precision/with-high-precision';
 
 export const graphqlPresets = {
-  withAllFields: withAllFieldsPresets.graphqlPreset,
+  withCentPrecision: withCentPrecisionPresets.graphqlPreset,
+  withHighPrecision: withHighPrecisionPresets.graphqlPreset,
 };

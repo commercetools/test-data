@@ -1,17 +1,13 @@
 import { TBaseMoneyDraftGraphql } from '../../../types';
-import { graphqlPreset } from './with-all-fields';
+import { graphqlPreset } from './with-high-precision';
 
-describe('BaseMoneyDraft Builder', () => {
+describe('BaseMoneyDraft Builder with high precision', () => {
   const validateModel = (
     model: TBaseMoneyDraftGraphql,
     currencyCode: string
   ) => {
     expect(model).toEqual(
       expect.objectContaining({
-        centPrecision: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: currencyCode,
-        }),
         highPrecision: expect.objectContaining({
           type: 'highPrecision',
           currencyCode: currencyCode,

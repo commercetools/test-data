@@ -12,7 +12,7 @@ type TParams = {
 
 export const graphqlPreset = (params?: TParams) => {
   return GraphqlModelBuilder().value(
-    BaseMoneyDraftGraphql.presets.withAllFields({
+    BaseMoneyDraftGraphql.presets.withCentPrecision({
       currencyCode: params?.currencyCode || 'USD',
     })
   );

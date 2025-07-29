@@ -8,7 +8,7 @@ import {
 
 export const graphqlPreset = () => {
   return GraphqlModelBuilder().value(
-    BaseMoneyDraftGraphql.presets.withAllFields({ currencyCode: 'USD' })
+    BaseMoneyDraftGraphql.presets.withCentPrecision({ currencyCode: 'USD' })
   );
 };
 
