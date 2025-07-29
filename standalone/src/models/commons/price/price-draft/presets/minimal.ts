@@ -1,7 +1,21 @@
-import { MoneyDraft } from '@/models/commons';
-import PriceDraft from '../builder';
+import { MoneyDraftRest } from '@/models/commons';
+import { BaseMoneyDraftGraphql } from '@/models/commons/base-money/base-money-draft';
+import {
+  GraphqlModelBuilder,
+  RestModelBuilder,
+  CompatModelBuilder,
+} from '../builders';
 
-const minimal = () =>
-  PriceDraft().value(MoneyDraft.presets.withCurrency('USD'));
+export const graphqlPreset = () => {
+  return GraphqlModelBuilder().value(
+    BaseMoneyDraftGraphql.presets.withCentPrecision({ currencyCode: 'USD' })
+  );
+};
 
-export default minimal;
+export const restPreset = () => {
+  return RestModelBuilder().value(MoneyDraftRest.presets.withCurrency('USD'));
+};
+
+export const compatPreset = () => {
+  return CompatModelBuilder().value(MoneyDraftRest.presets.withCurrency('USD'));
+};

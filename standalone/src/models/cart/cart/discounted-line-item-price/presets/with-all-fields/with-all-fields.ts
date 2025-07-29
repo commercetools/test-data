@@ -1,5 +1,5 @@
 import { TBuilder } from '@/core';
-import { Money } from '@/models/commons';
+import { MoneyGraphql, MoneyRest } from '@/models/commons';
 import {
   DiscountedLineItemPortionGraphql,
   DiscountedLineItemPortionRest,
@@ -30,7 +30,7 @@ export const restPreset = (
     ...params,
   };
   return RestModelBuilder()
-    .value(Money.presets.withCurrency(_params.currencyCode))
+    .value(MoneyRest.presets.withCurrency(_params.currencyCode))
     .includedDiscounts([
       DiscountedLineItemPortionRest.presets.withAllFields({
         currencyCode: _params.currencyCode,
@@ -47,7 +47,7 @@ export const graphqlPreset = (
     ...params,
   };
   return GraphqlModelBuilder()
-    .value(Money.presets.withCurrency(_params.currencyCode))
+    .value(MoneyGraphql.presets.withCurrency(_params.currencyCode))
     .includedDiscounts([
       DiscountedLineItemPortionGraphql.presets.withAllFields({
         currencyCode: _params.currencyCode,

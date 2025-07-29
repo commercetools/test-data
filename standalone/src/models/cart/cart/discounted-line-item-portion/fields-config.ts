@@ -1,6 +1,11 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { CartDiscount } from '@/models/cart/cart-discount';
-import { Money, ReferenceGraphql, ReferenceRest } from '@/models/commons';
+import {
+  MoneyGraphql,
+  MoneyRest,
+  ReferenceGraphql,
+  ReferenceRest,
+} from '@/models/commons';
 import type {
   TDiscountedLineItemPortionGraphql,
   TDiscountedLineItemPortionRest,
@@ -10,7 +15,7 @@ export const restFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPortionRest
   {
     fields: {
       discount: fake(() => ReferenceRest.presets.cartDiscountReference()),
-      discountedAmount: fake(() => Money.random()),
+      discountedAmount: fake(() => MoneyRest.random()),
     },
   };
 
@@ -18,7 +23,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPortionG
   {
     fields: {
       discount: fake(() => CartDiscount.random()),
-      discountedAmount: fake(() => Money.random()),
+      discountedAmount: fake(() => MoneyGraphql.random()),
       discountRef: null,
       __typename: 'DiscountedLineItemPortion',
     },
