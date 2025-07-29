@@ -12,7 +12,7 @@ import {
   MethodTaxRateRest,
   MethodTaxedPriceGraphql,
   MethodTaxedPriceRest,
-} from '@commercetools/composable-commerce-test-data/cart-discount';
+} from '@commercetools/composable-commerce-test-data/cart';
 
 const methodTaxRateGraphqlModel = MethodTaxRateGraphql.random().build();
 const methodTaxRateRestModel = MethodTaxRateRest.random().build();
