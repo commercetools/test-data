@@ -1,5 +1,258 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.3.0
+
+### Minor Changes
+
+- [#935](https://github.com/commercetools/test-data/pull/935) [`af86b6a`](https://github.com/commercetools/test-data/commit/af86b6aaf12fc4f50c58776aff46d33a9ee8033e) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing two new `withAllFields` presets for the `DiscountedLisItemPortion` and `DiscountedLineItemPrice` that can be used to generate objects for those models with all the fields populated.
+
+  They both accept some params which allow to provide some key values used for the nested models.
+
+  Here are some examples on how they can be used:
+
+  ```ts
+  import {
+    DiscountedLineItemPriceGraphql,
+    DiscountedLineItemPortionGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  // DiscountedLineItemPrice
+
+  // When no param is provided we will use these values
+  //  - currencyCode: 'EUR'
+  //  - target: 'lineItems'
+  //  - discountId: 'cart-discount-id'
+  const discountedLineItemPrice =
+    DiscountedLineItemPriceGraphql.presets.withAllFields();
+
+  // With some custom params
+  const discountedLineItemPriceCustomized =
+    DiscountedLineItemPriceGraphql.presets.withAllFields({
+      currencyCode: 'USD',
+    });
+
+  // DiscountedLineItemPortionGraphql
+
+  // When no param is provided we will use these values
+  //  - currencyCode: 'EUR'
+  //  - discountId: 'cart-discount-id'
+  const discountedLineItemPortion =
+    DiscountedLineItemPortionGraphql.presets.withAllFields();
+
+  // With some custom params
+  const discountedLineItemPriceCustomized =
+    DiscountedLineItemPriceGraphql.presets.withAllFields({
+      discountId: 'discount-XZV',
+    });
+  ```
+
+  We've also updated the `withAllFields` preset in the `LineItem` test data model so we make sure the `variant` property value that is generated with one boolean attribute filled in its attributes list property.
+
+- [#936](https://github.com/commercetools/test-data/pull/936) [`5da7c3f`](https://github.com/commercetools/test-data/commit/5da7c3fd287b4823fc85b49c1d082668dfda2516) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing two new test data models named `MethodTaxRate` and `MethodTaxedPrice` which can be consumed from the @commercetools/composable-commerce-test-data/cart entry point.
+
+  This is how it can be used:
+
+  ```ts
+  import {
+    MethodTaxRateGraphql,
+    MethodTaxRateRest,
+    MethodTaxedPriceGraphql,
+    MethodTaxedPriceRest,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const methodTaxRateGraphqlModel = MethodTaxRateGraphql.random().build();
+  const methodTaxRateRestModel = MethodTaxRateRest.random().build();
+
+  const methodTaxesPriceGraphqlModel = MethodTaxedPriceGraphql.random().build();
+  const methodTaxedPriceRestModel = MethodTaxedPriceRest.random().build();
+  ```
+
+- [#934](https://github.com/commercetools/test-data/pull/934) [`11c9f92`](https://github.com/commercetools/test-data/commit/11c9f92ea8114a2bffdeffc7419067f9ad31de66) Thanks [@bradd123](https://github.com/bradd123)! - We are introducing a new model named `PaymentInfo` that can be consumed from the `@commercetools/composable-commerce-test-data/order` entry point.
+
+  This is how the new model could be used:
+
+  ```ts
+  import {
+    PaymentInfoRest,
+    PaymentInfoGraphql,
+  } from '@commercetools/composable-commerce-test-data/order';
+
+  const restPaymentInfo = PaymentInfoRest.random().build();
+
+  const graphqlPaymentInfo = PaymentInfoGraphql.random().build();
+  ```
+
+- [#933](https://github.com/commercetools/test-data/pull/933) [`50f92a0`](https://github.com/commercetools/test-data/commit/50f92a09e658ba4307203baa8b8dc41576aa5bfd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing two new helper functions which helps generating GraphQL lists:
+
+  - `buildLimitGraphqlList`
+  - `buildCountGraphqlList`
+
+  both in the `@commercetools/composable-commerce-test-data/core` entry point.
+
+  When looking through the generated GraphQL types we've found we have two types of lists results:
+
+  ```ts
+  // Limit based
+  export type TCtpInterfaceInteractionsRawResult = {
+    __typename?: 'InterfaceInteractionsRawResult';
+    limit?: Maybe<Scalars['Int']['output']>;
+    offset?: Maybe<Scalars['Int']['output']>;
+    results: Array<TCtpInterfaceInteractionsRaw>;
+    total: Scalars['Int']['output'];
+  };
+
+  // Count based
+  export type TCtpInventoryEntryQueryResult = {
+    __typename?: 'InventoryEntryQueryResult';
+    count: Scalars['Int']['output'];
+    exists: Scalars['Boolean']['output'];
+    offset: Scalars['Int']['output'];
+    results: Array<TCtpInventoryEntry>;
+    total: Scalars['Long']['output'];
+  };
+  ```
+
+  With these new two helpers, consumers have a more ergonomic way of building this type of results lists.
+
+  Here's an example for a limit-based result list:
+
+  ```ts
+  import { buildLimitGraphqlList } from '@/core';
+  import {
+    AttributeDefinitionGraphql,
+    type TAttributeDefinitionGraphql,
+  } from '@commercetools/composable-commerce-test-data/product-type';
+
+  const attributeDefinitionsResultGraphql = buildLimitGraphqlList<
+    TAttributeDefinitionGraphql,
+    'AttributeDefinitionResult'
+  >(
+    [
+      AttributeDefinitionGraphql.presets.countryOfOrigin(),
+      AttributeDefinitionGraphql.presets.size(),
+    ],
+    {
+      __typename: 'AttributeDefinitionResult',
+    }
+  );
+  ```
+
+  Here's an example for a count-based result list:
+
+  ```ts
+  import { buildCountGraphqlList } from '@/core';
+  import {
+    InventoryEntryGraphql,
+    type TInventoryEntryGraphql,
+  } from '@commercetools/composable-commerce-test-data/inventory-entry';
+
+  const inventoryEntriesResultGraphql = buildCountGraphqlList<
+    TAttributeDefinitionGraphql,
+    'InventoryEntryQueryResult'
+  >(
+    [
+      InventoryEntryGraphql.random(),
+      InventoryEntryGraphql.random(),
+      InventoryEntryGraphql.random(),
+    ],
+    {
+      __typename: 'InventoryEntryQueryResult',
+    }
+  );
+  ```
+
+- [#937](https://github.com/commercetools/test-data/pull/937) [`cab657f`](https://github.com/commercetools/test-data/commit/cab657f220b53d1f69a68df95fed161666434f50) Thanks [@bradd123](https://github.com/bradd123)! - We've migrated the `Money` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Money` model is now deprecated and you're expected to start using the `MoneyGraphql` or `MoneyRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import { MoneyGraphql, MoneyRest } form '@commercetools/composable-commerce-test-data/commons';
+
+  const graphqlMoney = MoneyGraphql.random().build();
+  const restMoney = MoneyRest.random().build();
+  ```
+
+- [#927](https://github.com/commercetools/test-data/pull/927) [`baa8b9e`](https://github.com/commercetools/test-data/commit/baa8b9ede50959cbbec6a982ef35b4a1db62e6cc) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - We've migrated the `Location` model to the new implementation patterns.
+
+  The model was populating the `state` property by default which goes against the rule of only populating required fields by default.
+  We've changed that property to not be populated by default and also included a new preset which can be used when consumers need to generate a fully populated object.
+
+  Example:
+
+  ```ts
+  import { LocationGraphql } from '@commercetools/composable-commerce-test-data/zone';
+
+  const fullLocation = LocationGraphql.presets.withAllFields();
+  ```
+
+### Patch Changes
+
+- [#938](https://github.com/commercetools/test-data/pull/938) [`ab632f3`](https://github.com/commercetools/test-data/commit/ab632f3c5671ab00eb818bdf53f9490cf9a0ce6d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Updated the `@commercetools/platform-sdk` package to its latest version so we can use the most up-to-date Typescript generated types from commercetools REST APIs.
+
+  Here's a list of the changes:
+
+  - `Cart` model: included `priceRoundingMode` field.
+  - `CartDraft` model: included `priceRoundingMode` field.
+  - `DiscountGroup` model: included `type` field.
+  - `InventoryEntry` model: included `reservationExpirationInMinutes` field.
+  - `InventoryEntryDraft` model: included `reservationExpirationInMinutes` field.
+  - `Order` model: included `priceRoundingMode` field.
+  - `ProductProjection` model: included `attributesRaw` field.
+  - `ProductTailoringAttribute` model: included `attributesRaw` field.
+  - `ProjectExtension` model: included `isReducedReviewModifiedProductsPaginationEnabled` field.
+
+- [#939](https://github.com/commercetools/test-data/pull/939) [`f04d1e6`](https://github.com/commercetools/test-data/commit/f04d1e64414faf1741bb399088b45005314956c5) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `Price` and `PriceDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the migrated models are now deprecated and you're expected to start using the `PriceGraphql` or `PriceRest` models instead depending of the type of API you're mocking.
+
+  You can use them like this:
+
+  ```ts
+  import {
+    PriceRest,
+    PriceGraphql,
+    PriceDraftRest,
+    PriceDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/commons';
+
+  const restPrice = PriceRest.random().build();
+  const graphqlPrice = PriceGraphql.random().build();
+
+  const restPriceDraft = PriceDraftRest.random().build();
+  const graphqlPriceDraft = PriceDraftGraphql.random().build();
+  ```
+
+  We're also introducing a new sub-model for the `PriceDraft` one which is called `BaseMoneyDraft` and only exists in the GraphQL API.
+  You can use it to set a specific `value` in a price draft.
+
+  Example:
+
+  ```ts
+  import {
+    BaseMoneyDraftGraphql,
+    PriceDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/commons';
+
+  const graphqlPriceDraft = PriceDraftGraphql.random()
+    .value(BaseMoneyDraftGraphql.presets.withAllFields({ currencyCode: 'USD' }))
+    .build();
+  ```
+
+- [#932](https://github.com/commercetools/test-data/pull/932) [`8b68cdc`](https://github.com/commercetools/test-data/commit/8b68cdc8099612984010ae4e0029a6f9292b0843) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing a new model named `DiscountCodeInfo` that can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.
+
+  This is how the new model could be used:
+
+  ```ts
+  import {
+    DiscountCodeInfoRest,
+    DiscountCodeInfoGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const restDiscountCodeInfo = DiscountCodeInfoRest.random().build();
+
+  const graphqlDiscountCodeInfo = DiscountCodeInfoGraphql.random().build();
+  ```
+
 ## 13.2.0
 
 ### Minor Changes
