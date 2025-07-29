@@ -36,6 +36,7 @@ describe('DiscountGroup Builder', () => {
         description: null,
         nameAllLocales: null,
         descriptionAllLocales: null,
+        type: expect.any(String),
         __typename: 'DiscountGroup',
       })
     );
