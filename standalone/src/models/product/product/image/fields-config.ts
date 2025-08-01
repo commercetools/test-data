@@ -23,4 +23,17 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TImageGraphql> = {
     dimensions: fake(() => ImageDimensionsGraphql.random()),
     __typename: 'Image',
   },
+  postBuild: (model, context) => {
+    if (context?.isCompatMode) {
+      model.dimensions = model.dimensions
+        ? ImageDimensionsGraphql.random()
+            // @ts-expect-error - This is needed because of the compatibility mode using the REST API
+            .width(model.dimensions.w)
+            // @ts-expect-error - This is needed because of the compatibility mode using the REST API
+            .height(model.dimensions.h)
+            .build()
+        : model.dimensions;
+    }
+    return model;
+  },
 };

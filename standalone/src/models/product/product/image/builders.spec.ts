@@ -25,6 +25,7 @@ const validateGraphqlModel = (model: TImageGraphql) => {
       __typename: 'Dimensions',
     })
   );
+  expect(model.__typename).toEqual('Image');
 };
 
 describe('Image model builders', () => {
@@ -38,7 +39,6 @@ describe('Image model builders', () => {
     const graphqlModel = ImageGraphql.random().build();
 
     validateGraphqlModel(graphqlModel);
-    expect(graphqlModel.__typename).toEqual('Image');
   });
 });
 
@@ -59,6 +59,5 @@ describe('Image model compatibility builders', () => {
     const graphqlModel = Image.random().buildGraphql<TImageGraphql>();
 
     validateGraphqlModel(graphqlModel);
-    expect(graphqlModel.__typename).toEqual('Image');
   });
 });

@@ -1,17 +1,14 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { Price } from '@/models/commons';
-import { Attribute } from '@/models/product/product';
-import * as Image from '../image';
+import { PriceGraphql, PriceRest } from '@/models/commons';
+import { Attribute, ImageGraphql, ImageRest } from '@/models/product/product';
 import type { TProductVariantGraphql, TProductVariantRest } from './types';
 
 const commonFieldsConfig = {
   availability: null,
   assets: [],
   id: fake((f) => f.number.int()),
-  images: fake(() => [Image.random()]),
   key: fake((f) => f.lorem.slug(2)),
   price: null,
-  prices: fake(() => [Price.random()]),
   sku: fake((f) => `${f.lorem.word()}-${f.string.alphanumeric(3)}`),
 };
 
@@ -19,7 +16,9 @@ export const restFieldsConfig: TModelFieldsConfig<TProductVariantRest> = {
   fields: {
     ...commonFieldsConfig,
     attributes: fake(() => [Attribute.random()]),
+    images: fake(() => [ImageRest.random()]),
     isMatchingVariant: fake(() => false),
+    prices: fake(() => [PriceRest.random()]),
     scopedPrice: null,
     scopedPriceDiscounted: null,
   },
@@ -29,6 +28,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {
     ...commonFieldsConfig,
     attributesRaw: fake(() => [Attribute.random()]),
     allRecurrencePrices: null,
+    images: fake(() => [ImageGraphql.random()]),
+    prices: fake(() => [PriceGraphql.random()]),
     __typename: 'ProductVariant',
   },
   postBuild: (model, context) => {
