@@ -14,8 +14,8 @@ export * from './product-variant-availability/types';
 export * as Attribute from './attribute';
 export * as AttributeDraft from './attribute/attribute-draft';
 
-export * as Image from './image';
-export * as ImageDraft from './image/image-draft';
+export * from './image';
+export * from './image/image-draft';
 
 export * from './image-dimensions';
 export * from './image-dimensions/image-dimensions-draft';

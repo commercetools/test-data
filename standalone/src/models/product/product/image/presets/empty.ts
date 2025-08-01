@@ -1,6 +1,22 @@
-import Image from '../builder';
-import { TImageBuilder } from '../types';
+import { TBuilder } from '@/core';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../builders';
+import { TImageGraphql, TImageRest } from '../types';
 
-const empty = (): TImageBuilder => Image().label(undefined);
+const populatePreset = <TModel extends TImageGraphql | TImageRest>(
+  builder: TBuilder<TModel>
+) => {
+  return builder.label(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TImageRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TImageGraphql> =>
+  populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TImageRest | TImageGraphql> =>
+  populatePreset(CompatModelBuilder());

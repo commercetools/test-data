@@ -1,14 +1,10 @@
-import type {
-  TImageDraft,
-  TImageDraftGraphql,
-  TImageDraftRest,
-} from '../../types';
-import * as emptyPresets from './empty';
+import { TImageDraft, TImageDraftGraphql, TImageDraftRest } from '../types';
+import { ImageDraft, ImageDraftGraphql, ImageDraftRest } from './index';
 
 const validateModel = (model: TImageDraftGraphql | TImageDraftRest) => {
   expect(model).toMatchObject({
+    label: expect.any(String),
     url: expect.any(String),
-    label: undefined,
   });
 };
 
@@ -32,37 +28,35 @@ const validateGraphqlModel = (model: TImageDraftGraphql) => {
   );
 };
 
-describe('commercetools API platform preset builders', () => {
+describe('ImageDraft model builders', () => {
   it('builds a REST model', () => {
-    const restModel = emptyPresets.restPreset().build();
+    const restModel = ImageDraftRest.random().build();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = emptyPresets.graphqlPreset().build();
+    const graphqlModel = ImageDraftGraphql.random().build();
 
     validateGraphqlModel(graphqlModel);
   });
 });
 
-describe('commercetools API platform preset compatibility builders', () => {
+describe('ImageDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const restModel = emptyPresets.compatPreset().build<TImageDraft>();
+    const restModel = ImageDraft.random().build<TImageDraft>();
 
     validateRestModel(restModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = emptyPresets.compatPreset().buildRest<TImageDraftRest>();
+    const restModel = ImageDraft.random().buildRest<TImageDraftRest>();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = emptyPresets
-      .compatPreset()
-      .buildGraphql<TImageDraftGraphql>();
+    const graphqlModel = ImageDraft.random().buildGraphql<TImageDraftGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });
