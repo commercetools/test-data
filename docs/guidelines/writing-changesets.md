@@ -81,7 +81,10 @@ We've migrated the `TaxRate` model to the new implementation patterns.
 This change does not have any impact on consumers, however the `TaxRate` model is now deprecated and you're expected to start using the `TaxRateGraphql` or `TaxRateRest` models instead depending of the type of API you're mocking.
 
 ```ts
-import { TaxRateGraphql, TaxRateRest } form '@commercetools/composable-commerce-test-data/tax-cateopry';
+import {
+  TaxRateGraphql,
+  TaxRateRest,
+} from '@commercetools/composable-commerce-test-data/tax-cateopry';
 
 const graphqlTaxRate = TaxRateGraphql.random().build();
 const restTaxRate = TaxRateRest.random().build();
