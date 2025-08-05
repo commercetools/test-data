@@ -1,6 +1,7 @@
 // Export types
 export * from './attribute/types';
 export * from './image/types';
+export * from './image-dimensions/types';
 export * from './product/types';
 export * from './product-catalog-data/types';
 export * from './product-data/types';
@@ -15,6 +16,9 @@ export * as AttributeDraft from './attribute/attribute-draft';
 
 export * as Image from './image';
 export * as ImageDraft from './image/image-draft';
+
+export * from './image-dimensions';
+export * from './image-dimensions/image-dimensions-draft';
 
 export * from './product';
 export * from './product/product-draft';
