@@ -32,7 +32,7 @@ const validateGraphqlModel = (model: TImageDraftGraphql) => {
   );
 };
 
-describe('commercetools API platform preset builders', () => {
+describe('Image "empty" preset builders', () => {
   it('builds a REST model', () => {
     const restModel = emptyPresets.restPreset().build();
 
@@ -46,7 +46,7 @@ describe('commercetools API platform preset builders', () => {
   });
 });
 
-describe('commercetools API platform preset compatibility builders', () => {
+describe('Image "empty" preset compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const restModel = emptyPresets.compatPreset().build<TImageDraft>();
 
