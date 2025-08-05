@@ -10,7 +10,7 @@ This change does not have any impact on consumers, however the `Image` model is 
 import {
   ImageGraphql,
   ImageRest,
-} from '@commercetools/composable-commerce-test-data/tax-cateopry';
+} from '@commercetools/composable-commerce-test-data/product';
 
 const graphqlImage = ImageGraphql.random().build();
 const restImage = ImageRest.random().build();
