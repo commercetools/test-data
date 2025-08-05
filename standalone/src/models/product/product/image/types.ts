@@ -3,12 +3,12 @@ import type { TBuilder } from '@/core';
 import type { TCtpImage, TCtpImageInput } from '@/graphql-types';
 
 /**
- * @deprecated use `TImageRest` instead
+ * @deprecated use `TImageRest` or `TImageGraphql` instead
  */
 export type TImage = Image;
 
 /**
- * @deprecated use `TImageDraftRest` instead
+ * @deprecated use `TImageDraftRest` or `TImageDraftGraphql` instead
  */
 export type TImageDraft = Image;
 
