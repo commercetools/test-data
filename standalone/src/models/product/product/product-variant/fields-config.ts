@@ -22,6 +22,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductVariantRest> = {
     isMatchingVariant: fake(() => false),
     scopedPrice: null,
     scopedPriceDiscounted: null,
+    recurrencePrices: [],
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {

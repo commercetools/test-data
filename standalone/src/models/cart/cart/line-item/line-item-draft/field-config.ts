@@ -22,6 +22,7 @@ const commonFieldsConfig = {
   externalTaxRate: null,
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   shippingDetails: null,
+  recurrenceInfo: null,
   custom: null,
 };
 
@@ -43,7 +44,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemDraftGraphql> = {
       ReferenceDraftGraphql.presets.channelReference()
     ),
     supplyChannel: fake(() => ReferenceDraftGraphql.presets.channelReference()),
-    recurrenceInfo: null,
     perMethodExternalTaxRate: null,
   },
 };
