@@ -20,6 +20,9 @@ export * from './image/image-draft';
 export * from './image-dimensions';
 export * from './image-dimensions/image-dimensions-draft';
 
+export * from './image-dimensions';
+export * from './image-dimensions/image-dimensions-draft';
+
 export * from './product';
 export * from './product/product-draft';
 
