@@ -16,6 +16,7 @@ const commonFieldsConfig = {
   externalTaxRate: null,
   shippingDetails: null,
   priceMode: oneOf(...Object.values(customLineItemPriceMode)),
+  recurrenceInfo: null,
   custom: null,
 };
 
@@ -29,6 +30,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemDraftGraphql
   {
     fields: {
       ...commonFieldsConfig,
-      recurrenceInfo: null,
     },
   };

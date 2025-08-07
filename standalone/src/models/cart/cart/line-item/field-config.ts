@@ -41,6 +41,7 @@ const commonFieldsConfig = {
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   shippingDetails: null,
   addedAt: fake(addedAt),
+  recurrenceInfo: null,
   custom: null,
   lastModifiedAt: fake(lastModifiedAt),
 };
@@ -75,7 +76,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     productTypeRef: null,
     supplyChannelRef: null,
     taxRate: fake(() => TaxRateGraphql.presets.withAllFields()),
-    recurrenceInfo: null,
     __typename: 'LineItem',
   },
   postBuild: (model) => {

@@ -22,6 +22,7 @@ const commonFieldsConfig = {
   discountedPricePerQuantity: [],
   shippingDetails: null,
   priceMode: oneOf(...Object.values(customLineItemPriceMode)),
+  recurrenceInfo: null,
   custom: null,
 };
 
@@ -43,7 +44,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
     __typename: 'CustomLineItem',
     nameAllLocales: fake((f) => LocalizedString.random()),
     taxCategoryRef: null,
-    recurrenceInfo: null,
   },
   postBuild: (model) => {
     const name = model.nameAllLocales

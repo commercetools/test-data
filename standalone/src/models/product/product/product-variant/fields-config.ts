@@ -21,6 +21,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductVariantRest> = {
     prices: fake(() => [PriceRest.random()]),
     scopedPrice: null,
     scopedPriceDiscounted: null,
+    recurrencePrices: [],
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {
