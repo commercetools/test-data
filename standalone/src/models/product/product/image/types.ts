@@ -1,27 +1,31 @@
 import type { Image } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import type { TCtpImage, TCtpImageInput } from '@/graphql-types';
 
+/**
+ * @deprecated use `TImageRest` or `TImageGraphql` instead
+ */
 export type TImage = Image;
+
+/**
+ * @deprecated use `TImageDraftRest` or `TImageDraftGraphql` instead
+ */
 export type TImageDraft = Image;
 
-export type TImageGraphql = Omit<TImage, 'dimensions'> & {
-  dimensions: {
-    width: number;
-    height: number;
-  };
-  __typename: 'Image';
-};
+// REST types
+export type TImageRest = Image;
+export type TImageDraftRest = Image;
 
-//Graphql draft representation
-export type TImageDraftGraphql = Omit<TImage, 'dimensions'> & {
-  dimensions: {
-    width: number;
-    height: number;
-  };
-};
+// GraphQL types
+export type TImageGraphql = TCtpImage;
+export type TImageDraftGraphql = TCtpImageInput;
 
-export type TImageBuilder = TBuilder<TImage>;
-export type TCreateImageBuilder = () => TImageBuilder;
-
-export type TImageDraftBuilder = TBuilder<TImageDraft>;
-export type TCreateImageDraftBuilder = () => TImageDraftBuilder;
+export type TCreateImageBuilder<
+  TImageModel extends
+    | TImage
+    | TImageDraft
+    | TImageRest
+    | TImageGraphql
+    | TImageDraftRest
+    | TImageDraftGraphql,
+> = () => TBuilder<TImageModel>;

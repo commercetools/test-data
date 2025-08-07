@@ -1,7 +1,21 @@
-import commercetoolsPosAem from './commercetools-api-platform';
-import commercetoolsApiPlatform from './commercetools-pos-aem';
-import empty from './empty';
+import * as commercetoolsApiPlatformPresets from './commercetools-api-platform';
+import * as commercetoolsPosAemPresets from './commercetools-pos-aem';
+import * as emptyPresets from './empty';
 
-const presets = { commercetoolsPosAem, commercetoolsApiPlatform, empty };
+export const restPresets = {
+  commercetoolsApiPlatform: commercetoolsApiPlatformPresets.restPreset,
+  commercetoolsPosAem: commercetoolsPosAemPresets.restPreset,
+  empty: emptyPresets.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  commercetoolsApiPlatform: commercetoolsApiPlatformPresets.graphqlPreset,
+  commercetoolsPosAem: commercetoolsPosAemPresets.graphqlPreset,
+  empty: emptyPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  commercetoolsApiPlatform: commercetoolsApiPlatformPresets.compatPreset,
+  commercetoolsPosAem: commercetoolsPosAemPresets.compatPreset,
+  empty: emptyPresets.compatPreset,
+};
