@@ -1,5 +1,66 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.4.0
+
+### Minor Changes
+
+- [#942](https://github.com/commercetools/test-data/pull/942) [`89a1d1d`](https://github.com/commercetools/test-data/commit/89a1d1d54f85fbc9170e60d3199c69b66ceca69c) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new test data model named `ImageDimensions` which can be consumed from the `@commercetools/composable-commerce-test-data/product` entry point.
+
+  This is how it can be used:
+
+  ```ts
+  import {
+    ImageDimensionsGraphql,
+    ImageDimensionsRest,
+    ImageDimensionsDraftGraphql,
+    ImageDimensionsDraftRest,
+  } from '@commercetools/composable-commerce-test-data/product';
+
+  // Creating test data models
+  const graphqlModel = ImageDimensionsGraphql.random()
+    .type(CartDiscountTargetGraphql.constants.targetTypes.lineItems)
+    .build();
+  const restModel = ImageDimensionsRest.random()
+    .type(CartDiscountTargetGraphql.constants.targetTypes.shipping)
+    .build();
+
+  // There are also some presets to generate test data models with
+  // some specific sizes
+  const thumbImageDimensionsGraphql =
+    ImageDimensionsGraphql.presets.withThumbSize();
+  const largeImageDimensionsRest = ImageDimensionsRest.presets.withLargeSize();
+  ```
+
+- [#945](https://github.com/commercetools/test-data/pull/945) [`888ba63`](https://github.com/commercetools/test-data/commit/888ba635d9c57c4abe08999749cc8c904d75aa25) Thanks [@dogayuksel](https://github.com/dogayuksel)! - We're introducing a new model named `QuotesListView`, which can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+
+  There's only a GraphQL version for this model as it only exists in the MC Settings service which only exposes a GraphQL API.
+
+  This is how the new model could be used:
+
+  ```
+  import {
+    QuotesListViewGraphql,
+  } from '@commercetools/composable-commerce-test-data/my-view';
+
+  const quotesListView = QuotesListViewGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#943](https://github.com/commercetools/test-data/pull/943) [`96484ad`](https://github.com/commercetools/test-data/commit/96484ade5f7e3f477d1177c8f66d6316ac20d87d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `Image` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Image` model is now deprecated and you're expected to start using the `ImageGraphql` or `ImageRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ImageGraphql,
+    ImageRest,
+  } from '@commercetools/composable-commerce-test-data/product';
+
+  const graphqlImage = ImageGraphql.random().build();
+  const restImage = ImageRest.random().build();
+  ```
+
 ## 13.3.0
 
 ### Minor Changes
@@ -83,7 +144,6 @@
   ```
 
 - [#933](https://github.com/commercetools/test-data/pull/933) [`50f92a0`](https://github.com/commercetools/test-data/commit/50f92a09e658ba4307203baa8b8dc41576aa5bfd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing two new helper functions which helps generating GraphQL lists:
-
   - `buildLimitGraphqlList`
   - `buildCountGraphqlList`
 
@@ -190,7 +250,6 @@
 - [#938](https://github.com/commercetools/test-data/pull/938) [`ab632f3`](https://github.com/commercetools/test-data/commit/ab632f3c5671ab00eb818bdf53f9490cf9a0ce6d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Updated the `@commercetools/platform-sdk` package to its latest version so we can use the most up-to-date Typescript generated types from commercetools REST APIs.
 
   Here's a list of the changes:
-
   - `Cart` model: included `priceRoundingMode` field.
   - `CartDraft` model: included `priceRoundingMode` field.
   - `DiscountGroup` model: included `type` field.
@@ -348,7 +407,6 @@
 ### Minor Changes
 
 - [#912](https://github.com/commercetools/test-data/pull/912) [`41fd2a1`](https://github.com/commercetools/test-data/commit/41fd2a1418d83999bd2f6d1c9f0a781962baba6d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Three new models have been added related to MC Gateway `OAuthClient` entity:
-
   - `OAuthClient`
   - `OAuthScope`
   - `ProjectPermission`
@@ -390,7 +448,6 @@
 ### Minor Changes
 
 - [#906](https://github.com/commercetools/test-data/pull/906) [`edee5c4`](https://github.com/commercetools/test-data/commit/edee5c4845eaad6e7387625aad42bab8bb377596) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - We've included two new presets to the `State` model:
-
   - `packed`
   - `shipped`
 
@@ -535,7 +592,6 @@
 ### Major Changes
 
 - [#885](https://github.com/commercetools/test-data/pull/885) [`65c738c`](https://github.com/commercetools/test-data/commit/65c738c890b4a780ad034c30ca228e1bc5c08152) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're removing all the **sample data presets** from the test data models:
-
   - sample-data-b2b
   - sample-data-b2c
   - sample-data-b2c-lifestyle
@@ -717,7 +773,6 @@
   ```
 
 - [#853](https://github.com/commercetools/test-data/pull/853) [`3211242`](https://github.com/commercetools/test-data/commit/3211242cd8de6a1d2c17c8cdbcc1ce82aeebbf6c) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've updated several models related to Custom Applications:
-
   - `CustomApplicationInstallation`: It now exports a `constants` property including values for different oAuth scopes.
   - `CustomApplicationInstallationPermissions`: It now exports a `constants` property including values for different oAuth scopes.
   - `CustomApplication`: The `constants` property was exporting the wrong values. We also change the default model to populate the minimal fields and include a new preset (`withAllFields`) which can be used for use cases when a fully populated object is needed.
@@ -759,7 +814,6 @@
 
 - [#854](https://github.com/commercetools/test-data/pull/854) [`e4f2733`](https://github.com/commercetools/test-data/commit/e4f273347ad5bd68d8aea420e7244ec6d7114037) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Migrated test-data models related to Organization extensions to the new implementation patterns.
   Included models:
-
   - `ContactInformation`
   - `OidcSsoConfig`
   - `OrganizationExtension`
@@ -791,7 +845,6 @@
   These changes are transparent for consumers.
 
   Here's the complete list of migrated models:
-
   - AttributeBooleanType
   - AttributeDateTimeType
   - AttributeDateType
@@ -846,7 +899,6 @@
 ### Minor Changes
 
 - [#815](https://github.com/commercetools/test-data/pull/815) [`79f4d99`](https://github.com/commercetools/test-data/commit/79f4d996c3efe732d13d1a488e66c2dc749e6b3f) Thanks [@rajrdk](https://github.com/rajrdk)! - Added two new sub-models to the Cart one:
-
   - `DiscountOnTotalPrice`
   - `DiscountedTotalPricePortion`
 
@@ -872,7 +924,6 @@
 
 - [#809](https://github.com/commercetools/test-data/pull/809) [`516a1f6`](https://github.com/commercetools/test-data/commit/516a1f60b9930da224e96e82c99f39092f03f128) Thanks [@Rombelirk](https://github.com/Rombelirk)! - The `ProductSelection` and `ProductSelectionDraft` models have been refactored to use the new implementation patterns but that does not affect consumers..
   Added new submodel to the ProductSelection model:
-
   - `ProductOfSelection`
 
   You can use it like this:
