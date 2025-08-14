@@ -2,7 +2,7 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We're introducing a new model named `QuotesListView` can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+We're introducing a new model named `QuotesListView`, which can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
 
 There's only a GraphQL version for this model as it only exists in the MC Settings services which only expose a GraphQL API.
 
