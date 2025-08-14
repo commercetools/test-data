@@ -12,5 +12,6 @@ This is how the new model could be used:
 import {
   QuotesListViewGraphql,
 } from '@commercetools/composable-commerce-test-data/my-view';
+
 const quotesListView = QuotesListViewGraphql.random().build();
 ```
