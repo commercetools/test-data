@@ -51,8 +51,6 @@ describe('RecurrencePolicyDraft Builder', () => {
       )
       .build();
 
-    console.log(graphqlModel);
-
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         key: expect.any(String),
