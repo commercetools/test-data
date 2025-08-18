@@ -1,6 +1,6 @@
 import { StandardScheduleInputGraphql } from './index';
 
-describe('StandardScheduleDraft Builder', () => {
+describe('StandardScheduleInput Builder', () => {
   it('should build properties for the GraphQL representation', () => {
     const graphqlModel = StandardScheduleInputGraphql.random().build();
 

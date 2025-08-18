@@ -1,11 +1,11 @@
 import { fake, oneOf, sequence, type TModelFieldsConfig } from '@/core';
-import { CartGraphql, CartRest } from '@/models/cart/cart';
+import { CartGraphql } from '@/models/cart/cart';
 import {
   KeyReference,
   ReferenceGraphql,
   ReferenceRest,
 } from '@/models/commons';
-import { OrderGraphql, OrderRest } from '@/models/order';
+import { OrderGraphql } from '@/models/order';
 import { createRelatedDates } from '@/utils';
 import { StandardScheduleGraphql, StandardScheduleRest } from '../index';
 import { recurringOrderState } from './constants';
