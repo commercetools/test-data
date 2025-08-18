@@ -1,14 +1,57 @@
 import { LocalizedString } from '@/models/commons';
-import { StandardScheduleGraphql } from '../../index';
-import { RecurrencePolicyDraftGraphql } from './index';
+import {
+  StandardScheduleDraftRest,
+  RecurrencePolicyScheduleInputGraphql,
+  StandardScheduleInputGraphql,
+} from '../../index';
+import { intervalUnit } from '../../standard-schedule/constants';
+import {
+  RecurrencePolicyDraftGraphql,
+  RecurrencePolicyDraftRest,
+} from './index';
 
 describe('RecurrencePolicyDraft Builder', () => {
+  it('should build properties for the REST representation', () => {
+    const restModel = RecurrencePolicyDraftRest.random()
+      .name(LocalizedString.random())
+      .description(LocalizedString.random())
+      .schedule(StandardScheduleDraftRest.random())
+      .build();
+
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        description: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        schedule: expect.objectContaining({
+          type: 'standard',
+          value: expect.any(Number),
+          intervalUnit: expect.toBeOneOf(Object.values(intervalUnit)),
+        }),
+      })
+    );
+  });
+
   it('should build properties for the GraphQL representation', () => {
     const graphqlModel = RecurrencePolicyDraftGraphql.random()
       .name(LocalizedString.random())
       .description(LocalizedString.random())
-      .schedule(StandardScheduleGraphql.random())
-      .buildGraphql();
+      .schedule(
+        RecurrencePolicyScheduleInputGraphql.random().standard(
+          StandardScheduleInputGraphql.random()
+        )
+      )
+      .build();
+
+    console.log(graphqlModel);
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
@@ -28,10 +71,10 @@ describe('RecurrencePolicyDraft Builder', () => {
           }),
         ]),
         schedule: expect.objectContaining({
-          type: 'Standard',
-          value: expect.any(Number),
-          intervalUnit: expect.any(String),
-          __typename: 'StandardSchedule',
+          standard: expect.objectContaining({
+            value: expect.any(Number),
+            intervalUnit: expect.toBeOneOf(Object.values(intervalUnit)),
+          }),
         }),
       })
     );
