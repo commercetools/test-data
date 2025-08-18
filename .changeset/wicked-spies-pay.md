@@ -2,9 +2,9 @@
 '@commercetools/composable-commerce-test-data': minor
 ---
 
-We're introducing a new model named, `standard-schedule-draft`, `standard-schedule-input` and `recurrence-policy-scheule-input`. Also added rest models for `standard-schedule`, `counter`, `counterDraft`, `recurrence-policy`, `recurrence-policy-draft`, `recurring-order` and ` recurring-order-draft`. All these modules can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
+We're introducing new models named, `standard-schedule-draft`, `standard-schedule-input` and `recurrence-policy-scheule-input`. Also added rest models for `standard-schedule`, `counter`, `counterDraft`, `recurrence-policy`, `recurrence-policy-draft`, `recurring-order` and ` recurring-order-draft`. All these modules can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
 
-This is how the new model could be used:
+This is how new models could be used:
 
 ```ts
 import {
