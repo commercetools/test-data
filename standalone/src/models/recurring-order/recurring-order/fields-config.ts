@@ -1,11 +1,15 @@
 import { fake, oneOf, sequence, type TModelFieldsConfig } from '@/core';
-import { CartGraphql } from '@/models/cart/cart';
-import { KeyReference, ReferenceGraphql } from '@/models/commons';
-import { Order } from '@/models/order';
+import { CartGraphql, CartRest } from '@/models/cart/cart';
+import {
+  KeyReference,
+  ReferenceGraphql,
+  ReferenceRest,
+} from '@/models/commons';
+import { OrderGraphql, OrderRest } from '@/models/order';
 import { createRelatedDates } from '@/utils';
-import { StandardScheduleGraphql } from '../index';
+import { StandardScheduleGraphql, StandardScheduleRest } from '../index';
 import { recurringOrderState } from './constants';
-import type { TRecurringOrderGraphql } from './types';
+import type { TRecurringOrderGraphql, TRecurringOrderRest } from './types';
 
 const [getOlderDate, getNewerDate, getFutureDate] = createRelatedDates();
 
@@ -21,6 +25,7 @@ const commonFieldsConfig = {
   skipConfiguration: null,
   businessUnit: null,
   state: null,
+  recurringOrderState: oneOf(...Object.values(recurringOrderState)),
   customer: null,
   customerEmail: null,
   custom: null,
@@ -28,20 +33,30 @@ const commonFieldsConfig = {
   createdBy: null,
   lastModifiedAt: fake(getNewerDate),
   lastModifiedBy: null,
+  store: null,
+};
+
+export const restFieldsConfig: TModelFieldsConfig<TRecurringOrderRest> = {
+  fields: {
+    ...commonFieldsConfig,
+    cart: fake(() => ReferenceRest.presets.cartReference()),
+    originOrder: fake(() => ReferenceRest.presets.orderReference()),
+    schedule: fake(() => StandardScheduleRest.random()),
+    recurringOrderState: oneOf(...Object.values(recurringOrderState)),
+  },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
   fields: {
+    ...commonFieldsConfig,
     cart: fake(() => CartGraphql.random()),
     schedule: fake(() => StandardScheduleGraphql.random()),
-    recurringOrderState: oneOf(...Object.values(recurringOrderState)),
-    originOrder: fake(() => Order.random()),
+    originOrder: fake(() => OrderGraphql.random()),
     cartRef: null,
     customerRef: null,
     businessUnitRef: null,
     stateRef: null,
     originOrderRef: null,
-    ...commonFieldsConfig,
     __typename: 'RecurringOrder',
   },
   postBuild: (model) => {

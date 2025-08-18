@@ -1,9 +1,19 @@
 import { createSpecializedBuilder } from '@/core';
-import { graphqlFieldsConfig } from './fields-config';
+import { graphqlFieldsConfig, restFieldsConfig } from './fields-config';
 import type {
   TCreateRecurringOrderBuilder,
   TRecurringOrderGraphql,
+  TRecurringOrderRest,
 } from './types';
+
+export const RestModelBuilder: TCreateRecurringOrderBuilder<
+  TRecurringOrderRest
+> = () =>
+  createSpecializedBuilder({
+    name: 'RecurringOrderRestBuilder',
+    type: 'rest',
+    modelFieldsConfig: restFieldsConfig,
+  });
 
 export const GraphqlModelBuilder: TCreateRecurringOrderBuilder<
   TRecurringOrderGraphql
