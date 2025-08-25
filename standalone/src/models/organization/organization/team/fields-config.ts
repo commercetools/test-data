@@ -18,8 +18,15 @@ export const restFieldsConfig: TModelFieldsConfig<TTeamRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TTeamGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    __typename: 'Team',
     members: [User.random().buildGraphql()],
-    membersRef: [ReferenceGraphql.random().typeId('user').build()],
+    membersRef: [],
+    __typename: 'Team',
+  },
+  postBuild: (model) => {
+    model.membersRef = model.members.map((member) =>
+      ReferenceGraphql.random().typeId('user').id(member.id).build()
+    );
+
+    return model;
   },
 };
