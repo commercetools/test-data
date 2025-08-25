@@ -1,14 +1,20 @@
 import type { TBuilder } from '@/core';
 import type { TCoreTeam } from '@/graphql-types';
-import type { TReference } from '@/models/commons';
+import type { TReferenceRest } from '@/models/commons';
+
+/**
+ * @deprecated use `TTeamRest` or `TTeamGraphql` instead
+ */
+export type TTeam = TTeamRest;
+
+export type TTeamRest = {
+  id: string;
+  name: string;
+  members: Array<TReferenceRest<'user'>>;
+};
 
 export type TTeamGraphql = TCoreTeam;
 
-export type TTeam = {
-  id: string;
-  name: string;
-  members: Array<TReference<'user'>>;
-};
-
-export type TTeamBuilder = TBuilder<TTeam>;
-export type TCreateTeamBuilder = () => TTeamBuilder;
+export type TCreateTeamBuilder<
+  TTeamModel extends TTeamRest | TTeamGraphql = TTeamRest,
+> = () => TBuilder<TTeamModel>;

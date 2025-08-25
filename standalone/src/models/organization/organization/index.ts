@@ -8,6 +8,4 @@ export { default as presetsMc } from './mc-organization/presets';
 export * from './mc-organization/types';
 
 // Team
-export * as Team from './team';
-export { default as teamPresets } from './team/presets';
-export * from './team/types';
+export * from './team';

@@ -1,6 +1,6 @@
 import { fake, Generator, sequence } from '@/core';
 import { createRelatedDates } from '@/utils';
-import * as Team from '../team';
+import { Team } from '../team';
 import type { TOrganization } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
