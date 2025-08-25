@@ -1,7 +1,10 @@
-import { GraphqlModelBuilder } from './builders';
+import { GraphqlModelBuilder, RestModelBuilder } from './builders';
 import * as RecurringOrderDraftPresets from './presets';
 
-// TODO : Add rest model once recurring orders is available in Public Beta
+export const RecurringOrderDraftRest = {
+  random: RestModelBuilder,
+  presets: RecurringOrderDraftPresets.restPresets,
+};
 
 export const RecurringOrderDraftGraphql = {
   random: GraphqlModelBuilder,

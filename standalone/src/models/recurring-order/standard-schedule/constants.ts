@@ -1,5 +1,3 @@
-export const intervalUnit = {
-  Days: 'Days',
-  Weeks: 'Weeks',
-  Months: 'Months',
-} as const;
+import { TCtpIntervalUnit } from '@/graphql-types';
+
+export const intervalUnit = TCtpIntervalUnit;
