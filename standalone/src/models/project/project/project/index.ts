@@ -5,7 +5,6 @@ import {
 } from './builders';
 import { restPresets, graphqlPresets, compatPresets } from './presets';
 
-export * as MessagesConfiguration from './messages-configuration';
 export * from './types';
 
 export const ProjectRest = {

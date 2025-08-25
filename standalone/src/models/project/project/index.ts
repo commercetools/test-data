@@ -9,3 +9,4 @@ export * from './mc-project/types';
 export * from './project';
 export * as ProjectDraft from './project/project-draft';
 export { default as draftPresets } from './project/project-draft/presets';
+export * as MessagesConfiguration from './project/messages-configuration';
