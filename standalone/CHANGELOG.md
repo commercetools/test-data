@@ -1,5 +1,37 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.4.1
+
+### Patch Changes
+
+- [#948](https://github.com/commercetools/test-data/pull/948) [`14a1c9b`](https://github.com/commercetools/test-data/commit/14a1c9be42351a84c1829fa9a79561c9dd4b9444) Thanks [@ahmehri](https://github.com/ahmehri)! - We've migrated the `Project` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Project` model is now deprecated and you're expected to start using the `ProjectGraphql` or `ProjectRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ProjectGraphql,
+    ProjectRest,
+  } from '@commercetools/composable-commerce-test-data/project';
+
+  const projectGraphql = ProjectGraphql.random().build();
+  const projectRest = ProjectRest.random().build();
+  ```
+
+- [#947](https://github.com/commercetools/test-data/pull/947) [`9b04119`](https://github.com/commercetools/test-data/commit/9b0411905c767f64199367e7fadaef0791a301e2) Thanks [@ahmehri](https://github.com/ahmehri)! - We've migrated the `Team` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Team` model is now deprecated and you're expected to start using the `TeamGraphql` or `TeamRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    TeamGraphql,
+    TeamRest,
+  } from '@commercetools/composable-commerce-test-data/organization';
+
+  const teamGraphql = TeamGraphql.random().build();
+  const teamRest = TeamRest.random().build();
+  ```
+
 ## 13.4.0
 
 ### Minor Changes
