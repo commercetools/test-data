@@ -1,7 +1,7 @@
 import { fake, sequence, type TModelFieldsConfig } from '@/core';
 import { LocalizedString } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import type { TRecurrencePolicyGraphql } from './types';
+import type { TRecurrencePolicyGraphql, TRecurrencePolicyRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -16,6 +16,12 @@ const commonFieldsConfig = {
   createdBy: null,
   lastModifiedAt: fake(getNewerDate),
   lastModifiedBy: null,
+};
+
+export const restFieldsConfig: TModelFieldsConfig<TRecurrencePolicyRest> = {
+  fields: {
+    ...commonFieldsConfig,
+  },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TRecurrencePolicyGraphql> =
