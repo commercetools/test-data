@@ -1,3 +1,4 @@
+import { vi } from 'vitest';
 import { build, sequence, fake, oneOf, bool, perBuild } from './index';
 
 describe('test-data-bot', () => {
@@ -641,7 +642,7 @@ describe('test-data-bot', () => {
         name: string;
       }
 
-      jest.spyOn(console, 'warn').mockImplementationOnce(() => {});
+      vi.spyOn(console, 'warn').mockImplementationOnce(() => {});
 
       const userBuilder = build<User>({
         fields: {
