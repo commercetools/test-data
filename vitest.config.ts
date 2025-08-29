@@ -12,9 +12,12 @@ export default defineConfig({
         'standalone/src/**/*.ts',
         '!standalone/src/**/index.ts',
         '!standalone/src/**/*.spec.ts',
-        '!standalone/src/**/*.test.ts',
         '!standalone/src/**/types.ts',
+        // 'generators/src/**/*.ts',
       ],
+      // reporter: ['html'],
+      // reportsDirectory: './coverage-reports',
+      // clean: false, // prevents automatic cleanup
     },
     maxConcurrency: os.cpus().length, // Set maxConcurrency to the number of CPU cores (10)
     pool: 'threads',
@@ -22,7 +25,7 @@ export default defineConfig({
       threads: {
         isolate: false, // toggle for testing speed
         // maxThreads: os.cpus().length,
-        maxThreads: 7,
+        maxThreads: 6,
         minThreads: 5,
       },
     },
