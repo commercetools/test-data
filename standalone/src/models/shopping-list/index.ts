@@ -7,3 +7,6 @@ export * from './text-line-item/types';
 export * as ShoppingList from './shopping-list';
 export * as ShoppingListLineItem from './shopping-list-line-item';
 export * as TextLineItem from './text-line-item';
+
+// Export draft models
+export * from './shopping-list/shopping-list-draft';
