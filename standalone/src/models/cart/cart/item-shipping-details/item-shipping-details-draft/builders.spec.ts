@@ -19,7 +19,13 @@ const populateGraphqlModel = (
 const validateRestModel = (model: TItemShippingDetailsDraftRest) => {
   expect(model).toEqual(
     expect.objectContaining({
-      targets: expect.arrayContaining([ItemShippingTargetRest.random()]),
+      targets: expect.arrayContaining([
+        expect.objectContaining({
+          addressKey: expect.any(String),
+          quantity: expect.any(Number),
+          shippingMethodKey: null,
+        }),
+      ]),
     })
   );
 };
@@ -27,7 +33,14 @@ const validateRestModel = (model: TItemShippingDetailsDraftRest) => {
 const validateGraphqlModel = (model: TItemShippingDetailsDraftGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
-      targets: expect.arrayContaining([ItemShippingTargetGraphql.random()]),
+      targets: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'ItemShippingTarget',
+          addressKey: expect.any(String),
+          quantity: expect.any(Number),
+          shippingMethodKey: null,
+        }),
+      ]),
       itemShippingAddressTargets: null,
       shippingTargets: null,
     })
