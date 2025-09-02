@@ -172,8 +172,8 @@ importers:
         specifier: ^24.0.0
         version: 24.2.1
       '@commercetools/platform-sdk':
-        specifier: 8.13.0
-        version: 8.13.0
+        specifier: 8.16.0
+        version: 8.16.0
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.6.0
@@ -935,12 +935,12 @@ packages:
     peerDependencies:
       eslint: 8.x
 
-  '@commercetools/platform-sdk@8.13.0':
-    resolution: {integrity: sha512-NkRPpCRLxuS0hO9m4WbCazhmIILMc/Aqw204k6loIsG1kDKXO6at5jQxRa4l2FP6wwwo741Mo9y844ziyCf5FA==}
+  '@commercetools/platform-sdk@8.16.0':
+    resolution: {integrity: sha512-tgYJsmhzPE2c0S9LeGpgz9nuHaLF2F7t8hyi6aIRGxR2HxcIMFFZeyU8tAuBkPyQyUGtCWVS4m2nq8iDEm9iWg==}
     engines: {node: '>=18'}
 
-  '@commercetools/ts-client@4.1.0':
-    resolution: {integrity: sha512-IbEq0mnudNlWVBxLdxJz6NL+IQLOsxnKofKOLxWXlWSJMiu5H4nmIciuLzhiRsEbmUm/EagGN2NJs5IOE0NQ1A==}
+  '@commercetools/ts-client@4.2.1':
+    resolution: {integrity: sha512-nFI5ojerOwkVMNGYh8owtpYg2C5DJWWqravD1Fy9PZAznVkUUp7LvYf52wcLw/0OnvFCVLKLx/DD501XF+xQfA==}
     engines: {node: '>=18'}
 
   '@commitlint/cli@19.8.1':
@@ -6572,11 +6572,11 @@ snapshots:
       - supports-color
       - ts-jest
 
-  '@commercetools/platform-sdk@8.13.0':
+  '@commercetools/platform-sdk@8.16.0':
     dependencies:
-      '@commercetools/ts-client': 4.1.0
+      '@commercetools/ts-client': 4.2.1
 
-  '@commercetools/ts-client@4.1.0':
+  '@commercetools/ts-client@4.2.1':
     dependencies:
       buffer: 6.0.3
 

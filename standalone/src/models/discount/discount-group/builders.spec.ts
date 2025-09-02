@@ -16,6 +16,7 @@ describe('DiscountGroup Builder', () => {
         sortOrder: expect.any(String),
         name: null,
         description: null,
+        isActive: expect.any(Boolean),
       })
     );
   });
@@ -37,6 +38,7 @@ describe('DiscountGroup Builder', () => {
         nameAllLocales: null,
         descriptionAllLocales: null,
         type: expect.any(String),
+        isActive: expect.any(Boolean),
         __typename: 'DiscountGroup',
       })
     );

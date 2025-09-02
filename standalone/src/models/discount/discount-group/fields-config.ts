@@ -16,6 +16,7 @@ const commonFieldsConfig = {
   sortOrder: fake((f) =>
     String(f.number.float({ min: 0.00000001, max: 0.99999999 }))
   ),
+  isActive: fake((f) => f.datatype.boolean()),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TDiscountGroupRest> = {
