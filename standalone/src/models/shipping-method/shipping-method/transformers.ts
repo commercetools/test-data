@@ -1,7 +1,7 @@
 import { Transformer } from '@/core';
 import {
   LocalizedString,
-  Reference,
+  ReferenceRest,
   type TReferenceGraphql,
 } from '@/models/commons';
 import type {
@@ -32,7 +32,7 @@ const transformers = {
     ],
     replaceFields: ({ fields }) => ({
       ...fields,
-      taxCategory: Reference.random()
+      taxCategory: ReferenceRest.random()
         .id(fields.taxCategory.id)
         .typeId('tax-category')
         .build(),
@@ -54,7 +54,7 @@ const transformers = {
       const localizedDescriptionAllLocales = LocalizedString.toLocalizedField(
         fields.localizedDescription
       );
-      const taxCategoryRef: TReferenceGraphql = Reference.random()
+      const taxCategoryRef: TReferenceGraphql = ReferenceRest.random()
         .id(fields.taxCategory.id)
         .typeId('tax-category')
         .buildGraphql();
