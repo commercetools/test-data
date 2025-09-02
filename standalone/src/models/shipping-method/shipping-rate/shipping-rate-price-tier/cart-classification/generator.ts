@@ -9,6 +9,7 @@ const generator = Generator<TCartClassificationPriceTier>({
     type: 'CartClassification',
     price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
     value: fake((f) => f.lorem.word()),
+    isMatching: fake((f) => f.datatype.boolean()),
   },
 });
 

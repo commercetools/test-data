@@ -9,6 +9,8 @@ const generator = Generator<TCartScorePriceTier>({
     type: 'CartScore',
     price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
     score: fake((f) => f.number.int({ min: 1, max: 10 })),
+    isMatching: fake((f) => f.datatype.boolean()),
+    priceFunction: null,
   },
 });
 
