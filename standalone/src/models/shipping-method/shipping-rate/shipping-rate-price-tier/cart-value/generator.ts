@@ -9,6 +9,7 @@ const generator = Generator<TCartValuePriceTier>({
     type: 'CartValue',
     price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
     minimumCentAmount: fake((f) => f.number.int({ min: 5000, max: 10000 })),
+    isMatching: fake((f) => f.datatype.boolean()),
   },
 });
 

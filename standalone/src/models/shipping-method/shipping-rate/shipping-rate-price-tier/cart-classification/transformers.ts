@@ -9,19 +9,19 @@ const transformers = {
     TCartClassificationPriceTier,
     TCartClassificationPriceTier
   >('default', {
-    buildFields: ['value', 'price'],
+    buildFields: ['value', 'price', 'isMatching'],
   }),
   rest: Transformer<TCartClassificationPriceTier, TCartClassificationPriceTier>(
     'rest',
     {
-      buildFields: ['value', 'price'],
+      buildFields: ['value', 'price', 'isMatching'],
     }
   ),
   graphql: Transformer<
     TCartClassificationPriceTier,
     TCartClassificationPriceTierGraphql
   >('graphql', {
-    buildFields: ['value', 'price'],
+    buildFields: ['value', 'price', 'isMatching'],
   }),
 };
 
