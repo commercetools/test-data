@@ -63,6 +63,8 @@ describe('InventoryEntryDraft model compatibility builders', () => {
           typeId: 'channel',
         }),
         custom: null,
+        minCartQuantity: null,
+        maxCartQuantity: null,
       })
     );
   });
@@ -82,6 +84,8 @@ describe('InventoryEntryDraft model compatibility builders', () => {
           __typename: 'Channel',
         }),
         custom: null,
+        minCartQuantity: null,
+        maxCartQuantity: null,
       })
     );
   });
