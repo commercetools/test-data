@@ -1,8 +1,8 @@
-import { BusinessUnitsListMyViewGraphql } from './index';
+import { BusinessUnitsListViewGraphql } from './index';
 
 describe('BusinessUnitsListView Builder', () => {
   it('should build properties for the GraphQL representation', () => {
-    const graphqlModel = BusinessUnitsListMyViewGraphql.random().build();
+    const graphqlModel = BusinessUnitsListViewGraphql.random().build();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
@@ -16,7 +16,7 @@ describe('BusinessUnitsListView Builder', () => {
         projectKey: expect.any(String),
         sort: null,
         table: null,
-        __typename: 'BusinessUnitsListMyView',
+        __typename: 'BusinessUnitsListView',
       })
     );
   });

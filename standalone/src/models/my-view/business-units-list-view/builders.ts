@@ -1,10 +1,10 @@
 import { createSpecializedBuilder } from '@/core';
 import { graphqlFieldsConfig } from './fields-config';
-import type { TCreateBusinessUnitsListMyViewBuilder } from './types';
+import type { TCreateBusinessUnitsListViewBuilder } from './types';
 
-export const GraphqlModelBuilder: TCreateBusinessUnitsListMyViewBuilder = () =>
+export const GraphqlModelBuilder: TCreateBusinessUnitsListViewBuilder = () =>
   createSpecializedBuilder({
-    name: 'BusinessUnitsListMyViewGraphqlBuilder',
+    name: 'BusinessUnitsListViewGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

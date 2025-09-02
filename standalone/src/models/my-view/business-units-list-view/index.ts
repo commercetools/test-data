@@ -1,10 +1,10 @@
 import { GraphqlModelBuilder } from './builders';
-import * as BusinessUnitsListMyViewPresets from './presets';
+import * as BusinessUnitsListViewPresets from './presets';
 
 // This model does not have a REST version as it only exists in the MC Settings service
 // which only supports GraphQL.
 
-export const BusinessUnitsListMyViewGraphql = {
+export const BusinessUnitsListViewGraphql = {
   random: GraphqlModelBuilder,
-  presets: BusinessUnitsListMyViewPresets.graphqlPresets,
+  presets: BusinessUnitsListViewPresets.graphqlPresets,
 };

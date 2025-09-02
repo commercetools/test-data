@@ -1,10 +1,10 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
-import type { TBusinessUnitsListMyViewGraphql } from './types';
+import type { TBusinessUnitsListViewGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-export const graphqlFieldsConfig: TModelFieldsConfig<TBusinessUnitsListMyViewGraphql> =
+export const graphqlFieldsConfig: TModelFieldsConfig<TBusinessUnitsListViewGraphql> =
   {
     fields: {
       createdAt: fake(getOlderDate),
@@ -17,6 +17,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TBusinessUnitsListMyViewGra
       sort: null,
       filters: [],
       id: fake((f) => f.string.uuid()),
-      __typename: 'BusinessUnitsListMyView',
+      __typename: 'BusinessUnitsListView',
     },
   };
