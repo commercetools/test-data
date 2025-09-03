@@ -1,7 +1,7 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 export * from './types';
 
-export const CartValuePriceTierDraft = {
+export const CartValuePriceTierDraftRest = {
   random: RestModelBuilder,
 };
 
