@@ -1,17 +1,23 @@
 import { Transformer } from '@/core';
-import type { TCartValuePriceTier, TCartValuePriceTierGraphql } from './types';
+import type {
+  TCartValuePriceTierRest,
+  TCartValuePriceTierGraphql,
+} from './types';
 
 const transformers = {
-  default: Transformer<TCartValuePriceTier, TCartValuePriceTier>('default', {
-    buildFields: ['minimumCentAmount', 'price', 'isMatching'],
+  default: Transformer<TCartValuePriceTierRest, TCartValuePriceTierRest>(
+    'default',
+    {
+      buildFields: ['price', 'isMatching', 'minimumCentAmount'],
+    }
+  ),
+  rest: Transformer<TCartValuePriceTierRest, TCartValuePriceTierRest>('rest', {
+    buildFields: ['price', 'isMatching', 'minimumCentAmount'],
   }),
-  rest: Transformer<TCartValuePriceTier, TCartValuePriceTier>('rest', {
-    buildFields: ['minimumCentAmount', 'price', 'isMatching'],
-  }),
-  graphql: Transformer<TCartValuePriceTier, TCartValuePriceTierGraphql>(
+  graphql: Transformer<TCartValuePriceTierRest, TCartValuePriceTierGraphql>(
     'graphql',
     {
-      buildFields: ['minimumCentAmount', 'price', 'isMatching'],
+      buildFields: ['price', 'isMatching', 'minimumCentAmount'],
     }
   ),
 };

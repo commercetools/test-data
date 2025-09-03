@@ -1,17 +1,23 @@
 import { Transformer } from '@/core';
-import type { TCartScorePriceTier, TCartScorePriceTierGraphql } from './types';
+import type {
+  TCartScorePriceTierRest,
+  TCartScorePriceTierGraphql,
+} from './types';
 
 const transformers = {
-  default: Transformer<TCartScorePriceTier, TCartScorePriceTier>('default', {
-    buildFields: ['score', 'price', 'isMatching', 'priceFunction'],
+  default: Transformer<TCartScorePriceTierRest, TCartScorePriceTierRest>(
+    'default',
+    {
+      buildFields: ['price', 'isMatching', 'score', 'priceFunction'],
+    }
+  ),
+  rest: Transformer<TCartScorePriceTierRest, TCartScorePriceTierRest>('rest', {
+    buildFields: ['price', 'isMatching', 'score', 'priceFunction'],
   }),
-  rest: Transformer<TCartScorePriceTier, TCartScorePriceTier>('rest', {
-    buildFields: ['score', 'price', 'isMatching', 'priceFunction'],
-  }),
-  graphql: Transformer<TCartScorePriceTier, TCartScorePriceTierGraphql>(
+  graphql: Transformer<TCartScorePriceTierRest, TCartScorePriceTierGraphql>(
     'graphql',
     {
-      buildFields: ['score', 'price', 'isMatching', 'priceFunction'],
+      buildFields: ['price', 'isMatching', 'score', 'priceFunction'],
     }
   ),
 };
