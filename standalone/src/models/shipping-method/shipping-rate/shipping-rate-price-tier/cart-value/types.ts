@@ -1,15 +1,10 @@
 import { CartValueTier } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import { TCtpShippingRateCartValuePriceTier } from '@/graphql-types';
 
-export type TCartValuePriceTier = CartValueTier;
+export type TCartValuePriceTierRest = CartValueTier;
+export type TCartValuePriceTierGraphql = TCtpShippingRateCartValuePriceTier;
 
-export type TCartValuePriceTierGraphql = TCartValuePriceTier & {
-  __typename: 'CartValuePriceTier';
-};
-
-export type TCartValuePriceTierBuilder = TBuilder<TCartValuePriceTier>;
-export type TCartValuePriceTierDraftBuilder = TBuilder<TCartValuePriceTier>;
-
-export type TCreateCartValuePriceTierBuilder = () => TCartValuePriceTierBuilder;
-export type TCreateCartValuePriceTierDraftBuilder =
-  () => TCartValuePriceTierDraftBuilder;
+export type TCartValuePriceTierBuilder<
+  TModel extends TCartValuePriceTierRest | TCartValuePriceTierGraphql,
+> = () => TBuilder<TModel>;

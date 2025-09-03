@@ -1,24 +1,24 @@
 import { Transformer } from '@/core';
 import type {
-  TCartClassificationPriceTier,
+  TCartClassificationPriceTierRest,
   TCartClassificationPriceTierGraphql,
 } from './types';
 
 const transformers = {
   default: Transformer<
-    TCartClassificationPriceTier,
-    TCartClassificationPriceTier
+    TCartClassificationPriceTierRest,
+    TCartClassificationPriceTierRest
   >('default', {
     buildFields: ['value', 'price', 'isMatching'],
   }),
-  rest: Transformer<TCartClassificationPriceTier, TCartClassificationPriceTier>(
-    'rest',
-    {
-      buildFields: ['value', 'price', 'isMatching'],
-    }
-  ),
+  rest: Transformer<
+    TCartClassificationPriceTierRest,
+    TCartClassificationPriceTierRest
+  >('rest', {
+    buildFields: ['value', 'price', 'isMatching'],
+  }),
   graphql: Transformer<
-    TCartClassificationPriceTier,
+    TCartClassificationPriceTierRest,
     TCartClassificationPriceTierGraphql
   >('graphql', {
     buildFields: ['value', 'price', 'isMatching'],
