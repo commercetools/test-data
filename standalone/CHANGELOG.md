@@ -1,5 +1,11 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.5.0
+
+### Minor Changes
+
+- [#953](https://github.com/commercetools/test-data/pull/953) [`604f0c4`](https://github.com/commercetools/test-data/commit/604f0c46fd62dde1ed31fb272d17c81bb3493d1e) Thanks [@nima-ct](https://github.com/nima-ct)! - Add isActive field to discount group models and update inventory entry models with minCartQuantity and maxCartQuantity fields to match new platform SDK types
+
 ## 13.4.1
 
 ### Patch Changes
