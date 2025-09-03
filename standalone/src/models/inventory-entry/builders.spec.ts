@@ -75,6 +75,8 @@ describe('InventoryEntry model compatibility builders', () => {
         expectedDelivery: expect.any(String),
         supplyChannel: null,
         custom: null,
+        minCartQuantity: null,
+        maxCartQuantity: null,
       })
     );
   });
@@ -99,6 +101,8 @@ describe('InventoryEntry model compatibility builders', () => {
         supplyChannel: null,
         supplyChannelRef: null,
         custom: null,
+        minCartQuantity: null,
+        maxCartQuantity: null,
       })
     );
   });

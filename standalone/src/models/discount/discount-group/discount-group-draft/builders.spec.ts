@@ -10,6 +10,7 @@ describe('DiscountGroupDraft Builder', () => {
         sortOrder: expect.any(String),
         name: null,
         description: null,
+        isActive: expect.any(Boolean),
       })
     );
   });
@@ -22,6 +23,7 @@ describe('DiscountGroupDraft Builder', () => {
         sortOrder: expect.any(String),
         name: null,
         description: null,
+        isActive: expect.any(Boolean),
       })
     );
   });

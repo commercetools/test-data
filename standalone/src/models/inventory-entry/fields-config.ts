@@ -20,6 +20,8 @@ const commonFieldsConfig = {
   expectedDelivery: fake(getFutureDate),
   supplyChannel: null,
   custom: null,
+  minCartQuantity: null,
+  maxCartQuantity: null,
 };
 export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryRest> = {
   fields: {
