@@ -9,7 +9,7 @@ const generator = Generator<TShippingRateDraft>({
   fields: {
     price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
     freeAbove: null,
-    tiers: fake(() => [CartScorePriceTierDraftRest.random().build()]),
+    tiers: [CartScorePriceTierDraftRest.random()],
   },
 });
 

@@ -9,7 +9,7 @@ const generator = Generator<TShippingRate>({
   fields: {
     price: fake(() => CentPrecisionMoney.random()),
     freeAbove: fake(() => CentPrecisionMoney.random()),
-    tiers: fake(() => [CartScorePriceTierDraftRest.random().build()]),
+    tiers: [CartScorePriceTierDraftRest.random()],
     isMatching: fake((f) => f.datatype.boolean()),
   },
 });
