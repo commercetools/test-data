@@ -42,7 +42,6 @@ export const restFieldsConfig: TModelFieldsConfig<TRecurringOrderRest> = {
     cart: fake(() => ReferenceRest.presets.cartReference()),
     originOrder: fake(() => ReferenceRest.presets.orderReference()),
     schedule: fake(() => StandardScheduleRest.random()),
-    recurringOrderState: oneOf(...Object.values(recurringOrderState)),
   },
 };
 
