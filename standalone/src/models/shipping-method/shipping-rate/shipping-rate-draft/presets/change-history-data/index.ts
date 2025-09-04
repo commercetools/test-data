@@ -1,7 +1,9 @@
-import usdCurrency from './with-usd-currency';
+import * as withUsdCurrency from './with-usd-currency';
 
-const presets = {
-  usdCurrency,
+export const restPresets = {
+  withUsdCurrency: withUsdCurrency.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withUsdCurrency: withUsdCurrency.graphqlPreset,
+};
