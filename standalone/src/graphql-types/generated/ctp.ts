@@ -9,9 +9,10 @@ type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
 type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
-type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
-  [_ in K]?: never;
-};
+type MakeEmpty<
+  T extends { [key: string]: unknown },
+  K extends keyof T,
+> = { [_ in K]?: never };
 type Incremental<T> =
   | T
   | {
@@ -4273,6 +4274,7 @@ export type TCtpCustomerDeleted = TCtpMessagePayload & {
 export type TCtpCustomerEmailChanged = TCtpMessagePayload & {
   __typename?: 'CustomerEmailChanged';
   email: Scalars['String']['output'];
+  oldEmail: Scalars['String']['output'];
   type: Scalars['String']['output'];
 };
 
@@ -6142,6 +6144,8 @@ export type TCtpInventoryEntry = TCtpReferenceExpandable &
     key?: Maybe<Scalars['String']['output']>;
     lastModifiedAt: Scalars['DateTime']['output'];
     lastModifiedBy?: Maybe<TCtpInitiator>;
+    maxCartQuantity?: Maybe<Scalars['Long']['output']>;
+    minCartQuantity?: Maybe<Scalars['Long']['output']>;
     quantityOnStock: Scalars['Long']['output'];
     reservationExpirationInMinutes?: Maybe<Scalars['Int']['output']>;
     restockableInDays?: Maybe<Scalars['Int']['output']>;
@@ -6176,6 +6180,8 @@ export type TCtpInventoryEntryDraft = {
   custom?: InputMaybe<TCtpCustomFieldsDraft>;
   expectedDelivery?: InputMaybe<Scalars['DateTime']['input']>;
   key?: InputMaybe<Scalars['String']['input']>;
+  maxCartQuantity?: InputMaybe<Scalars['Long']['input']>;
+  minCartQuantity?: InputMaybe<Scalars['Long']['input']>;
   quantityOnStock: Scalars['Long']['input'];
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   reservationExpirationInMinutes?: InputMaybe<Scalars['Int']['input']>;
@@ -6233,6 +6239,7 @@ export type TCtpInventoryEntryUpdateAction = {
   setCustomField?: InputMaybe<TCtpSetInventoryEntryCustomField>;
   setCustomType?: InputMaybe<TCtpSetInventoryEntryCustomType>;
   setExpectedDelivery?: InputMaybe<TCtpSetInventoryEntryExpectedDelivery>;
+  setInventoryLimits?: InputMaybe<TCtpSetInventoryLimits>;
   setKey?: InputMaybe<TCtpSetInventoryKey>;
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   setReservationExpirationInMinutes?: InputMaybe<TCtpSetInventoryEntryReservationExpirationInMinutes>;
@@ -7157,6 +7164,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpRecurringOrderCustomTypeRemoved
       | TCtpRecurringOrderCustomTypeSet
       | TCtpRecurringOrderDeleted
+      | TCtpRecurringOrderExpiresAtSet
       | TCtpRecurringOrderKeySet
       | TCtpRecurringOrderScheduleSet
       | TCtpRecurringOrderStartsAtSet
@@ -13655,6 +13663,13 @@ export type TCtpRecurringOrderExpiredInput = {
   dummy?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type TCtpRecurringOrderExpiresAtSet = TCtpMessagePayload & {
+  __typename?: 'RecurringOrderExpiresAtSet';
+  newExpiresAt?: Maybe<Scalars['DateTime']['output']>;
+  oldExpiresAt?: Maybe<Scalars['DateTime']['output']>;
+  type: Scalars['String']['output'];
+};
+
 export type TCtpRecurringOrderKeySet = TCtpMessagePayload & {
   __typename?: 'RecurringOrderKeySet';
   key?: Maybe<Scalars['String']['output']>;
@@ -13726,6 +13741,7 @@ export type TCtpRecurringOrderStateTransition = TCtpMessagePayload & {
 export type TCtpRecurringOrderUpdateAction = {
   setCustomField?: InputMaybe<TCtpSetRecurringOrderCustomField>;
   setCustomType?: InputMaybe<TCtpSetRecurringOrderCustomType>;
+  setExpiresAt?: InputMaybe<TCtpSetRecurringOrderExpiresAt>;
   setKey?: InputMaybe<TCtpSetRecurringOrderKey>;
   setOrderSkipConfiguration?: InputMaybe<TCtpSetRecurringOrderOrderSkipConfiguration>;
   setRecurringOrderState?: InputMaybe<TCtpSetRecurringOrderState>;
@@ -15433,6 +15449,11 @@ export type TCtpSetInventoryKey = {
   key?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type TCtpSetInventoryLimits = {
+  maxCartQuantity?: InputMaybe<Scalars['Int']['input']>;
+  minCartQuantity?: InputMaybe<Scalars['Int']['input']>;
+};
+
 /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
 export type TCtpSetLineItemRecurrenceInfo = {
   lineItemId: Scalars['String']['input'];
@@ -16350,6 +16371,10 @@ export type TCtpSetRecurringOrderCustomType = {
   type?: InputMaybe<TCtpResourceIdentifierInput>;
   typeId?: InputMaybe<Scalars['String']['input']>;
   typeKey?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TCtpSetRecurringOrderExpiresAt = {
+  expiresAt?: InputMaybe<Scalars['DateTime']['input']>;
 };
 
 export type TCtpSetRecurringOrderKey = {
