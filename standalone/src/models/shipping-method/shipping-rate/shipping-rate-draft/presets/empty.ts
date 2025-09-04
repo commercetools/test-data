@@ -1,7 +1,26 @@
-import type { TShippingRateDraftBuilder } from '../../types';
-import ShippingRateDraft from '../builder';
+import { type TBuilder } from '@/core';
+import { RestModelBuilder, GraphqlModelBuilder } from '../builders';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+} from '../types';
 
-const empty = (): TShippingRateDraftBuilder =>
-  ShippingRateDraft().freeAbove(undefined).tiers(undefined);
+const populatePreset = <
+  TModel extends TShippingRateDraftGraphql | TShippingRateDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder;
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TShippingRateDraftRest> => {
+  return populatePreset(RestModelBuilder())
+    .freeAbove(undefined)
+    .tiers(undefined);
+};
+
+export const graphqlPreset = (): TBuilder<TShippingRateDraftGraphql> => {
+  return populatePreset(GraphqlModelBuilder())
+    .freeAbove(undefined)
+    .tiers(undefined);
+};

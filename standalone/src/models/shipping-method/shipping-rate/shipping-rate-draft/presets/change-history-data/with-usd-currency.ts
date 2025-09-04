@@ -1,10 +1,24 @@
-import { MoneyDraft } from '@/models/commons';
-import type { TShippingRateDraftBuilder } from '../../../types';
-import * as ShippingRateDraft from '../../index';
+import type { TBuilder } from '@/core';
+import { MoneyDraftRest } from '@/models/commons';
+import { ShippingRateDraftRest, ShippingRateDraftGraphql } from '../../index';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+} from '../../types';
 
-const usdCurrency = (): TShippingRateDraftBuilder =>
-  ShippingRateDraft.random()
-    .price(MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode())
-    .freeAbove(MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode());
+const populatePreset = <
+  TModel extends TShippingRateDraftRest | TShippingRateDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
+    .tiers([])
+    .price(MoneyDraftRest.presets.changeHistoryData.withUsdCurrencyCode())
+    .freeAbove(MoneyDraftRest.presets.changeHistoryData.withUsdCurrencyCode());
+};
 
-export default usdCurrency;
+export const restPreset = (): TBuilder<TShippingRateDraftRest> =>
+  populatePreset(ShippingRateDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TShippingRateDraftGraphql> =>
+  populatePreset(ShippingRateDraftGraphql.random());
