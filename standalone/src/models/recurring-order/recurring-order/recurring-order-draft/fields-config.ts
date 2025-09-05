@@ -1,7 +1,11 @@
-import { fake, sequence, type TModelFieldsConfig } from '@/core';
-import { ReferenceDraftGraphql } from '@/models/commons';
+import { fake, oneOf, sequence, type TModelFieldsConfig } from '@/core';
+import { ReferenceDraftGraphql, ReferenceDraftRest } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import type { TRecurringOrderDraftGraphql } from '../types';
+import { recurringOrderState } from '../constants';
+import type {
+  TRecurringOrderDraftGraphql,
+  TRecurringOrderDraftRest,
+} from '../types';
 
 const [getNewerDate] = createRelatedDates();
 
@@ -9,16 +13,23 @@ const commonFieldsConfig = {
   key: null,
   cartVersion: sequence(),
   startsAt: fake(getNewerDate),
+  expiresAt: null,
   state: null,
   custom: null,
+};
+
+export const restFieldsConfig: TModelFieldsConfig<TRecurringOrderDraftRest> = {
+  fields: {
+    ...commonFieldsConfig,
+    cart: fake((f) => ReferenceDraftRest.presets.cartReference()),
+  },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderDraftGraphql> =
   {
     fields: {
-      cart: fake((f) => ReferenceDraftGraphql.presets.cartReference()),
-      recurringOrderState: null,
-      expiresAt: null,
       ...commonFieldsConfig,
+      recurringOrderState: oneOf(...Object.values(recurringOrderState)),
+      cart: fake((f) => ReferenceDraftGraphql.presets.cartReference()),
     },
   };
