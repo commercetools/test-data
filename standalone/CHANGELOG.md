@@ -1,5 +1,26 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.6.0
+
+### Minor Changes
+
+- [#954](https://github.com/commercetools/test-data/pull/954) [`a04413c`](https://github.com/commercetools/test-data/commit/a04413cd2ac423334b4752502c9392c8e2460685) Thanks [@Rombelirk](https://github.com/Rombelirk)! - We're introducing a new model named `BusinessUnitsListView`, which can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+
+  There's only a GraphQL version for this model as it only exists in the MC Settings service which only exposes a GraphQL API.
+
+  This is how the new model could be used:
+
+  ```
+  import {
+    BusinessUnitsListViewGraphql,
+  } from '@commercetools/composable-commerce-test-data/my-view';
+  const BusinessUnitsListView = BusinessUnitsListViewGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#958](https://github.com/commercetools/test-data/pull/958) [`86f2497`](https://github.com/commercetools/test-data/commit/86f2497016edb12121c85961e5928c58ed7f3812) Thanks [@nima-ct](https://github.com/nima-ct)! - Update types package and add missing lock property to Cart Model
+
 ## 13.5.0
 
 ### Minor Changes
