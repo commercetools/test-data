@@ -144,6 +144,7 @@ const validateGraphqlModel = (model: TCartGraphql) => {
       }),
       customer: null,
       placement: null,
+      lock: null,
       lineItems: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'LineItem',

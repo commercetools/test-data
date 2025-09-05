@@ -102,6 +102,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
     refusedGiftsRefs: null,
     customer: null,
     placement: null,
+    lock: null,
   },
   postBuild: (model) => {
     const storeRef = model.store

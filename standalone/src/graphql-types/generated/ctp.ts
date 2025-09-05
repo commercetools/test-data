@@ -1814,6 +1814,26 @@ export type TCtpBusinessUnitCustomTypeSet = TCtpMessagePayload & {
   type: Scalars['String']['output'];
 };
 
+export type TCtpBusinessUnitCustomerGroupAssignmentAdded =
+  TCtpMessagePayload & {
+    __typename?: 'BusinessUnitCustomerGroupAssignmentAdded';
+    customerGroupAssignment: TCtpCustomerGroupAssignment;
+    type: Scalars['String']['output'];
+  };
+
+export type TCtpBusinessUnitCustomerGroupAssignmentRemoved =
+  TCtpMessagePayload & {
+    __typename?: 'BusinessUnitCustomerGroupAssignmentRemoved';
+    customerGroupAssignment: TCtpCustomerGroupAssignment;
+    type: Scalars['String']['output'];
+  };
+
+export type TCtpBusinessUnitCustomerGroupAssignmentsSet = TCtpMessagePayload & {
+  __typename?: 'BusinessUnitCustomerGroupAssignmentsSet';
+  customerGroupAssignments?: Maybe<Array<TCtpCustomerGroupAssignment>>;
+  type: Scalars['String']['output'];
+};
+
 export type TCtpBusinessUnitDefaultBillingAddressSet = TCtpMessagePayload & {
   __typename?: 'BusinessUnitDefaultBillingAddressSet';
   address?: Maybe<TCtpAddress>;
@@ -1992,6 +2012,8 @@ export type TCtpBusinessUnitUpdateAction = {
   addAddress?: InputMaybe<TCtpAddBusinessUnitAddress>;
   addAssociate?: InputMaybe<TCtpAddBusinessUnitAssociate>;
   addBillingAddressId?: InputMaybe<TCtpAddBusinessUnitBillingAddressId>;
+  /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+  addCustomerGroupAssignment?: InputMaybe<TCtpAddCustomerGroupAssignment>;
   addShippingAddressId?: InputMaybe<TCtpAddBusinessUnitShippingAddressId>;
   addStore?: InputMaybe<TCtpAddBusinessUnitStore>;
   changeAddress?: InputMaybe<TCtpChangeBusinessUnitAddress>;
@@ -2004,6 +2026,8 @@ export type TCtpBusinessUnitUpdateAction = {
   removeAddress?: InputMaybe<TCtpRemoveBusinessUnitAddress>;
   removeAssociate?: InputMaybe<TCtpRemoveBusinessUnitAssociate>;
   removeBillingAddressId?: InputMaybe<TCtpRemoveBusinessUnitBillingAddressId>;
+  /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+  removeCustomerGroupAssignment?: InputMaybe<TCtpRemoveCustomerGroupAssignment>;
   removeShippingAddressId?: InputMaybe<TCtpRemoveBusinessUnitShippingAddressId>;
   removeStore?: InputMaybe<TCtpRemoveBusinessUnitStore>;
   setAddressCustomField?: InputMaybe<TCtpSetBusinessUnitAddressCustomField>;
@@ -2012,6 +2036,8 @@ export type TCtpBusinessUnitUpdateAction = {
   setContactEmail?: InputMaybe<TCtpSetBusinessUnitContactEmail>;
   setCustomField?: InputMaybe<TCtpSetBusinessUnitCustomField>;
   setCustomType?: InputMaybe<TCtpSetBusinessUnitCustomType>;
+  /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+  setCustomerGroupAssignments?: InputMaybe<TCtpSetCustomerGroupAssignments>;
   setDefaultBillingAddress?: InputMaybe<TCtpSetBusinessUnitDefaultBillingAddress>;
   setDefaultShippingAddress?: InputMaybe<TCtpSetBusinessUnitDefaultShippingAddress>;
   setStoreMode?: InputMaybe<TCtpSetBusinessUnitStoreMode>;
@@ -2056,6 +2082,7 @@ export type TCtpCart = TCtpReferenceExpandable &
     lastModifiedBy?: Maybe<TCtpInitiator>;
     lineItems: Array<TCtpLineItem>;
     locale?: Maybe<Scalars['Locale']['output']>;
+    lock?: Maybe<TCtpCartLock>;
     origin: TCtpCartOrigin;
     paymentInfo?: Maybe<TCtpPaymentInfo>;
     placement?: Maybe<TCtpPlacement>;
@@ -2368,8 +2395,6 @@ export type TCtpCartDiscountVisualization = {
   data: TCtpCartDiscount | TCtpDiscountGroup;
   id: Scalars['String']['output'];
   itemCount: Scalars['Long']['output'];
-  items: Array<TCtpCartDiscountVisualization>;
-  sortOrder?: Maybe<Scalars['String']['output']>;
 };
 
 export type TCtpCartDiscountVisualizationData = {
@@ -2384,6 +2409,20 @@ export type TCtpCartDiscountVisualizationQueryResult = {
   results: Array<TCtpCartDiscountVisualization>;
   total: Scalars['Long']['output'];
 };
+
+/** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+export type TCtpCartDiscountVisualizationSearchConfiguration = {
+  __typename?: 'CartDiscountVisualizationSearchConfiguration';
+  lastModifiedAt: Scalars['DateTime']['output'];
+  lastModifiedBy?: Maybe<TCtpInitiator>;
+  status: TCtpCartDiscountVisualizationSearchStatus;
+};
+
+/** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+export enum TCtpCartDiscountVisualizationSearchStatus {
+  Activated = 'Activated',
+  Deactivated = 'Deactivated',
+}
 
 export type TCtpCartDraft = {
   anonymousId?: InputMaybe<Scalars['String']['input']>;
@@ -2427,6 +2466,13 @@ export type TCtpCartLimitWithCurrent = TCtpLimitWithCurrent & {
 export type TCtpCartLimitsProjection = {
   __typename?: 'CartLimitsProjection';
   total: TCtpCartLimitWithCurrent;
+};
+
+/** Prevents edits on a Cart, unless the user has the 'manage_locked_carts' OAuth role. */
+export type TCtpCartLock = {
+  __typename?: 'CartLock';
+  clientId: Scalars['String']['output'];
+  createdAt: Scalars['DateTime']['output'];
 };
 
 export enum TCtpCartOrigin {
@@ -2509,6 +2555,7 @@ export type TCtpCartUpdateAction = {
   changeTaxMode?: InputMaybe<TCtpChangeCartTaxMode>;
   changeTaxRoundingMode?: InputMaybe<TCtpChangeCartTaxRoundingMode>;
   freezeCart?: InputMaybe<TCtpFreezeCart>;
+  lockCart?: InputMaybe<TCtpLockCart>;
   recalculate?: InputMaybe<TCtpRecalculateCart>;
   removeCustomLineItem?: InputMaybe<TCtpRemoveCartCustomLineItem>;
   removeDiscountCode?: InputMaybe<TCtpRemoveCartDiscountCode>;
@@ -2566,6 +2613,7 @@ export type TCtpCartUpdateAction = {
   setShippingMethodTaxRate?: InputMaybe<TCtpSetCartShippingMethodTaxRate>;
   setShippingRateInput?: InputMaybe<TCtpSetCartShippingRateInput>;
   unfreezeCart?: InputMaybe<TCtpUnfreezeCart>;
+  unlockCart?: InputMaybe<TCtpUnlockCart>;
   updateItemShippingAddress?: InputMaybe<TCtpUpdateCartItemShippingAddress>;
 };
 
@@ -3152,6 +3200,11 @@ export type TCtpChangeProductTailoringAssetOrder = {
 
 export type TCtpChangeProjectSettingsBusinessUnitSearchStatus = {
   status: TCtpBusinessUnitSearchStatus;
+};
+
+/** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+export type TCtpChangeProjectSettingsCartDiscountVisualizationSearchStatus = {
+  status: TCtpCartDiscountVisualizationSearchStatus;
 };
 
 export type TCtpChangeProjectSettingsCartsConfiguration = {
@@ -4273,6 +4326,7 @@ export type TCtpCustomerDeleted = TCtpMessagePayload & {
 export type TCtpCustomerEmailChanged = TCtpMessagePayload & {
   __typename?: 'CustomerEmailChanged';
   email: Scalars['String']['output'];
+  oldEmail: Scalars['String']['output'];
   type: Scalars['String']['output'];
 };
 
@@ -4301,6 +4355,12 @@ export type TCtpCustomerEmailTokenCreated = TCtpMessagePayload & {
 
 export type TCtpCustomerEmailVerified = TCtpMessagePayload & {
   __typename?: 'CustomerEmailVerified';
+  type: Scalars['String']['output'];
+};
+
+export type TCtpCustomerExternalIdSet = TCtpMessagePayload & {
+  __typename?: 'CustomerExternalIdSet';
+  externalId?: Maybe<Scalars['String']['output']>;
   type: Scalars['String']['output'];
 };
 
@@ -4610,6 +4670,15 @@ export type TCtpCustomerSignUpDraft = {
   stores?: InputMaybe<Array<TCtpResourceIdentifierInput>>;
   title?: InputMaybe<Scalars['String']['input']>;
   vatId?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TCtpCustomerStoresSet = TCtpMessagePayload & {
+  __typename?: 'CustomerStoresSet';
+  oldStores: Array<TCtpStore>;
+  oldStoresRef: Array<TCtpKeyReference>;
+  stores: Array<TCtpStore>;
+  storesRef: Array<TCtpKeyReference>;
+  type: Scalars['String']['output'];
 };
 
 export type TCtpCustomerTitleSet = TCtpMessagePayload & {
@@ -5069,6 +5138,7 @@ export type TCtpDiscountGroup = TCtpCartDiscountVisualizationData &
     description?: Maybe<Scalars['String']['output']>;
     descriptionAllLocales?: Maybe<Array<TCtpLocalizedString>>;
     id: Scalars['String']['output'];
+    isActive: Scalars['Boolean']['output'];
     key: Scalars['String']['output'];
     lastModifiedAt: Scalars['DateTime']['output'];
     lastModifiedBy?: Maybe<TCtpInitiator>;
@@ -5106,9 +5176,17 @@ export type TCtpDiscountGroupDeleted = TCtpMessagePayload & {
 /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
 export type TCtpDiscountGroupDraft = {
   description?: InputMaybe<Array<TCtpLocalizedStringItemInputType>>;
+  isActive?: InputMaybe<Scalars['Boolean']['input']>;
   key: Scalars['String']['input'];
   name?: InputMaybe<Array<TCtpLocalizedStringItemInputType>>;
   sortOrder: Scalars['String']['input'];
+};
+
+export type TCtpDiscountGroupIsActiveSet = TCtpMessagePayload & {
+  __typename?: 'DiscountGroupIsActiveSet';
+  discountGroupId: Scalars['String']['output'];
+  isActive: Scalars['Boolean']['output'];
+  type: Scalars['String']['output'];
 };
 
 export type TCtpDiscountGroupKeySet = TCtpMessagePayload & {
@@ -5150,6 +5228,7 @@ export type TCtpDiscountGroupSortOrderSet = TCtpMessagePayload & {
 /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
 export type TCtpDiscountGroupUpdateAction = {
   setDescription?: InputMaybe<TCtpSetDiscountGroupDescription>;
+  setIsActive?: InputMaybe<TCtpSetDiscountGroupIsActive>;
   setKey?: InputMaybe<TCtpSetDiscountGroupKey>;
   setName?: InputMaybe<TCtpSetDiscountGroupName>;
   setSortOrder?: InputMaybe<TCtpSetDiscountGroupSortOrder>;
@@ -6126,6 +6205,7 @@ export enum TCtpIntervalUnit {
 
 export type TCtpInventoryConfigurationProjection = {
   __typename?: 'InventoryConfigurationProjection';
+  releaseExpiredReservations: Scalars['Boolean']['output'];
   reservationExpirationInMinutes?: Maybe<Scalars['Int']['output']>;
 };
 
@@ -6142,6 +6222,8 @@ export type TCtpInventoryEntry = TCtpReferenceExpandable &
     key?: Maybe<Scalars['String']['output']>;
     lastModifiedAt: Scalars['DateTime']['output'];
     lastModifiedBy?: Maybe<TCtpInitiator>;
+    maxCartQuantity?: Maybe<Scalars['Long']['output']>;
+    minCartQuantity?: Maybe<Scalars['Long']['output']>;
     quantityOnStock: Scalars['Long']['output'];
     reservationExpirationInMinutes?: Maybe<Scalars['Int']['output']>;
     restockableInDays?: Maybe<Scalars['Int']['output']>;
@@ -6176,6 +6258,8 @@ export type TCtpInventoryEntryDraft = {
   custom?: InputMaybe<TCtpCustomFieldsDraft>;
   expectedDelivery?: InputMaybe<Scalars['DateTime']['input']>;
   key?: InputMaybe<Scalars['String']['input']>;
+  maxCartQuantity?: InputMaybe<Scalars['Long']['input']>;
+  minCartQuantity?: InputMaybe<Scalars['Long']['input']>;
   quantityOnStock: Scalars['Long']['input'];
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   reservationExpirationInMinutes?: InputMaybe<Scalars['Int']['input']>;
@@ -6233,6 +6317,7 @@ export type TCtpInventoryEntryUpdateAction = {
   setCustomField?: InputMaybe<TCtpSetInventoryEntryCustomField>;
   setCustomType?: InputMaybe<TCtpSetInventoryEntryCustomType>;
   setExpectedDelivery?: InputMaybe<TCtpSetInventoryEntryExpectedDelivery>;
+  setInventoryLimits?: InputMaybe<TCtpSetInventoryLimits>;
   setKey?: InputMaybe<TCtpSetInventoryKey>;
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   setReservationExpirationInMinutes?: InputMaybe<TCtpSetInventoryEntryReservationExpirationInMinutes>;
@@ -6715,6 +6800,10 @@ export type TCtpLocation = {
   state?: Maybe<Scalars['String']['output']>;
 };
 
+export type TCtpLockCart = {
+  dummy?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type TCtpMe = TCtpActiveCartInterface &
   TCtpCartQueryInterface &
   TCtpMeQueryInterface &
@@ -6937,6 +7026,9 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpBusinessUnitCustomFieldRemoved
       | TCtpBusinessUnitCustomTypeRemoved
       | TCtpBusinessUnitCustomTypeSet
+      | TCtpBusinessUnitCustomerGroupAssignmentAdded
+      | TCtpBusinessUnitCustomerGroupAssignmentRemoved
+      | TCtpBusinessUnitCustomerGroupAssignmentsSet
       | TCtpBusinessUnitDefaultBillingAddressSet
       | TCtpBusinessUnitDefaultShippingAddressSet
       | TCtpBusinessUnitDeleted
@@ -6982,6 +7074,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpCustomerEmailChanged
       | TCtpCustomerEmailTokenCreated
       | TCtpCustomerEmailVerified
+      | TCtpCustomerExternalIdSet
       | TCtpCustomerFirstNameSet
       | TCtpCustomerGroupAssignmentAdded
       | TCtpCustomerGroupAssignmentRemoved
@@ -6995,6 +7088,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpCustomerLastNameSet
       | TCtpCustomerPasswordTokenCreated
       | TCtpCustomerPasswordUpdated
+      | TCtpCustomerStoresSet
       | TCtpCustomerTitleSet
       | TCtpDeliveryAdded
       | TCtpDeliveryAddressSet
@@ -7010,6 +7104,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpDiscountCodeKeySet
       | TCtpDiscountGroupCreated
       | TCtpDiscountGroupDeleted
+      | TCtpDiscountGroupIsActiveSet
       | TCtpDiscountGroupKeySet
       | TCtpDiscountGroupSortOrderSet
       | TCtpInventoryEntryAvailableAgain
@@ -7094,6 +7189,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpPaymentStatusInterfaceCodeSet
       | TCtpPaymentStatusStateTransition
       | TCtpPaymentTransactionAdded
+      | TCtpPaymentTransactionInterfaceIdSet
       | TCtpPaymentTransactionStateChanged
       | TCtpProductAddedToCategory
       | TCtpProductCreated
@@ -7157,6 +7253,7 @@ export type TCtpMessage = TCtpReferenceExpandable &
       | TCtpRecurringOrderCustomTypeRemoved
       | TCtpRecurringOrderCustomTypeSet
       | TCtpRecurringOrderDeleted
+      | TCtpRecurringOrderExpiresAtSet
       | TCtpRecurringOrderKeySet
       | TCtpRecurringOrderScheduleSet
       | TCtpRecurringOrderStartsAtSet
@@ -7518,6 +7615,8 @@ export type TCtpMutation = {
   deleteProductType?: Maybe<TCtpProductTypeDefinition>;
   deleteQuote?: Maybe<TCtpQuote>;
   deleteQuoteRequest?: Maybe<TCtpQuoteRequest>;
+  /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+  deleteRecurrencePolicy?: Maybe<TCtpRecurrencePolicy>;
   /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
   deleteRecurringOrder?: Maybe<TCtpRecurringOrder>;
   deleteReview?: Maybe<TCtpReview>;
@@ -8073,6 +8172,12 @@ export type TCtpMutation_DeleteQuoteRequestArgs = {
   key?: InputMaybe<Scalars['String']['input']>;
   personalDataErasure?: InputMaybe<Scalars['Boolean']['input']>;
   storeKey?: InputMaybe<Scalars['KeyReferenceInput']['input']>;
+  version: Scalars['Long']['input'];
+};
+
+export type TCtpMutation_DeleteRecurrencePolicyArgs = {
+  id?: InputMaybe<Scalars['String']['input']>;
+  key?: InputMaybe<Scalars['String']['input']>;
   version: Scalars['Long']['input'];
 };
 
@@ -10107,6 +10212,14 @@ export type TCtpPaymentTransactionAdded = TCtpMessagePayload & {
   type: Scalars['String']['output'];
 };
 
+export type TCtpPaymentTransactionInterfaceIdSet = TCtpMessagePayload & {
+  __typename?: 'PaymentTransactionInterfaceIdSet';
+  newTransactionInterfaceId?: Maybe<Scalars['String']['output']>;
+  oldTransactionInterfaceId?: Maybe<Scalars['String']['output']>;
+  transactionId: Scalars['String']['output'];
+  type: Scalars['String']['output'];
+};
+
 export type TCtpPaymentTransactionStateChanged = TCtpMessagePayload & {
   __typename?: 'PaymentTransactionStateChanged';
   state: TCtpTransactionState;
@@ -10148,6 +10261,7 @@ export type TCtpPaymentUpdateAction = {
   setStatusInterfaceText?: InputMaybe<TCtpSetPaymentStatusInterfaceText>;
   setTransactionCustomField?: InputMaybe<TCtpSetPaymentTransactionCustomField>;
   setTransactionCustomType?: InputMaybe<TCtpSetPaymentTransactionCustomType>;
+  setTransactionInterfaceId?: InputMaybe<TCtpSetPaymentTransactionInterfaceId>;
   transitionState?: InputMaybe<TCtpTransitionPaymentState>;
 };
 
@@ -12116,7 +12230,7 @@ export type TCtpProjectProjection = {
   createdAt: Scalars['DateTime']['output'];
   createdBy?: Maybe<TCtpInitiator>;
   currencies: Array<Scalars['Currency']['output']>;
-  discounts?: Maybe<TCtpDiscountsConfiguration>;
+  discounts: TCtpDiscountsConfiguration;
   externalOAuth?: Maybe<TCtpExternalOAuth>;
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   inventory?: Maybe<TCtpInventoryConfigurationProjection>;
@@ -12137,6 +12251,8 @@ export type TCtpProjectProjection = {
 
 export type TCtpProjectSettingsUpdateAction = {
   changeBusinessUnitSearchStatus?: InputMaybe<TCtpChangeProjectSettingsBusinessUnitSearchStatus>;
+  /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+  changeCartDiscountVisualizationSearchStatus?: InputMaybe<TCtpChangeProjectSettingsCartDiscountVisualizationSearchStatus>;
   changeCartsConfiguration?: InputMaybe<TCtpChangeProjectSettingsCartsConfiguration>;
   changeCountries?: InputMaybe<TCtpChangeProjectSettingsCountries>;
   changeCountryTaxRateFallbackEnabled?: InputMaybe<TCtpChangeProjectSettingsCountryTaxRateFallbackEnabled>;
@@ -12164,6 +12280,8 @@ export type TCtpProjectSettingsUpdateAction = {
   setMyBusinessUnitAssociateRoleOnCreation?: InputMaybe<TCtpSetProjectSettingsMyBusinessUnitAssociateRoleOnCreation>;
   /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
   setProductVsCartDiscountCombination?: InputMaybe<TCtpSetProjectSettingsProductVsCartDiscountCombination>;
+  /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
+  setReleaseExpiredReservations?: InputMaybe<TCtpSetProjectSettingsReleaseExpiredReservations>;
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   setReservationExpirationInMinutes?: InputMaybe<TCtpSetProjectSettingsReservationExpirationInMinutes>;
   setShippingRateInputType?: InputMaybe<TCtpSetProjectSettingsShippingRateInputType>;
@@ -13655,6 +13773,13 @@ export type TCtpRecurringOrderExpiredInput = {
   dummy?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type TCtpRecurringOrderExpiresAtSet = TCtpMessagePayload & {
+  __typename?: 'RecurringOrderExpiresAtSet';
+  newExpiresAt?: Maybe<Scalars['DateTime']['output']>;
+  oldExpiresAt?: Maybe<Scalars['DateTime']['output']>;
+  type: Scalars['String']['output'];
+};
+
 export type TCtpRecurringOrderKeySet = TCtpMessagePayload & {
   __typename?: 'RecurringOrderKeySet';
   key?: Maybe<Scalars['String']['output']>;
@@ -13726,6 +13851,7 @@ export type TCtpRecurringOrderStateTransition = TCtpMessagePayload & {
 export type TCtpRecurringOrderUpdateAction = {
   setCustomField?: InputMaybe<TCtpSetRecurringOrderCustomField>;
   setCustomType?: InputMaybe<TCtpSetRecurringOrderCustomType>;
+  setExpiresAt?: InputMaybe<TCtpSetRecurringOrderExpiresAt>;
   setKey?: InputMaybe<TCtpSetRecurringOrderKey>;
   setOrderSkipConfiguration?: InputMaybe<TCtpSetRecurringOrderOrderSkipConfiguration>;
   setRecurringOrderState?: InputMaybe<TCtpSetRecurringOrderState>;
@@ -14529,6 +14655,8 @@ export type TCtpSearchFilterModelInput = {
 export type TCtpSearchIndexingConfiguration = {
   __typename?: 'SearchIndexingConfiguration';
   businessUnits?: Maybe<TCtpBusinessUnitSearchConfiguration>;
+  /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
+  cartDiscountVisualizations?: Maybe<TCtpCartDiscountVisualizationSearchConfiguration>;
   customers?: Maybe<TCtpCustomerSearchConfiguration>;
   /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
   discountCodes?: Maybe<TCtpDiscountCodeSearchConfiguration>;
@@ -15378,6 +15506,11 @@ export type TCtpSetDiscountGroupDescription = {
 };
 
 /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
+export type TCtpSetDiscountGroupIsActive = {
+  isActive: Scalars['Boolean']['input'];
+};
+
+/** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
 export type TCtpSetDiscountGroupKey = {
   key: Scalars['String']['input'];
 };
@@ -15431,6 +15564,11 @@ export type TCtpSetInventoryEntrySupplyChannel = {
 
 export type TCtpSetInventoryKey = {
   key?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TCtpSetInventoryLimits = {
+  maxCartQuantity?: InputMaybe<Scalars['Int']['input']>;
+  minCartQuantity?: InputMaybe<Scalars['Int']['input']>;
 };
 
 /** BETA: This feature can be subject to change and should be used carefully in production. https://docs.commercetools.com/api/contract#public-beta */
@@ -15929,6 +16067,11 @@ export type TCtpSetPaymentTransactionCustomType = {
   typeKey?: InputMaybe<Scalars['String']['input']>;
 };
 
+export type TCtpSetPaymentTransactionInterfaceId = {
+  transactionId: Scalars['String']['input'];
+  transactionInterfaceId?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type TCtpSetProductAssetCustomField = {
   assetId?: InputMaybe<Scalars['String']['input']>;
   assetKey?: InputMaybe<Scalars['String']['input']>;
@@ -16292,8 +16435,13 @@ export type TCtpSetProjectSettingsProductVsCartDiscountCombination = {
 };
 
 /** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
+export type TCtpSetProjectSettingsReleaseExpiredReservations = {
+  releaseExpiredReservations: Scalars['Boolean']['input'];
+};
+
+/** CLOSED BETA: This feature is subject to change and should not be used in production. https://docs.commercetools.com/api/contract#closed-beta */
 export type TCtpSetProjectSettingsReservationExpirationInMinutes = {
-  reservationExpirationInMinutes?: InputMaybe<Scalars['Int']['input']>;
+  reservationExpirationInMinutes: Scalars['Int']['input'];
 };
 
 export type TCtpSetProjectSettingsShippingRateInputType = {
@@ -16350,6 +16498,10 @@ export type TCtpSetRecurringOrderCustomType = {
   type?: InputMaybe<TCtpResourceIdentifierInput>;
   typeId?: InputMaybe<Scalars['String']['input']>;
   typeKey?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TCtpSetRecurringOrderExpiresAt = {
+  expiresAt?: InputMaybe<Scalars['DateTime']['input']>;
 };
 
 export type TCtpSetRecurringOrderKey = {
@@ -19400,6 +19552,10 @@ export type TCtpTypeUpdateAction = {
 };
 
 export type TCtpUnfreezeCart = {
+  dummy?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TCtpUnlockCart = {
   dummy?: InputMaybe<Scalars['String']['input']>;
 };
 
