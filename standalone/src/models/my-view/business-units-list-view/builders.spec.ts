@@ -16,7 +16,7 @@ describe('BusinessUnitsListView Builder', () => {
         projectKey: expect.any(String),
         sort: null,
         table: null,
-        __typename: 'BusinessUnitsListView',
+        __typename: 'BusinessUnitsListMyView',
       })
     );
   });
