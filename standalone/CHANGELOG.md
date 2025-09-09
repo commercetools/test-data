@@ -1,5 +1,11 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.7.1
+
+### Patch Changes
+
+- [#960](https://github.com/commercetools/test-data/pull/960) [`0daf533`](https://github.com/commercetools/test-data/commit/0daf5337e63a6b130f5cd579a4070a2b767e434d) Thanks [@Rombelirk](https://github.com/Rombelirk)! - We've fixed the `__typename` field on the BusinessUnitsListView model (`BusinessUnitsListMyView` instead of `BusinessUnitsListView`).
+
 ## 13.7.0
 
 ### Minor Changes
