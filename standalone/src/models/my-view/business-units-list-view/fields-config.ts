@@ -17,6 +17,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TBusinessUnitsListViewGraph
       sort: null,
       filters: [],
       id: fake((f) => f.string.uuid()),
-      __typename: 'BusinessUnitsListView',
+      __typename: 'BusinessUnitsListMyView',
     },
   };
