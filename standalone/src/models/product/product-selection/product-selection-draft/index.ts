@@ -1,3 +1,4 @@
+import * as constants from '../constants';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
@@ -8,11 +9,13 @@ import * as modelPresets from './presets';
 export const ProductSelectionDraftRest = {
   random: RestModelBuilder,
   presets: modelPresets.restPresets,
+  constants,
 };
 
 export const ProductSelectionDraftGraphql = {
   random: GraphqlModelBuilder,
   presets: modelPresets.graphqlPresets,
+  constants,
 };
 
 /**
@@ -21,4 +24,5 @@ export const ProductSelectionDraftGraphql = {
 export const ProductSelectionDraft = {
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
+  constants,
 };
