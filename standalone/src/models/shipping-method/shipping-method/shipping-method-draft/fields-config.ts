@@ -32,10 +32,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodDraftGraphql
     },
     postBuild: (model) => {
       const localizedNameAllLocales = model.localizedName
-        ? LocalizedString.toLocalizedField(model.localizedName)
+        ? LocalizedString.toLocalizedField(LocalizedString.random())
         : null;
       const localizedDescriptionAllLocales = model.localizedDescription
-        ? LocalizedString.toLocalizedField(model.localizedDescription)
+        ? LocalizedString.toLocalizedField(LocalizedString.random())
         : null;
 
       return {
