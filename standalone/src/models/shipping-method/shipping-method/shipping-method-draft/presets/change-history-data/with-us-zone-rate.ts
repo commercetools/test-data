@@ -1,5 +1,5 @@
 import type { TBuilder } from '@/core';
-import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
+import { ZoneRateDraftRest } from '../../../../zone-rate/zone-rate-draft';
 import type {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
@@ -20,7 +20,7 @@ const populateWithUsZoneRatePreset = <
 ) => {
   return builder
     .taxCategory(null!)
-    .zoneRates([ZoneRateDraft.presets.changeHistoryData.usZone()])
+    .zoneRates([ZoneRateDraftRest.presets.changeHistoryData.usZone()])
     .isDefault(false);
 };
 

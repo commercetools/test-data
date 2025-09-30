@@ -6,8 +6,10 @@ import type {
 import * as empty from './empty';
 
 describe('Empty preset', () => {
-  it('should set all specified fields to undefined for REST model', () => {
-    const emptyShippingMethodDraft = empty.restPreset().build();
+  it('[REST] should set all specified fields to undefined for REST model', () => {
+    const emptyShippingMethodDraft = empty
+      .restPreset()
+      .build<TShippingMethodDraftRest>();
     expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
     expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
       `undefined`
@@ -21,8 +23,10 @@ describe('Empty preset', () => {
     expect(emptyShippingMethodDraft.custom).toMatchInlineSnapshot(`undefined`);
   });
 
-  it('should set all specified fields to undefined for GraphQL model', () => {
-    const emptyShippingMethodDraft = empty.graphqlPreset().build();
+  it('[GraphQL] should set all specified fields to undefined for GraphQL model', () => {
+    const emptyShippingMethodDraft = empty
+      .graphqlPreset()
+      .build<TShippingMethodDraftGraphql>();
     expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
     expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
       `undefined`
@@ -36,8 +40,10 @@ describe('Empty preset', () => {
     expect(emptyShippingMethodDraft.custom).toMatchInlineSnapshot(`undefined`);
   });
 
-  it('should set all specified fields to undefined for compatibility model', () => {
-    const emptyShippingMethodDraft = empty.compatPreset().build();
+  it('[Compat] should set all specified fields to undefined for compatibility model', () => {
+    const emptyShippingMethodDraft = empty
+      .compatPreset()
+      .build<TShippingMethodDraft>();
     expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
     expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
       `undefined`

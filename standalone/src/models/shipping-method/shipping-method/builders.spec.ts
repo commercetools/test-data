@@ -1,5 +1,9 @@
 import type { TShippingMethodRest, TShippingMethodGraphql } from './types';
-import { ShippingMethodRest, ShippingMethodGraphql } from './index';
+import {
+  ShippingMethodRest,
+  ShippingMethodGraphql,
+  ShippingMethod,
+} from './index';
 
 function validateRestModel(model: TShippingMethodRest) {
   expect(model).toEqual(
@@ -127,19 +131,20 @@ describe('ShippingMethod model builders', () => {
 
 describe('ShippingMethod model compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const compatModel = ShippingMethodRest.random().build();
+    const compatModel = ShippingMethod.random().build();
 
     validateRestModel(compatModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = ShippingMethodRest.random().buildRest();
+    const restModel = ShippingMethod.random().buildRest();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = ShippingMethodGraphql.random().build();
+    const graphqlModel =
+      ShippingMethod.random().buildGraphql<TShippingMethodGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

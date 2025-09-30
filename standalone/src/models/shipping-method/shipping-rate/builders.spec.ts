@@ -1,5 +1,5 @@
 import type { TShippingRateRest, TShippingRateGraphql } from './types';
-import { ShippingRateRest, ShippingRateGraphql } from './index';
+import { ShippingRateRest, ShippingRateGraphql, ShippingRate } from './index';
 
 function validateRestModel(model: TShippingRateRest) {
   expect(model).toEqual(
@@ -74,19 +74,20 @@ describe('Product model builders', () => {
 
 describe('Product model compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const compatModel = ShippingRateRest.random().build();
+    const compatModel = ShippingRate.random().build();
 
     validateRestModel(compatModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = ShippingRateRest.random().buildRest();
+    const restModel = ShippingRate.random().buildRest();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = ShippingRateGraphql.random().build();
+    const graphqlModel =
+      ShippingRate.random().buildGraphql<TShippingRateGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

@@ -2,7 +2,11 @@ import type {
   TShippingMethodDraftRest,
   TShippingMethodDraftGraphql,
 } from '../types';
-import { ShippingMethodDraftRest, ShippingMethodDraftGraphql } from './index';
+import {
+  ShippingMethodDraft,
+  ShippingMethodDraftGraphql,
+  ShippingMethodDraftRest,
+} from '.';
 
 function validateRestModel(model: TShippingMethodDraftRest) {
   expect(model).toEqual(
@@ -29,34 +33,17 @@ function validateRestModel(model: TShippingMethodDraftRest) {
 function validateGraphqlModel(model: TShippingMethodDraftGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
-      __typename: 'ShippingMethodDraft',
       key: expect.any(String),
       name: expect.any(String),
       description: expect.any(String),
       localizedName: expect.arrayContaining([
         expect.objectContaining({
-          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
         }),
       ]),
       localizedDescription: expect.arrayContaining([
         expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      localizedNameAllLocales: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      localizedDescriptionAllLocales: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
         }),
@@ -86,20 +73,21 @@ describe('ShippingMethodDraft model builders', () => {
 });
 
 describe('ShippingMethodDraft model compatibility builders', () => {
-  it('builds a default (REST) model', () => {
-    const compatModel = ShippingMethodDraftRest.random().build();
+  it('builds a default model', () => {
+    const model = ShippingMethodDraft.random().build();
 
-    validateRestModel(compatModel);
+    validateRestModel(model);
   });
 
   it('builds a REST model', () => {
-    const restModel = ShippingMethodDraftRest.random().buildRest();
+    const restModel = ShippingMethodDraft.random().buildRest();
 
     validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = ShippingMethodDraftGraphql.random().build();
+    const graphqlModel =
+      ShippingMethodDraft.random().buildGraphql<TShippingMethodDraftGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

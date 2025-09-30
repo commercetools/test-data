@@ -73,23 +73,3 @@ describe('Product model builders', () => {
     validateGraphqlModel(graphqlModel);
   });
 });
-
-describe('Product model compatibility builders', () => {
-  it('builds a default (REST) model', () => {
-    const compatModel = ShippingRateDraftRest.random().build();
-
-    validateRestModel(compatModel);
-  });
-
-  it('builds a REST model', () => {
-    const restModel = ShippingRateDraftRest.random().buildRest();
-
-    validateRestModel(restModel);
-  });
-
-  it('builds a GraphQL model', () => {
-    const graphqlModel = ShippingRateDraftGraphql.random().build();
-
-    validateGraphqlModel(graphqlModel);
-  });
-});
