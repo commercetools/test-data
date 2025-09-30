@@ -29,14 +29,12 @@ const commonFieldsConfig = {
   lastModifiedBy: fake(() => ClientLogging.random()),
 };
 
-// REST shipping method
 export const restFieldsConfig: TModelFieldsConfig<TShippingMethodRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-// GraphQL shipping method
 export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodGraphql> = {
   fields: {
     ...commonFieldsConfig,

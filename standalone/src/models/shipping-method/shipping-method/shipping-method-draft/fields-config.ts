@@ -30,19 +30,4 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodDraftGraphql
     fields: {
       ...commonFieldsConfig,
     },
-    postBuild: (model) => {
-      const localizedNameAllLocales = model.localizedName
-        ? LocalizedString.toLocalizedField(LocalizedString.random())
-        : null;
-      const localizedDescriptionAllLocales = model.localizedDescription
-        ? LocalizedString.toLocalizedField(LocalizedString.random())
-        : null;
-
-      return {
-        ...model,
-        __typename: 'ShippingMethodDraft',
-        localizedNameAllLocales,
-        localizedDescriptionAllLocales,
-      };
-    },
   };

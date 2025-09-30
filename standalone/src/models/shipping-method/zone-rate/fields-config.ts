@@ -1,5 +1,9 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { KeyReference, Reference, TReferenceGraphql } from '@/models/commons';
+import {
+  KeyReference,
+  ReferenceGraphql,
+  TReferenceGraphql,
+} from '@/models/commons';
 import { ShippingRateRest } from '../shipping-rate';
 import type { TZoneRateRest, TZoneRateGraphql } from './types';
 
@@ -21,10 +25,12 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TZoneRateGraphql> = {
     zoneRef: null,
   },
   postBuild: (model) => {
-    const zoneRef: TReferenceGraphql = Reference.random()
-      .id(model.zone.id)
-      .typeId('zone')
-      .buildGraphql();
+    const zoneRef: TReferenceGraphql | null = model.zone
+      ? ReferenceGraphql.random()
+          .id(model.zone.id)
+          .typeId('zone')
+          .buildGraphql()
+      : null;
 
     return {
       ...model,

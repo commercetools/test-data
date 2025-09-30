@@ -1,6 +1,6 @@
-import { ZoneRate, ZoneRateDraft, Zone } from '@commercetools/platform-sdk';
+import { Zone, ZoneRate, ZoneRateDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TReferenceGraphql } from '@/models/commons';
+import { TCtpZoneRate, TCtpZoneRateDraft } from '@/graphql-types';
 
 /**
  * @deprecated use `TZoneRateRest` or `TZoneRateGraphql` instead
@@ -15,11 +15,8 @@ export type TZoneRateDraft = ZoneRateDraft;
 export type TZoneRateRest = ZoneRate;
 export type TZoneRateDraftRest = ZoneRateDraft;
 
-export type TZoneRateGraphql = ZoneRate & {
-  zoneRef: TReferenceGraphql;
-  __typename: 'ZoneRate';
-};
-export type TZoneRateDraftGraphql = ZoneRateDraft;
+export type TZoneRateGraphql = TCtpZoneRate;
+export type TZoneRateDraftGraphql = TCtpZoneRateDraft;
 
 export type TCreateZoneRateBuilder<
   TZoneRateModel extends
