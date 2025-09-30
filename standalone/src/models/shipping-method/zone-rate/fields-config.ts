@@ -26,10 +26,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TZoneRateGraphql> = {
   },
   postBuild: (model) => {
     const zoneRef: TReferenceGraphql | null = model.zone
-      ? ReferenceGraphql.random()
-          .id(model.zone.id)
-          .typeId('zone')
-          .buildGraphql()
+      ? ReferenceGraphql.random().id(model.zone.id).typeId('zone').build()
       : null;
 
     return {

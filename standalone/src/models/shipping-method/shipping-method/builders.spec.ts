@@ -131,9 +131,9 @@ describe('ShippingMethod model builders', () => {
 
 describe('ShippingMethod model compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const compatModel = ShippingMethod.random().build();
+    const model = ShippingMethod.random().build();
 
-    validateRestModel(compatModel);
+    validateRestModel(model);
   });
 
   it('builds a REST model', () => {
