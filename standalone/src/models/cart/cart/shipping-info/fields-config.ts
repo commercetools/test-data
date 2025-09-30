@@ -1,6 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { CentPrecisionMoney, Reference } from '@/models/commons';
-import { ShippingRate } from '@/models/shipping-method';
+import { ShippingRateRest } from '@/models/shipping-method/shipping-rate';
 import type { TShippingInfoGraphql, TShippingInfoRest } from './types';
 
 const commonFieldsConfig = {
@@ -12,7 +12,7 @@ const commonFieldsConfig = {
   shippingMethodState: fake((f) =>
     f.helpers.arrayElement(['DoesNotMatchCart', 'MatchesCart'])
   ),
-  shippingRate: fake(() => ShippingRate.random()),
+  shippingRate: fake(() => ShippingRateRest.random()),
   taxCategory: null,
   taxRate: null,
   taxedPrice: null,

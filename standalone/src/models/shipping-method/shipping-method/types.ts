@@ -15,11 +15,9 @@ export type TShippingMethod = ShippingMethod;
  */
 export type TShippingMethodDraft = ShippingMethodDraft;
 
-// REST types
 export type TShippingMethodRest = ShippingMethod;
 export type TShippingMethodDraftRest = ShippingMethodDraft;
 
-// GraphQL types
 export type TShippingMethodGraphql = TCtpShippingMethod;
 export type TShippingMethodDraftGraphql = TCtpShippingMethodDraft;
 

@@ -10,7 +10,6 @@ import type {
 } from '../types';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
-// REST shipping method draft builder
 export const RestModelBuilder: TCreateShippingMethodBuilder<
   TShippingMethodDraftRest
 > = () =>
@@ -20,7 +19,6 @@ export const RestModelBuilder: TCreateShippingMethodBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-// GraphQL shipping method draft builder
 export const GraphqlModelBuilder: TCreateShippingMethodBuilder<
   TShippingMethodDraftGraphql
 > = () =>
@@ -30,7 +28,6 @@ export const GraphqlModelBuilder: TCreateShippingMethodBuilder<
     modelFieldsConfig: graphqlFieldsConfig,
   });
 
-// Compatibility builder for backwards compatibility
 export const CompatModelBuilder = <
   TShippingMethodDraftModel extends
     | TShippingMethodDraftRest

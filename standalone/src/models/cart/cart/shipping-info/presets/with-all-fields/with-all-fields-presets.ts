@@ -1,6 +1,7 @@
 import type { TBuilder } from '@/core';
 import { Money, Reference } from '@/models/commons';
-import { ShippingMethod, ShippingRate } from '@/models/shipping-method';
+import { ShippingMethodRest } from '@/models/shipping-method/shipping-method';
+import { ShippingRateRest } from '@/models/shipping-method/shipping-rate';
 import { TaxRate } from '@/models/tax-category';
 import {
   TaxedItemPriceGraphql,
@@ -16,7 +17,7 @@ const populatePreset = <T extends TShippingInfoRest | TShippingInfoGraphql>(
     .deliveries([])
     .price(Money.presets.withCurrency('EUR'))
     .shippingMethodName('shipping-method-name')
-    .shippingRate(ShippingRate.random())
+    .shippingRate(ShippingRateRest.random())
     .taxCategory(Reference.presets.taxCategoryReference())
     .taxRate(TaxRate.presets.withAllFields());
 
@@ -27,5 +28,5 @@ export const restPreset = (): TBuilder<TShippingInfoRest> =>
 
 export const graphqlPreset = (): TBuilder<TShippingInfoGraphql> =>
   populatePreset(ShippingInfoGraphql.random())
-    .shippingMethod(ShippingMethod.random())
+    .shippingMethod(ShippingMethodRest.random())
     .taxedPrice(TaxedItemPriceGraphql.presets.withAllFields());

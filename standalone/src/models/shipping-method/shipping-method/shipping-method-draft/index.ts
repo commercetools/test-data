@@ -25,7 +25,3 @@ export const ShippingMethodDraft = {
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
 };
-
-// Legacy exports for backwards compatibility
-export { default as random } from './builder';
-export { default as presets } from './presets';

@@ -1,14 +1,37 @@
+import type { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
-import { ShippingRateDraft } from '../../../../shipping-rate';
-import type { TZoneRateDraftBuilder } from '../../../types';
-import * as ZoneRateDraft from '../../index';
+import { ShippingRateDraftRest } from '../../../../shipping-rate/shipping-rate-draft';
+import type {
+  TZoneRateDraft,
+  TZoneRateDraftGraphql,
+  TZoneRateDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
 
 // zone with key'e2e-us-zone' will always be set in the project under test
 //{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
 
-const usZone = (): TZoneRateDraftBuilder =>
-  ZoneRateDraft.random()
+const populateUsZonePreset = <
+  TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
-    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usdCurrency()]);
+    .shippingRates([
+      ShippingRateDraftRest.presets.changeHistoryData.withUsdCurrency(),
+    ]);
+};
 
-export default usZone;
+export const restPreset = (): TBuilder<TZoneRateDraftRest> =>
+  populateUsZonePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TZoneRateDraftGraphql> =>
+  populateUsZonePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TZoneRateDraft> =>
+  populateUsZonePreset(CompatModelBuilder());
