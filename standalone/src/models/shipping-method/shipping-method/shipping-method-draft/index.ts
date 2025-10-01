@@ -7,7 +7,6 @@ import * as modelPresets from './presets';
 
 export * from '../types';
 
-// New specialized builders
 export const ShippingMethodDraftRest = {
   random: RestModelBuilder,
   presets: modelPresets.restPresets,

@@ -5,7 +5,7 @@ import { TCtpZoneRate, TCtpZoneRateDraft } from '@/graphql-types';
 /**
  * @deprecated use `TZoneRateRest` or `TZoneRateGraphql` instead
  */
-export type TZoneRate = Omit<ZoneRate, 'zone'> & { zone: Zone };
+export type TZoneRate = ZoneRate;
 
 /**
  * @deprecated use `TZoneRateDraftRest` or `TZoneRateDraftGraphql` instead
