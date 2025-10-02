@@ -1,6 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { CentPrecisionMoney, Reference } from '@/models/commons';
-import { ShippingRate } from '@/models/shipping-method/shipping-rate';
+import { ShippingRate } from '@/models/shipping-method';
 import type { TShippingInfoGraphql, TShippingInfoRest } from './types';
 
 const commonFieldsConfig = {
