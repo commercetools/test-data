@@ -1,16 +1,16 @@
 import type { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
 import { ShippingRateDraftRest } from '../../../../shipping-rate/shipping-rate-draft';
-import type {
-  TZoneRateDraft,
-  TZoneRateDraftGraphql,
-  TZoneRateDraftRest,
-} from '../../../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from '../../builders';
+import type {
+  TZoneRateDraft,
+  TZoneRateDraftGraphql,
+  TZoneRateDraftRest,
+} from '../../types';
 
 // zone with key'e2e-us-zone' will always be set in the project under test
 //{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}

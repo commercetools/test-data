@@ -1,7 +1,7 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
 import { ShippingRateDraftRest } from '../../shipping-rate/shipping-rate-draft';
-import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from '../types';
+import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from './types';
 
 const commonFieldsConfig = {
   zone: fake(() => KeyReferenceDraft.presets.zone()),

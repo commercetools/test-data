@@ -1,4 +1,8 @@
-import { createSpecializedBuilder } from '@/core';
+import {
+  createSpecializedBuilder,
+  createCompatibilityBuilder,
+  type TModelFieldsConfig,
+} from '@/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
   TShippingRateDraftBuilder,
@@ -22,4 +26,18 @@ export const GraphqlModelBuilder: TShippingRateDraftBuilder<
     name: 'ShippingRateDraftGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
+  });
+
+export const CompatModelBuilder = <
+  TShippingRateDraftModel extends
+    | TShippingRateDraftRest
+    | TShippingRateDraftGraphql = TShippingRateDraftRest,
+>() =>
+  createCompatibilityBuilder<TShippingRateDraftModel>({
+    name: 'ShippingRateDraftCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TShippingRateDraftModel>,
+      graphql:
+        graphqlFieldsConfig as TModelFieldsConfig<TShippingRateDraftModel>,
+    },
   });

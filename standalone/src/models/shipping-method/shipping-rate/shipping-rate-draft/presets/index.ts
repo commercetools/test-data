@@ -10,3 +10,8 @@ export const graphqlPresets = {
   empty: empty.graphqlPreset,
   changeHistoryData: changeHistoryData.graphqlPresets,
 };
+
+export const compatPresets = {
+  empty: empty.compatPreset,
+  changeHistoryData: changeHistoryData.compatPresets,
+};

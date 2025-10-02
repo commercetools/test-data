@@ -2,7 +2,7 @@ import {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
   TShippingMethodDraftRest,
-} from '../../../types';
+} from '../../types';
 import { restPreset, graphqlPreset, compatPreset } from './with-us-zone-rate';
 
 describe('ShippingMethod with `US` Zone preset', () => {

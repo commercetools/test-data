@@ -6,9 +6,6 @@ import {
 
 export * from './types';
 
-export * as ShippingRateDraft from './shipping-rate-draft';
-export * as ShippingRatePriceTierDraft from './shipping-rate-price-tier';
-
 /**
  * @deprecated Use `ShippingRateRest` or `ShippingRateGraphql` exported models instead of `ShippingRate`.
  */

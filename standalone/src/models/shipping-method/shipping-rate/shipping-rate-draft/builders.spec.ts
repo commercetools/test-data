@@ -2,7 +2,11 @@ import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
 } from './types';
-import { ShippingRateDraftRest, ShippingRateDraftGraphql } from './index';
+import {
+  ShippingRateDraftRest,
+  ShippingRateDraftGraphql,
+  ShippingRateDraft,
+} from './index';
 
 function validateRestModel(model: TShippingRateDraftRest) {
   expect(model).toEqual(
@@ -60,7 +64,7 @@ function validateGraphqlModel(model: TShippingRateDraftGraphql) {
   );
 }
 
-describe('Product model builders', () => {
+describe('ShippingRateDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = ShippingRateDraftRest.random().build();
 
@@ -69,6 +73,27 @@ describe('Product model builders', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ShippingRateDraftGraphql.random().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('ShippingRateDraft model compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = ShippingRateDraft.random().build();
+
+    validateRestModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = ShippingRateDraft.random().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel =
+      ShippingRateDraft.random().buildGraphql<TShippingRateDraftGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

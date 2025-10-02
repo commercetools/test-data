@@ -7,3 +7,7 @@ export const restPresets = {
 export const graphqlPresets = {
   withUsdCurrency: withUsdCurrency.graphqlPreset,
 };
+
+export const compatPresets = {
+  withUsdCurrency: withUsdCurrency.compatPreset,
+};

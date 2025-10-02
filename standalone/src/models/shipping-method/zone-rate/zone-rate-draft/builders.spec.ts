@@ -1,4 +1,4 @@
-import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from '../types';
+import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from './types';
 import {
   ZoneRateDraftRest,
   ZoneRateDraftGraphql,

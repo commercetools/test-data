@@ -3,14 +3,14 @@ import {
   createCompatibilityBuilder,
   type TModelFieldsConfig,
 } from '@/core';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TCreateZoneRateBuilder,
+  TCreateZoneRateDraftBuilder,
   TZoneRateDraftRest,
   TZoneRateDraftGraphql,
-} from '../types';
-import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
+} from './types';
 
-export const RestModelBuilder: TCreateZoneRateBuilder<
+export const RestModelBuilder: TCreateZoneRateDraftBuilder<
   TZoneRateDraftRest
 > = () =>
   createSpecializedBuilder({
@@ -19,7 +19,7 @@ export const RestModelBuilder: TCreateZoneRateBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCreateZoneRateBuilder<
+export const GraphqlModelBuilder: TCreateZoneRateDraftBuilder<
   TZoneRateDraftGraphql
 > = () =>
   createSpecializedBuilder({

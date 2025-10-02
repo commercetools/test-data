@@ -4,7 +4,6 @@ import {
   CompatModelBuilder,
 } from './builders';
 
-export * as ZoneRateDraft from './zone-rate-draft';
 export * from './types';
 
 export const ZoneRateRest = {

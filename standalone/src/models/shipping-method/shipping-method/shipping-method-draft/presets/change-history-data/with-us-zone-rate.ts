@@ -1,15 +1,15 @@
 import type { TBuilder } from '@/core';
 import { ZoneRateDraftRest } from '../../../../zone-rate/zone-rate-draft';
-import type {
-  TShippingMethodDraft,
-  TShippingMethodDraftGraphql,
-  TShippingMethodDraftRest,
-} from '../../../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from '../../builders';
+import type {
+  TShippingMethodDraft,
+  TShippingMethodDraftGraphql,
+  TShippingMethodDraftRest,
+} from '../../types';
 
 //default(false) as more than one default method will lead to an error
 

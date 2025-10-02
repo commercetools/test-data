@@ -1,5 +1,9 @@
 import { type TBuilder } from '@/core';
-import { RestModelBuilder, GraphqlModelBuilder } from '../builders';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../builders';
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
@@ -21,6 +25,12 @@ export const restPreset = (): TBuilder<TShippingRateDraftRest> => {
 
 export const graphqlPreset = (): TBuilder<TShippingRateDraftGraphql> => {
   return populatePreset(GraphqlModelBuilder())
+    .freeAbove(undefined)
+    .tiers(undefined);
+};
+
+export const compatPreset = (): TBuilder<TShippingRateDraftRest> => {
+  return populatePreset(CompatModelBuilder())
     .freeAbove(undefined)
     .tiers(undefined);
 };

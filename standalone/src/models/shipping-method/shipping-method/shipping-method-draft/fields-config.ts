@@ -3,7 +3,7 @@ import { LocalizedString } from '@/models/commons';
 import type {
   TShippingMethodDraftRest,
   TShippingMethodDraftGraphql,
-} from '../types';
+} from './types';
 
 const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),

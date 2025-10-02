@@ -1,6 +1,10 @@
 import type { TBuilder } from '@/core';
 import { MoneyDraftRest } from '@/models/commons';
-import { ShippingRateDraftRest, ShippingRateDraftGraphql } from '../../index';
+import {
+  ShippingRateDraftRest,
+  ShippingRateDraftGraphql,
+  ShippingRateDraft,
+} from '../../index';
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
@@ -22,3 +26,6 @@ export const restPreset = (): TBuilder<TShippingRateDraftRest> =>
 
 export const graphqlPreset = (): TBuilder<TShippingRateDraftGraphql> =>
   populatePreset(ShippingRateDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TShippingRateDraftRest> =>
+  populatePreset(ShippingRateDraft.random());

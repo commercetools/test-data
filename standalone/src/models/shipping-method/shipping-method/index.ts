@@ -4,7 +4,6 @@ import {
   CompatModelBuilder,
 } from './builders';
 
-export * as ShippingMethodDraft from './shipping-method-draft';
 export * from './types';
 
 export const ShippingMethodRest = {
