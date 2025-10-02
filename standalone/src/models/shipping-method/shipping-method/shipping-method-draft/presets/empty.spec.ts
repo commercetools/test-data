@@ -2,7 +2,7 @@ import type {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
   TShippingMethodDraftRest,
-} from '../../types';
+} from '../types';
 import * as empty from './empty';
 
 describe('Empty preset', () => {

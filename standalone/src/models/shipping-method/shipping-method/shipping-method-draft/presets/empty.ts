@@ -1,14 +1,14 @@
 import type { TBuilder } from '@/core';
-import type {
-  TShippingMethodDraft,
-  TShippingMethodDraftGraphql,
-  TShippingMethodDraftRest,
-} from '../../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from '../builders';
+import type {
+  TShippingMethodDraft,
+  TShippingMethodDraftGraphql,
+  TShippingMethodDraftRest,
+} from '../types';
 
 const populateEmptyPreset = <
   TModel extends TShippingMethodDraftGraphql | TShippingMethodDraftRest,
