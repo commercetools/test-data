@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { MoneyDraftRest } from '@/models/commons';
+import { MoneyRest } from '@/models/commons';
 import type {
   TCartClassificationPriceTierGraphql,
   TCartClassificationPriceTierRest,
@@ -9,7 +9,7 @@ import type {
 
 const commonFieldsConfig = {
   type: 'CartClassification',
-  price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
+  price: fake(() => MoneyRest.random()),
   value: fake((f) => f.lorem.word()),
   isMatching: fake((f) => f.datatype.boolean()),
 };

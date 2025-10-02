@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { MoneyDraftRest } from '@/models/commons';
+import { MoneyRest } from '@/models/commons';
 import type {
   TCartValuePriceTierGraphql,
   TCartValuePriceTierRest,
@@ -9,7 +9,7 @@ import type {
 
 const commonFieldsConfig = {
   type: 'CartValue',
-  price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
+  price: fake(() => MoneyRest.random()),
   minimumCentAmount: fake((f) => f.number.int({ min: 1000, max: 5000 })),
   isMatching: fake((f) => f.datatype.boolean()),
 };

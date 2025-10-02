@@ -9,6 +9,7 @@ function validateRestModel(model: TShippingRateRest) {
         currencyCode: expect.any(String),
       }),
       price: expect.objectContaining({
+        type: 'centPrecision',
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
       }),
@@ -37,6 +38,7 @@ function validateGraphqlModel(model: TShippingRateGraphql) {
         currencyCode: expect.any(String),
       }),
       price: expect.objectContaining({
+        type: 'centPrecision',
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
       }),

@@ -28,11 +28,15 @@ const validateRestModel = (model: TShippingRest) => {
       shippingInfo: expect.objectContaining({
         price: expect.objectContaining({
           type: 'centPrecision',
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
         }),
         shippingMethodName: expect.any(String),
         shippingRate: expect.objectContaining({
           price: expect.objectContaining({
             type: 'centPrecision',
+            centAmount: expect.any(Number),
+            currencyCode: expect.any(String),
           }),
         }),
         deliveries: expect.any(Array),
