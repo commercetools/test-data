@@ -36,7 +36,7 @@ function validateGraphqlModel(model: TCartValuePriceTierGraphql) {
   );
 }
 
-describe('Product model builders', () => {
+describe('CartValuePriceTier model builders', () => {
   it('builds a REST model', () => {
     const restModel = CartValuePriceTierDraftRest.random().build();
 
@@ -50,7 +50,7 @@ describe('Product model builders', () => {
   });
 });
 
-describe('Product model compatibility builders', () => {
+describe('CartValuePriceTier model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = CartValuePriceTierDraftRest.random().build();
 

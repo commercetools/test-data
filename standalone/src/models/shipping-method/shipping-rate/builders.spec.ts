@@ -58,7 +58,7 @@ function validateGraphqlModel(model: TShippingRateGraphql) {
   );
 }
 
-describe('Product model builders', () => {
+describe('ShippingRate model builders', () => {
   it('builds a REST model', () => {
     const restModel = ShippingRateRest.random().build();
 
@@ -72,7 +72,7 @@ describe('Product model builders', () => {
   });
 });
 
-describe('Product model compatibility builders', () => {
+describe('ShippingRate model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = ShippingRate.random().build();
 
