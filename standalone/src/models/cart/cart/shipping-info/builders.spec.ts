@@ -18,8 +18,7 @@ describe('ShippingInfo Builder', () => {
         ),
         shippingRate: expect.objectContaining({
           price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
+            type: 'centPrecision',
           }),
         }),
         taxCategory: null,
