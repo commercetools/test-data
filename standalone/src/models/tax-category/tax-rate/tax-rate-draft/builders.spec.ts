@@ -3,12 +3,12 @@ import { TaxRateDraft, TaxRateDraftGraphql, TaxRateDraftRest } from './index';
 
 const validateModel = (model: TTaxRateDraftGraphql | TTaxRateDraftRest) => {
   expect(model).toMatchObject({
-    amount: expect.any(Number),
+    amount: null,
     country: expect.any(String),
     includedInPrice: expect.any(Boolean),
-    key: expect.any(String),
+    key: null,
     name: expect.any(String),
-    state: expect.any(String),
+    state: null,
     subRates: null,
   });
 };
