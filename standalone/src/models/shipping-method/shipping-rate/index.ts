@@ -1,5 +1,22 @@
-export * as ShippingRateDraft from './shipping-rate-draft';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
 export * from './types';
+
+/**
+ * @deprecated Use `ShippingRateRest` or `ShippingRateGraphql` exported models instead of `ShippingRate`.
+ */
+export const ShippingRate = {
+  random: CompatModelBuilder,
+};
+
+export const ShippingRateRest = {
+  random: RestModelBuilder,
+};
+
+export const ShippingRateGraphql = {
+  random: GraphqlModelBuilder,
+};

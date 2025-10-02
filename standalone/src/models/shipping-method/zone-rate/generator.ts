@@ -1,6 +1,6 @@
 import { fake, Generator } from '@/core';
 import { Zone } from '@/models/zone';
-import * as ShippingRate from '../shipping-rate';
+import { ShippingRate } from '../shipping-rate';
 import { TZoneRate } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#zonerate

@@ -1,12 +1,28 @@
-import { TShippingRateDraft } from '../../../types';
-import usdCurrency from './with-usd-currency';
+import { restPreset, graphqlPreset, compatPreset } from './with-usd-currency';
 
-describe('Shipping rate with the MoneyDraft `USD` currencyCode preset', () => {
-  it('should return the currencyCode of `USD`', () => {
-    const shippingRateWithUsdCurrencyMoneyPreset =
-      usdCurrency().build<TShippingRateDraft>();
+describe('With USD Currency preset', () => {
+  it('[REST] should set all specified fields correctly', () => {
+    const shippingRateDraftPreset = restPreset().build();
 
-    expect(shippingRateWithUsdCurrencyMoneyPreset).toEqual(
+    expect(shippingRateDraftPreset).toEqual(
+      expect.objectContaining({
+        price: expect.objectContaining({
+          currencyCode: 'USD',
+          centAmount: expect.any(Number),
+        }),
+        freeAbove: expect.objectContaining({
+          currencyCode: 'USD',
+          centAmount: expect.any(Number),
+        }),
+        isMatching: expect.any(Boolean),
+      })
+    );
+  });
+
+  it('[GraphQL] should set all specified fields correctly', () => {
+    const shippingRateDraftPreset = graphqlPreset().build();
+
+    expect(shippingRateDraftPreset).toEqual(
       expect.objectContaining({
         tiers: [],
         price: expect.objectContaining({
@@ -17,6 +33,25 @@ describe('Shipping rate with the MoneyDraft `USD` currencyCode preset', () => {
           currencyCode: 'USD',
           centAmount: expect.any(Number),
         }),
+        isMatching: expect.any(Boolean),
+      })
+    );
+  });
+
+  it('[Compat] should set all specified fields correctly', () => {
+    const shippingRateDraftPreset = compatPreset().build();
+
+    expect(shippingRateDraftPreset).toEqual(
+      expect.objectContaining({
+        price: expect.objectContaining({
+          currencyCode: 'USD',
+          centAmount: expect.any(Number),
+        }),
+        freeAbove: expect.objectContaining({
+          currencyCode: 'USD',
+          centAmount: expect.any(Number),
+        }),
+        isMatching: expect.any(Boolean),
       })
     );
   });

@@ -1,8 +1,36 @@
-import { TShippingRateDraftBuilder } from '../../types';
-import empty from './empty';
+import { restPresets, graphqlPresets, compatPresets } from './index';
 
-it(`should set all specified fields to undefined`, () => {
-  const emptyShippingRateDraft = empty().build<TShippingRateDraftBuilder>();
-  expect(emptyShippingRateDraft.freeAbove).toMatchInlineSnapshot(`undefined`);
-  expect(emptyShippingRateDraft.tiers).toMatchInlineSnapshot(`undefined`);
+describe('ShippingRateDraft - Empty Preset', () => {
+  it('should return a valid rest model', () => {
+    const model = restPresets.empty().build();
+
+    expect(model).toEqual(
+      expect.objectContaining({
+        freeAbove: undefined,
+        tiers: undefined,
+      })
+    );
+  });
+
+  it('should return a valid graphql model', () => {
+    const model = graphqlPresets.empty().build();
+
+    expect(model).toEqual(
+      expect.objectContaining({
+        freeAbove: undefined,
+        tiers: undefined,
+      })
+    );
+  });
+
+  it('should return a valid compat model', () => {
+    const model = compatPresets.empty().build();
+
+    expect(model).toEqual(
+      expect.objectContaining({
+        freeAbove: undefined,
+        tiers: undefined,
+      })
+    );
+  });
 });
