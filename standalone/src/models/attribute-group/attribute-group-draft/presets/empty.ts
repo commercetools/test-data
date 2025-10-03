@@ -3,11 +3,7 @@ import {
   TAttributeGroupDraftGraphql,
   TAttributeGroupDraftRest,
 } from '../../types';
-import {
-  AttributeGroupDraftGraphql,
-  AttributeGroupDraftRest,
-  AttributeGroupDraft,
-} from '../index';
+import { AttributeGroupDraftGraphql, AttributeGroupDraftRest } from '../index';
 
 const populatePreset = <
   TModel extends TAttributeGroupDraftRest | TAttributeGroupDraftGraphql,
@@ -22,7 +18,3 @@ export const restPreset = (): TBuilder<TAttributeGroupDraftRest> =>
 
 export const graphqlPreset = (): TBuilder<TAttributeGroupDraftGraphql> =>
   populatePreset(AttributeGroupDraftGraphql.random());
-
-export const compatPreset = (): TBuilder<
-  TAttributeGroupDraftRest | TAttributeGroupDraftGraphql
-> => populatePreset(AttributeGroupDraft.random());

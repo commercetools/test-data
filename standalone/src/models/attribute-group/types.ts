@@ -4,7 +4,7 @@ import type {
   AttributeReference,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import type { TCtpLocalizedStringItemInputType } from '@/graphql-types';
+import type { TCtpAttributeGroupDraft } from '@/graphql-types';
 import { TLocalizedStringGraphql } from '@/models/commons';
 
 export type TAttributeGroup = AttributeGroup;
@@ -24,19 +24,8 @@ export type TAttributeGroupBuilder = TBuilder<AttributeGroup>;
 export type TCreateAttributeGroupBuilder = () => TAttributeGroupBuilder;
 
 export type TAttributeGroupDraft = AttributeGroupDraft;
-
 export type TAttributeGroupDraftRest = TAttributeGroupDraft;
-
-export type TAttributeGroupDraftGraphql = Omit<
-  TAttributeGroupDraft,
-  'name' | 'description'
-> & {
-  name: TCtpLocalizedStringItemInputType[];
-  description?: TCtpLocalizedStringItemInputType[] | null;
-  attributes: AttributeReference[];
-  key?: string;
-  __typename: 'AttributeGroupDraft';
-};
+export type TAttributeGroupDraftGraphql = TCtpAttributeGroupDraft;
 
 export type TAttributeGroupDraftBuilder = TBuilder<TAttributeGroupDraft>;
 export type TCreateAttributeGroupDraftBuilder =

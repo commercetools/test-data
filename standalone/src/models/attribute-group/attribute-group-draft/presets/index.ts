@@ -7,7 +7,3 @@ export const restPresets = {
 export const graphqlPresets = {
   empty: empty.graphqlPreset,
 };
-
-export const compatPresets = {
-  empty: empty.compatPreset,
-};

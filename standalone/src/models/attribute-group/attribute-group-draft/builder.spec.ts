@@ -2,11 +2,7 @@ import type {
   TAttributeGroupDraftGraphql,
   TAttributeGroupDraftRest,
 } from '../types';
-import {
-  AttributeGroupDraft,
-  AttributeGroupDraftGraphql,
-  AttributeGroupDraftRest,
-} from './index';
+import { AttributeGroupDraftGraphql, AttributeGroupDraftRest } from './index';
 
 const validateRestModel = (model: TAttributeGroupDraftRest) => {
   console.log('Rest model', model);
@@ -61,23 +57,5 @@ describe('AttributeGroupDraft builders', () => {
   it('should create a GraphQL model object', () => {
     const graphqlDraft = AttributeGroupDraftGraphql.random().build();
     validateGraphqlModel(graphqlDraft);
-  });
-});
-
-describe('AttributeGroupDraft compatibility builders', () => {
-  it('should create a default compatibility model object', () => {
-    const compatDraft = AttributeGroupDraft.random().build();
-    validateRestModel(compatDraft);
-  });
-
-  it('should create a REST compatibility model object', () => {
-    const compatDraft = AttributeGroupDraft.random().buildRest();
-    validateRestModel(compatDraft);
-  });
-
-  it('should create a GraphQL compatibility model object', () => {
-    const compatDraft =
-      AttributeGroupDraft.random().buildGraphql<TAttributeGroupDraftGraphql>();
-    validateGraphqlModel(compatDraft);
   });
 });
