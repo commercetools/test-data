@@ -14,7 +14,7 @@ const populatePreset = <
 >(
   builder: TBuilder<TModel>
 ) => {
-  return builder.name('').description(undefined).attributes([]);
+  return builder.description(undefined).key(undefined);
 };
 
 export const restPreset = (): TBuilder<TAttributeGroupDraftRest> =>

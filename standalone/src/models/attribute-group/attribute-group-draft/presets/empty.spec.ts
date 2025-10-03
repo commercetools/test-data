@@ -8,8 +8,7 @@ const validateCommonFields = (
   model: TAttributeGroupDraftRest | TAttributeGroupDraftGraphql
 ) => {
   expect(model).toMatchObject({
-    key: expect.any(String),
-    name: expect.any(String),
+    key: undefined,
     description: undefined,
     attributes: expect.any(Array),
   });

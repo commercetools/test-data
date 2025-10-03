@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { LocalizedStringDraft, LocalizedString } from '@/models/commons';
+import { LocalizedString } from '@/models/commons';
 import type {
   TAttributeGroupDraftGraphql,
   TAttributeGroupDraftRest,
@@ -7,11 +7,9 @@ import type {
 
 const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),
-  name: fake(() => LocalizedStringDraft.random()),
-  description: fake((f) =>
-    LocalizedStringDraft.random().en(f.lorem.sentences(2))
-  ),
-  attributes: [],
+  name: fake(() => LocalizedString.random()),
+  description: fake((f) => LocalizedString.random().en(f.lorem.sentences(2))),
+  attributes: fake(() => []), // TODO: attributeReference[]
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TAttributeGroupDraftRest> = {
@@ -23,13 +21,8 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeGroupDraftRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeGroupDraftGraphql> =
   {
     fields: {
+      // TODO: name and description have unique types
       ...commonFieldsConfig,
-      nameAllLocales: fake(() =>
-        LocalizedString.toLocalizedField(LocalizedString.random())
-      ),
-      descriptionAllLocales: fake(() =>
-        LocalizedString.toLocalizedField(LocalizedString.random())
-      ),
       __typename: 'AttributeGroupDraft',
     },
   };

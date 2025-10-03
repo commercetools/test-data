@@ -47,8 +47,6 @@ const validateGraphqlModel = (model: TAttributeGroupDraftGraphql) => {
         }),
       ]),
       attributes: expect.any(Array),
-      nameAllLocales: expect.any(Array),
-      descriptionAllLocales: expect.any(Array),
       __typename: 'AttributeGroupDraft',
     })
   );
