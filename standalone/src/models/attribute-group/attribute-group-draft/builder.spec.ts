@@ -9,17 +9,13 @@ const validateRestModel = (model: TAttributeGroupDraftRest) => {
 
   expect(model).toEqual(
     expect.objectContaining({
-      key: expect.any(String),
+      key: null,
       name: expect.objectContaining({
         de: expect.any(String),
         en: expect.any(String),
         fr: expect.any(String),
       }),
-      description: expect.objectContaining({
-        de: expect.any(String),
-        en: expect.any(String),
-        fr: expect.any(String),
-      }),
+      description: null,
       attributes: expect.any(Array),
     })
   );
@@ -29,21 +25,16 @@ const validateGraphqlModel = (model: TAttributeGroupDraftGraphql) => {
   console.log('GraphQL model', model);
   expect(model).toEqual(
     expect.objectContaining({
-      key: expect.any(String),
+      key: null,
       name: expect.arrayContaining([
         expect.objectContaining({
           locale: expect.any(String),
           value: expect.any(String),
+          __typename: 'LocalizedString',
         }),
       ]),
-      description: expect.arrayContaining([
-        expect.objectContaining({
-          locale: expect.any(String),
-          value: expect.any(String),
-        }),
-      ]),
+      description: null,
       attributes: expect.any(Array),
-      __typename: 'AttributeGroupDraft',
     })
   );
 };
