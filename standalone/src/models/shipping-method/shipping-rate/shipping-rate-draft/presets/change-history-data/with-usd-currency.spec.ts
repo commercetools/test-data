@@ -1,55 +1,43 @@
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+} from '../../../types';
 import { restPreset, graphqlPreset, compatPreset } from './with-usd-currency';
+
+function validateModel(
+  model: TShippingRateDraftRest | TShippingRateDraftGraphql
+) {
+  expect(model).toEqual(
+    expect.objectContaining({
+      price: expect.objectContaining({
+        currencyCode: 'USD',
+        centAmount: expect.any(Number),
+      }),
+      freeAbove: expect.objectContaining({
+        currencyCode: 'USD',
+        centAmount: expect.any(Number),
+      }),
+      tiers: [],
+    })
+  );
+}
 
 describe('With USD Currency preset', () => {
   it('[REST] should set all specified fields correctly', () => {
-    const shippingRateDraftPreset = restPreset().build();
+    const restModel = restPreset().build();
 
-    expect(shippingRateDraftPreset).toEqual(
-      expect.objectContaining({
-        price: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-        freeAbove: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-      })
-    );
+    validateModel(restModel);
   });
 
   it('[GraphQL] should set all specified fields correctly', () => {
-    const shippingRateDraftPreset = graphqlPreset().build();
+    const graphqlModel = graphqlPreset().build();
 
-    expect(shippingRateDraftPreset).toEqual(
-      expect.objectContaining({
-        tiers: [],
-        price: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-        freeAbove: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-      })
-    );
+    validateModel(graphqlModel);
   });
 
   it('[Compat] should set all specified fields correctly', () => {
-    const shippingRateDraftPreset = compatPreset().build();
+    const compatModel = compatPreset().build();
 
-    expect(shippingRateDraftPreset).toEqual(
-      expect.objectContaining({
-        price: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-        freeAbove: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-      })
-    );
+    validateModel(compatModel);
   });
 });

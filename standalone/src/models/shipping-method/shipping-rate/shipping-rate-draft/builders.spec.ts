@@ -1,6 +1,7 @@
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
+  TShippingRateDraft,
 } from '../types';
 import {
   ShippingRateDraftRest,
@@ -8,23 +9,9 @@ import {
   ShippingRateDraft,
 } from './index';
 
-function validateRestModel(model: TShippingRateDraftRest) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      freeAbove: expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
-      price: expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
-      tiers: [],
-    })
-  );
-}
-
-function validateGraphqlModel(model: TShippingRateDraftGraphql) {
+function validateModel(
+  model: TShippingRateDraftRest | TShippingRateDraftGraphql | TShippingRateDraft
+) {
   expect(model).toEqual(
     expect.objectContaining({
       freeAbove: expect.objectContaining({
@@ -44,13 +31,13 @@ describe('ShippingRateDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = ShippingRateDraftRest.random().build();
 
-    validateRestModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ShippingRateDraftGraphql.random().build();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(graphqlModel);
   });
 });
 
@@ -58,19 +45,19 @@ describe('ShippingRateDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = ShippingRateDraft.random().build();
 
-    validateRestModel(compatModel);
+    validateModel(compatModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = ShippingRateDraft.random().buildRest();
+    const compatRestModel = ShippingRateDraft.random().buildRest();
 
-    validateRestModel(restModel);
+    validateModel(compatRestModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel =
+    const compatGraphqlModel =
       ShippingRateDraft.random().buildGraphql<TShippingRateDraftGraphql>();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(compatGraphqlModel);
   });
 });
