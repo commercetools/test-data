@@ -1,14 +1,14 @@
 import type { TBuilder } from '@/core';
 import { MoneyDraftRest } from '@/models/commons';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+} from '../../../types';
 import {
   ShippingRateDraftRest,
   ShippingRateDraftGraphql,
   ShippingRateDraft,
 } from '../../index';
-import type {
-  TShippingRateDraftRest,
-  TShippingRateDraftGraphql,
-} from '../../types';
 
 const populatePreset = <
   TModel extends TShippingRateDraftRest | TShippingRateDraftGraphql,

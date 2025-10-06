@@ -3,14 +3,14 @@ import {
   createCompatibilityBuilder,
   type TModelFieldsConfig,
 } from '@/core';
-import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TShippingRateDraftBuilder,
+  TCreateShippingRateBuilder,
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
-} from './types';
+} from '../types';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
-export const RestModelBuilder: TShippingRateDraftBuilder<
+export const RestModelBuilder: TCreateShippingRateBuilder<
   TShippingRateDraftRest
 > = () =>
   createSpecializedBuilder({
@@ -19,7 +19,7 @@ export const RestModelBuilder: TShippingRateDraftBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TShippingRateDraftBuilder<
+export const GraphqlModelBuilder: TCreateShippingRateBuilder<
   TShippingRateDraftGraphql
 > = () =>
   createSpecializedBuilder({

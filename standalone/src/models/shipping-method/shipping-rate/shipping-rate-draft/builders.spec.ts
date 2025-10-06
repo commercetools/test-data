@@ -1,7 +1,7 @@
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
-} from './types';
+} from '../types';
 import {
   ShippingRateDraftRest,
   ShippingRateDraftGraphql,

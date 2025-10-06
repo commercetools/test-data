@@ -1,7 +1,6 @@
 // Export types
 export * from './shipping-method/types';
 export * from './shipping-rate/types';
-export * from './shipping-rate/shipping-rate-draft/types';
 export * from './zone-rate/types';
 
 // Export models

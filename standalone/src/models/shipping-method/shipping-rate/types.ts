@@ -1,16 +1,28 @@
-import { ShippingRate } from '@commercetools/platform-sdk';
+import type {
+  ShippingRate,
+  ShippingRateDraft,
+} from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TCtpShippingRate } from '@/graphql-types';
+import type { TCtpShippingRate, TCtpShippingRateDraft } from '@/graphql-types';
 
 /**
- * @deprecated use `TShippingRateRest` or `TShippingRateGraphql` instead
+ * @deprecated use 'TShippingRateRest' or 'TShippingRateGraphql' instead
  */
 export type TShippingRate = ShippingRate;
-
 export type TShippingRateRest = ShippingRate;
-
 export type TShippingRateGraphql = TCtpShippingRate;
 
-export type TShippingRateBuilder<
-  TModel extends TShippingRateRest | TShippingRateGraphql,
-> = () => TBuilder<TModel>;
+/**
+ * @deprecated use 'TShippingRateDraftRest' or 'TShippingRateDraftGraphql' instead
+ */
+export type TShippingRateDraft = ShippingRateDraft;
+export type TShippingRateDraftRest = ShippingRateDraft;
+export type TShippingRateDraftGraphql = TCtpShippingRateDraft;
+
+export type TCreateShippingRateBuilder<
+  TShippingRateModel extends
+    | TShippingRateRest
+    | TShippingRateGraphql
+    | TShippingRateDraftRest
+    | TShippingRateDraftGraphql,
+> = () => TBuilder<TShippingRateModel>;

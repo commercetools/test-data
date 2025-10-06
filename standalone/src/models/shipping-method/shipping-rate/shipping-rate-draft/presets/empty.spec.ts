@@ -1,7 +1,7 @@
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
-} from '../types';
+} from '../../types';
 import { restPresets, graphqlPresets, compatPresets } from './index';
 
 const validateModel = (

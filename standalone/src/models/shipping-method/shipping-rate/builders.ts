@@ -5,19 +5,21 @@ import {
 } from '@/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TShippingRateBuilder,
+  TCreateShippingRateBuilder,
   TShippingRateGraphql,
   TShippingRateRest,
 } from './types';
 
-export const RestModelBuilder: TShippingRateBuilder<TShippingRateRest> = () =>
+export const RestModelBuilder: TCreateShippingRateBuilder<
+  TShippingRateRest
+> = () =>
   createSpecializedBuilder({
     name: 'ShippingRateRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TShippingRateBuilder<
+export const GraphqlModelBuilder: TCreateShippingRateBuilder<
   TShippingRateGraphql
 > = () =>
   createSpecializedBuilder({

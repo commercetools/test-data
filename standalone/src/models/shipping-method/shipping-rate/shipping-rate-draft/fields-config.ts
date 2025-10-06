@@ -4,7 +4,7 @@ import { CartScorePriceTierDraftRest } from '../shipping-rate-price-tier/cart-sc
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
-} from './types';
+} from '../types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingratedraft
 
