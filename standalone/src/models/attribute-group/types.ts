@@ -1,7 +1,6 @@
 import type {
   AttributeGroup,
   AttributeGroupDraft,
-  AttributeReference,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import type { TCtpAttributeGroupDraft } from '@/graphql-types';
@@ -23,10 +22,11 @@ export type TAttributeGroupGraphql = Omit<
 export type TAttributeGroupBuilder = TBuilder<AttributeGroup>;
 export type TCreateAttributeGroupBuilder = () => TAttributeGroupBuilder;
 
-export type TAttributeGroupDraft = AttributeGroupDraft;
-export type TAttributeGroupDraftRest = TAttributeGroupDraft;
+export type TAttributeGroupDraftRest = AttributeGroupDraft;
 export type TAttributeGroupDraftGraphql = TCtpAttributeGroupDraft;
 
-export type TAttributeGroupDraftBuilder = TBuilder<TAttributeGroupDraft>;
+export type TAttributeGroupDraftBuilder = TBuilder<
+  TAttributeGroupDraftRest | TAttributeGroupDraftGraphql
+>;
 export type TCreateAttributeGroupDraftBuilder =
   () => TAttributeGroupDraftBuilder;
