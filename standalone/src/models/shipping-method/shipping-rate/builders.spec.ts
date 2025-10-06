@@ -1,7 +1,13 @@
-import type { TShippingRateRest, TShippingRateGraphql } from './types';
+import type {
+  TShippingRateRest,
+  TShippingRateGraphql,
+  TShippingRate,
+} from './types';
 import { ShippingRateRest, ShippingRateGraphql, ShippingRate } from './index';
 
-function validateRestModel(model: TShippingRateRest) {
+function validateModel(
+  model: TShippingRateRest | TShippingRateGraphql | TShippingRate
+) {
   expect(model).toEqual(
     expect.objectContaining({
       freeAbove: expect.objectContaining({
@@ -23,33 +29,6 @@ function validateRestModel(model: TShippingRateRest) {
         }),
       ],
       isMatching: expect.any(Boolean),
-    })
-  );
-}
-
-function validateGraphqlModel(model: TShippingRateGraphql) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      freeAbove: expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
-      price: expect.objectContaining({
-        type: 'centPrecision',
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
-      tiers: [
-        expect.objectContaining({
-          isMatching: null,
-          price: null,
-          score: expect.any(Number),
-          priceFunction: null,
-          type: 'CartScore',
-        }),
-      ],
-      isMatching: expect.any(Boolean),
-      __typename: 'ShippingRate',
     })
   );
 }
@@ -58,13 +37,18 @@ describe('ShippingRate model builders', () => {
   it('builds a REST model', () => {
     const restModel = ShippingRateRest.random().build();
 
-    validateRestModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ShippingRateGraphql.random().build();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(graphqlModel);
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        __typename: 'ShippingRate',
+      })
+    );
   });
 });
 
@@ -72,19 +56,24 @@ describe('ShippingRate model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = ShippingRate.random().build();
 
-    validateRestModel(compatModel);
+    validateModel(compatModel);
   });
 
   it('builds a REST model', () => {
     const restModel = ShippingRate.random().buildRest();
 
-    validateRestModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
       ShippingRate.random().buildGraphql<TShippingRateGraphql>();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(graphqlModel);
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        __typename: 'ShippingRate',
+      })
+    );
   });
 });

@@ -11,7 +11,7 @@ const commonFieldsConfig = {
   type: 'CartValue',
   price: fake(() => MoneyRest.random()),
   minimumCentAmount: fake((f) => f.number.int({ min: 1000, max: 5000 })),
-  isMatching: fake((f) => f.datatype.boolean()),
+  isMatching: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartValuePriceTierRest> = {
@@ -24,6 +24,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartValuePriceTierGraphql>
   {
     fields: {
       ...commonFieldsConfig,
-      __typename: 'CartValuePriceTier',
+      __typename: 'ShippingRateCartValuePriceTier',
     },
   };
