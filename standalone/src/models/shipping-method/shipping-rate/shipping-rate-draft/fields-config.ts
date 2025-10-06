@@ -11,8 +11,7 @@ import type {
 const commonFieldsConfig = {
   price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
   freeAbove: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
-  tiers: fake(() => [CartScorePriceTierDraftRest.random()]),
-  isMatching: fake((f) => f.datatype.boolean()),
+  tiers: [],
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TShippingRateDraftRest> = {

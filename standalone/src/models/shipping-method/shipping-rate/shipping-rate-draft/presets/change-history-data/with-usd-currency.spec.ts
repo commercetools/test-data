@@ -14,7 +14,6 @@ describe('With USD Currency preset', () => {
           currencyCode: 'USD',
           centAmount: expect.any(Number),
         }),
-        isMatching: expect.any(Boolean),
       })
     );
   });
@@ -33,7 +32,6 @@ describe('With USD Currency preset', () => {
           currencyCode: 'USD',
           centAmount: expect.any(Number),
         }),
-        isMatching: expect.any(Boolean),
       })
     );
   });
@@ -51,7 +49,6 @@ describe('With USD Currency preset', () => {
           currencyCode: 'USD',
           centAmount: expect.any(Number),
         }),
-        isMatching: expect.any(Boolean),
       })
     );
   });

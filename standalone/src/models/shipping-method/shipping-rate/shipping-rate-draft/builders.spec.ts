@@ -19,19 +19,7 @@ function validateRestModel(model: TShippingRateDraftRest) {
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
       }),
-      tiers: [
-        expect.objectContaining({
-          isMatching: expect.any(Boolean),
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-          priceFunction: null,
-          score: expect.any(Number),
-          type: 'CartScore',
-        }),
-      ],
-      isMatching: expect.any(Boolean),
+      tiers: [],
     })
   );
 }
@@ -47,19 +35,7 @@ function validateGraphqlModel(model: TShippingRateDraftGraphql) {
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
       }),
-      tiers: [
-        expect.objectContaining({
-          isMatching: expect.any(Boolean),
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-          priceFunction: null,
-          score: expect.any(Number),
-          type: 'CartScore',
-        }),
-      ],
-      isMatching: expect.any(Boolean),
+      tiers: [],
     })
   );
 }
