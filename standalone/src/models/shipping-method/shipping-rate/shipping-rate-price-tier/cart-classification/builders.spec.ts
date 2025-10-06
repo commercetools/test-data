@@ -7,7 +7,9 @@ import {
   CartClassificationPriceTierGraphql,
 } from './index';
 
-function validateRestModel(model: TCartClassificationPriceTierRest) {
+function validateModel(
+  model: TCartClassificationPriceTierRest | TCartClassificationPriceTierGraphql
+) {
   expect(model).toEqual(
     expect.objectContaining({
       type: 'CartClassification',
@@ -17,21 +19,6 @@ function validateRestModel(model: TCartClassificationPriceTierRest) {
         currencyCode: expect.any(String),
       }),
       isMatching: expect.any(Boolean),
-    })
-  );
-}
-
-function validateGraphqlModel(model: TCartClassificationPriceTierGraphql) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      type: 'CartClassification',
-      value: expect.any(String),
-      price: expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
-      isMatching: expect.any(Boolean),
-      __typename: 'CartClassificationPriceTier',
     })
   );
 }
@@ -40,13 +27,16 @@ describe('CartClassificationPriceTier model builders', () => {
   it('builds a REST model', () => {
     const restModel = CartClassificationPriceTierDraftRest.random().build();
 
-    validateRestModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = CartClassificationPriceTierGraphql.random().build();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(graphqlModel);
+    expect(graphqlModel.__typename).toBe(
+      'ShippingRateCartClassificationPriceTier'
+    );
   });
 });
 
@@ -54,18 +44,21 @@ describe('CartClassificationPriceTier model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = CartClassificationPriceTierDraftRest.random().build();
 
-    validateRestModel(compatModel);
+    validateModel(compatModel);
   });
 
   it('builds a REST model', () => {
     const restModel = CartClassificationPriceTierDraftRest.random().buildRest();
 
-    validateRestModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = CartClassificationPriceTierGraphql.random().build();
 
-    validateGraphqlModel(graphqlModel);
+    validateModel(graphqlModel);
+    expect(graphqlModel.__typename).toBe(
+      'ShippingRateCartClassificationPriceTier'
+    );
   });
 });

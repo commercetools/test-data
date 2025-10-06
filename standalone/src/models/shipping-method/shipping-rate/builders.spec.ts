@@ -15,11 +15,8 @@ function validateRestModel(model: TShippingRateRest) {
       }),
       tiers: [
         expect.objectContaining({
-          isMatching: expect.any(Boolean),
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
+          isMatching: null,
+          price: null,
           score: expect.any(Number),
           priceFunction: null,
           type: 'CartScore',
@@ -44,11 +41,8 @@ function validateGraphqlModel(model: TShippingRateGraphql) {
       }),
       tiers: [
         expect.objectContaining({
-          isMatching: expect.any(Boolean),
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
+          isMatching: null,
+          price: null,
           score: expect.any(Number),
           priceFunction: null,
           type: 'CartScore',

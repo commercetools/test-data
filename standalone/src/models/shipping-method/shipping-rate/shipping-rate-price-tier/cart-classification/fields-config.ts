@@ -25,6 +25,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartClassificationPriceTie
   {
     fields: {
       ...commonFieldsConfig,
-      __typename: 'CartClassificationPriceTier',
+      __typename: 'ShippingRateCartClassificationPriceTier',
     },
   };

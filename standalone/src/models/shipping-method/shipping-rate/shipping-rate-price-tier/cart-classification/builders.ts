@@ -10,7 +10,7 @@ export const RestModelBuilder: TCartClassificationPriceTierBuilder<
   TCartClassificationPriceTierRest
 > = () =>
   createSpecializedBuilder({
-    name: 'ProductVariantTailoringRestBuilder',
+    name: 'CartClassificationPriceTierRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
@@ -19,7 +19,7 @@ export const GraphqlModelBuilder: TCartClassificationPriceTierBuilder<
   TCartClassificationPriceTierGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'ProductVariantTailoringGraphqlBuilder',
+    name: 'CartClassificationPriceTierGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

@@ -1,5 +1,4 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { MoneyRest } from '@/models/commons';
 import type {
   TCartScorePriceTierGraphql,
   TCartScorePriceTierRest,
@@ -9,10 +8,10 @@ import type {
 
 const commonFieldsConfig = {
   type: 'CartScore',
-  price: fake(() => MoneyRest.random()),
   score: fake((f) => f.number.int({ min: 1, max: 15 })),
-  isMatching: fake((f) => f.datatype.boolean()),
+  price: null,
   priceFunction: null,
+  isMatching: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartScorePriceTierRest> = {
@@ -25,6 +24,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartScorePriceTierGraphql>
   {
     fields: {
       ...commonFieldsConfig,
-      __typename: 'CartScorePriceTier',
+      __typename: 'ShippingRateCartScorePriceTier',
     },
   };
