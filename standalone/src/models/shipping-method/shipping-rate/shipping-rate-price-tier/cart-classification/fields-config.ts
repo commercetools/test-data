@@ -11,7 +11,7 @@ const commonFieldsConfig = {
   type: 'CartClassification',
   price: fake(() => MoneyRest.random()),
   value: fake((f) => f.lorem.word()),
-  isMatching: fake((f) => f.datatype.boolean()),
+  isMatching: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartClassificationPriceTierRest> =

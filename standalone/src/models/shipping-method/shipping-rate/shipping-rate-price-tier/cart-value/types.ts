@@ -5,6 +5,6 @@ import { TCtpShippingRateCartValuePriceTier } from '@/graphql-types';
 export type TCartValuePriceTierRest = CartValueTier;
 export type TCartValuePriceTierGraphql = TCtpShippingRateCartValuePriceTier;
 
-export type TCartValuePriceTierBuilder<
+export type TCreateCartValuePriceTierBuilder<
   TModel extends TCartValuePriceTierRest | TCartValuePriceTierGraphql,
 > = () => TBuilder<TModel>;

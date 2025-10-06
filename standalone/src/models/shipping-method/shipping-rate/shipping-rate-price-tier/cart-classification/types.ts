@@ -6,7 +6,7 @@ export type TCartClassificationPriceTierRest = CartClassificationTier;
 export type TCartClassificationPriceTierGraphql =
   TCtpShippingRateCartClassificationPriceTier;
 
-export type TCartClassificationPriceTierBuilder<
+export type TCreateCartClassificationPriceTierBuilder<
   TModel extends
     | TCartClassificationPriceTierRest
     | TCartClassificationPriceTierGraphql,

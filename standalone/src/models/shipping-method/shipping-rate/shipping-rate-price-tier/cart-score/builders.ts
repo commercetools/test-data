@@ -1,12 +1,12 @@
 import { createSpecializedBuilder } from '@/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TCartScorePriceTierBuilder,
+  TCreateCartScorePriceTierBuilder,
   TCartScorePriceTierGraphql,
   TCartScorePriceTierRest,
 } from './types';
 
-export const RestModelBuilder: TCartScorePriceTierBuilder<
+export const RestModelBuilder: TCreateCartScorePriceTierBuilder<
   TCartScorePriceTierRest
 > = () =>
   createSpecializedBuilder({
@@ -15,7 +15,7 @@ export const RestModelBuilder: TCartScorePriceTierBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCartScorePriceTierBuilder<
+export const GraphqlModelBuilder: TCreateCartScorePriceTierBuilder<
   TCartScorePriceTierGraphql
 > = () =>
   createSpecializedBuilder({

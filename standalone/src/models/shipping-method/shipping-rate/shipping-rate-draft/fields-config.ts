@@ -1,6 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { MoneyDraftRest } from '@/models/commons';
-import { CartScorePriceTierDraftRest } from '../shipping-rate-price-tier/cart-score';
 import type {
   TShippingRateDraftRest,
   TShippingRateDraftGraphql,
@@ -10,7 +9,7 @@ import type {
 
 const commonFieldsConfig = {
   price: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
-  freeAbove: fake(() => MoneyDraftRest.presets.withCurrency('EUR')),
+  freeAbove: null,
   tiers: [],
 };
 

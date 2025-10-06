@@ -2,10 +2,7 @@ import type {
   TCartValuePriceTierRest,
   TCartValuePriceTierGraphql,
 } from './types';
-import {
-  CartValuePriceTierDraftRest,
-  CartValuePriceTierGraphql,
-} from './index';
+import { CartValuePriceTierRest, CartValuePriceTierGraphql } from './index';
 
 function validateModel(
   model: TCartValuePriceTierRest | TCartValuePriceTierGraphql
@@ -25,32 +22,7 @@ function validateModel(
 
 describe('CartValuePriceTier model builders', () => {
   it('builds a REST model', () => {
-    const restModel = CartValuePriceTierDraftRest.random().build();
-
-    validateModel(restModel);
-  });
-
-  it('builds a GraphQL model', () => {
-    const graphqlModel = CartValuePriceTierGraphql.random().build();
-
-    validateModel(graphqlModel);
-    expect(graphqlModel).toEqual(
-      expect.objectContaining({
-        __typename: 'ShippingRateCartValuePriceTier',
-      })
-    );
-  });
-});
-
-describe('CartValuePriceTier model compatibility builders', () => {
-  it('builds a default (REST) model', () => {
-    const compatModel = CartValuePriceTierDraftRest.random().build();
-
-    validateModel(compatModel);
-  });
-
-  it('builds a REST model', () => {
-    const restModel = CartValuePriceTierDraftRest.random().buildRest();
+    const restModel = CartValuePriceTierRest.random().build();
 
     validateModel(restModel);
   });

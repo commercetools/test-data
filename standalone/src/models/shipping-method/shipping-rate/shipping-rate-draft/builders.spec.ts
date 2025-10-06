@@ -14,10 +14,7 @@ function validateModel(
 ) {
   expect(model).toEqual(
     expect.objectContaining({
-      freeAbove: expect.objectContaining({
-        centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
-      }),
+      freeAbove: null,
       price: expect.objectContaining({
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
