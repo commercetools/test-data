@@ -2,30 +2,28 @@
 '@commercetools/composable-commerce-test-data': patch
 ---
 
-## Migrated Zone Rate Model
+We've migrated the `ZoneRate` model to the new implementation patterns.
 
-The zone rate models have been migrated to the new model structure:
+This change does not have any impact on consumers, however the `ZoneRate` model is now deprecated and you're expected to start using the `ZoneRateGraphql` or `ZoneRateRest` models instead depending of the type of API you're mocking.
 
 ```ts
 import {
-  ZoneRateRest,
   ZoneRateGraphql,
+  ZoneRateRest,
 } from '@commercetools/composable-commerce-test-data/shipping-method';
 
-const restZoneRate = ZoneRateRest.random().build();
 const graphqlZoneRate = ZoneRateGraphql.random().build();
+const restZoneRate = ZoneRateRest.random().build();
 ```
 
-## Migrated Zone Rate Draft Model
-
-The zone rate draft models have been migrated with preset support:
+We've also migrated the `ZoneRateDraft` model with enhanced preset support:
 
 ```ts
 import {
-  ZoneRateDraftRest,
   ZoneRateDraftGraphql,
+  ZoneRateDraftRest,
 } from '@commercetools/composable-commerce-test-data/shipping-method';
 
-const restDraft = ZoneRateDraftRest.random().build();
 const graphqlDraft = ZoneRateDraftGraphql.random().build();
+const restDraft = ZoneRateDraftRest.random().build();
 ```

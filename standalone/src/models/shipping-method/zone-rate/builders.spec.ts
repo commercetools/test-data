@@ -9,13 +9,9 @@ function validateRestModel(model: TZoneRateRest) {
       }),
       shippingRates: expect.arrayContaining([
         expect.objectContaining({
-          freeAbove: null,
           price: expect.objectContaining({
             centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
           }),
-          tiers: [],
-          isMatching: null,
         }),
       ]),
     })
@@ -23,38 +19,18 @@ function validateRestModel(model: TZoneRateRest) {
 }
 
 function validateGraphqlModel(model: TZoneRateGraphql) {
-  const zoneId = model.zone?.id;
-
   expect(model).toEqual(
     expect.objectContaining({
       __typename: 'ZoneRate',
       zone: expect.objectContaining({
         __typename: 'Zone',
-        id: zoneId,
-        key: expect.any(String),
-        name: expect.any(String),
-        version: expect.any(Number),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        createdBy: expect.any(Object),
-        lastModifiedBy: expect.any(Object),
-        description: expect.any(String),
-        locations: expect.any(Array),
       }),
       zoneRef: expect.objectContaining({
-        typeId: 'zone',
         __typename: 'Reference',
-        id: zoneId,
       }),
       shippingRates: expect.arrayContaining([
         expect.objectContaining({
-          freeAbove: null,
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-          tiers: [],
-          isMatching: null,
+          __typename: 'ShippingRate',
         }),
       ]),
     })

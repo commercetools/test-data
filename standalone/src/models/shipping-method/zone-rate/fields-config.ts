@@ -5,23 +5,21 @@ import {
   TReferenceGraphql,
 } from '@/models/commons';
 import { Zone } from '@/models/zone';
-import { ShippingRateRest } from '../shipping-rate';
+import { ShippingRateGraphql, ShippingRateRest } from '../shipping-rate';
 import type { TZoneRateRest, TZoneRateGraphql } from './types';
 
-const commonFieldsConfig = {
-  shippingRates: fake(() => [ShippingRateRest.random()]),
-};
+// https://docs.commercetools.com/api/projects/shippingMethods#zonerate
 
 export const restFieldsConfig: TModelFieldsConfig<TZoneRateRest> = {
   fields: {
-    ...commonFieldsConfig,
+    shippingRates: fake(() => [ShippingRateRest.random()]),
     zone: fake(() => KeyReference.random().typeId('zone')),
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TZoneRateGraphql> = {
   fields: {
-    ...commonFieldsConfig,
+    shippingRates: fake(() => [ShippingRateGraphql.random()]),
     __typename: 'ZoneRate',
     zone: fake(() => Zone.random()),
     zoneRef: null,
