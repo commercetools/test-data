@@ -16,7 +16,9 @@ const graphqlZoneRate = ZoneRateGraphql.random().build();
 const restZoneRate = ZoneRateRest.random().build();
 ```
 
-We've also migrated the `ZoneRateDraft` model with enhanced preset support:
+We've migrated the `ZoneRateDraft` model to the new implementation patterns.
+
+This change does not have any impact on consumers, however the `ZoneRateDraft` model is now deprecated and you're expected to start using the `ZoneRateDraftGraphql` or `ZoneRateDraftRest` models instead depending of the type of API you're mocking.
 
 ```ts
 import {
