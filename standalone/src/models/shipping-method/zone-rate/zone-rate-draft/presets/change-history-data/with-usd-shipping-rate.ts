@@ -1,6 +1,15 @@
 import type { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
-import { ShippingRateDraftRest } from '../../../../shipping-rate/shipping-rate-draft';
+import {
+  ShippingRateDraftRest,
+  ShippingRateDraftGraphql,
+  ShippingRateDraft,
+} from '../../../../shipping-rate/shipping-rate-draft';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+  TShippingRateDraft,
+} from '../../../../shipping-rate/types';
 import type {
   TZoneRateDraft,
   TZoneRateDraftGraphql,
@@ -18,20 +27,32 @@ import {
 const populatePreset = <
   TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest | TZoneRateDraft,
 >(
-  builder: TBuilder<TModel>
+  builder: TBuilder<TModel>,
+  shippingRateBuilder: TModel extends TZoneRateDraftGraphql
+    ? TBuilder<TShippingRateDraftGraphql>
+    : TModel extends TZoneRateDraftRest
+      ? TBuilder<TShippingRateDraftRest>
+      : TBuilder<TShippingRateDraft>
 ) => {
   return builder
     .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
-    .shippingRates([
-      ShippingRateDraftRest.presets.changeHistoryData.withUsdCurrency(),
-    ]);
+    .shippingRates([shippingRateBuilder.build()]);
 };
 
 export const restPreset = (): TBuilder<TZoneRateDraftRest> =>
-  populatePreset(RestModelBuilder());
+  populatePreset(
+    RestModelBuilder(),
+    ShippingRateDraftRest.presets.changeHistoryData.withUsdCurrency()
+  );
 
 export const graphqlPreset = (): TBuilder<TZoneRateDraftGraphql> =>
-  populatePreset(GraphqlModelBuilder());
+  populatePreset(
+    GraphqlModelBuilder(),
+    ShippingRateDraftGraphql.presets.changeHistoryData.withUsdCurrency()
+  );
 
 export const compatPreset = (): TBuilder<TZoneRateDraft> =>
-  populatePreset(CompatModelBuilder());
+  populatePreset(
+    CompatModelBuilder(),
+    ShippingRateDraft.presets.changeHistoryData.withUsdCurrency()
+  );
