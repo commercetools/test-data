@@ -1,6 +1,6 @@
 import { fake, Generator } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
-import * as ShippingRateDraft from '../../shipping-rate/shipping-rate-draft';
+import { ShippingRateDraft } from '../../shipping-rate/shipping-rate-draft';
 import { TZoneRateDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#zoneratedraft

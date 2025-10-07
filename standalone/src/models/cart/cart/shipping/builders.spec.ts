@@ -35,8 +35,17 @@ const validateRestModel = (model: TShippingRest) => {
         shippingRate: expect.objectContaining({
           price: expect.objectContaining({
             type: 'centPrecision',
+            centAmount: expect.any(Number),
+            currencyCode: expect.any(String),
           }),
         }),
+        deliveries: expect.any(Array),
+        discountedPrice: null,
+        shippingMethod: null,
+        shippingMethodState: expect.any(String),
+        taxCategory: null,
+        taxRate: null,
+        taxedPrice: null,
       }),
       shippingRateInput: null,
       shippingCustomFields: null,

@@ -1,23 +1,43 @@
-import { TShippingRateDraft } from '../../../types';
-import usdCurrency from './with-usd-currency';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+} from '../../../types';
+import { restPreset, graphqlPreset, compatPreset } from './with-usd-currency';
 
-describe('Shipping rate with the MoneyDraft `USD` currencyCode preset', () => {
-  it('should return the currencyCode of `USD`', () => {
-    const shippingRateWithUsdCurrencyMoneyPreset =
-      usdCurrency().build<TShippingRateDraft>();
+function validateModel(
+  model: TShippingRateDraftRest | TShippingRateDraftGraphql
+) {
+  expect(model).toEqual(
+    expect.objectContaining({
+      price: expect.objectContaining({
+        currencyCode: 'USD',
+        centAmount: expect.any(Number),
+      }),
+      freeAbove: expect.objectContaining({
+        currencyCode: 'USD',
+        centAmount: expect.any(Number),
+      }),
+      tiers: [],
+    })
+  );
+}
 
-    expect(shippingRateWithUsdCurrencyMoneyPreset).toEqual(
-      expect.objectContaining({
-        tiers: [],
-        price: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-        freeAbove: expect.objectContaining({
-          currencyCode: 'USD',
-          centAmount: expect.any(Number),
-        }),
-      })
-    );
+describe('With USD Currency preset', () => {
+  it('[REST] should set all specified fields correctly', () => {
+    const restModel = restPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('[GraphQL] should set all specified fields correctly', () => {
+    const graphqlModel = graphqlPreset().build();
+
+    validateModel(graphqlModel);
+  });
+
+  it('[Compat] should set all specified fields correctly', () => {
+    const compatModel = compatPreset().build();
+
+    validateModel(compatModel);
   });
 });

@@ -1,5 +1,5 @@
 import { KeyReferenceDraft } from '@/models/commons';
-import { ShippingRateDraft } from '../../../../shipping-rate';
+import { ShippingRateDraft } from '../../../../shipping-rate/shipping-rate-draft';
 import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';
 
@@ -9,6 +9,8 @@ import * as ZoneRateDraft from '../../index';
 const usZone = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
-    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usdCurrency()]);
+    .shippingRates([
+      ShippingRateDraft.presets.changeHistoryData.withUsdCurrency(),
+    ]);
 
 export default usZone;
