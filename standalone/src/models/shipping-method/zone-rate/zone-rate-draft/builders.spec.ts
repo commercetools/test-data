@@ -1,4 +1,4 @@
-import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from './types';
+import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from '../types';
 import {
   ZoneRateDraftRest,
   ZoneRateDraftGraphql,
@@ -13,14 +13,12 @@ function validateRestModel(model: TZoneRateDraftRest) {
       }),
       shippingRates: expect.arrayContaining([
         expect.objectContaining({
-          freeAbove: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
+          freeAbove: null,
           price: expect.objectContaining({
             centAmount: expect.any(Number),
             currencyCode: expect.any(String),
           }),
+          tiers: [],
         }),
       ]),
     })
@@ -35,14 +33,12 @@ function validateGraphqlModel(model: TZoneRateDraftGraphql) {
       }),
       shippingRates: expect.arrayContaining([
         expect.objectContaining({
-          freeAbove: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
+          freeAbove: null,
           price: expect.objectContaining({
             centAmount: expect.any(Number),
             currencyCode: expect.any(String),
           }),
+          tiers: [],
         }),
       ]),
     })

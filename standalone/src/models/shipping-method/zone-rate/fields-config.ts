@@ -4,17 +4,18 @@ import {
   ReferenceGraphql,
   TReferenceGraphql,
 } from '@/models/commons';
+import { Zone } from '@/models/zone';
 import { ShippingRateRest } from '../shipping-rate';
 import type { TZoneRateRest, TZoneRateGraphql } from './types';
 
 const commonFieldsConfig = {
-  zone: fake(() => KeyReference.random().typeId('zone')),
   shippingRates: fake(() => [ShippingRateRest.random()]),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TZoneRateRest> = {
   fields: {
     ...commonFieldsConfig,
+    zone: fake(() => KeyReference.random().typeId('zone')),
   },
 };
 
@@ -22,6 +23,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TZoneRateGraphql> = {
   fields: {
     ...commonFieldsConfig,
     __typename: 'ZoneRate',
+    zone: fake(() => Zone.random()),
     zoneRef: null,
   },
   postBuild: (model) => {
