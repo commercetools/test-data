@@ -1,5 +1,110 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.8.0
+
+### Minor Changes
+
+- [#968](https://github.com/commercetools/test-data/pull/968) [`1561155`](https://github.com/commercetools/test-data/commit/15611556262c82017751417fbf7cfdf02364acfa) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Introduces the attribute-group-draft model and an empty preset; and the attribute-reference, which is used internally by attribute-group-draft.
+
+  ```ts
+  import {
+    AttributeGroupDraftGraphql,
+    AttributeGroupDraftRest,
+  } from '@commercetools/composable-commerce-test-data/attribute-group';
+
+  const graphqlModel = AttributeGroupDraftGraphql.random().build();
+
+  const restModel = AttributeGroupDraftRest.random().build();
+
+  // empty preset
+  const emptyGraphqlModel = AttributeGroupDraftGraphql.presets.empty().build();
+
+  const emptyRestModel = AttributeGroupDraftRest.presets.empty().build();
+  ```
+
+- [#967](https://github.com/commercetools/test-data/pull/967) [`0052689`](https://github.com/commercetools/test-data/commit/00526899a3c0d5af14885b61ccb20038e7982509) Thanks [@nima-ct](https://github.com/nima-ct)! - ## New Shipping Rate Price Tier Models
+
+  We're introducing new shipping rate price tier models that provide support for mocking different types of shipping rate pricing tiers:
+
+  ```ts
+  import {
+    CartClassificationPriceTierDraftRest,
+    CartValuePriceTierDraftRest,
+    CartScorePriceTierDraftRest,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const cartClassificationTier =
+    CartClassificationPriceTierDraftRest.random().build();
+  const cartValueTier = CartValuePriceTierDraftRest.random().build();
+  const cartScoreTier = CartScorePriceTierDraftRest.random().build();
+  ```
+
+  ```ts
+  import {
+    CartClassificationPriceTierGraphql,
+    CartValuePriceTierGraphql,
+    CartScorePriceTierGraphql,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const cartClassificationTier =
+    CartClassificationPriceTierGraphql.random().build();
+  const cartValueTier = CartValuePriceTierGraphql.random().build();
+  const cartScoreTier = CartScorePriceTierGraphql.random().build();
+  ```
+
+  ## Migrated Shipping Rate Model
+
+  The shipping rate models have been migrated to the new model structure:
+
+  ```ts
+  import {
+    ShippingRateRest,
+    ShippingRateGraphql,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const restShippingRate = ShippingRateRest.random().build();
+  const graphqlShippingRate = ShippingRateGraphql.random().build();
+  ```
+
+  ## Migrated Shipping Rate Draft Model
+
+  The shipping rate draft models have been migrated with enhanced preset support:
+
+  ```ts
+  import {
+    ShippingRateDraftRest,
+    ShippingRateDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const restDraft = ShippingRateDraftRest.random().build();
+  const graphqlDraft = ShippingRateDraftGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#962](https://github.com/commercetools/test-data/pull/962) [`572ac19`](https://github.com/commercetools/test-data/commit/572ac197132e82c79b77b048ca4132402ff69631) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Updated the way constants are exported for the `ProductSelection` models.
+
+  We were exporting them independently but we usually add them as part of the models instead.
+
+  ```ts
+  // BEFORE
+  import {
+    ProductSelectionGraphql,
+    productSelectionMode as productSelectionModeConstants,
+  } from '@commercetools/composable-commerce-test-data/product-selection';
+
+  const productSelectionDraftInclusion = ProductSelectionGraphql.random()
+    .mode(productSelectionModeConstants.Individual)
+    .build();
+
+  // AFTER
+  import { ProductSelectionGraphql } from '@commercetools/composable-commerce-test-data/product-selection';
+
+  const productSelectionDraftInclusion = ProductSelectionGraphql.random()
+    .mode(ProductSelectionGraphql.constants.productSelectionMode.Individual)
+    .build();
+  ```
+
 ## 13.7.1
 
 ### Patch Changes
