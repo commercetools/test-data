@@ -20,35 +20,12 @@ const commonFieldsConfig = {
   version: sequence(),
 };
 
-// readonly attributes: AttributeReference[];
-// readonly createdAt: string;
-// readonly createdBy?: CreatedBy;
-// readonly description?: LocalizedString;
-// readonly id: string;
-// readonly key?: string;
-// readonly lastModifiedAt: string;
-// readonly lastModifiedBy?: LastModifiedBy;
-// readonly name: LocalizedString;
-// readonly version: number;
 export const restFieldsConfig: TModelFieldsConfig<TAttributeGroupRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-// __typename?: 'AttributeGroup';
-// attributes: Array<TCtpAttributeReference>;
-// createdAt: Scalars['DateTime']['output'];
-// createdBy?: Maybe<TCtpInitiator>;
-// description?: Maybe<Scalars['String']['output']>;
-// descriptionAllLocales?: Maybe<Array<TCtpLocalizedString>>;
-// id: Scalars['String']['output'];
-// key?: Maybe<Scalars['String']['output']>;
-// lastModifiedAt: Scalars['DateTime']['output'];
-// lastModifiedBy?: Maybe<TCtpInitiator>;
-// name?: Maybe<Scalars['String']['output']>;
-// nameAllLocales: Array<TCtpLocalizedString>;
-// version: Scalars['Long']['output'];
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeGroupGraphql> = {
   fields: {
     ...commonFieldsConfig,
