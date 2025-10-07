@@ -3,7 +3,7 @@ import { LocalizedStringDraft } from '@/models/commons';
 import {
   AttributeReferenceRest,
   AttributeReferenceGraphql,
-} from '../attribute-reference';
+} from '../../attribute-reference';
 import type {
   TAttributeGroupDraftGraphql,
   TAttributeGroupDraftRest,
