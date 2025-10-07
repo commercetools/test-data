@@ -5,3 +5,4 @@ export * as presets from './presets';
 export * from './types';
 
 export * from './attribute-group-draft';
+export * from './attribute-reference';

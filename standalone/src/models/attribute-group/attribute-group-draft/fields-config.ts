@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { LocalizedString } from '@/models/commons';
+import { LocalizedStringDraft } from '@/models/commons';
 import {
   AttributeReferenceRest,
   AttributeReferenceGraphql,
@@ -14,7 +14,7 @@ import type {
 const commonFieldsConfig = {
   key: null,
   description: null,
-  name: fake(() => LocalizedString.random()),
+  name: fake(() => LocalizedStringDraft.random()),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TAttributeGroupDraftRest> = {
