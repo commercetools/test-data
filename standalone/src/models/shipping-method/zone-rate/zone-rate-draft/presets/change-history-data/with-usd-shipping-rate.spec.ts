@@ -3,9 +3,13 @@ import type {
   TZoneRateDraftGraphql,
   TZoneRateDraftRest,
 } from '../../../types';
-import * as usZone from './with-usd-shipping-rate';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-usd-shipping-rate';
 
-const validateUsZonePreset = (
+const validateModel = (
   usZoneWithUsdShippingRate:
     | TZoneRateDraft
     | TZoneRateDraftGraphql
@@ -36,17 +40,17 @@ const validateUsZonePreset = (
 
 describe('Zone rate with `USD` shippingRate & e2e key preset', () => {
   it('should return the currencyCode: `USD` & key: `e2e-us-zone` for REST model', () => {
-    const usZoneWithUsdShippingRate = usZone.restPreset().build();
-    validateUsZonePreset(usZoneWithUsdShippingRate);
+    const usZoneWithUsdShippingRate = restPreset().build();
+    validateModel(usZoneWithUsdShippingRate);
   });
 
   it('should return the currencyCode: `USD` & key: `e2e-us-zone` for GraphQL model', () => {
-    const usZoneWithUsdShippingRate = usZone.graphqlPreset().build();
-    validateUsZonePreset(usZoneWithUsdShippingRate);
+    const usZoneWithUsdShippingRate = graphqlPreset().build();
+    validateModel(usZoneWithUsdShippingRate);
   });
 
   it('should return the currencyCode: `USD` & key: `e2e-us-zone` for compatibility model', () => {
-    const usZoneWithUsdShippingRate = usZone.compatPreset().build();
-    validateUsZonePreset(usZoneWithUsdShippingRate);
+    const usZoneWithUsdShippingRate = compatPreset().build();
+    validateModel(usZoneWithUsdShippingRate);
   });
 });

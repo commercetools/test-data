@@ -1,12 +1,16 @@
-import type { TZoneRateDraftRest, TZoneRateDraftGraphql } from '../types';
+import type {
+  TZoneRateDraftRest,
+  TZoneRateDraftGraphql,
+  TZoneRateDraft,
+} from '../types';
 import {
   ZoneRateDraftRest,
   ZoneRateDraftGraphql,
   ZoneRateDraft,
 } from './index';
 
-function validateZoneRateModel(
-  model: TZoneRateDraftRest | TZoneRateDraftGraphql
+function validateModel(
+  model: TZoneRateDraftRest | TZoneRateDraftGraphql | TZoneRateDraft
 ) {
   expect(model).toEqual(
     expect.objectContaining({
@@ -31,13 +35,13 @@ describe('ZoneRateDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = ZoneRateDraftRest.random().build();
 
-    validateZoneRateModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ZoneRateDraftGraphql.random().build();
 
-    validateZoneRateModel(graphqlModel);
+    validateModel(graphqlModel);
   });
 });
 
@@ -45,19 +49,19 @@ describe('ZoneRateDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = ZoneRateDraft.random().build();
 
-    validateZoneRateModel(compatModel);
+    validateModel(compatModel);
   });
 
   it('builds a REST model', () => {
     const restModel = ZoneRateDraft.random().buildRest();
 
-    validateZoneRateModel(restModel);
+    validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
       ZoneRateDraft.random().buildGraphql<TZoneRateDraftGraphql>();
 
-    validateZoneRateModel(graphqlModel);
+    validateModel(graphqlModel);
   });
 });

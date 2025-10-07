@@ -15,8 +15,8 @@ import {
 // zone with key'e2e-us-zone' will always be set in the project under test
 //{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
 
-const populateUsZonePreset = <
-  TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest,
+const populatePreset = <
+  TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest | TZoneRateDraft,
 >(
   builder: TBuilder<TModel>
 ) => {
@@ -28,10 +28,10 @@ const populateUsZonePreset = <
 };
 
 export const restPreset = (): TBuilder<TZoneRateDraftRest> =>
-  populateUsZonePreset(RestModelBuilder());
+  populatePreset(RestModelBuilder());
 
 export const graphqlPreset = (): TBuilder<TZoneRateDraftGraphql> =>
-  populateUsZonePreset(GraphqlModelBuilder());
+  populatePreset(GraphqlModelBuilder());
 
 export const compatPreset = (): TBuilder<TZoneRateDraft> =>
-  populateUsZonePreset(CompatModelBuilder());
+  populatePreset(CompatModelBuilder());
