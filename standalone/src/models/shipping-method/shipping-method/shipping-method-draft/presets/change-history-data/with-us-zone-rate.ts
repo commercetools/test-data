@@ -1,4 +1,4 @@
-import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
+import { ZoneRateDraft } from '../../../../zone-rate/zone-rate-draft';
 import * as ShippingMethodDraft from '../../../shipping-method-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
 

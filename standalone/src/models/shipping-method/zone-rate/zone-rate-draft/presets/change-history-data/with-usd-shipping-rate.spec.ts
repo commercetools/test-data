@@ -2,7 +2,7 @@ import type {
   TZoneRateDraft,
   TZoneRateDraftGraphql,
   TZoneRateDraftRest,
-} from '../../types';
+} from '../../../types';
 import * as usZone from './with-usd-shipping-rate';
 
 const validateUsZonePreset = (
