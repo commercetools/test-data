@@ -31,7 +31,7 @@ The key items could be:
 
 Here we list some example for some common use cases.
 
-### If your adding a new test data model
+### If you are adding a new test data model
 
 #### Basic use case:
 
