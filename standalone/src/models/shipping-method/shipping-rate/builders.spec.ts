@@ -33,11 +33,7 @@ describe('ShippingRate model builders', () => {
     const graphqlModel = ShippingRateGraphql.random().build();
 
     validateModel(graphqlModel);
-    expect(graphqlModel).toEqual(
-      expect.objectContaining({
-        __typename: 'ShippingRate',
-      })
-    );
+    expect(graphqlModel.__typename).toEqual('ShippingRate');
   });
 });
 
@@ -59,10 +55,6 @@ describe('ShippingRate model compatibility builders', () => {
       ShippingRate.random().buildGraphql<TShippingRateGraphql>();
 
     validateModel(graphqlModel);
-    expect(graphqlModel).toEqual(
-      expect.objectContaining({
-        __typename: 'ShippingRate',
-      })
-    );
+    expect(graphqlModel.__typename).toEqual('ShippingRate');
   });
 });

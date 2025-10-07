@@ -29,10 +29,6 @@ describe('CartScorePriceTier model builders', () => {
     const graphqlModel = CartScorePriceTierGraphql.random().build();
 
     validateModel(graphqlModel);
-    expect(graphqlModel).toEqual(
-      expect.objectContaining({
-        __typename: 'ShippingRateCartScorePriceTier',
-      })
-    );
+    expect(graphqlModel.__typename).toEqual('ShippingRateCartScorePriceTier');
   });
 });
