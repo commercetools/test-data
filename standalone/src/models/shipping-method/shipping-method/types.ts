@@ -1,29 +1,31 @@
 import type {
   ShippingMethod,
   ShippingMethodDraft,
-  TaxCategory,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import {
-  TLocalizedStringGraphql,
-  type TReferenceGraphql,
-} from '@/models/commons';
+import type {
+  TCtpShippingMethod,
+  TCtpShippingMethodDraft,
+} from '@/graphql-types';
 
-export type TShippingMethod = ShippingMethod & { taxCategory: TaxCategory };
+/**
+ * @deprecated use `TShippingMethodRest` or `TShippingMethodGraphql` instead
+ */
+export type TShippingMethod = ShippingMethod;
 export type TShippingMethodRest = ShippingMethod;
-export type TShippingMethodGraphql = TShippingMethod & {
-  taxCategoryRef: TReferenceGraphql;
-  localizedNameAllLocales: TLocalizedStringGraphql | null;
-  localizedDescriptionAllLocales: TLocalizedStringGraphql | null;
-  __typename: 'ShippingMethod';
-};
+export type TShippingMethodGraphql = TCtpShippingMethod;
 
+/**
+ * @deprecated use `TShippingMethodDraftRest` or `TShippingMethodDraftGraphql` instead
+ */
 export type TShippingMethodDraft = ShippingMethodDraft;
-export type TShippingMethodDraftGraphql = TShippingMethodDraft;
+export type TShippingMethodDraftRest = ShippingMethodDraft;
+export type TShippingMethodDraftGraphql = TCtpShippingMethodDraft;
 
-export type TShippingMethodBuilder = TBuilder<TShippingMethod>;
-export type TShippingMethodDraftBuilder = TBuilder<TShippingMethodDraft>;
-
-export type TCreateShippingMethodBuilder = () => TShippingMethodBuilder;
-export type TCreateShippingMethodDraftBuilder =
-  () => TShippingMethodDraftBuilder;
+export type TCreateShippingMethodBuilder<
+  TShippingMethodModel extends
+    | TShippingMethodRest
+    | TShippingMethodGraphql
+    | TShippingMethodDraftRest
+    | TShippingMethodDraftGraphql,
+> = () => TBuilder<TShippingMethodModel>;

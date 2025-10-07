@@ -1,13 +1,34 @@
-import { ZoneRateDraft } from '../../../../zone-rate/zone-rate-draft';
-import * as ShippingMethodDraft from '../../../shipping-method-draft';
-import type { TShippingMethodDraftBuilder } from '../../../types';
+import type { TBuilder } from '@/core';
+import { ZoneRateDraftRest } from '../../../../zone-rate/zone-rate-draft';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
+import type {
+  TShippingMethodDraft,
+  TShippingMethodDraftGraphql,
+  TShippingMethodDraftRest,
+} from '../../types';
 
 //default(false) as more than one default method will lead to an error
 
-const withUsZoneRate = (): TShippingMethodDraftBuilder =>
-  ShippingMethodDraft.random()
+const populateWithUsZoneRatePreset = <
+  TModel extends TShippingMethodDraftGraphql | TShippingMethodDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .taxCategory(null!)
-    .zoneRates([ZoneRateDraft.presets.changeHistoryData.usZone()])
+    .zoneRates([ZoneRateDraftRest.presets.changeHistoryData.usZone()])
     .isDefault(false);
+};
 
-export default withUsZoneRate;
+export const restPreset = (): TBuilder<TShippingMethodDraftRest> =>
+  populateWithUsZoneRatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TShippingMethodDraftGraphql> =>
+  populateWithUsZoneRatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TShippingMethodDraft> =>
+  populateWithUsZoneRatePreset(CompatModelBuilder());

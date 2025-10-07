@@ -1,7 +1,13 @@
-import withUsZoneRate from './with-us-zone-rate';
+import * as withUsZoneRate from './with-us-zone-rate';
 
-const presets = {
-  withUsZoneRate,
+export const restPresets = {
+  withUsZoneRate: withUsZoneRate.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withUsZoneRate: withUsZoneRate.graphqlPreset,
+};
+
+export const compatPresets = {
+  withUsZoneRate: withUsZoneRate.compatPreset,
+};
