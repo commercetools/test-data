@@ -5,27 +5,9 @@ import {
   ZoneRateDraft,
 } from './index';
 
-function validateRestModel(model: TZoneRateDraftRest) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      zone: expect.objectContaining({
-        typeId: 'zone',
-      }),
-      shippingRates: expect.arrayContaining([
-        expect.objectContaining({
-          freeAbove: null,
-          price: expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-          tiers: [],
-        }),
-      ]),
-    })
-  );
-}
-
-function validateGraphqlModel(model: TZoneRateDraftGraphql) {
+function validateZoneRateModel(
+  model: TZoneRateDraftRest | TZoneRateDraftGraphql
+) {
   expect(model).toEqual(
     expect.objectContaining({
       zone: expect.objectContaining({
@@ -49,13 +31,13 @@ describe('ZoneRateDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = ZoneRateDraftRest.random().build();
 
-    validateRestModel(restModel);
+    validateZoneRateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ZoneRateDraftGraphql.random().build();
 
-    validateGraphqlModel(graphqlModel);
+    validateZoneRateModel(graphqlModel);
   });
 });
 
@@ -63,19 +45,19 @@ describe('ZoneRateDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = ZoneRateDraft.random().build();
 
-    validateRestModel(compatModel);
+    validateZoneRateModel(compatModel);
   });
 
   it('builds a REST model', () => {
     const restModel = ZoneRateDraft.random().buildRest();
 
-    validateRestModel(restModel);
+    validateZoneRateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
       ZoneRateDraft.random().buildGraphql<TZoneRateDraftGraphql>();
 
-    validateGraphqlModel(graphqlModel);
+    validateZoneRateModel(graphqlModel);
   });
 });
