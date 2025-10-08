@@ -1,131 +1,108 @@
-import type { TShippingMethodRest, TShippingMethodGraphql } from './types';
+import { TBuilder } from '@/core';
+import { LocalizedString } from '@/models/commons';
+import type { TShippingMethodGraphql } from './types';
 import {
   ShippingMethodRest,
   ShippingMethodGraphql,
   ShippingMethod,
 } from './index';
 
-function validateRestModel(model: TShippingMethodRest) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      id: expect.any(String),
-      version: expect.any(Number),
-      key: expect.any(String),
-      name: expect.any(String),
-      localizedName: expect.objectContaining({
-        en: expect.any(String),
-      }),
-      localizedDescription: expect.objectContaining({
-        en: expect.any(String),
-      }),
-      taxCategory: expect.objectContaining({
-        id: expect.any(String),
-      }),
-      zoneRates: expect.any(Array),
-      isDefault: expect.any(Boolean),
-      predicate: expect.any(String),
-      active: false,
-      custom: null,
-      createdAt: expect.any(String),
-      createdBy: expect.objectContaining({
-        customer: expect.objectContaining({ typeId: 'customer' }),
-      }),
-      lastModifiedAt: expect.any(String),
-      lastModifiedBy: expect.objectContaining({
-        customer: expect.objectContaining({ typeId: 'customer' }),
-      }),
-    })
-  );
-}
-
-function validateGraphqlModel(model: TShippingMethodGraphql) {
-  expect(model).toEqual(
-    expect.objectContaining({
-      __typename: 'ShippingMethod',
-      id: expect.any(String),
-      version: expect.any(Number),
-      key: expect.any(String),
-      name: expect.any(String),
-      localizedName: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      localizedDescription: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      localizedNameAllLocales: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      localizedDescriptionAllLocales: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'LocalizedString',
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      taxCategory: expect.objectContaining({
-        id: expect.any(String),
-        typeId: 'tax-category',
-      }),
-      taxCategoryRef: expect.objectContaining({
-        id: expect.any(String),
-        typeId: 'tax-category',
-      }),
-      zoneRates: expect.any(Array),
-      isDefault: expect.any(Boolean),
-      predicate: expect.any(String),
-      active: false,
-      custom: null,
-      createdAt: expect.any(String),
-      createdBy: expect.objectContaining({
-        __typename: 'Initiator',
-        customerRef: expect.objectContaining({
-          typeId: 'customer',
-          __typename: 'Reference',
-        }),
-        userRef: expect.objectContaining({
-          typeId: 'user',
-          __typename: 'Reference',
-        }),
-      }),
-      lastModifiedAt: expect.any(String),
-      lastModifiedBy: expect.objectContaining({
-        __typename: 'Initiator',
-        customerRef: expect.objectContaining({
-          typeId: 'customer',
-          __typename: 'Reference',
-        }),
-        userRef: expect.objectContaining({
-          typeId: 'user',
-          __typename: 'Reference',
-        }),
-      }),
-    })
-  );
-}
-
 describe('ShippingMethod model builders', () => {
-  it('builds a REST model', () => {
-    const restModel = ShippingMethodRest.random().build();
+  it('should build properties for the REST representation', () => {
+    const restModel = ShippingMethodRest.random()
+      .localizedName(LocalizedString.random())
+      .localizedDescription(LocalizedString.random())
+      .build();
 
-    validateRestModel(restModel);
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: null,
+        name: expect.any(String),
+        description: null,
+        localizedName: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        localizedDescription: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        taxCategory: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'tax-category',
+        }),
+        zoneRates: expect.any(Array),
+        isDefault: expect.any(Boolean),
+        predicate: null,
+        active: false,
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+      })
+    );
   });
 
-  it('builds a GraphQL model', () => {
-    const graphqlModel = ShippingMethodGraphql.random().build();
+  it('should build properties for the GraphQL representation', () => {
+    const graphqlModel = ShippingMethodGraphql.random()
+      .localizedNameAllLocales(LocalizedString.random())
+      .localizedDescriptionAllLocales(LocalizedString.random())
+      .build();
 
-    validateGraphqlModel(graphqlModel);
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        __typename: 'ShippingMethod',
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: null,
+        name: expect.any(String),
+        description: null,
+        localizedName: expect.any(String),
+        localizedDescription: expect.any(String),
+        localizedNameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        localizedDescriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        taxCategory: expect.objectContaining({
+          __typename: 'TaxCategory',
+        }),
+        taxCategoryRef: expect.objectContaining({
+          typeId: 'tax-category',
+        }),
+        zoneRates: expect.any(Array),
+        isDefault: expect.any(Boolean),
+        predicate: null,
+        active: false,
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          __typename: 'Initiator',
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          __typename: 'Initiator',
+        }),
+      })
+    );
   });
 });
 
@@ -133,19 +110,119 @@ describe('ShippingMethod model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const model = ShippingMethod.random().build();
 
-    validateRestModel(model);
+    expect(model).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: null,
+        name: expect.any(String),
+        description: null,
+        localizedName: null,
+        localizedDescription: null,
+        taxCategory: expect.objectContaining({
+          typeId: 'tax-category',
+        }),
+        zoneRates: expect.any(Array),
+        isDefault: expect.any(Boolean),
+        predicate: null,
+        active: false,
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+      })
+    );
   });
 
   it('builds a REST model', () => {
     const restModel = ShippingMethod.random().buildRest();
 
-    validateRestModel(restModel);
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: null,
+        name: expect.any(String),
+        description: null,
+        localizedName: null,
+        localizedDescription: null,
+        taxCategory: expect.objectContaining({
+          typeId: 'tax-category',
+        }),
+        zoneRates: expect.any(Array),
+        isDefault: expect.any(Boolean),
+        predicate: null,
+        active: false,
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          anonymousId: expect.any(String),
+        }),
+      })
+    );
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel =
-      ShippingMethod.random().buildGraphql<TShippingMethodGraphql>();
+    const graphqlModel = (
+      ShippingMethod.random() as TBuilder<TShippingMethodGraphql>
+    )
+      .localizedNameAllLocales(LocalizedString.random())
+      .localizedDescriptionAllLocales(LocalizedString.random())
+      .buildGraphql();
 
-    validateGraphqlModel(graphqlModel);
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        __typename: 'ShippingMethod',
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: null,
+        name: expect.any(String),
+        description: null,
+        localizedName: expect.any(String),
+        localizedDescription: expect.any(String),
+        localizedNameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        localizedDescriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        taxCategory: expect.objectContaining({
+          __typename: 'TaxCategory',
+        }),
+        taxCategoryRef: expect.objectContaining({
+          typeId: 'tax-category',
+        }),
+        zoneRates: expect.any(Array),
+        isDefault: expect.any(Boolean),
+        predicate: null,
+        active: false,
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          __typename: 'Initiator',
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          __typename: 'Initiator',
+        }),
+      })
+    );
   });
 });
