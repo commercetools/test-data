@@ -1,19 +1,25 @@
-import { ZoneRate, ZoneRateDraft, Zone } from '@commercetools/platform-sdk';
+import { ZoneRate, ZoneRateDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TReferenceGraphql } from '@/models/commons';
+import { TCtpZoneRate, TCtpZoneRateDraft } from '@/graphql-types';
 
-export type TZoneRate = Omit<ZoneRate, 'zone'> & { zone: Zone };
 export type TZoneRateRest = ZoneRate;
-export type TZoneRateGraphql = ZoneRate & {
-  zoneRef: TReferenceGraphql;
-  __typename: 'ZoneRate';
-};
+export type TZoneRateGraphql = TCtpZoneRate;
+/**
+ * @deprecated use `TZoneRateRest` or `TZoneRateGraphql` instead
+ */
+export type TZoneRate = ZoneRate;
 
+export type TZoneRateDraftRest = ZoneRateDraft;
+export type TZoneRateDraftGraphql = TCtpZoneRateDraft;
+/**
+ * @deprecated use `TZoneRateDraftRest` or `TZoneRateDraftGraphql` instead
+ */
 export type TZoneRateDraft = ZoneRateDraft;
-export type TZoneRateDraftGraphql = TZoneRateDraft;
 
-export type TZoneRateBuilder = TBuilder<TZoneRate>;
-export type TZoneRateDraftBuilder = TBuilder<TZoneRateDraft>;
-
-export type TCreateZoneRateBuilder = () => TZoneRateBuilder;
-export type TCreateZoneRateDraftBuilder = () => TZoneRateDraftBuilder;
+export type TCreateZoneRateBuilder<
+  TZoneRateModel extends
+    | TZoneRateRest
+    | TZoneRateGraphql
+    | TZoneRateDraftRest
+    | TZoneRateDraftGraphql,
+> = () => TBuilder<TZoneRateModel>;

@@ -1,16 +1,56 @@
+import type { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
-import { ShippingRateDraft } from '../../../../shipping-rate/shipping-rate-draft';
-import type { TZoneRateDraftBuilder } from '../../../types';
-import * as ZoneRateDraft from '../../index';
+import {
+  ShippingRateDraftRest,
+  ShippingRateDraftGraphql,
+  ShippingRateDraft,
+} from '../../../../shipping-rate/shipping-rate-draft';
+import type {
+  TShippingRateDraftRest,
+  TShippingRateDraftGraphql,
+  TShippingRateDraft,
+} from '../../../../shipping-rate/types';
+import type {
+  TZoneRateDraft,
+  TZoneRateDraftGraphql,
+  TZoneRateDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
 
-// zone with key'e2e-us-zone' will always be set in the project under test
-//{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
+// zone with key 'e2e-us-zone' will always be set in the project under test
+// { "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
 
-const usZone = (): TZoneRateDraftBuilder =>
-  ZoneRateDraft.random()
+const populatePreset = <
+  TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest | TZoneRateDraft,
+>(
+  builder: TBuilder<TModel>,
+  shippingRateBuilder: TBuilder<
+    TShippingRateDraftGraphql | TShippingRateDraftRest | TShippingRateDraft
+  >
+) => {
+  return builder
     .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
-    .shippingRates([
-      ShippingRateDraft.presets.changeHistoryData.withUsdCurrency(),
-    ]);
+    .shippingRates([shippingRateBuilder]);
+};
 
-export default usZone;
+export const restPreset = (): TBuilder<TZoneRateDraftRest> =>
+  populatePreset(
+    RestModelBuilder(),
+    ShippingRateDraftRest.presets.changeHistoryData.withUsdCurrency()
+  );
+
+export const graphqlPreset = (): TBuilder<TZoneRateDraftGraphql> =>
+  populatePreset(
+    GraphqlModelBuilder(),
+    ShippingRateDraftGraphql.presets.changeHistoryData.withUsdCurrency()
+  );
+
+export const compatPreset = (): TBuilder<TZoneRateDraft> =>
+  populatePreset(
+    CompatModelBuilder(),
+    ShippingRateDraft.presets.changeHistoryData.withUsdCurrency()
+  );

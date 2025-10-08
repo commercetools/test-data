@@ -42,7 +42,7 @@
 /standalone/src/models/product @commercetools/pdm-team-fe
 /standalone/src/models/product-discount @commercetools/priceless-team-fe
 /standalone/src/models/product-projection @commercetools/pdm-team-fe
-/standalone/src/models/product-selection @commercetools/context-team-fe
+/standalone/src/models/product/product-selection @commercetools/context-team-fe
 /standalone/src/models/product-type @commercetools/pdm-team-fe
 /standalone/src/models/project @commercetools/bots-team-engineers
 /standalone/src/models/quote @commercetools/customers-team-fe

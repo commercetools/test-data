@@ -1,7 +1,13 @@
-import changeHistoryData from './change-history-data';
+import * as changeHistoryData from './change-history-data';
 
-const presets = {
-  changeHistoryData,
+export const restPresets = {
+  changeHistoryData: changeHistoryData.restPresets,
 };
 
-export default presets;
+export const graphqlPresets = {
+  changeHistoryData: changeHistoryData.graphqlPresets,
+};
+
+export const compatPresets = {
+  changeHistoryData: changeHistoryData.compatPresets,
+};
