@@ -6,6 +6,7 @@ import {
 import * as modelPresets from './presets';
 
 export * from '../types';
+export { RestModelBuilder, GraphqlModelBuilder, CompatModelBuilder };
 
 export const ShippingMethodDraftRest = {
   random: RestModelBuilder,

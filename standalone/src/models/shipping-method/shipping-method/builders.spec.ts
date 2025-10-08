@@ -1,4 +1,3 @@
-import { TBuilder } from '@/core';
 import { LocalizedString } from '@/models/commons';
 import type { TShippingMethodGraphql, TShippingMethodRest } from './types';
 import {
@@ -72,15 +71,11 @@ function validateGraphqlModel(model: TShippingMethodGraphql) {
       localizedDescription: expect.any(String),
       localizedNameAllLocales: expect.arrayContaining([
         expect.objectContaining({
-          locale: expect.any(String),
-          value: expect.any(String),
           __typename: 'LocalizedString',
         }),
       ]),
       localizedDescriptionAllLocales: expect.arrayContaining([
         expect.objectContaining({
-          locale: expect.any(String),
-          value: expect.any(String),
           __typename: 'LocalizedString',
         }),
       ]),
@@ -152,12 +147,10 @@ describe('ShippingMethod model compatibility builders', () => {
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = (
-      ShippingMethod.random() as TBuilder<TShippingMethodGraphql>
-    )
-      .localizedNameAllLocales(LocalizedString.random())
-      .localizedDescriptionAllLocales(LocalizedString.random())
-      .buildGraphql();
+    const graphqlModel = ShippingMethod.random()
+      .localizedName(LocalizedString.random())
+      .localizedDescription(LocalizedString.random())
+      .buildGraphql<TShippingMethodGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

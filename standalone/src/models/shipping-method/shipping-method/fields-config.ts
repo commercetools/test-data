@@ -3,6 +3,7 @@ import {
   ClientLogging,
   LocalizedString,
   ReferenceRest,
+  TLocalizedStringGraphql,
 } from '@/models/commons';
 import { TaxCategory } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';
@@ -49,7 +50,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodGraphql> = {
     localizedNameAllLocales: null,
     zoneRates: fake(() => [ZoneRateGraphql.random()]),
   },
-  postBuild: (model) => {
+  postBuild: (model, context) => {
     const taxCategoryRef = model.taxCategory
       ? ReferenceRest.random()
           .id(model.taxCategory.id)
@@ -57,15 +58,29 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodGraphql> = {
           .buildGraphql()
       : null;
 
-    const localizedName = model.localizedNameAllLocales
+    let localizedNameAllLocales = model.localizedNameAllLocales;
+    let localizedDescriptionAllLocales = model.localizedDescriptionAllLocales;
+
+    // This is required because of the Compat builder presets.
+    // It should be removed when the Compat builder is removed.
+    if (context?.isCompatMode && model.localizedName) {
+      localizedNameAllLocales =
+        model.localizedName as unknown as TLocalizedStringGraphql;
+    }
+    if (context?.isCompatMode && model.localizedDescription) {
+      localizedDescriptionAllLocales =
+        model.localizedDescription as unknown as TLocalizedStringGraphql;
+    }
+
+    const localizedName = localizedNameAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.localizedNameAllLocales
+          localizedNameAllLocales
         )
       : null;
 
-    const localizedDescription = model.localizedDescriptionAllLocales
+    const localizedDescription = localizedDescriptionAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.localizedDescriptionAllLocales
+          localizedDescriptionAllLocales
         )
       : null;
 
@@ -73,7 +88,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodGraphql> = {
       ...model,
       taxCategoryRef,
       localizedName,
+      localizedNameAllLocales,
       localizedDescription,
+      localizedDescriptionAllLocales,
     };
   },
 };
