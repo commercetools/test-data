@@ -1,27 +1,33 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { LocalizedString } from '@/models/commons';
+import { ReferenceGraphql, ReferenceRest } from '@/models/commons';
+import {
+  ZoneRateDraftGraphql,
+  ZoneRateDraftRest,
+} from '../../zone-rate/zone-rate-draft';
 import type {
   TShippingMethodDraftRest,
   TShippingMethodDraftGraphql,
 } from '../types';
 
+// https://docs.commercetools.com/api/projects/shippingMethods#shippingmethoddraft
+
 const commonFieldsConfig = {
-  key: fake((f) => f.lorem.slug(2)),
+  key: null,
   name: fake((f) => f.lorem.words(2)),
-  description: fake((f) => f.lorem.sentence()),
-  localizedName: fake(() => LocalizedString.random()),
-  localizedDescription: fake(() => LocalizedString.random()),
-  taxCategory: null,
-  zoneRates: null,
+  description: null,
+  localizedName: null,
+  localizedDescription: null,
+  active: null,
   isDefault: fake((f) => f.datatype.boolean()),
   predicate: null,
-  active: fake(() => false),
   custom: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TShippingMethodDraftRest> = {
   fields: {
     ...commonFieldsConfig,
+    taxCategory: fake(() => ReferenceRest.random().typeId('tax-category')),
+    zoneRates: fake(() => [ZoneRateDraftRest.random()]),
   },
 };
 
@@ -29,5 +35,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodDraftGraphql
   {
     fields: {
       ...commonFieldsConfig,
+      taxCategory: fake(() => ReferenceGraphql.random().typeId('tax-category')),
+      zoneRates: fake(() => [ZoneRateDraftGraphql.random()]),
     },
   };

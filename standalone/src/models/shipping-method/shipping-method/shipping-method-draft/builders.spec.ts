@@ -11,20 +11,25 @@ import {
 function validateRestModel(model: TShippingMethodDraftRest) {
   expect(model).toEqual(
     expect.objectContaining({
-      key: expect.any(String),
+      key: null,
       name: expect.any(String),
-      description: expect.any(String),
-      localizedName: expect.objectContaining({
-        en: expect.any(String),
+      description: null,
+      localizedName: null,
+      localizedDescription: null,
+      taxCategory: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'tax-category',
       }),
-      localizedDescription: expect.objectContaining({
-        en: expect.any(String),
-      }),
-      taxCategory: null,
-      zoneRates: null,
+      zoneRates: expect.arrayContaining([
+        expect.objectContaining({
+          zone: expect.objectContaining({
+            typeId: 'zone',
+          }),
+        }),
+      ]),
       isDefault: expect.any(Boolean),
       predicate: null,
-      active: false,
+      active: null,
       custom: null,
     })
   );
@@ -33,26 +38,24 @@ function validateRestModel(model: TShippingMethodDraftRest) {
 function validateGraphqlModel(model: TShippingMethodDraftGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
-      key: expect.any(String),
+      key: null,
       name: expect.any(String),
-      description: expect.any(String),
-      localizedName: expect.arrayContaining([
+      description: null,
+      localizedName: null,
+      localizedDescription: null,
+      taxCategory: expect.objectContaining({
+        typeId: 'tax-category',
+      }),
+      zoneRates: expect.arrayContaining([
         expect.objectContaining({
-          locale: 'en',
-          value: expect.any(String),
+          zone: expect.objectContaining({
+            typeId: 'zone',
+          }),
         }),
       ]),
-      localizedDescription: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en',
-          value: expect.any(String),
-        }),
-      ]),
-      taxCategory: null,
-      zoneRates: null,
       isDefault: expect.any(Boolean),
       predicate: null,
-      active: false,
+      active: null,
       custom: null,
     })
   );

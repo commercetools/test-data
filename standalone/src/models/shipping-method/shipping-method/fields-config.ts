@@ -6,6 +6,7 @@ import {
 } from '@/models/commons';
 import { TaxCategory } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';
+import { ZoneRateGraphql, ZoneRateRest } from '../zone-rate';
 import type { TShippingMethodRest, TShippingMethodGraphql } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingmethod
@@ -20,7 +21,6 @@ const commonFieldsConfig = {
   localizedName: null,
   description: null,
   localizedDescription: null,
-  zoneRates: fake(() => []),
   active: fake(() => false),
   isDefault: fake((f) => f.datatype.boolean()),
   predicate: null,
@@ -35,6 +35,7 @@ export const restFieldsConfig: TModelFieldsConfig<TShippingMethodRest> = {
   fields: {
     ...commonFieldsConfig,
     taxCategory: fake(() => ReferenceRest.random().typeId('tax-category')),
+    zoneRates: fake(() => [ZoneRateRest.random()]),
   },
 };
 
@@ -46,6 +47,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingMethodGraphql> = {
     taxCategoryRef: null,
     localizedDescriptionAllLocales: null,
     localizedNameAllLocales: null,
+    zoneRates: fake(() => [ZoneRateGraphql.random()]),
   },
   postBuild: (model) => {
     const taxCategoryRef = model.taxCategory
