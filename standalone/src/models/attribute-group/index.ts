@@ -1,8 +1,8 @@
-// Main AttributeGroup exports (if any)
-export * as AttributeGroup from '.';
-export { default as random } from './builder';
-export * as presets from './presets';
-export * from './types';
+// Export types
+export * from './attribute-group/types';
+export * from './attribute-reference/types';
 
-export * from './attribute-group-draft';
+// Export data models
+export * from './attribute-group';
+export * from './attribute-group/attribute-group-draft';
 export * from './attribute-reference';
