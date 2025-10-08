@@ -5,8 +5,6 @@ import type {
 import { AttributeGroupDraftGraphql, AttributeGroupDraftRest } from './index';
 
 const validateRestModel = (model: TAttributeGroupDraftRest) => {
-  console.log('Rest model', model);
-
   expect(model).toEqual(
     expect.objectContaining({
       key: null,
@@ -22,7 +20,6 @@ const validateRestModel = (model: TAttributeGroupDraftRest) => {
 };
 
 const validateGraphqlModel = (model: TAttributeGroupDraftGraphql) => {
-  console.log('GraphQL model', model);
   expect(model).toEqual(
     expect.objectContaining({
       key: null,
@@ -30,7 +27,6 @@ const validateGraphqlModel = (model: TAttributeGroupDraftGraphql) => {
         expect.objectContaining({
           locale: expect.any(String),
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       description: null,
