@@ -1,7 +1,13 @@
-import usZone from './with-usd-shipping-rate';
+import * as usZone from './with-usd-shipping-rate';
 
-const presets = {
-  usZone,
+export const restPresets = {
+  usZone: usZone.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  usZone: usZone.graphqlPreset,
+};
+
+export const compatPresets = {
+  usZone: usZone.compatPreset,
+};
