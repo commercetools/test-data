@@ -1,16 +1,16 @@
 import type { TBuilder } from '@/core';
+import type {
+  TShippingMethodDraft,
+  TShippingMethodDraftGraphql,
+  TShippingMethodDraftRest,
+} from '../../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from '../builders';
-import type {
-  TShippingMethodDraft,
-  TShippingMethodDraftGraphql,
-  TShippingMethodDraftRest,
-} from '../types';
 
-const populateEmptyPreset = <
+const populatePreset = <
   TModel extends TShippingMethodDraftGraphql | TShippingMethodDraftRest,
 >(
   builder: TBuilder<TModel>
@@ -24,10 +24,10 @@ const populateEmptyPreset = <
 };
 
 export const restPreset = (): TBuilder<TShippingMethodDraftRest> =>
-  populateEmptyPreset(RestModelBuilder());
+  populatePreset(RestModelBuilder());
 
 export const graphqlPreset = (): TBuilder<TShippingMethodDraftGraphql> =>
-  populateEmptyPreset(GraphqlModelBuilder());
+  populatePreset(GraphqlModelBuilder());
 
 export const compatPreset = (): TBuilder<TShippingMethodDraft> =>
-  populateEmptyPreset(CompatModelBuilder());
+  populatePreset(CompatModelBuilder());

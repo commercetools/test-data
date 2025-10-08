@@ -2,58 +2,40 @@ import type {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
   TShippingMethodDraftRest,
-} from '../types';
-import * as empty from './empty';
+} from '../../types';
+import { restPresets, graphqlPresets, compatPresets } from './index';
 
-describe('Empty preset', () => {
-  it('[REST] should set all specified fields to undefined for REST model', () => {
-    const emptyShippingMethodDraft = empty
-      .restPreset()
-      .build<TShippingMethodDraftRest>();
-    expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
-    expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.localizedDescription).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.predicate).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.custom).toMatchInlineSnapshot(`undefined`);
+const validateModel = (
+  model:
+    | TShippingMethodDraftGraphql
+    | TShippingMethodDraftRest
+    | TShippingMethodDraft
+) => {
+  expect(model).toMatchObject({
+    key: undefined,
+    localizedName: undefined,
+    localizedDescription: undefined,
+    predicate: undefined,
+    custom: undefined,
+  });
+};
+
+describe('ShippingMethodDraft - Empty Preset', () => {
+  it('should return a valid rest model', () => {
+    const model = restPresets.empty().build();
+
+    validateModel(model);
   });
 
-  it('[GraphQL] should set all specified fields to undefined for GraphQL model', () => {
-    const emptyShippingMethodDraft = empty
-      .graphqlPreset()
-      .build<TShippingMethodDraftGraphql>();
-    expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
-    expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.localizedDescription).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.predicate).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.custom).toMatchInlineSnapshot(`undefined`);
+  it('should return a valid graphql model', () => {
+    const model = graphqlPresets.empty().build();
+
+    validateModel(model);
   });
 
-  it('[Compat] should set all specified fields to undefined for compatibility model', () => {
-    const emptyShippingMethodDraft = empty
-      .compatPreset()
-      .build<TShippingMethodDraft>();
-    expect(emptyShippingMethodDraft.key).toMatchInlineSnapshot(`undefined`);
-    expect(emptyShippingMethodDraft.localizedName).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.localizedDescription).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.predicate).toMatchInlineSnapshot(
-      `undefined`
-    );
-    expect(emptyShippingMethodDraft.custom).toMatchInlineSnapshot(`undefined`);
+  it('should return a valid compat model', () => {
+    const model = compatPresets.empty().build();
+
+    validateModel(model);
   });
 });

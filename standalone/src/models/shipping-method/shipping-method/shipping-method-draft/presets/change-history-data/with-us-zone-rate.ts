@@ -1,34 +1,58 @@
 import type { TBuilder } from '@/core';
-import { ZoneRateDraftRest } from '../../../../zone-rate/zone-rate-draft';
+import type {
+  TZoneRateDraft,
+  TZoneRateDraftGraphql,
+  TZoneRateDraftRest,
+} from '@/models/shipping-method/zone-rate';
+import {
+  ZoneRateDraft,
+  ZoneRateDraftGraphql,
+  ZoneRateDraftRest,
+} from '../../../../zone-rate/zone-rate-draft';
+import type {
+  TShippingMethodDraft,
+  TShippingMethodDraftGraphql,
+  TShippingMethodDraftRest,
+} from '../../../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from '../../builders';
-import type {
-  TShippingMethodDraft,
-  TShippingMethodDraftGraphql,
-  TShippingMethodDraftRest,
-} from '../../types';
 
 //default(false) as more than one default method will lead to an error
 
-const populateWithUsZoneRatePreset = <
-  TModel extends TShippingMethodDraftGraphql | TShippingMethodDraftRest,
+const populatePreset = <
+  TModel extends
+    | TShippingMethodDraftGraphql
+    | TShippingMethodDraftRest
+    | TShippingMethodDraft,
 >(
-  builder: TBuilder<TModel>
+  builder: TBuilder<TModel>,
+  zoneRateBuilder: TBuilder<
+    TZoneRateDraftGraphql | TZoneRateDraftRest | TZoneRateDraft
+  >
 ) => {
   return builder
     .taxCategory(null!)
-    .zoneRates([ZoneRateDraftRest.presets.changeHistoryData.usZone()])
+    .zoneRates([zoneRateBuilder])
     .isDefault(false);
 };
 
 export const restPreset = (): TBuilder<TShippingMethodDraftRest> =>
-  populateWithUsZoneRatePreset(RestModelBuilder());
+  populatePreset(
+    RestModelBuilder(),
+    ZoneRateDraftRest.presets.changeHistoryData.usZone()
+  );
 
 export const graphqlPreset = (): TBuilder<TShippingMethodDraftGraphql> =>
-  populateWithUsZoneRatePreset(GraphqlModelBuilder());
+  populatePreset(
+    GraphqlModelBuilder(),
+    ZoneRateDraftGraphql.presets.changeHistoryData.usZone()
+  );
 
 export const compatPreset = (): TBuilder<TShippingMethodDraft> =>
-  populateWithUsZoneRatePreset(CompatModelBuilder());
+  populatePreset(
+    CompatModelBuilder(),
+    ZoneRateDraft.presets.changeHistoryData.usZone()
+  );
