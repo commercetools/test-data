@@ -21,22 +21,20 @@ import {
   CompatModelBuilder,
 } from '../../builders';
 
-// zone with key'e2e-us-zone' will always be set in the project under test
-//{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
+// zone with key 'e2e-us-zone' will always be set in the project under test
+// { "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
 
 const populatePreset = <
   TModel extends TZoneRateDraftGraphql | TZoneRateDraftRest | TZoneRateDraft,
 >(
   builder: TBuilder<TModel>,
-  shippingRateBuilder: TModel extends TZoneRateDraftGraphql
-    ? TBuilder<TShippingRateDraftGraphql>
-    : TModel extends TZoneRateDraftRest
-      ? TBuilder<TShippingRateDraftRest>
-      : TBuilder<TShippingRateDraft>
+  shippingRateBuilder: TBuilder<
+    TShippingRateDraftGraphql | TShippingRateDraftRest | TShippingRateDraft
+  >
 ) => {
   return builder
     .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
-    .shippingRates([shippingRateBuilder.build()]);
+    .shippingRates([shippingRateBuilder]);
 };
 
 export const restPreset = (): TBuilder<TZoneRateDraftRest> =>
