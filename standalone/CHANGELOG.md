@@ -1,5 +1,94 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.8.1
+
+### Patch Changes
+
+- [#971](https://github.com/commercetools/test-data/pull/971) [`bf111b2`](https://github.com/commercetools/test-data/commit/bf111b25038d9de819530b51a311aa9285db8133) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `AttributeGroup` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `AttributeGroup` model is now deprecated and you're expected to start using the `AttributeGroupGraphql` or `AttributeGroupRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    AttributeGroupGraphql,
+    AttributeGroupRest,
+  } from '@commercetools/composable-commerce-test-data/attribute-group';
+
+  const graphqlAttributeGroup = AttributeGroupGraphql.random().build();
+  const restAttributeGroup = AttributeGroupRest.random().build();
+  ```
+
+- [#970](https://github.com/commercetools/test-data/pull/970) [`34fe95b`](https://github.com/commercetools/test-data/commit/34fe95b201a80288fe10e09da29dc8c5537ded90) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've fixed an error in the `AttributeGroupDraft` test-data model as its name was not populated with a draft model.
+
+  Also, we've updated the entry point of the `@commercetools/composable-commerce-test-data/attribute-group` package entry point so it also exports the `AttributeReference` model.
+  It can be used like this:
+
+  ```ts
+  import {
+    AttributeReferenceGraphql,
+    AttributeReferenceRest,
+  } from '@commercetools/composable-commerce-test-data/attribute-group';
+
+  const graphqlModel = AttributeReferenceGraphql.random().build();
+  const restModel = AttributeReferenceRest.random().build();
+  ```
+
+- [#973](https://github.com/commercetools/test-data/pull/973) [`55cf64b`](https://github.com/commercetools/test-data/commit/55cf64bd3f251d57602a7497322a8cca346ecc57) Thanks [@nima-ct](https://github.com/nima-ct)! - We've migrated the `ShippingMethod` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `ShippingMethod` model is now deprecated and you're expected to start using the `ShippingMethodGraphql` or `ShippingMethodRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ShippingMethodGraphql,
+    ShippingMethodRest,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const graphqlShippingMethod = ShippingMethodGraphql.random().build();
+  const restShippingMethod = ShippingMethodRest.random().build();
+  ```
+
+  We've migrated the `ShippingMethodDraft` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `ShippingMethodDraft` model is now deprecated and you're expected to start using the `ShippingMethodDraftGraphql` or `ShippingMethodDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ShippingMethodDraftGraphql,
+    ShippingMethodDraftRest,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const graphqlDraft = ShippingMethodDraftGraphql.random().build();
+  const restDraft = ShippingMethodDraftRest.random().build();
+  ```
+
+- [#969](https://github.com/commercetools/test-data/pull/969) [`e85472b`](https://github.com/commercetools/test-data/commit/e85472bfb8491e9f86a1e8e8aad7df973b958f15) Thanks [@nima-ct](https://github.com/nima-ct)! - We've migrated the `ZoneRate` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `ZoneRate` model is now deprecated and you're expected to start using the `ZoneRateGraphql` or `ZoneRateRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ZoneRateGraphql,
+    ZoneRateRest,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const graphqlZoneRate = ZoneRateGraphql.random().build();
+  const restZoneRate = ZoneRateRest.random().build();
+  ```
+
+  We've migrated the `ZoneRateDraft` model to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `ZoneRateDraft` model is now deprecated and you're expected to start using the `ZoneRateDraftGraphql` or `ZoneRateDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ZoneRateDraftGraphql,
+    ZoneRateDraftRest,
+  } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  const graphqlDraft = ZoneRateDraftGraphql.random().build();
+  const restDraft = ZoneRateDraftRest.random().build();
+  ```
+
 ## 13.8.0
 
 ### Minor Changes
