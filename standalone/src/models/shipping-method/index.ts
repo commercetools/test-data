@@ -4,8 +4,8 @@ export * from './shipping-rate/types';
 export * from './zone-rate/types';
 
 // Export models
-export * as ShippingMethod from './shipping-method';
-export * as ShippingMethodDraft from './shipping-method/shipping-method-draft';
+export * from './shipping-method';
+export * from './shipping-method/shipping-method-draft';
 
 export * from './shipping-rate';
 export * from './shipping-rate/shipping-rate-draft';
