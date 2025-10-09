@@ -1,5 +1,24 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.8.2
+
+### Patch Changes
+
+- [#974](https://github.com/commercetools/test-data/pull/974) [`4da5a8c`](https://github.com/commercetools/test-data/commit/4da5a8cb2820476716578f2bc10ae12aa273e525) Thanks [@nima-ct](https://github.com/nima-ct)! - Fix zone rate models exports
+
+  The shipping-method index was using aliased wildcard exports (`export * as ZoneRate`) for zone rate models and zone rate draft models.
+  This fix replaces with direct named exports.
+
+  ```ts
+  import { ZoneRate } from '@commercetools/composable-commerce-test-data/shipping-method';
+
+  // BEFORE
+  const graphqlZoneRate = ZoneRate.ZoneRate.random();
+
+  // AFTER
+  const graphqlZoneRate = ZoneRate.random();
+  ```
+
 ## 13.8.1
 
 ### Patch Changes
