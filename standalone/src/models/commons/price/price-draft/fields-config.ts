@@ -3,7 +3,7 @@ import { BaseMoneyDraftGraphql, MoneyDraftRest } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { TPriceDraftGraphql, TPriceDraftRest } from '../types';
 
-const [getOlderDate, getNewerDate] = createRelatedDates();
+const [getOlderDate, getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   fields: {
@@ -16,7 +16,7 @@ const commonFieldsConfig = {
     recurrencePolicy: null,
     tiers: null,
     validFrom: fake(getOlderDate),
-    validUntil: fake(getNewerDate),
+    validUntil: fake(getFutureDate),
   },
 };
 
