@@ -1,15 +1,15 @@
 import type { Zone, ZoneDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import { TCtpZone } from '@/graphql-types';
 
 export type TZone = Zone;
+export type TZoneRest = Zone;
+export type TZoneGraphql = TCtpZone;
+
 export type TZoneDraft = ZoneDraft;
+export type TZoneDraftRest = ZoneDraft;
+// There's not draft graphql type for Zone
 
-export type TZoneGraphql = TZone & {
-  __typename: 'Zone';
-};
-export type TZoneDraftGraphql = TZoneDraft;
-
-export type TZoneBuilder = TBuilder<TZone>;
-export type TZoneDraftBuilder = TBuilder<TZoneDraft>;
-export type TCreateZoneBuilder = () => TZoneBuilder;
-export type TCreateZoneDraftBuilder = () => TZoneDraftBuilder;
+export type TCreateZoneBuilder<
+  TZoneModel extends TZoneRest | TZoneGraphql | TZoneDraftRest,
+> = () => TBuilder<TZoneModel>;
