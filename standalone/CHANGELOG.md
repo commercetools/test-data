@@ -1,5 +1,30 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.8.3
+
+### Patch Changes
+
+- [#977](https://github.com/commercetools/test-data/pull/977) [`1b76a63`](https://github.com/commercetools/test-data/commit/1b76a638efaab29b3b2cef0472de8de272ea0d77) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `Zone` and `ZoneDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Zone` and `ZoneDraft` models are now deprecated and you're expected to start using the `ZoneGraphql`, `ZoneRest`, `ZoneDraftGraphql` or `ZoneDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    ZoneGraphql,
+    ZoneRest,
+    ZoneDraftRest,
+    ZoneDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/zone';
+
+  const graphqlZone = ZoneGraphql.random().build();
+  const restZone = ZoneRest.random().build();
+
+  const graphqlZoneDraft = ZoneDraftGraphql.random().build();
+  const restZoneDraft = ZoneDraftRest.random().build();
+  ```
+
+- [#978](https://github.com/commercetools/test-data/pull/978) [`9cf1001`](https://github.com/commercetools/test-data/commit/9cf10017965c3fce06c6e2305c12ed32e4587806) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed an issue with both the `Price` and `PriceDraft` models regarding the default value of their `validUntil` property as it was being populated with the current timestamp where it's expected to be a future timestamp instead.
+
 ## 13.8.2
 
 ### Patch Changes
