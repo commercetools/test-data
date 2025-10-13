@@ -3,6 +3,8 @@ import {
   StandardScheduleDraftRest,
   RecurrencePolicyScheduleInputGraphql,
   StandardScheduleInputGraphql,
+  DayOfMonthScheduleInput,
+  DayOfMonthScheduleDraftRest,
 } from '../../index';
 import { intervalUnit } from '../../standard-schedule/constants';
 import {
@@ -40,6 +42,23 @@ describe('RecurrencePolicyDraft Builder', () => {
     );
   });
 
+  it('should build properties for the REST representation with a day of month schedule', () => {
+    const restModel = RecurrencePolicyDraftRest.random()
+      .name(LocalizedString.random())
+      .description(LocalizedString.random())
+      .schedule(DayOfMonthScheduleDraftRest.random())
+      .build();
+
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        schedule: expect.objectContaining({
+          type: 'dayOfMonth',
+          day: expect.any(Number),
+        }),
+      })
+    );
+  });
+
   it('should build properties for the GraphQL representation', () => {
     const graphqlModel = RecurrencePolicyDraftGraphql.random()
       .name(LocalizedString.random())
@@ -72,6 +91,28 @@ describe('RecurrencePolicyDraft Builder', () => {
           standard: expect.objectContaining({
             value: expect.any(Number),
             intervalUnit: expect.toBeOneOf(Object.values(intervalUnit)),
+          }),
+        }),
+      })
+    );
+  });
+
+  it('should build properties for the GraphQL representation with a day of month schedule', () => {
+    const graphqlModel = RecurrencePolicyDraftGraphql.random()
+      .name(LocalizedString.random())
+      .description(LocalizedString.random())
+      .schedule(
+        RecurrencePolicyScheduleInputGraphql.random().dayOfMonth(
+          DayOfMonthScheduleInput.random()
+        )
+      )
+      .build();
+
+    expect(graphqlModel).toEqual(
+      expect.objectContaining({
+        schedule: expect.objectContaining({
+          dayOfMonth: expect.objectContaining({
+            day: expect.any(Number),
           }),
         }),
       })

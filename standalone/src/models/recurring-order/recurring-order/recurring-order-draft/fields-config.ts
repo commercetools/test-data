@@ -7,12 +7,12 @@ import type {
   TRecurringOrderDraftRest,
 } from '../types';
 
-const [getNewerDate] = createRelatedDates();
+const [getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   key: null,
   cartVersion: sequence(),
-  startsAt: fake(getNewerDate),
+  startsAt: fake(getFutureDate),
   expiresAt: null,
   state: null,
   custom: null,
