@@ -3,7 +3,7 @@ import { CentPrecisionMoney, ReferenceGraphql } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { TPriceGraphql, TPriceRest } from './types';
 
-const [getOlderDate, getFutureDate] = createRelatedDates();
+const [getOlderDate, , getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   fields: {
