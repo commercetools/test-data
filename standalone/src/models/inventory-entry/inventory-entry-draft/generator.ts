@@ -3,7 +3,7 @@ import { ReferenceDraft } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { TInventoryEntryDraft } from '../types';
 
-const [getFutureDate] = createRelatedDates();
+const [, , getFutureDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/projects/inventory#inventoryentrydraft
 

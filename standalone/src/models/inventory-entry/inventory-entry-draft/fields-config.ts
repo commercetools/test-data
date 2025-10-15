@@ -7,7 +7,7 @@ import type {
   TInventoryEntryDraftRest,
 } from '../types';
 
-const [getFutureDate] = createRelatedDates();
+const [, , getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),
