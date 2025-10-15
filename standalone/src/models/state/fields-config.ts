@@ -6,7 +6,7 @@ import { TStateGraphql, TStateRest } from './types';
 
 // Public docs: https://docs.commercetools.com/api/projects/states#state
 
-const [getNewerDate, getOlderDate] = createRelatedDates();
+const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),

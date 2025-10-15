@@ -7,7 +7,7 @@ import type {
   TRecurringOrderDraftRest,
 } from '../types';
 
-const [getFutureDate] = createRelatedDates();
+const [, , getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   key: null,
