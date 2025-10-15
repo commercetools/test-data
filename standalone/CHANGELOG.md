@@ -1,5 +1,42 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.9.0
+
+### Minor Changes
+
+- [#976](https://github.com/commercetools/test-data/pull/976) [`62026f2`](https://github.com/commercetools/test-data/commit/62026f2c01369b28067488cf860e04ac1fa7186c) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing new models named, `day-of-month-schedule`, `day-of-month-schedule-draft`, and `day-of-month-schedule-input`. All these modules can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
+
+  This is how new models could be used:
+
+  ```ts
+  import {
+      DayOfMonthScheuleRest,
+      DayOfMonthScheduleGraphql,
+      DayOfMonthScheduleDraft,
+      DayOfMonthScheuleInput
+  } from '@commercetools/composable-commerce-test-data/recurring-order';
+
+  // rest models
+  const dayOfMonthScheduleDraft = DayOfMonthScheduleDraft.random().build();,
+  const dayOfMonthScheuleRest = DayOfMonthScheuleRest.random().build();
+
+  // graphql models
+  const dayOfMonthScheuleInput = DayOfMonthScheuleInput.random().build();
+  const dayOfMonthScheduleGraphql = DayOfMonthScheduleGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#982](https://github.com/commercetools/test-data/pull/982) [`dca5318`](https://github.com/commercetools/test-data/commit/dca5318a9c3e6dfecd3e2197996db608ab90bc69) Thanks [@rajrdk](https://github.com/rajrdk)! - We've identified some models where the default dates that were used to populate some of their fields where not always accurate. The returned default values were past dates instead of a future ones.
+
+  These are the affected models and the properties:
+  - `InventoryEntryDraft.expectedDelivery`
+  - `RecurringOrderDraft.startsAt`
+
+- [#981](https://github.com/commercetools/test-data/pull/981) [`b6112e2`](https://github.com/commercetools/test-data/commit/b6112e2660db7c88d6701094e25f8d57e2e2aa04) Thanks [@rajrdk](https://github.com/rajrdk)! - Fixed an error with both `Price` and `PriceDraft` models causing the default value for the `validUntil` property to not be a string representation of a future date.
+
+  Now that default value will always represent a date one year ahead.
+
 ## 13.8.3
 
 ### Patch Changes
