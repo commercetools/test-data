@@ -16,13 +16,10 @@ const validateModel = (model: TPriceDraftRest | TPriceDraftGraphql) => {
       key: null,
       recurrencePolicy: null,
       tiers: null,
-      validFrom: expect.any(String),
-      validUntil: expect.any(String),
+      validFrom: expect.dateBeforeToday(),
+      validUntil: expect.dateAfterToday(),
     })
   );
-  // Dates extra checks
-  expect(new Date(model.validFrom!)).toEqual(expect.dateBeforeToday());
-  expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 
 const validateRestModel = (model: TPriceDraftRest) => {
