@@ -17,8 +17,8 @@ const validateRestModel = (model: TPriceRest) => {
       id: expect.any(String),
       recurrencePolicy: null,
       tiers: null,
-      validFrom: expect.any(String),
-      validUntil: expect.any(String),
+      validFrom: expect.dateBeforeToday(),
+      validUntil: expect.dateAfterToday(),
       value: expect.objectContaining({
         type: 'centPrecision',
       }),
@@ -41,8 +41,8 @@ const validateGraphqlModel = (model: TPriceGraphql) => {
       recurrencePolicy: null,
       recurrencePolicyRef: null,
       tiers: null,
-      validFrom: expect.any(String),
-      validUntil: expect.any(String),
+      validFrom: expect.dateBeforeToday(),
+      validUntil: expect.dateAfterToday(),
       value: expect.objectContaining({
         type: 'centPrecision',
         __typename: 'Money',

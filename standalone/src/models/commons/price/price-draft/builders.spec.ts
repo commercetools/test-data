@@ -16,8 +16,8 @@ const validateModel = (model: TPriceDraftRest | TPriceDraftGraphql) => {
       key: null,
       recurrencePolicy: null,
       tiers: null,
-      validFrom: expect.any(String),
-      validUntil: expect.any(String),
+      validFrom: expect.dateBeforeToday(),
+      validUntil: expect.dateAfterToday(),
     })
   );
 };

@@ -3,7 +3,7 @@ import { BaseMoneyDraftGraphql, MoneyDraftRest } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { TPriceDraftGraphql, TPriceDraftRest } from '../types';
 
-const [getOlderDate, getFutureDate] = createRelatedDates();
+const [getOlderDate, , getFutureDate] = createRelatedDates();
 
 const commonFieldsConfig = {
   fields: {
