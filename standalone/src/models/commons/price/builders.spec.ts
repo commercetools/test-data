@@ -25,7 +25,7 @@ const validateRestModel = (model: TPriceRest) => {
     })
   );
   // Dates extra checks
-  expect(new Date(model.validFrom as string)).toEqual(expect.dateBeforeToday());
+  expect(new Date(model.validFrom!)).toEqual(expect.dateBeforeToday());
   expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 
@@ -54,7 +54,7 @@ const validateGraphqlModel = (model: TPriceGraphql) => {
     })
   );
   // Dates extra checks
-  expect(new Date(model.validFrom as string)).toEqual(expect.dateBeforeToday());
+  expect(new Date(model.validFrom!)).toEqual(expect.dateBeforeToday());
   expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 

@@ -8,7 +8,7 @@ const createRelatedDates = (
   const pastReference = new Date();
 
   const getOlderDate = (f: Faker) => {
-    const refDate = new Date().toISOString();
+    const refDate = new Date(Date.now() - 1000 * 60 * 60 * 24);
     return f.date
       .recent({ days: recentDaysFromPastReference, refDate })
       .toISOString();

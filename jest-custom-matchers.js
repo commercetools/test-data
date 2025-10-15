@@ -24,18 +24,9 @@ const compareAgainstToday = (dateString) => {
 };
 class DateBeforeToday {
   asymmetricMatch(actual) {
-    const toISOString =
-      typeof actual === 'string'
-        ? actual
-        : actual instanceof Date
-          ? actual.toISOString()
-          : null;
-    if (!toISOString) return false;
+    const stringDate = actual instanceof Date ? actual.toISOString() : actual;
 
-    const dayCompare = compareAgainstToday(toISOString);
-    if (dayCompare < 0) return true; //  before today
-    if (dayCompare > 0) return false; // after today
-    return toISOString.localeCompare(new Date().toISOString()) < 0;
+    return compareAgainstToday(stringDate) < 0;
   }
 
   toString() {
@@ -47,24 +38,15 @@ class DateBeforeToday {
   }
 
   getExpectedType() {
-    return 'date';
+    return 'date or string(ISO date)';
   }
 }
 expect.dateBeforeToday = () => new DateBeforeToday();
 class DateAfterToday {
   asymmetricMatch(actual) {
-    const toISOString =
-      typeof actual === 'string'
-        ? actual
-        : actual instanceof Date
-          ? actual.toISOString()
-          : null;
-    if (!toISOString) return false;
+    const stringDate = actual instanceof Date ? actual.toISOString() : actual;
 
-    const dayCompare = compareAgainstToday(toISOString);
-    if (dayCompare > 0) return true; //  after today
-    if (dayCompare < 0) return false; // before today
-    return toISOString.localeCompare(new Date().toISOString()) > 0;
+    return compareAgainstToday(stringDate) > 0;
   }
 
   toString() {
@@ -76,7 +58,7 @@ class DateAfterToday {
   }
 
   getExpectedType() {
-    return 'date';
+    return 'date or string(ISO date)';
   }
 }
 expect.dateAfterToday = () => new DateAfterToday();
