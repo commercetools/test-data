@@ -20,10 +20,9 @@ const validateModel = (model: TPriceDraftRest | TPriceDraftGraphql) => {
       validUntil: expect.any(String),
     })
   );
-  // Future date check
-  expect(new Date(model.validUntil as string).getTime()).toBeGreaterThan(
-    Date.now()
-  );
+  // Dates extra checks
+  expect(new Date(model.validFrom as string)).toEqual(expect.dateBeforeToday());
+  expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 
 const validateRestModel = (model: TPriceDraftRest) => {

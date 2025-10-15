@@ -24,6 +24,9 @@ const validateRestModel = (model: TPriceRest) => {
       }),
     })
   );
+  // Dates extra checks
+  expect(new Date(model.validFrom as string)).toEqual(expect.dateBeforeToday());
+  expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 
 const validateGraphqlModel = (model: TPriceGraphql) => {
@@ -50,6 +53,9 @@ const validateGraphqlModel = (model: TPriceGraphql) => {
       __typename: 'ProductPrice',
     })
   );
+  // Dates extra checks
+  expect(new Date(model.validFrom as string)).toEqual(expect.dateBeforeToday());
+  expect(new Date(model.validUntil as string)).toEqual(expect.dateAfterToday());
 };
 
 describe('Price model builders', () => {
