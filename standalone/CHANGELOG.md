@@ -1,5 +1,21 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.10.0
+
+### Minor Changes
+
+- [#983](https://github.com/commercetools/test-data/pull/983) [`b0f9eb8`](https://github.com/commercetools/test-data/commit/b0f9eb826d8836d8d52aad2a38ca85923d9904e6) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new model named `OrderDetailView` can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+
+  There's only a GraphQL version for this model as it only exists in the MC Settings services which only expose a GraphQL API.
+
+  This is how the new model could be used:
+
+  ```ts
+  import { OrderDetailViewGraphql } from '@commercetools/composable-commerce-test-data/my-view';
+
+  const orderDetailView = OrderDetailViewGraphql.random().build();
+  ```
+
 ## 13.9.0
 
 ### Minor Changes
