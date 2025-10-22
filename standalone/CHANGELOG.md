@@ -1,5 +1,21 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.11.0
+
+### Minor Changes
+
+- [#985](https://github.com/commercetools/test-data/pull/985) [`437def9`](https://github.com/commercetools/test-data/commit/437def98cfea8bafef514c7cb2aae7019708465c) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new model named `DashboardView` can be consumed from the `@commercetools/composable-commerce-test-data/my-view` entry point.
+
+  There's only a GraphQL version for this model as it only exists in the MC Settings services which only expose a GraphQL API.
+
+  This is how the new model could be used:
+
+  ```ts
+  import { DashboardViewGraphql } from '@commercetools/composable-commerce-test-data/my-view';
+
+  const dashboardView = DashboardViewGraphql.random().build();
+  ```
+
 ## 13.10.0
 
 ### Minor Changes
