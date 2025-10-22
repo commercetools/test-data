@@ -1,4 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
+import { LocalizedField } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import type { TDashboardViewGraphql } from './types';
 
@@ -13,7 +14,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDashboardViewGraphql> = {
     id: fake((f) => f.string.uuid()),
     isActive: fake(() => true),
     layout: null,
-    nameAllLocales: [],
+    nameAllLocales: fake(() => [LocalizedField.random()]),
     projectKey: fake((f) => f.lorem.slug(2)),
     timeZone: null,
     updatedAt: fake(getNewerDate),

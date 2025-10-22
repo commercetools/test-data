@@ -11,7 +11,11 @@ describe('DashboardView Builder', () => {
         id: expect.any(String),
         isActive: true,
         layout: null,
-        nameAllLocales: [],
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedField',
+          }),
+        ]),
         projectKey: expect.any(String),
         timeZone: null,
         updatedAt: expect.any(String),
