@@ -1,4 +1,5 @@
 export * from './business-units-list-view/types';
+export * from './dashboard-view/types';
 export * from './my-view-nested-table/types';
 export * from './my-view-sort/types';
 export * from './my-view-table/types';
@@ -9,6 +10,7 @@ export * from './pim-search-list-view/types';
 export * from './variant-prices-list-view/types';
 
 export * from './business-units-list-view';
+export * from './dashboard-view';
 export * from './my-view-nested-table';
 export * from './my-view-sort';
 export * from './my-view-table';
