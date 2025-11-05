@@ -12,7 +12,7 @@ export * as PaymentMethodInfo from './payment-method-info';
 export * as PaymentMethodInfoDraft from './payment-method-info/payment-method-info-draft';
 
 export * from './payment-status';
-export * as PaymentStatusDraft from './payment-status/payment-status-draft';
+export * from './payment-status/payment-status-draft';
 
 export * from './transaction';
 export * from './transaction/transaction-draft';
