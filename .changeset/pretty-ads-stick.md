@@ -12,7 +12,7 @@ import {
   TransactionRest,
   TransactionDraftGraphql,
   TransactionDraftRest,
-} from '@commercetools/composable-commerce-test-data/tax-cateopry';
+} from '@commercetools/composable-commerce-test-data/payment';
 
 const graphqlTransaction = TransactionGraphql.random().build();
 const restTransaction = TransactionRest.random().build();
