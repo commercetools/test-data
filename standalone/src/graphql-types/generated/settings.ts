@@ -712,6 +712,10 @@ export type TMcSettingsMigrationMatchingScore = {
   score: Scalars['Float']['output'];
 };
 
+export type TMcSettingsMigrationTransferMyViewsInput = {
+  userIds: Array<Scalars['String']['input']>;
+};
+
 export type TMcSettingsMutation = {
   __typename?: 'Mutation';
   activateBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
@@ -790,6 +794,8 @@ export type TMcSettingsMutation = {
   installCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   installCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
   /** @deprecated Experimental feature - For internal usage only */
+  migrationTransferMyViews: TMcSettingsTransferListMyViewsResponse;
+  /** @deprecated Experimental feature - For internal usage only */
   moveMessagesFromDeadLetterQueueToMainQueue?: Maybe<TMcSettingsBatchProcessResult>;
   random: Scalars['String']['output'];
   /** @deprecated Experimental feature - For internal usage only */
@@ -805,6 +811,8 @@ export type TMcSettingsMutation = {
   setProjectExtensionOrderStatesVisibility?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionReviewModifiedProductsPaginationSettings?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionRichTextEditorSettings?: Maybe<TMcSettingsProjectExtension>;
+  /** @deprecated Experimental feature - For internal usage only */
+  transferMyViewsOwnership: TMcSettingsTransferListMyViewsResponse;
   uninstallCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   uninstallCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
   updateBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
@@ -1126,6 +1134,10 @@ export type TMcSettingsMutation_InstallCustomViewArgs = {
   projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type TMcSettingsMutation_MigrationTransferMyViewsArgs = {
+  data: TMcSettingsMigrationTransferMyViewsInput;
+};
+
 export type TMcSettingsMutation_MoveMessagesFromDeadLetterQueueToMainQueueArgs =
   {
     messages: Array<TMcSettingsMessageInput>;
@@ -1191,6 +1203,10 @@ export type TMcSettingsMutation_SetProjectExtensionRichTextEditorSettingsArgs =
   {
     data?: InputMaybe<TMcSettingsRichTextEditorSettingsInput>;
   };
+
+export type TMcSettingsMutation_TransferMyViewsOwnershipArgs = {
+  data: TMcSettingsMigrationTransferMyViewsInput;
+};
 
 export type TMcSettingsMutation_UninstallCustomApplicationArgs = {
   installedApplicationId: Scalars['ID']['input'];
@@ -1453,7 +1469,7 @@ export type TMcSettingsOidcSsoConfig = {
 export type TMcSettingsOidcSsoConfigDataInput = {
   authorityUrl: Scalars['String']['input'];
   clientId: Scalars['String']['input'];
-  clientSecret: Scalars['String']['input'];
+  clientSecret?: InputMaybe<Scalars['String']['input']>;
   logoutUrl?: InputMaybe<Scalars['String']['input']>;
   sessionTokenExpTimeSeconds?: InputMaybe<Scalars['Int']['input']>;
   teamIdForNewUsers: Scalars['String']['input'];
@@ -1665,6 +1681,8 @@ export type TMcSettingsProjectSettingsStoresView = {
   isActive?: Maybe<Scalars['Boolean']['output']>;
   nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
   projectKey: Scalars['String']['output'];
+  search?: Maybe<Scalars['String']['output']>;
+  searchParams?: Maybe<Scalars['Json']['output']>;
   sort?: Maybe<TMcSettingsSort>;
   table?: Maybe<TMcSettingsTable>;
   updatedAt: Scalars['DateTime']['output'];
@@ -1673,6 +1691,8 @@ export type TMcSettingsProjectSettingsStoresView = {
 
 export type TMcSettingsProjectSettingsStoresViewInput = {
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  searchParams?: InputMaybe<Scalars['Json']['input']>;
   sort: TMcSettingsSortCreateInput;
   table?: InputMaybe<TMcSettingsProjectSettingsStoresViewTableInput>;
 };
@@ -2296,6 +2316,12 @@ export type TMcSettingsTotalSalesConfiguration = {
 
 export type TMcSettingsTotalSalesConfigurationInput = {
   productId?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type TMcSettingsTransferListMyViewsResponse = {
+  __typename?: 'TransferListMyViewsResponse';
+  message: Scalars['String']['output'];
+  totalUpdatedViews: Scalars['Int']['output'];
 };
 
 export type TMcSettingsVariantPricesListView = {
