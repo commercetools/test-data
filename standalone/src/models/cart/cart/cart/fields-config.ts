@@ -72,6 +72,7 @@ const commonFieldsConfig = {
   paymentInfo: null,
   discountTypeCombination: null,
   priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
+  recurringPaymentConfiguration: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
