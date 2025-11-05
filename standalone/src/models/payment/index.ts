@@ -14,5 +14,5 @@ export * as PaymentMethodInfoDraft from './payment-method-info/payment-method-in
 export * as PaymentStatus from './payment-status';
 export * as PaymentStatusDraft from './payment-status/payment-status-draft';
 
-export * as Transaction from './transaction';
+export * from './transaction';
 export * as TransactionDraft from './transaction/transaction-draft';

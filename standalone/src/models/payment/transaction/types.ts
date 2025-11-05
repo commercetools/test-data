@@ -1,16 +1,27 @@
 import { Transaction, TransactionDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import { TCtpTransaction, TCtpTransactionDraft } from '@/graphql-types';
 
+/**
+ * @deprecated Use TCtpTransactionRest or TCtpTransactionGraphql instead
+ */
 export type TTransaction = Transaction;
+
+/**
+ * @deprecated Use TCtpTransactionDraftRest or TCtpTransactionDraftGraphql instead
+ */
 export type TTransactionDraft = TransactionDraft;
 
-export type TTransactionGraphql = TTransaction & {
-  __typename: 'Transaction';
-};
-export type TTransactionDraftGraphql = TTransactionDraft;
+export type TTransactionRest = Transaction;
+export type TTransactionDraftRest = TransactionDraft;
 
-export type TTransactionBuilder = TBuilder<TTransaction>;
-export type TTransactionDraftBuilder = TBuilder<TTransactionDraft>;
+export type TTransactionGraphql = TCtpTransaction;
+export type TTransactionDraftGraphql = TCtpTransactionDraft;
 
-export type TCreateTransactionBuilder = () => TTransactionBuilder;
-export type TCreateTransactionDraftBuilder = () => TTransactionDraftBuilder;
+export type TCreateTransactionBuilder<
+  TTransactionModel extends
+    | TTransactionRest
+    | TTransactionGraphql
+    | TTransactionDraftRest
+    | TTransactionDraftGraphql,
+> = () => TBuilder<TTransactionModel>;
