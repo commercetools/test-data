@@ -32,7 +32,10 @@ describe('builder', () => {
         paymentStatus: expect.objectContaining({
           interfaceCode: expect.any(String),
           interfaceText: expect.any(String),
-          state: null,
+          state: expect.objectContaining({
+            id: expect.any(String),
+            typeId: expect.any(String),
+          }),
         }),
         transactions: expect.arrayContaining([
           expect.objectContaining({
@@ -164,7 +167,9 @@ describe('builder', () => {
           __typename: 'PaymentStatus',
           interfaceCode: expect.any(String),
           interfaceText: expect.any(String),
-          state: null,
+          state: expect.objectContaining({
+            __typename: 'State',
+          }),
           stateRef: expect.objectContaining({
             __typename: 'Reference',
             id: expect.any(String),

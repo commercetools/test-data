@@ -1,6 +1,24 @@
-export * as PaymentStatusDraft from './payment-status-draft';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as presets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './payment-status-draft/presets';
-export * from './types';
+export const PaymentStatusRest = {
+  random: RestModelBuilder,
+  presets: presets.restPresets,
+};
+
+export const PaymentStatusGraphql = {
+  random: GraphqlModelBuilder,
+  presets: presets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `PaymentStatusRest` or `PaymentStatusGraphql` exported models instead of `PaymentStatus`.
+ */
+export const PaymentStatus = {
+  random: CompatModelBuilder,
+  presets: presets.compatPresets,
+};

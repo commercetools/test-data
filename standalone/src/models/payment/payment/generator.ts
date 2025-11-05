@@ -3,7 +3,7 @@ import { CentPrecisionMoney } from '@/models/commons';
 import { Customer } from '@/models/customer/customer';
 import { createRelatedDates } from '@/utils';
 import * as PaymentMethodInfo from '../payment-method-info';
-import * as PaymentStatus from '../payment-status';
+import { PaymentStatus } from '../payment-status';
 import { Transaction } from '../transaction';
 import { TPayment } from './types';
 
