@@ -1,11 +1,29 @@
-import type { TTransactionDraftBuilder } from '../../types';
-import TransactionDraft from '../builder';
+import { TBuilder } from '@/core';
+import { TTransactionDraftGraphql, TTransactionDraftRest } from '../../types';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
 
-const empty = (): TTransactionDraftBuilder =>
-  TransactionDraft()
+const populatePreset = <
+  TModel extends TTransactionDraftGraphql | TTransactionDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .interactionId(undefined)
     .state(undefined)
     .timestamp(undefined)
     .custom(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TTransactionDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TTransactionDraftGraphql> =>
+  populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TTransactionDraftRest | TTransactionDraftGraphql
+> => populatePreset(CompatModelBuilder());

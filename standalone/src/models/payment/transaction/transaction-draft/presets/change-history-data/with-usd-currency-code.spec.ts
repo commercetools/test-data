@@ -1,9 +1,9 @@
-import { TransactionType } from '../../constants';
+import { TransactionState, TransactionType } from '../../../constants';
 import type {
   TTransactionDraftRest,
   TTransactionDraftGraphql,
-} from '../../types';
-import * as emptyPresets from './empty';
+} from '../../../types';
+import * as withUsdCurrencyCodePresets from './with-usd-currency-code';
 
 function validateModel(
   model: TTransactionDraftRest | TTransactionDraftGraphql
@@ -11,49 +11,49 @@ function validateModel(
   expect(model).toEqual(
     expect.objectContaining({
       id: expect.any(String),
-      timestamp: undefined,
+      timestamp: expect.any(String),
       type: expect.toBeOneOf(Object.values(TransactionType)),
       amount: expect.objectContaining({
         centAmount: expect.any(Number),
-        currencyCode: expect.any(String),
+        currencyCode: 'USD',
       }),
-      interactionId: undefined,
-      state: undefined,
+      interactionId: null,
+      state: expect.toBeOneOf(Object.values(TransactionState)),
       interfaceId: null,
-      custom: undefined,
+      custom: null,
     })
   );
 }
 
-describe('TransactionDraft "empty" preset builders', () => {
+describe('TransactionDraft "withUsdCurrencyCodePresets" preset builders', () => {
   it('builds a REST model', () => {
-    const restModel = emptyPresets.restPreset().build();
+    const restModel = withUsdCurrencyCodePresets.restPreset().build();
 
     validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = emptyPresets.graphqlPreset().build();
+    const graphqlModel = withUsdCurrencyCodePresets.graphqlPreset().build();
 
     validateModel(graphqlModel);
   });
 });
 
-describe('TransactionDraft "empty" preset compatibility builders', () => {
+describe('TransactionDraft "withUsdCurrencyCodePresets" preset compatibility builders', () => {
   it('builds a default (REST) model', () => {
-    const compatModel = emptyPresets.compatPreset().build();
+    const compatModel = withUsdCurrencyCodePresets.compatPreset().build();
 
     validateModel(compatModel);
   });
 
   it('builds a REST model', () => {
-    const restModel = emptyPresets.compatPreset().buildRest();
+    const restModel = withUsdCurrencyCodePresets.compatPreset().buildRest();
 
     validateModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = emptyPresets
+    const graphqlModel = withUsdCurrencyCodePresets
       .compatPreset()
       .buildGraphql<TTransactionDraftGraphql>();
 

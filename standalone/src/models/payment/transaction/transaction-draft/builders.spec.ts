@@ -1,12 +1,14 @@
+import { TransactionState, TransactionType } from '../constants';
+import type { TTransactionDraftRest, TTransactionDraftGraphql } from '../types';
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from './builders';
-import { TransactionState, TransactionType } from './constants';
-import type { TTransactionRest, TTransactionGraphql } from './types';
 
-function validateModel(model: TTransactionRest | TTransactionGraphql) {
+function validateModel(
+  model: TTransactionDraftRest | TTransactionDraftGraphql
+) {
   expect(model).toEqual(
     expect.objectContaining({
       id: expect.any(String),
@@ -24,7 +26,7 @@ function validateModel(model: TTransactionRest | TTransactionGraphql) {
   );
 }
 
-describe('Transaction model builders', () => {
+describe('TransactionDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = RestModelBuilder().build();
 
@@ -35,11 +37,10 @@ describe('Transaction model builders', () => {
     const graphqlModel = GraphqlModelBuilder().build();
 
     validateModel(graphqlModel);
-    expect(graphqlModel.__typename).toBe('Transaction');
   });
 });
 
-describe('Transaction model compatibility builders', () => {
+describe('TransactionDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const compatModel = CompatModelBuilder().build();
 
@@ -54,9 +55,8 @@ describe('Transaction model compatibility builders', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
-      CompatModelBuilder().buildGraphql<TTransactionGraphql>();
+      CompatModelBuilder().buildGraphql<TTransactionDraftGraphql>();
 
     validateModel(graphqlModel);
-    expect(graphqlModel.__typename).toBe('Transaction');
   });
 });
