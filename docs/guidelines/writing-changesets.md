@@ -84,7 +84,7 @@ This change does not have any impact on consumers, however the `TaxRate` model i
 import {
   TaxRateGraphql,
   TaxRateRest,
-} from '@commercetools/composable-commerce-test-data/tax-cateopry';
+} from '@commercetools/composable-commerce-test-data/tax-category';
 
 const graphqlTaxRate = TaxRateGraphql.random().build();
 const restTaxRate = TaxRateRest.random().build();
