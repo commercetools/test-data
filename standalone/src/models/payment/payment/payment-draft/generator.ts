@@ -2,7 +2,7 @@ import { fake, Generator } from '@/core';
 import { MoneyDraft, Reference } from '@/models/commons';
 import * as PaymentMethodInfoDraft from '../../payment-method-info/payment-method-info-draft';
 import * as PaymentStatusDraft from '../../payment-status/payment-status-draft';
-import * as TransactionDraft from '../../transaction/transaction-draft';
+import { TransactionDraft } from '../../transaction/transaction-draft';
 import { TPaymentDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentdraft

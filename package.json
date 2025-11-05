@@ -4,7 +4,10 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": ["generators", "standalone"]
+    "packages": [
+      "generators",
+      "standalone"
+    ]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -31,8 +34,9 @@
     "@babel/core": "^7.21.0",
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.7",
-    "@commercetools-frontend/babel-preset-mc-app": "24.8.0",
-    "@commercetools-frontend/eslint-config-mc-app": "24.8.0",
+    "@commercetools-frontend/babel-preset-mc-app": "24.10.0",
+    "@commercetools-frontend/eslint-config-mc-app": "24.10.0",
+    "@commercetools-frontend/mc-scripts": "24.10.0",
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@graphql-codegen/add": "5.0.3",

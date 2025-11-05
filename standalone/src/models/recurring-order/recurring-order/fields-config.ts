@@ -55,6 +55,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
     customerRef: null,
     businessUnitRef: null,
     stateRef: null,
+    storeRef: null,
     originOrderRef: null,
     __typename: 'RecurringOrder',
   },
@@ -83,6 +84,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
           .id(model.state.id)
           .buildGraphql()
       : model.stateRef;
+    const storeRef = model.store
+      ? KeyReference.presets.store().key(model.store.key).buildGraphql()
+      : model.storeRef;
     const originOrderRef = model.originOrder
       ? ReferenceGraphql.presets
           .orderReference()
@@ -95,6 +99,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
       customerRef,
       businessUnitRef,
       stateRef,
+      storeRef,
       originOrderRef,
     };
   },

@@ -32,5 +32,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryDraftGraphql
       ...commonFieldsConfig,
       reservationExpirationInMinutes: null,
       supplyChannel: fake(() => ChannelGraphql.random()),
+      stockLevels: null,
     },
   };

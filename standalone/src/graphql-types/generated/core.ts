@@ -210,17 +210,13 @@ export type TCoreDbClusterConfig = {
 };
 
 export type TCoreDbClusterConfigInput = {
-  dbClusterKey: TCoreDbClusterKeyInput;
+  dbClusterKey: Scalars['String']['input'];
   sharded: Scalars['Boolean']['input'];
 };
 
 export type TCoreDbClusterKey = {
   __typename?: 'DBClusterKey';
   name: Scalars['String']['output'];
-};
-
-export type TCoreDbClusterKeyInput = {
-  name: Scalars['String']['input'];
 };
 
 export type TCoreDbClustersConfig = {
@@ -238,7 +234,7 @@ export type TCoreDbClustersConfig = {
 export type TCoreDbClustersConfigInput = {
   carts?: InputMaybe<TCoreDbClusterConfigInput>;
   commits?: InputMaybe<TCoreDbClusterConfigInput>;
-  default: TCoreDbClusterKeyInput;
+  default: Scalars['String']['input'];
   orders?: InputMaybe<TCoreDbClusterConfigInput>;
   products?: InputMaybe<TCoreDbClusterConfigInput>;
   recurringOrders?: InputMaybe<TCoreDbClusterConfigInput>;
@@ -331,10 +327,13 @@ export type TCoreInitiator = {
 export type TCoreInventoryConfiguration = {
   __typename?: 'InventoryConfiguration';
   enableInventoryAtScale: Scalars['Boolean']['output'];
+  releaseExpiredReservations: Scalars['Boolean']['output'];
   reservationExpirationInMinutes?: Maybe<Scalars['Int']['output']>;
 };
 
 export type TCoreInventoryConfigurationInput = {
+  enableInventoryAtScale?: Scalars['Boolean']['input'];
+  releaseExpiredReservations?: Scalars['Boolean']['input'];
   reservationExpirationInMinutes?: InputMaybe<Scalars['Int']['input']>;
 };
 

@@ -1,10 +1,32 @@
-import { MoneyDraft } from '@/models/commons';
-import type { TTransactionDraftBuilder } from '../../../types';
-import * as TransactionDraft from '../../index';
+import { TBuilder } from '@/core';
+import {
+  MoneyDraft,
+  MoneyDraftGraphql,
+  MoneyDraftRest,
+} from '@/models/commons';
+import {
+  TTransactionDraftGraphql,
+  TTransactionDraftRest,
+} from '../../../types';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../../builders';
 
-const withUsdCurrencyCode = (): TTransactionDraftBuilder =>
-  TransactionDraft.random().amount(
-    MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode()
+export const restPreset = (): TBuilder<TTransactionDraftRest> =>
+  RestModelBuilder().amount(
+    MoneyDraftRest.presets.changeHistoryData.withUsdCurrencyCode()
   );
 
-export default withUsdCurrencyCode;
+export const graphqlPreset = (): TBuilder<TTransactionDraftGraphql> =>
+  GraphqlModelBuilder().amount(
+    MoneyDraftGraphql.presets.changeHistoryData.withUsdCurrencyCode()
+  );
+
+export const compatPreset = (): TBuilder<
+  TTransactionDraftRest | TTransactionDraftGraphql
+> =>
+  CompatModelBuilder().amount(
+    MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode()
+  );

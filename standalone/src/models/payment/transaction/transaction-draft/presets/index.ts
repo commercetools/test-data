@@ -1,9 +1,21 @@
-import changeHistoryData from './change-history-data';
-import empty from './empty';
+import * as withUsdCurrencyCodePresets from './change-history-data/with-usd-currency-code';
+import * as emptyPresets from './empty';
 
-const presets = {
-  changeHistoryData,
-  empty,
+export const restPresets = {
+  empty: emptyPresets.restPreset,
+  changeHistoryData: {
+    withUsdCurrencyCode: withUsdCurrencyCodePresets.restPreset,
+  },
 };
-
-export default presets;
+export const graphqlPresets = {
+  empty: emptyPresets.graphqlPreset,
+  changeHistoryData: {
+    withUsdCurrencyCode: withUsdCurrencyCodePresets.graphqlPreset,
+  },
+};
+export const compatPresets = {
+  empty: emptyPresets.compatPreset,
+  changeHistoryData: {
+    withUsdCurrencyCode: withUsdCurrencyCodePresets.compatPreset,
+  },
+};

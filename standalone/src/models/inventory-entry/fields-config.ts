@@ -33,6 +33,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
     ...commonFieldsConfig,
     reservationExpirationInMinutes: null,
     supplyChannelRef: null,
+    stockLevels: null,
     __typename: 'InventoryEntry',
   },
   postBuild: (model) => {
