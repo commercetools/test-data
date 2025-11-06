@@ -1,12 +1,9 @@
 import { Builder } from '@/core';
-import type {
-  TPaymentMethodInfoDraft,
-  TCreatePaymentMethodInfoDraftBuilder,
-} from '../types';
+import type { TPaymentMethodInfoDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
-const Model: TCreatePaymentMethodInfoDraftBuilder = () =>
+const Model = () =>
   Builder<TPaymentMethodInfoDraft>({
     generator,
     transformers,

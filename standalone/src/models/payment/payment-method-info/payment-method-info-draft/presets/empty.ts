@@ -1,7 +1,6 @@
-import type { TPaymentMethodInfoDraftBuilder } from '../../types';
 import PaymentMethodInfoDraft from '../builder';
 
-const empty = (): TPaymentMethodInfoDraftBuilder =>
+const empty = () =>
   PaymentMethodInfoDraft()
     .paymentInterface(undefined)
     .method(undefined)

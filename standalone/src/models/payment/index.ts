@@ -8,7 +8,7 @@ export * from './transaction/types';
 export * as Payment from './payment';
 export * as PaymentDraft from './payment/payment-draft';
 
-export * as PaymentMethodInfo from './payment-method-info';
+export * from './payment-method-info';
 export * as PaymentMethodInfoDraft from './payment-method-info/payment-method-info-draft';
 
 export * from './payment-status';

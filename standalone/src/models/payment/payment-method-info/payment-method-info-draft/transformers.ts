@@ -1,7 +1,7 @@
 import { Transformer } from '@/core';
 import type {
   TPaymentMethodInfoDraft,
-  TPaymentMethodInfoDraftGraphQL,
+  TPaymentMethodInfoDraftGraphql,
 } from '../types';
 
 const transformers = {
@@ -17,7 +17,7 @@ const transformers = {
       buildFields: ['name'],
     }
   ),
-  graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraftGraphQL>(
+  graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraftGraphql>(
     'graphql',
     {
       buildFields: ['name'],

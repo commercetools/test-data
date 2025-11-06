@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@/core/test-utils';
 import {
   TPaymentMethodInfoDraft,
-  TPaymentMethodInfoDraftGraphQL,
+  TPaymentMethodInfoDraftGraphql,
 } from '../types';
 import * as PaymentMethodInfoInput from './index';
 
@@ -25,7 +25,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<
       TPaymentMethodInfoDraft,
-      TPaymentMethodInfoDraftGraphQL
+      TPaymentMethodInfoDraftGraphql
     >(
       'graphql',
       PaymentMethodInfoInput.random(),

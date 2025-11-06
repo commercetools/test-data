@@ -1,21 +1,30 @@
 import { PaymentMethodInfo } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TLocalizedStringGraphql } from '@/models/commons';
+import {
+  TCtpPaymentMethodInfo,
+  TCtpPaymentMethodInfoInput,
+} from '@/graphql-types';
 
+/**
+ * @deprecated Use TCtpPaymentMethodInfo or TCtpPaymentMethodInfoDraft instead
+ */
 export type TPaymentMethodInfo = PaymentMethodInfo;
 
-export type TPaymentMethodInfoGraphql = TPaymentMethodInfo & {
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  __typename: 'PaymentMethodInfo';
-};
-
+/**
+ * @deprecated Use TCtpPaymentMethodInfoDraft or TCtpPaymentMethodInfoDraftGraphql instead
+ */
 export type TPaymentMethodInfoDraft = PaymentMethodInfo;
 
-export type TPaymentMethodInfoDraftGraphQL = TPaymentMethodInfoDraft;
+export type TPaymentMethodInfoRest = PaymentMethodInfo;
+export type TPaymentMethodInfoDraftRest = PaymentMethodInfo;
 
-export type TPaymentMethodInfoBuilder = TBuilder<TPaymentMethodInfo>;
-export type TCreatePaymentMethodInfoBuilder = () => TPaymentMethodInfoBuilder;
+export type TPaymentMethodInfoGraphql = TCtpPaymentMethodInfo;
+export type TPaymentMethodInfoDraftGraphql = TCtpPaymentMethodInfoInput;
 
-export type TPaymentMethodInfoDraftBuilder = TBuilder<TPaymentMethodInfoDraft>;
-export type TCreatePaymentMethodInfoDraftBuilder =
-  () => TPaymentMethodInfoDraftBuilder;
+export type TCreatePaymentMethodInfoBuilder<
+  TPaymentMethodInfoModel extends
+    | TPaymentMethodInfoRest
+    | TPaymentMethodInfoGraphql
+    | TPaymentMethodInfoDraftRest
+    | TPaymentMethodInfoDraftGraphql,
+> = () => TBuilder<TPaymentMethodInfoModel>;
