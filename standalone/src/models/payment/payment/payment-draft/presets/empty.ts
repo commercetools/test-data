@@ -1,7 +1,6 @@
-import type { TPaymentDraftBuilder } from '../../types';
 import PaymentDraft from '../builder';
 
-const empty = (): TPaymentDraftBuilder =>
+const empty = () =>
   PaymentDraft()
     .key(undefined)
     .interfaceId(undefined)
