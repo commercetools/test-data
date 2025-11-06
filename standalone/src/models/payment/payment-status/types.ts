@@ -1,20 +1,27 @@
 import { PaymentStatus, PaymentStatusDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TReferenceGraphql } from '@/models/commons';
+import { TCtpPaymentStatus, TCtpPaymentStatusInput } from '@/graphql-types';
 
+/**
+ * @deprecated Use TCtpPaymentStatusRest or TCtpPaymentStatusGraphql instead
+ */
 export type TPaymentStatus = PaymentStatus;
 
+/**
+ * @deprecated Use TCtpPaymentStatusDraftRest or TCtpPaymentStatusDraftGraphql instead
+ */
 export type TPaymentStatusDraft = PaymentStatusDraft;
 
-export type TPaymentStatusGraphql = TPaymentStatus & {
-  stateRef: TReferenceGraphql | null;
-  __typename: 'PaymentStatus';
-};
+export type TPaymentStatusRest = PaymentStatus;
+export type TPaymentStatusDraftRest = PaymentStatusDraft;
 
-export type TPaymentStatusDraftGraphql = TPaymentStatusDraft;
+export type TPaymentStatusGraphql = TCtpPaymentStatus;
+export type TPaymentStatusDraftGraphql = TCtpPaymentStatusInput;
 
-export type TPaymentStatusBuilder = TBuilder<TPaymentStatus>;
-export type TPaymentStatusDraftBuilder = TBuilder<TPaymentStatusDraft>;
-
-export type TCreatePaymentStatusBuilder = () => TPaymentStatusBuilder;
-export type TCreatePaymentStatusDraftBuilder = () => TPaymentStatusDraftBuilder;
+export type TCreatePaymentStatusBuilder<
+  TPaymentStatusModel extends
+    | TPaymentStatusRest
+    | TPaymentStatusGraphql
+    | TPaymentStatusDraftRest
+    | TPaymentStatusDraftGraphql,
+> = () => TBuilder<TPaymentStatusModel>;
