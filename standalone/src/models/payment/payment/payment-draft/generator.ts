@@ -1,6 +1,6 @@
 import { fake, Generator } from '@/core';
 import { MoneyDraft, Reference } from '@/models/commons';
-import * as PaymentMethodInfoDraft from '../../payment-method-info/payment-method-info-draft';
+import { PaymentMethodInfoDraft } from '../../payment-method-info/payment-method-info-draft';
 import { PaymentStatusDraft } from '../../payment-status/payment-status-draft';
 import { TransactionDraft } from '../../transaction/transaction-draft';
 import { TPaymentDraft } from '../types';

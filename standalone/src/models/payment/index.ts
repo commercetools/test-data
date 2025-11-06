@@ -9,7 +9,7 @@ export * as Payment from './payment';
 export * as PaymentDraft from './payment/payment-draft';
 
 export * from './payment-method-info';
-export * as PaymentMethodInfoDraft from './payment-method-info/payment-method-info-draft';
+export * from './payment-method-info/payment-method-info-draft';
 
 export * from './payment-status';
 export * from './payment-status/payment-status-draft';

@@ -1,3 +1,24 @@
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from '../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as presets from './presets';
+
+export const PaymentMethodInfoDraftRest = {
+  random: RestModelBuilder,
+  presets: presets.restPresets,
+};
+
+export const PaymentMethodInfoDraftGraphql = {
+  random: GraphqlModelBuilder,
+  presets: presets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `PaymentMethodInfoDraftRest` or `PaymentMethodInfoDraftGraphql` exported models instead of `PaymentMethodInfoDraft`.
+ */
+export const PaymentMethodInfoDraft = {
+  random: CompatModelBuilder,
+  presets: presets.compatPresets,
+};
