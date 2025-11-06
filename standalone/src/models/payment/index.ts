@@ -6,7 +6,7 @@ export * from './transaction/types';
 
 // Export models
 export * from './payment';
-export * as PaymentDraft from './payment/payment-draft';
+export * from './payment/payment-draft';
 
 export * from './payment-method-info';
 export * from './payment-method-info/payment-method-info-draft';

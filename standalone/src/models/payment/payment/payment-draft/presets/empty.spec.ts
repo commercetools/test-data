@@ -1,19 +1,58 @@
-import { TPaymentDraft } from '../../types';
-import empty from './empty';
+import type { TPaymentDraftRest, TPaymentDraftGraphql } from '../../types';
+import * as emptyPresets from './empty';
 
-it(`should set all specified fields to undefined`, () => {
-  const emptyPaymentDraft = empty().build<TPaymentDraft>();
-  expect(emptyPaymentDraft.key).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.anonymousId).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.interfaceId).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.customer).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.paymentMethodInfo).toMatchInlineSnapshot(
-    `undefined`
+function validateModel(model: TPaymentDraftRest | TPaymentDraftGraphql) {
+  expect(model).toEqual(
+    expect.objectContaining({
+      amountPlanned: expect.objectContaining({
+        centAmount: expect.any(Number),
+        currencyCode: expect.any(String),
+      }),
+      paymentMethodInfo: undefined,
+      custom: undefined,
+      key: undefined,
+      customer: undefined,
+      anonymousId: undefined,
+      interfaceId: undefined,
+      paymentStatus: undefined,
+      transactions: undefined,
+      interfaceInteractions: undefined,
+    })
   );
-  expect(emptyPaymentDraft.paymentStatus).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.transactions).toMatchInlineSnapshot(`undefined`);
-  expect(emptyPaymentDraft.interfaceInteractions).toMatchInlineSnapshot(
-    `undefined`
-  );
-  expect(emptyPaymentDraft.custom).toMatchInlineSnapshot(`undefined`);
+}
+
+describe('PaymentDraft "empty" preset builders', () => {
+  it('builds a REST model', () => {
+    const restModel = emptyPresets.restPreset().build();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = emptyPresets.graphqlPreset().build();
+
+    validateModel(graphqlModel);
+  });
+});
+
+describe('PaymentDraft "empty" preset compatibility builders', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = emptyPresets.compatPreset().build();
+
+    validateModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = emptyPresets.compatPreset().buildRest();
+
+    validateModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = emptyPresets
+      .compatPreset()
+      .buildGraphql<TPaymentDraftGraphql>();
+
+    validateModel(graphqlModel);
+  });
 });

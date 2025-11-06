@@ -42,9 +42,9 @@ export const restFieldsConfig: TModelFieldsConfig<TPaymentRest> = {
   fields: {
     ...commonFieldsConfig,
     customer: fake(() => ReferenceRest.presets.customerReference()),
-    paymentMethodInfo: fake((f) => PaymentMethodInfoRest.random()),
-    paymentStatus: fake((f) => PaymentStatusRest.random()),
-    transactions: [fake((f) => TransactionRest.random())],
+    paymentMethodInfo: fake(() => PaymentMethodInfoRest.random()),
+    paymentStatus: fake(() => PaymentStatusRest.random()),
+    transactions: [fake(() => TransactionRest.random())],
   },
 };
 
@@ -58,9 +58,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TPaymentGraphql> = {
         __typename: 'InterfaceInteractionsRawResult',
       })
     ),
-    paymentMethodInfo: fake((f) => PaymentMethodInfoGraphql.random()),
-    paymentStatus: fake((f) => PaymentStatusGraphql.random()),
-    transactions: [fake((f) => TransactionGraphql.random())],
+    paymentMethodInfo: fake(() => PaymentMethodInfoGraphql.random()),
+    paymentStatus: fake(() => PaymentStatusGraphql.random()),
+    transactions: [fake(() => TransactionGraphql.random())],
     __typename: 'Payment',
   },
   postBuild: (model) => {
