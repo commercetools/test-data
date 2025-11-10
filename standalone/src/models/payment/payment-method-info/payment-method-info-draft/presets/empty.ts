@@ -1,13 +1,3 @@
-// import PaymentMethodInfoDraft from '../builders';
-
-// const empty = () =>
-//   PaymentMethodInfoDraft()
-//     .paymentInterface(undefined)
-//     .method(undefined)
-//     .name(undefined);
-
-// export default empty;
-
 import { TBuilder } from '@/core';
 import {
   TPaymentMethodInfoDraftGraphql,

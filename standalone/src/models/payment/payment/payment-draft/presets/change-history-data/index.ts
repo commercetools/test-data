@@ -1,7 +1,13 @@
-import withUsdCurrencyCode from './with-usd-currency-code';
+import * as withUsdCurrencyCodePresets from './with-usd-currency-code';
 
-const presets = {
-  withUsdCurrencyCode,
+export const restPresets = {
+  withUsdCurrencyCode: withUsdCurrencyCodePresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withUsdCurrencyCode: withUsdCurrencyCodePresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  withUsdCurrencyCode: withUsdCurrencyCodePresets.compatPreset,
+};

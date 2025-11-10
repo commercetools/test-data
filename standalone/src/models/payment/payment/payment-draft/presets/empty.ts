@@ -1,8 +1,17 @@
-import type { TPaymentDraftBuilder } from '../../types';
-import PaymentDraft from '../builder';
+import { TBuilder } from '@/core';
+import { TPaymentDraftGraphql, TPaymentDraftRest } from '../../types';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
 
-const empty = (): TPaymentDraftBuilder =>
-  PaymentDraft()
+const populatePreset = <
+  TModel extends TPaymentDraftGraphql | TPaymentDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key(undefined)
     .interfaceId(undefined)
     .anonymousId(undefined)
@@ -12,5 +21,14 @@ const empty = (): TPaymentDraftBuilder =>
     .transactions(undefined)
     .interfaceInteractions(undefined)
     .custom(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TPaymentDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TPaymentDraftGraphql> =>
+  populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TPaymentDraftRest | TPaymentDraftGraphql
+> => populatePreset(CompatModelBuilder());
