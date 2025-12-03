@@ -15,7 +15,7 @@ const populatePreset = <
 >(
   builder: TBuilder<TModel>
 ) => {
-  return builder.name(null).permissions([]).custom(null);
+  return builder.name(undefined).permissions([]).custom(undefined);
 };
 
 export const restPreset = (): TBuilder<TAssociateRoleDraftRest> =>

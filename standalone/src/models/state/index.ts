@@ -6,6 +6,7 @@ import {
 import * as constants from './constants';
 import * as modelPresets from './presets';
 
+// Export models
 export const StateRest = {
   constants,
   random: RestModelBuilder,
@@ -26,3 +27,8 @@ export const State = {
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
 };
+
+export * from './state-draft';
+
+// Export types
+export * from './types';
