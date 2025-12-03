@@ -19,6 +19,8 @@ export const referenceTypes = {
   productType: 'product-type',
   order: 'order',
   orderEdit: 'order-edit',
+  recurrencePolicy: 'recurrence-policy',
+  recurringOrder: 'recurring-order',
   review: 'review',
   shippingMethod: 'shipping-method',
   shoppingList: 'shopping-list',

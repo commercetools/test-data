@@ -22,6 +22,8 @@ import productSelectionReference from './product-selection-draft-reference';
 import productTypeReference from './product-type-draft-reference';
 import quoteReference from './quote-draft-reference';
 import quoteRequestReference from './quote-request-draft-reference';
+import recurrencePolicyReference from './recurrence-policy-draft-reference';
+import recurringOrderReference from './recurring-order-draft-reference';
 import reviewReference from './review-draft-reference';
 import shippingMethodReference from './shipping-method-draft-reference';
 import shoppingListReference from './shopping-list-draft-reference';
@@ -70,6 +72,8 @@ export const restPresets = {
   taxCategoryReference: taxCategoryReference.restPreset,
   typeReference: typeReference.restPreset,
   zoneReference: zoneReference.restPreset,
+  recurrencePolicyReference: recurrencePolicyReference.restPreset,
+  recurringOrderReference: recurringOrderReference.restPreset,
 };
 export const graphqlPresets = {
   associateRoleReference: associateRoleReference.graphqlPreset,
@@ -96,6 +100,8 @@ export const graphqlPresets = {
   productTypeReference: productTypeReference.graphqlPreset,
   quoteReference: quoteReference.graphqlPreset,
   quoteRequestReference: quoteRequestReference.graphqlPreset,
+  recurrencePolicyReference: recurrencePolicyReference.graphqlPreset,
+  recurringOrderReference: recurringOrderReference.graphqlPreset,
   reviewReference: reviewReference.graphqlPreset,
   shippingMethodReference: shippingMethodReference.graphqlPreset,
   shoppingListReference: shoppingListReference.graphqlPreset,
@@ -133,6 +139,8 @@ export const compatPresets = {
   productTypeReference: productTypeReference.compatPreset,
   quoteReference: quoteReference.compatPreset,
   quoteRequestReference: quoteRequestReference.compatPreset,
+  recurrencePolicyReference: recurrencePolicyReference.compatPreset,
+  recurringOrderReference: recurringOrderReference.compatPreset,
   reviewReference: reviewReference.compatPreset,
   shippingMethodReference: shippingMethodReference.compatPreset,
   shoppingListReference: shoppingListReference.compatPreset,
