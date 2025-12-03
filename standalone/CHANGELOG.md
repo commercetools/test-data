@@ -1,5 +1,93 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.12.0
+
+### Minor Changes
+
+- [#930](https://github.com/commercetools/test-data/pull/930) [`9ae8ecf`](https://github.com/commercetools/test-data/commit/9ae8ecf8ca4f2f8beb19dc01b1923edd96855512) Thanks [@NickDevG](https://github.com/NickDevG)! - Exporting missing shopping list submodels `ShoppingListDraft`, `ShoppingListDraftRest`, `ShoppingListDraftGraphql`, `ShoppingListLineItemDraftRest`, `ShoppingListLineItemDraftGraphql`, `TextLineItemDraftRest` and `TextLineItemDraftGraphql,`
+
+  Exporting missing state draft submodels `StateDraftRest`, `StateDraftGraphql` and `StateDraft` as well as the types for the module.
+
+### Patch Changes
+
+- [#993](https://github.com/commercetools/test-data/pull/993) [`133dd9e`](https://github.com/commercetools/test-data/commit/133dd9e2ebee47cf28903070e638c8196d28df02) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `Payment` and `PaymentDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Payment` and `PaymentDraft` models are now deprecated and you're expected to start using the `PaymentGraphql` or `PaymentDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    PaymentGraphql,
+    PaymentRest,
+    PaymentDraftGraphql,
+    PaymentDraftRest,
+  } from '@commercetools/composable-commerce-test-data/payment';
+
+  const graphqlPayment = PaymentGraphql.random().build();
+  const restPayment = PaymentRest.random().build();
+
+  const graphqlPaymentDraft = PaymentDraftGraphql.random().build();
+  const restPaymentDraft = PaymentDraftRest.random().build();
+  ```
+
+- [#991](https://github.com/commercetools/test-data/pull/991) [`f3729ec`](https://github.com/commercetools/test-data/commit/f3729ecad1431ca42b90293d0840293d8000e85f) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `PaymentStatus` and `PaymentStatusDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `PaymentStatus` and `PaymentStatusDraft` models are now deprecated and you're expected to start using the `PaymentStatusGraphql` or `PaymentStatusDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    PaymentStatusGraphql,
+    PaymentStatusRest,
+    PaymentStatusDraftGraphql,
+    PaymentStatusDraftRest,
+  } from '@commercetools/composable-commerce-test-data/payment';
+
+  const graphqlPaymentStatus = PaymentStatusGraphql.random().build();
+  const restPaymentStatus = PaymentStatusRest.random().build();
+
+  const graphqlPaymentStatusDraft = PaymentStatusDraftGraphql.random().build();
+  const restPaymentStatusDraft = PaymentStatusDraftRest.random().build();
+  ```
+
+- [#992](https://github.com/commercetools/test-data/pull/992) [`52abb24`](https://github.com/commercetools/test-data/commit/52abb2445021585000d1de55346416b48bd81846) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `PaymentMethodInfo` and `PaymentMethodInfoDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `PaymentMethodInfo` and `PaymentMethodInfoDraft` models are now deprecated and you're expected to start using the `PaymentMethodInfoGraphql` or `PaymentMethodInfoDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    PaymentMethodInfoGraphql,
+    PaymentMethodInfoRest,
+    PaymentMethodInfoDraftGraphql,
+    PaymentMethodInfoDraftRest,
+  } from '@commercetools/composable-commerce-test-data/payment';
+
+  const graphqlPaymentMethodInfo = PaymentMethodInfoGraphql.random().build();
+  const restPaymentMethodInfo = PaymentMethodInfoRest.random().build();
+
+  const graphqlPaymentMethodInfoDraft =
+    PaymentMethodInfoDraftGraphql.random().build();
+  const restPaymentMethodInfoDraft =
+    PaymentMethodInfoDraftRest.random().build();
+  ```
+
+- [#989](https://github.com/commercetools/test-data/pull/989) [`fab39e9`](https://github.com/commercetools/test-data/commit/fab39e9259e4b23fab1be684d0cf2ae76bbed549) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated the `Transaction` and `TransactionDraft` models to the new implementation patterns.
+
+  This change does not have any impact on consumers, however the `Transaction` and `TransactionDraft` models are now deprecated and you're expected to start using the `TransactionGraphql` or `TransactionDraftRest` models instead depending of the type of API you're mocking.
+
+  ```ts
+  import {
+    TransactionGraphql,
+    TransactionRest,
+    TransactionDraftGraphql,
+    TransactionDraftRest,
+  } from '@commercetools/composable-commerce-test-data/payment';
+
+  const graphqlTransaction = TransactionGraphql.random().build();
+  const restTransaction = TransactionRest.random().build();
+
+  const graphqlTransactionDraft = TransactionDraftGraphql.random().build();
+  const restTransactionDraft = TransactionDraftRest.random().build();
+  ```
+
 ## 13.11.0
 
 ### Minor Changes
