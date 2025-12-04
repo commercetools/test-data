@@ -28,6 +28,8 @@ export * from './item-shipping-target';
 export * from './item-state';
 export * from './line-item';
 export * from './line-item/line-item-draft';
+export * from './line-item-recurrence-info';
+export * from './line-item-recurrence-info/line-item-recurrence-info-draft';
 export * from './method-tax-rate';
 export * from './method-taxed-price';
 export * from './shipping';
