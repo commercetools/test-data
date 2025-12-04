@@ -61,6 +61,8 @@ export const restPresets = {
   productTypeReference: productTypeReference.restPreset,
   quoteReference: quoteReference.restPreset,
   quoteRequestReference: quoteRequestReference.restPreset,
+  recurrencePolicyReference: recurrencePolicyReference.restPreset,
+  recurringOrderReference: recurringOrderReference.restPreset,
   reviewReference: reviewReference.restPreset,
   shippingMethodReference: shippingMethodReference.restPreset,
   shoppingListReference: shoppingListReference.restPreset,
@@ -72,8 +74,6 @@ export const restPresets = {
   taxCategoryReference: taxCategoryReference.restPreset,
   typeReference: typeReference.restPreset,
   zoneReference: zoneReference.restPreset,
-  recurrencePolicyReference: recurrencePolicyReference.restPreset,
-  recurringOrderReference: recurringOrderReference.restPreset,
 };
 export const graphqlPresets = {
   associateRoleReference: associateRoleReference.graphqlPreset,
