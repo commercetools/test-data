@@ -15,6 +15,8 @@ export * from './cart';
 export * from './cart/cart-draft';
 export * from './custom-line-item';
 export * from './custom-line-item/custom-line-item-draft';
+export * from './custom-line-item-recurrence-info';
+export * from './custom-line-item-recurrence-info/custom-line-item-recurrence-info-draft';
 export * from './direct-discount';
 export * from './discount-code-info';
 export * from './discount-on-total-price';
