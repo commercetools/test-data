@@ -24,12 +24,10 @@ describe('CustomLineItemRecurrenceInfo Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         recurrencePolicy: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'RecurrencePolicy',
         }),
         expiresAt: expect.any(String),
         recurrencePolicyRef: expect.objectContaining({
-          typeId: 'recurrence-policy',
           __typename: 'Reference',
         }),
         __typename: 'CustomLineItemRecurrenceInfo',

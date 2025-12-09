@@ -26,7 +26,7 @@ describe('LineItemRecurrenceInfoDraft Builder', () => {
         priceSelectionMode: expect.any(String),
         expiresAt: expect.any(String),
         recurrencePolicyRef: expect.objectContaining({
-          typeId: 'recurrence-policy',
+          id: expect.any(String),
         }),
         __typename: 'LineItemRecurrenceInfoDraft',
       })

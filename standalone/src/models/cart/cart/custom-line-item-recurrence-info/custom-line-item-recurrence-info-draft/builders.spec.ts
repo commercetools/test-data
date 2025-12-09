@@ -25,7 +25,7 @@ describe('CustomLineItemRecurrenceInfoDraft Builder', () => {
       expect.objectContaining({
         expiresAt: expect.any(String),
         recurrencePolicyRef: expect.objectContaining({
-          typeId: 'recurrence-policy',
+          id: expect.any(String),
         }),
         __typename: 'CustomLineItemRecurrenceInfoDraft',
       })

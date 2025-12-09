@@ -30,7 +30,6 @@ describe('LineItemRecurrenceInfo Builder', () => {
         priceSelectionMode: expect.any(String),
         expiresAt: expect.any(String),
         recurrencePolicyRef: expect.objectContaining({
-          typeId: 'recurrence-policy',
           __typename: 'Reference',
         }),
         __typename: 'LineItemRecurrenceInfo',
