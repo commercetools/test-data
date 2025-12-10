@@ -9,6 +9,10 @@ jobs:
   release:
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
        # Get GitHub token via the CT Changesets App
       - name: Generate GitHub token (via CT Changesets App)
@@ -41,14 +45,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Creating .npmrc
+      - name: Verify npm version
         run: |
-          cat << EOF > "$HOME/.npmrc"
-            email=npmjs@commercetools.com
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          npm --version
+          # Ensure latest npm is installed for trusted publishing (OIDC)
 
       - name: Building packages
         run: pnpm build
