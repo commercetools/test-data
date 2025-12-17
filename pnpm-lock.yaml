@@ -178,8 +178,8 @@ importers:
         specifier: 8.18.0
         version: 8.18.0
       '@faker-js/faker':
-        specifier: ^10.0.0
-        version: 10.1.0
+        specifier: ^9.0.0
+        version: 9.6.0
       '@types/lodash':
         specifier: ^4.17.0
         version: 4.17.16
@@ -1728,9 +1728,9 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@faker-js/faker@10.1.0':
-    resolution: {integrity: sha512-C3mrr3b5dRVlKPJdfrAXS8+dq+rq8Qm5SNRazca0JKgw1HQERFmrVb0towvMmw5uu8hHKNiQasMaR/tydf3Zsg==}
-    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
+  '@faker-js/faker@9.6.0':
+    resolution: {integrity: sha512-3vm4by+B5lvsFPSyep3ELWmZfE3kicDtmemVpuwl1yH7tqtnHdsA6hG8fbXedMVdkzgtvzWoRgjSB4Q+FHnZiw==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
   '@flopflip/cache@15.1.5':
     resolution: {integrity: sha512-dQCDl4KLkSqbDy8ffQykwUvtptrc+lMfACfcQctxCpkzrXEYbTwphWK4EKCu2VfHu/AdHYd6v02NJefMxtMx0Q==}
@@ -11117,7 +11117,7 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@faker-js/faker@10.1.0': {}
+  '@faker-js/faker@9.6.0': {}
 
   '@flopflip/cache@15.1.5(typescript@5.9.3)':
     dependencies:
