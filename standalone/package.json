@@ -138,7 +138,7 @@
     "@commercetools/platform-sdk": "8.18.0",
     "@faker-js/faker": "^10.0.0",
     "@types/lodash": "^4.17.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "omit-deep": "^0.3.0"
   }
 }
