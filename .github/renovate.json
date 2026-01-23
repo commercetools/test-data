@@ -2,12 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>commercetools/renovate-config:default.json",
-    "github>commercetools/renovate-config//libraries/apollo-graphql.json",
     "github>commercetools/renovate-config//libraries/application-kit.json",
     "github>commercetools/renovate-config//libraries/babel.json",
     "github>commercetools/renovate-config//libraries/git-workflow.json",
     "github>commercetools/renovate-config//libraries/graphql-codegen.json",
-    "github>commercetools/renovate-config//libraries/internal-clis.json",
     "github>commercetools/renovate-config//libraries/linting.json",
     "github>commercetools/renovate-config//libraries/typescript.json",
     "github>commercetools/renovate-config//composite/testing.json",
