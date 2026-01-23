@@ -1,23 +1,42 @@
 {
-  "extends": ["config:base", ":pinOnlyDevDependencies", "schedule:monthly"],
-  "separateMajorMinor": true,
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>commercetools/renovate-config:default.json",
+    "github>commercetools/renovate-config//libraries/application-kit.json",
+    "github>commercetools/renovate-config//libraries/babel.json",
+    "github>commercetools/renovate-config//libraries/git-workflow.json",
+    "github>commercetools/renovate-config//libraries/graphql-codegen.json",
+    "github>commercetools/renovate-config//libraries/linting.json",
+    "github>commercetools/renovate-config//libraries/typescript.json",
+    "github>commercetools/renovate-config//composite/testing.json",
+    "github>commercetools/renovate-config//platforms/nodejs.json",
+    "github>commercetools/renovate-config//platforms/pnpm.json"
+  ],
   "packageRules": [
     {
-      "sourceUrlPrefixes": [
-        "https://github.com/commercetools/merchant-center-application-kit"
+      "matchPackageNames": [
+        "@changesets/changelog-github",
+        "@changesets/cli"
       ],
-      "groupName": "all application-kit packages"
+      "groupName": "changesets"
     },
     {
-      "packagePatterns": ["*"],
-      "updateTypes": ["minor", "patch"],
-      "groupName": "all dependencies",
-      "groupSlug": "all"
+      "matchPackageNames": [
+        "@manypkg/cli",
+        "@manypkg/find-root",
+        "@preconstruct/cli"
+      ],
+      "groupName": "monorepo tools"
+    },
+    {
+      "matchPackageNames": [
+        "babel-plugin-module-resolver",
+        "cross-env",
+        "dotenv",
+        "find-up",
+        "tsc-files"
+      ],
+      "groupName": "build and dev tools"
     }
-  ],
-  "lockFileMaintenance": {
-    "enabled": false
-  },
-  "labels": ["🤖 Type: Dependencies"],
-  "ignoreDeps": []
+  ]
 }
