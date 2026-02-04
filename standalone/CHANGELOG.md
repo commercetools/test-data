@@ -1,5 +1,48 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.13.0
+
+### Minor Changes
+
+- [#997](https://github.com/commercetools/test-data/pull/997) [`b60bcce`](https://github.com/commercetools/test-data/commit/b60bcce1e19717163a0b6c7bf584a7a8ca3d754f) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing new models named, `line-item-recurrence-info` and `line-item-recurrence-info-draft`, `custom-line-item-recurrence-info` and `custom-line-item-recurrence-info-draft`. All these models can be consumed from the `@commercetools/composable-commerce-test-data/cart` entry point.
+
+  This is how new models could be used:
+
+  ```ts
+  import {
+    LineItemRecurrenceInfoRest,
+    LineItemRecurrenceInfoGraphql,
+    LineItemRecurrenceInfoDraftRest,
+    LineItemRecurrenceInfoDraftGraphql,
+    CustomLineItemRecurrenceInfoRest,
+    CustomLineItemRecurrenceInfoGraphql,
+    CustomLineItemRecurrenceInfoDraftRest,
+    CustomLineItemRecurrenceInfoDraftGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  // Line item recurrence models
+  const lineItemRecurrenceInfoRest =
+    LineItemRecurrenceInfoRest.random().build();
+  const lineItemRecurrenceInfoGraphql =
+    LineItemRecurrenceInfoGraphql.random().build();
+  const lineItemRecurrenceInfoDraftRest =
+    LineItemRecurrenceInfoDraftRest.random().build();
+  const lineItemRecurrenceInfoDraftGraphql =
+    LineItemRecurrenceInfoDraftGraphql.random().build();
+
+  // Custom line item recurrence models
+  const customLineItemRecurrenceInfoRest =
+    CustomLineItemRecurrenceInfoRest.random().build();
+  const customLineItemRecurrenceInfoGraphql =
+    CustomLineItemRecurrenceInfoGraphql.random().build();
+  const customLineItemRecurrenceInfoDraftRest =
+    CustomLineItemRecurrenceInfoDraftRest.random().build();
+  const customLineItemRecurrenceInfoDraftGraphql =
+    CustomLineItemRecurrenceInfoDraftGraphql.random().build();
+  ```
+
+- [#1003](https://github.com/commercetools/test-data/pull/1003) [`fccb6bb`](https://github.com/commercetools/test-data/commit/fccb6bbe3f9539067ae8454589814bfd08679a03) Thanks [@mario-priceless](https://github.com/mario-priceless)! - **Jest 30 upgrade** - [Upgrade guide](https://jestjs.io/docs/upgrading-to-jest30)
+
 ## 13.12.0
 
 ### Minor Changes
