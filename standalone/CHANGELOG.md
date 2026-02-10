@@ -1,5 +1,11 @@
 # @commercetools/composable-commerce-test-data
 
+## 13.13.1
+
+### Patch Changes
+
+- [#1008](https://github.com/commercetools/test-data/pull/1008) [`f230439`](https://github.com/commercetools/test-data/commit/f230439150311e7698567e7f1c8d982b6d4bee63) Thanks [@nima-ct](https://github.com/nima-ct)! - Export staged types from the standalone-price entry point. TStagedStandalonePrice, TStagedStandalonePriceBuilder, TStagedPriceDraft, TStagedPriceDraftBuilder and related types are now re-exported from @commercetools/composable-commerce-test-data/standalone-price.
+
 ## 13.13.0
 
 ### Minor Changes
