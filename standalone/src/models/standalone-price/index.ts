@@ -6,3 +6,5 @@ export * as StandalonePrice from '.';
 export { default as random } from './builder';
 export { default as presets } from './presets';
 export * from './types';
+export * from './staged-standalone-price/types';
+export * from './staged-price-draft/types';
