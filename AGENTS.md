@@ -13,12 +13,21 @@ Two workspace packages (`pnpm-workspace.yaml`):
 - **`standalone/`** — the published package
   (`@commercetools/composable-commerce-test-data`). Contains all domain models
   under `src/models/`, organized by domain area (product, cart, category, etc.).
-  Each model folder contains `types.ts`, `fields-config.ts`, `builders.ts`,
-  `builders.spec.ts`, `index.ts`, and an optional `presets/` directory. The
-  `src/core/` module provides `createSpecializedBuilder` and helpers that all
-  domain models depend on.
+  Each domain folder (e.g. `product/`) contains one or more sub-model folders
+  (e.g. `product/`, `product-draft/`), and each sub-model folder contains
+  `types.ts`, `fields-config.ts`, `builders.ts`, `builders.spec.ts`, `index.ts`,
+  and an optional `presets/` directory. The `src/core/` module exports
+  `createSpecializedBuilder`, `fake`, `sequence`, `oneOf`,
+  `buildLimitGraphqlList`, `buildCountGraphqlList`, and other helpers. All domain
+  models depend on core — changes here have blast-radius across every model.
+  Dependencies beyond root stack: `@commercetools/platform-sdk` (REST types),
+  `@faker-js/faker` (random data generation), `lodash`, `omit-deep`.
 - **`generators/`** — internal CLI tool (`pnpm generate-model`) for scaffolding
-  new test data models.
+  new test data models. A `prompts`-based CLI entry point (`src/index.ts`)
+  dispatches to generators — currently the only generator is `new-test-model`.
+  Templates live in `src/new-test-model/templates/` and use
+  [Squirrelly](https://squirrelly.js.org/) for rendering. This package uses
+  `tsx` to run TypeScript directly — it is not built by `preconstruct`.
 
 Every model has two representations — REST and GraphQL — each with a random
 builder and optional presets. REST types come from `@commercetools/platform-sdk`.
@@ -54,7 +63,9 @@ entrypoint (see `standalone/package.json` `preconstruct.entrypoints`).
    versions.
 4. Wire up builders in `builders.ts` using `createSpecializedBuilder`.
 5. Re-export from the domain's `index.ts` and add the entrypoint to
-   `standalone/package.json` `preconstruct.entrypoints`.
+   `standalone/package.json` `preconstruct.entrypoints`. Add re-exports from the
+   top-level barrel files (e.g. `src/product.ts` re-exports from
+   `src/models/product/`). Update the `files` array in `standalone/package.json`.
 6. Write builder specs validating default REST and GraphQL output shapes.
 7. Run `pnpm test`, `pnpm typecheck`, and `pnpm lint`.
 
@@ -99,14 +110,23 @@ entrypoint (see `standalone/package.json` `preconstruct.entrypoints`).
 - The `prettierPath` in `jest.test.config.js` points to `prettier-jest` (an
   older version) because the latest Prettier is incompatible with Jest's snapshot
   formatting.
+- `src/core/` is high blast-radius — it is the foundation for every model
+  builder. Changes here affect all models. Run the full test suite after any
+  core change.
+- Entrypoint registration is manual — if you add a new model directory under
+  `src/models/` but forget to add it to `preconstruct.entrypoints` in
+  `standalone/package.json`, it won't be included in the published build.
+- The `files` array in `standalone/package.json` also needs updating when adding
+  a new domain — it controls what gets published to npm.
 
 ## Conventions
 
 - **Commits:** conventional commit format (enforced by commitlint). Scopes with
   slashes are allowed, e.g. `refactor(app/my-component): something`.
-- **Model file structure:** every model must have `types.ts`, `fields-config.ts`,
-  `builders.ts`, `builders.spec.ts`, and `index.ts`. Presets go in a `presets/`
-  subdirectory.
+- **Model file structure:** each domain folder contains one or more sub-model
+  folders (e.g. `product/product/`, `product/product-draft/`). Every sub-model
+  must have `types.ts`, `fields-config.ts`, `builders.ts`, `builders.spec.ts`,
+  and `index.ts`. Presets go in a `presets/` subdirectory.
 - **Fields config:** only assign values to required properties. For fully-populated
   versions, create a `withAllFields` preset.
 - **Changesets:** required for publishable changes. Run `pnpm changeset` — see
