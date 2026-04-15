@@ -39,6 +39,125 @@ runs after codegen to un-export colliding helper types and replace `any` with
 `preconstruct` builds the standalone package — each domain model is a separate
 entrypoint (see `standalone/package.json` `preconstruct.entrypoints`).
 
+## Import Aliases
+
+All imports within `standalone/` use path aliases (defined in `tsconfig.json`,
+mirrored in `babel.config.js`):
+
+| Alias               | Resolves to                      |
+| ------------------- | -------------------------------- |
+| `@/core`            | `standalone/src/core`            |
+| `@/core/test-utils` | `standalone/src/core/test-utils` |
+| `@/graphql-types`   | `standalone/src/graphql-types`   |
+| `@/models/*`        | `standalone/src/models/*`        |
+| `@/utils`           | `standalone/src/utils`           |
+
+Do not use relative imports to reach across these boundaries.
+
+## Builder API
+
+### Factory functions
+
+- **`createSpecializedBuilder({ name, type, modelFieldsConfig })`** — creates a
+  builder for a single API type (`'rest'` or `'graphql'`). Use for
+  `RestModelBuilder` and `GraphqlModelBuilder`.
+- **`createCompatibilityBuilder({ name, modelFieldsConfig: { rest, graphql } })`**
+  — creates a builder that supports all three build methods. Deprecated for new
+  models; prefer specialized builders.
+
+### Builder methods
+
+Every builder is a Proxy with:
+
+- **`.build()`** — returns the built object (REST for specialized rest builders,
+  REST for compat builders).
+- **`.buildRest()`** / **`.buildGraphql()`** — explicitly build one
+  representation.
+- **`.fieldName(value)`** — fluent setter for any model field. Returns the
+  builder for chaining. Value can be a literal, a nested builder (auto-built),
+  or a function `(currentState) => Partial<Model>`.
+- **`.build({ omitFields: ['a'] })`** / **`.build({ keepFields: ['a'] })`** —
+  include or exclude specific fields from the output.
+
+### Fields config
+
+Each model exports `restFieldsConfig` and `graphqlFieldsConfig` of type
+`TModelFieldsConfig<T>`:
+
+```ts
+export const restFieldsConfig: TModelFieldsConfig<TMyModelRest> = {
+  fields: {
+    id: fake((f) => f.string.uuid()), // callback receives a Faker instance
+    version: sequence(), // auto-incrementing number per build
+    status: oneOf('Active', 'Inactive'), // random pick
+    active: bool(), // random true/false
+    name: fake(() => LocalizedString.random()), // nested builder (auto-built)
+  },
+};
+```
+
+Only assign values to **required** fields. Use presets for fully-populated
+versions.
+
+GraphQL configs for non-draft models **must** include `__typename` as a string
+literal (e.g. `__typename: 'Category'`). Draft models must **not** include it
+(see ADR 0002).
+
+### `postBuild` callback
+
+Use `postBuild` when a field's value depends on other generated fields — most
+commonly in GraphQL configs where singular fields are derived from
+`*AllLocales` arrays:
+
+```ts
+export const graphqlFieldsConfig: TModelFieldsConfig<TMyModelGraphql> = {
+  fields: {
+    name: null,
+    nameAllLocales: fake(() => LocalizedString.random()) /* ... */,
+  },
+  postBuild: (model) => ({
+    ...model,
+    name: LocalizedString.resolveGraphqlDefaultLocaleValue(
+      model.nameAllLocales
+    ),
+  }),
+};
+```
+
+In compat builders, `postBuild` receives a second arg `{ isCompatMode: boolean }`
+to handle shape differences between REST and GraphQL field names.
+
+### Presets
+
+Presets live in `presets/` next to the model and return **builders** (not built
+objects) so consumers can chain further overrides before calling `.build()`.
+
+Each preset file exports up to three variants (`restPreset`, `graphqlPreset`,
+`compatPreset`). The `presets/index.ts` collects them:
+
+```ts
+export const restPresets = { withAllFields: restPreset };
+export const graphqlPresets = { withAllFields: graphqlPreset };
+export const compatPresets = { withAllFields: compatPreset };
+```
+
+### Model index pattern
+
+Each sub-model's `index.ts` wires builders and presets into the public API:
+
+```ts
+export const MyModelRest = {
+  presets: presets.restPresets,
+  random: RestModelBuilder,
+};
+export const MyModelGraphql = {
+  presets: presets.graphqlPresets,
+  random: GraphqlModelBuilder,
+};
+```
+
+Consumers use: `MyModelRest.random().fieldName(value).build()`.
+
 ## How To Make Changes
 
 ### Verify your work
