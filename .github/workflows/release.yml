@@ -60,6 +60,7 @@ jobs:
           publish: pnpm changeset publish
           version: pnpm changeset:version-and-format
           commit: 'ci(changesets): version packages'
+          commitMode: 'github-api'
         env:
           GITHUB_TOKEN: ${{ steps.generate_github_token.outputs.token }}
 
