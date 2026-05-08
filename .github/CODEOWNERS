@@ -1,64 +1,19 @@
-# This is a comment.
-# Each line is a file pattern followed by one or more owners.
-
 # Rules of code ownership
 # -----------------------
-# 1. Ideally all files in this repository have an owner - it is accepted that this is unlikely to happen
-# 2. We avoid broad ownership rules as much as possible and prefer more granular assignments
-# 3. Applications can be co-owned. If they are co-owned we should:
-#     2.1 Have one ownership rule for the entire application first, pointing to all teams owning the application (1)
-#     2.2 Have granular rules as good as possible to different parts of the application code, which take precedence over the broader rules (order of rules definition is important) (2)
-# 4. This file is grouped by applications and/or folders not by teams
-#     4.1 The order of rules within this file should match the default directory ordering
+# 1. @commercetools/merchant-center-tech-leadership reviews tooling and this file
+# 2. @commercetools/merchant-center-foundations-team-devs reviews all models, packages, and testing
 
 # GitHub
 /.github/CODEOWNERS @commercetools/merchant-center-tech-leadership
 
 # Tooling
-/standalone/src/core/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
-/standalone/src/utils/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
-/generators/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
-/codegen* @commercetools/bots-team-engineers
+/standalone/src/core/ @commercetools/merchant-center-tech-leadership
+/standalone/src/utils/ @commercetools/merchant-center-tech-leadership
+/generators/ @commercetools/merchant-center-tech-leadership
+/codegen* @commercetools/merchant-center-foundations-team-devs
 
 # Models
-/standalone/src/models/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
-
-/standalone/src/models/associate-role @commercetools/customers-team-fe
-/standalone/src/models/attribute-group @commercetools/pdm-team-fe
-/standalone/src/models/business-unit @commercetools/customers-team-fe
-/standalone/src/models/cart @commercetools/checkout-team-fe
-/standalone/src/models/cart-discount @commercetools/priceless-team-fe
-/standalone/src/models/category @commercetools/pdm-team-fe
-/standalone/src/models/channel @commercetools/context-team-fe
-/standalone/src/models/custom-view @commercetools/bots-team-engineers
-/standalone/src/models/customer @commercetools/customers-team-fe
-/standalone/src/models/customer-group @commercetools/customers-team-fe
-/standalone/src/models/discount @commercetools/priceless-team-fe
-/standalone/src/models/discounts-custom-view @commercetools/priceless-team-fe
-/standalone/src/models/filter-values @commercetools/priceless-team-fe
-/standalone/src/models/inventory-entry @commercetools/pdm-team-fe
-/standalone/src/models/order @commercetools/checkout-team-fe
-/standalone/src/models/payment @commercetools/checkout-team-fe
-/standalone/src/models/product @commercetools/pdm-team-fe
-/standalone/src/models/product-discount @commercetools/priceless-team-fe
-/standalone/src/models/product-projection @commercetools/pdm-team-fe
-/standalone/src/models/product/product-selection @commercetools/context-team-fe
-/standalone/src/models/product-type @commercetools/pdm-team-fe
-/standalone/src/models/project @commercetools/bots-team-engineers
-/standalone/src/models/quote @commercetools/customers-team-fe
-/standalone/src/models/quote-request @commercetools/customers-team-fe
-/standalone/src/models/shipping-method @commercetools/checkout-team-fe
-/standalone/src/models/shopping-list @commercetools/checkout-team-fe
-/standalone/src/models/staged-quote @commercetools/customers-team-fe
-/standalone/src/models/standalone-price @commercetools/priceless-team-fe
-/standalone/src/models/store @commercetools/context-team-fe
-/standalone/src/models/tax-category @commercetools/checkout-team-fe
-/standalone/src/models/zone @commercetools/checkout-team-fe
-
-/standalone/src/models/*/change-history-* @commercetools/pangolin-team-fe
-/standalone/src/models/*/sample-data-* @commercetools/craft-team-fe
+/standalone/src/models/** @commercetools/merchant-center-foundations-team-devs
 
 # Sample data preset directories
-**/presets/sample-data-b2c-lifestyle/ @commercetools/craft-team-fe
-**/presets/sample-data-b2b/ @commercetools/craft-team-fe
-**/presets/sample-data-fashion/ @commercetools/craft-team-fe
+**/presets/sample-data-*/ @commercetools/merchant-center-foundations-team-devs
