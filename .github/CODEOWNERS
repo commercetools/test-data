@@ -10,7 +10,7 @@
 /standalone/src/core/ @commercetools/merchant-center-tech-leadership
 /standalone/src/utils/ @commercetools/merchant-center-tech-leadership
 /generators/ @commercetools/merchant-center-tech-leadership
-/codegen* @commercetools/bots-team-engineers
+/codegen* @commercetools/merchant-center-foundations-team-devs
 
 # Models
 /standalone/src/models/** @commercetools/merchant-center-foundations-team-devs
