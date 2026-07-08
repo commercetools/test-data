@@ -28,7 +28,7 @@
     "generate-model": "pnpm --filter @commercetools-test-data/generators generate"
   },
   "dependencies": {
-    "@babel/core": "^7.21.0",
+    "@babel/core": "7.29.0",
     "@changesets/changelog-github": "0.5.2",
     "@changesets/cli": "2.29.8",
     "@commercetools-frontend/babel-preset-mc-app": "24.12.0",
@@ -46,15 +46,15 @@
     "@manypkg/cli": "0.25.1",
     "@manypkg/find-root": "3.1.0",
     "@preconstruct/cli": "2.8.12",
-    "@types/jest": "^29.4.0",
+    "@types/jest": "29.5.14",
     "@types/node": "24.10.9",
     "babel-jest": "29.7.0",
-    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-plugin-module-resolver": "5.0.2",
     "cross-env": "10.1.0",
     "dotenv": "17.2.3",
     "eslint": "8.57.1",
     "eslint-formatter-pretty": "5.0.0",
-    "find-up": "^7.0.0",
+    "find-up": "7.0.0",
     "husky": "9.1.7",
     "jest": "30.2.0",
     "jest-extended": "6.0.0",
@@ -64,9 +64,9 @@
     "jest-watch-typeahead": "2.2.2",
     "lint-staged": "15.5.2",
     "prettier": "3.7.4",
-    "prettier-jest": "npm:prettier@^3.0.0",
-    "tsc-files": "^1.1.3",
+    "prettier-jest": "npm:prettier@3.7.4",
+    "tsc-files": "1.1.4",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@11.10.0"
 }
