@@ -131,14 +131,14 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.17.9",
-    "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-frontend/application-config": "^24.0.0",
-    "@commercetools-frontend/constants": "^24.0.0",
+    "@babel/runtime": "7.28.4",
+    "@babel/runtime-corejs3": "7.28.4",
+    "@commercetools-frontend/application-config": "24.13.0",
+    "@commercetools-frontend/constants": "24.13.0",
     "@commercetools/platform-sdk": "8.18.0",
-    "@faker-js/faker": "^10.0.0",
-    "@types/lodash": "^4.17.0",
-    "lodash": "^4.17.21",
-    "omit-deep": "^0.3.0"
+    "@faker-js/faker": "10.3.0",
+    "@types/lodash": "4.17.21",
+    "lodash": "4.17.23",
+    "omit-deep": "0.3.0"
   }
 }
