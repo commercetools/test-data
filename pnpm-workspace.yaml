@@ -1,3 +1,17 @@
 packages:
-- "generators"
-- "standalone"
+  - "generators"
+  - "standalone"
+
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - '@commercetools/*'
+  - '@commercetools-frontend/*'
+  - '@commercetools-backend/*'
+  - '@commercetools-uikit/*'
+
+blockExoticSubdeps: true
+
+allowBuilds:
+  core-js: false
+  core-js-pure: false
+  esbuild: false

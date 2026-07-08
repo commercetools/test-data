@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", ":pinOnlyDevDependencies", "schedule:monthly"],
+  "extends": ["github>commercetools/renovate-config", "config:base", ":pinOnlyDevDependencies", "schedule:monthly"],
   "separateMajorMinor": true,
   "packageRules": [
     {
