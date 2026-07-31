@@ -29,6 +29,8 @@ It is _mandatory that before contributing to this repository_ you make sure you 
 
 Each respective team is responsible for the test data models of their domain in their repository to follow the defined patterns and to use these models in their applications instead of writing custom test data models in a bespoke repository.
 
+Dependency management in this repository follows the Merchant Center supply chain security baseline: a pnpm install delay/cooldown (`minimumReleaseAge`), build-script allowlists, SHA-pinned GitHub Actions, and centralized Renovate configuration. Before adding, updating, or overriding a dependency — or when a `minimumReleaseAge` cooldown or `pnpm audit --fix` blocks you — follow the [Supply Chain Security — Baseline & Override Procedures](https://commercetools.atlassian.net/wiki/spaces/MCF/pages/3580231746/Supply+Chain+Security+-+Baseline+Override+Procedures).
+
 ## Code review
 
 Pull Request reviews must and is expected to only involve the team owning the respective models by their domain. It can only, on demand and on a voluntary basis, involve other team(s).
@@ -147,7 +149,6 @@ When developing with multiple repositories, you may need to link packages locall
 ## Steps to Link a Local Package
 
 1. **Clone and Set Up the test-data Repository:**
-
    - Ensure that the test-data repository you want to link is cloned locally and properly set up.
      ```bash
      cd path-to-test-data-repo
@@ -156,7 +157,6 @@ When developing with multiple repositories, you may need to link packages locall
      ```
 
 2. **Update the Application's `package.json`:**
-
    - In your application’s `package.json`, replace the dependency version with the relative path to the local package directory. For example:
      ```json
      {
@@ -168,7 +168,6 @@ When developing with multiple repositories, you may need to link packages locall
      ```
 
 3. **Install Dependencies:**
-
    - Run the following commands to ensure your application is using the local version of the package:
      ```bash
      cd path-to-application-repo
@@ -176,7 +175,6 @@ When developing with multiple repositories, you may need to link packages locall
      ```
 
 4. **Verify the Link:**
-
    - Ensure that the package is correctly linked by inspecting the `node_modules` directory in your application repository. The package should point to your local build instead of fetching from a remote registry.
 
 5. **Development Workflow:**
