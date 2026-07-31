@@ -9,6 +9,11 @@ minimumReleaseAgeExclude:
   - '@commercetools-backend/*'
   - '@commercetools-uikit/*'
 
+# minimumReleaseAge set explicitly flips this to hard-fail; false restores pnpm's soft fall-back so clean CI/Vercel installs don't break.
+minimumReleaseAgeStrict: false
+# Skip the age gate for packages whose registry metadata lacks a publish time (pnpm/pnpm#11616).
+minimumReleaseAgeIgnoreMissingTime: true
+
 blockExoticSubdeps: true
 
 allowBuilds:
