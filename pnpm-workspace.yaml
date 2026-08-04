@@ -9,6 +9,11 @@ minimumReleaseAgeExclude:
   - '@commercetools-backend/*'
   - '@commercetools-uikit/*'
 
+# Explicit minimumReleaseAge already makes pnpm hard-fail on a no-mature-match; true keeps that (no silent fall-back or auto-exclude).
+minimumReleaseAgeStrict: true
+# Deliberate tightening: enforce the gate even when registry metadata omits a publish time, so a time-less mirror can't waive the cooldown.
+minimumReleaseAgeIgnoreMissingTime: false
+
 blockExoticSubdeps: true
 
 allowBuilds:
