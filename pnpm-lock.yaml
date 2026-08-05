@@ -72,14 +72,14 @@ importers:
         specifier: 29.7.0
         version: 29.7.0(@babel/core@7.29.0)
       babel-plugin-module-resolver:
-        specifier: 5.0.2
-        version: 5.0.2
+        specifier: 5.0.3
+        version: 5.0.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
       dotenv:
-        specifier: 17.2.3
-        version: 17.2.3
+        specifier: 17.4.2
+        version: 17.4.2
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -3874,8 +3874,8 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
 
-  babel-plugin-module-resolver@5.0.2:
-    resolution: {integrity: sha512-9KtaCazHee2xc0ibfqsDeamwDps6FZNo5S0Q81dUqEuFzVwPhcT4J5jOqIVvgCA3Q/wO9hKYxN/Ds3tIsp5ygg==}
+  babel-plugin-module-resolver@5.0.3:
+    resolution: {integrity: sha512-h8h6H71ZvdLJZxZrYkaeR30BojTaV7O9GfqacY14SNj5CNB8ocL9tydNzTC0JrnNN7vY3eJhwCmkDj7tuEUaqQ==}
 
   babel-plugin-polyfill-corejs2@0.4.15:
     resolution: {integrity: sha512-hR3GwrRwHUfYwGfrisXPIDP3JcYfBrW7wKE7+Au6wDYl7fm/ka1NEII6kORzxNU556JjfidZeBsO10kYvtV1aw==}
@@ -4663,8 +4663,8 @@ packages:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
     engines: {node: '>=12'}
 
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+  dotenv@17.4.2:
+    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
 
   dotenv@8.6.0:
@@ -13694,7 +13694,7 @@ snapshots:
       cosmiconfig: 7.1.0
       resolve: 1.22.11
 
-  babel-plugin-module-resolver@5.0.2:
+  babel-plugin-module-resolver@5.0.3:
     dependencies:
       find-babel-config: 2.1.2
       glob: 9.3.5
@@ -14537,7 +14537,7 @@ snapshots:
 
   dotenv@16.6.1: {}
 
-  dotenv@17.2.3: {}
+  dotenv@17.4.2: {}
 
   dotenv@8.6.0: {}
 
