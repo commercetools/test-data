@@ -151,8 +151,8 @@ importers:
         version: 4.21.0
     devDependencies:
       '@types/lodash':
-        specifier: 4.17.21
-        version: 4.17.21
+        specifier: 4.17.25
+        version: 4.17.25
       '@types/mustache':
         specifier: 4.2.6
         version: 4.2.6
@@ -181,8 +181,8 @@ importers:
         specifier: 10.3.0
         version: 10.3.0
       '@types/lodash':
-        specifier: 4.17.21
-        version: 4.17.21
+        specifier: 4.17.25
+        version: 4.17.25
       lodash:
         specifier: 4.17.23
         version: 4.17.23
@@ -3219,8 +3219,8 @@ packages:
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
-  '@types/lodash@4.17.21':
-    resolution: {integrity: sha512-FOvQ0YPD5NOfPgMzJihoT+Za5pdkDJWcbpuj1DjaKZIr/gxodQjY/uWEFlTNqW2ugXHUiL8lRQgw63dzKHZdeQ==}
+  '@types/lodash@4.17.25':
+    resolution: {integrity: sha512-+K1NIO8I+F9/wNulfVvu23QYd0Pe9/OCqRrim4NoYIf1VoEDL90Ve4ClzpyqBLc7NpGGWRvYNCKZ1BE/Jpf8dQ==}
 
   '@types/mime@1.3.5':
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
@@ -9827,7 +9827,7 @@ snapshots:
       '@commercetools-frontend/constants': 24.12.0
       '@commercetools-frontend/notifications': 24.12.0(redux@4.2.1)
       '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/react': 19.2.14
       '@types/react-redux': 7.1.34
       lodash: 4.17.21
@@ -9872,7 +9872,7 @@ snapshots:
       '@react-hook/latest': 1.0.3(react@19.2.4)
       '@react-hook/resize-observer': 1.2.6(react@19.2.4)
       '@types/history': 4.7.11
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/prop-types': 15.7.15
       '@types/react': 19.2.14
       '@types/react-dom': 19.2.3(@types/react@19.2.14)
@@ -9903,7 +9903,7 @@ snapshots:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
       '@commercetools-frontend/constants': 24.12.0
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/react': 19.2.14
       ajv: 8.17.1
       core-js: 3.48.0
@@ -9928,7 +9928,7 @@ snapshots:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
       '@commercetools-frontend/constants': 24.13.0
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/react': 19.2.14
       ajv: 8.17.1
       core-js: 3.48.0
@@ -9957,7 +9957,7 @@ snapshots:
       '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
       '@commercetools/http-user-agent': 3.0.0
       '@emotion/react': 11.14.0(@types/react@19.2.14)(react@19.2.4)
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/prop-types': 15.7.15
       '@types/react': 19.2.14
       apollo-link-logger: 2.0.1(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
@@ -10086,7 +10086,7 @@ snapshots:
       '@babel/runtime-corejs3': 7.28.4
       '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
       '@emotion/react': 11.14.0(@types/react@19.2.14)(react@19.2.4)
-      '@types/lodash': 4.17.21
+      '@types/lodash': 4.17.25
       '@types/prop-types': 15.7.15
       '@types/react': 19.2.14
       lodash: 4.17.21
@@ -12941,7 +12941,7 @@ snapshots:
     dependencies:
       '@types/node': 24.10.9
 
-  '@types/lodash@4.17.21': {}
+  '@types/lodash@4.17.25': {}
 
   '@types/mime@1.3.5': {}
 
