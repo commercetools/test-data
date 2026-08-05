@@ -8,6 +8,8 @@ minimumReleaseAgeExclude:
   - '@commercetools-frontend/*'
   - '@commercetools-backend/*'
   - '@commercetools-uikit/*'
+  # Renovate security update: lodash@4.18.1
+  - lodash@4.18.1
 
 # Explicit minimumReleaseAge already makes pnpm hard-fail on a no-mature-match; true keeps that (no silent fall-back or auto-exclude).
 minimumReleaseAgeStrict: true
