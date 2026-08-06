@@ -17,8 +17,8 @@
   "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "7.28.4",
-    "@babel/runtime-corejs3": "7.28.4",
+    "@babel/runtime": "7.29.7",
+    "@babel/runtime-corejs3": "7.29.7",
     "@manypkg/find-root": "3.1.0",
     "lodash": "4.17.23",
     "prompts": "2.4.2",
