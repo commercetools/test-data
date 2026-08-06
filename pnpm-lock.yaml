@@ -18,14 +18,14 @@ importers:
         specifier: 2.29.8
         version: 2.29.8(@types/node@24.10.9)
       '@commercetools-frontend/babel-preset-mc-app':
-        specifier: 24.12.0
-        version: 24.12.0
+        specifier: 24.13.0
+        version: 24.13.0
       '@commercetools-frontend/eslint-config-mc-app':
-        specifier: 24.12.0
-        version: 24.12.0(eslint@8.57.1)(jest@30.2.0(@types/node@24.10.9)(babel-plugin-macros@3.1.0))
+        specifier: 24.13.0
+        version: 24.13.0(eslint@8.57.1)(jest@30.2.0(@types/node@24.10.9)(babel-plugin-macros@3.1.0))
       '@commercetools-frontend/mc-scripts':
-        specifier: 24.12.0
-        version: 24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(eslint@8.57.1)(jiti@2.6.1)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(rollup@2.80.0)(terser@5.46.0)(tsx@4.21.0)(type-fest@0.21.3)(typescript@5.9.3)(yaml@2.8.2)
+        specifier: 24.13.0
+        version: 24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(eslint@8.57.1)(jiti@2.6.1)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(rollup@2.80.0)(terser@5.46.0)(tsx@4.21.0)(type-fest@0.21.3)(typescript@5.9.3)(yaml@2.8.2)
       '@commitlint/cli':
         specifier: 19.8.1
         version: 19.8.1(@types/node@24.10.9)(typescript@5.9.3)
@@ -957,89 +957,82 @@ packages:
   '@commercetools-community-kit/i18n@0.3.0':
     resolution: {integrity: sha512-EPxsJaNXUYwY6Q9gjyKOymzhlSNAhTur415yX25d6S/GA6sG0yWx+/WRKCr/AqSKOskv8SGpj8+tMyPFO6AeNQ==}
 
-  '@commercetools-frontend/actions-global@24.12.0':
-    resolution: {integrity: sha512-tuPab0akfpQ+6v5C8sYtAAXShFUgK7BRMmI58l0FUd1C+LaAd5Uch+WY77+9lhZGLwduLhH1mzwwlv0krVy9rQ==}
+  '@commercetools-frontend/actions-global@24.13.0':
+    resolution: {integrity: sha512-GYtgBa+p8KyZsQ3f+B8lEq9DIhvSzBwyIqIR681J2xuoEK+YNNWpHbhBivrXTLYhK3nzIJ5pwG7/6tIxOocQiw==}
     peerDependencies:
       react: 19.x
       react-redux: 7.x || 9.x
       redux: 4.x || 5.x
 
-  '@commercetools-frontend/application-components@24.12.0':
-    resolution: {integrity: sha512-UZZrL9iVG99hrXTef7heHXwbkDxlQnUlounMF7EQcDZpfvQfeizloOEm+phw/2cjlw+NYeveAa9aytOdqxDS8w==}
+  '@commercetools-frontend/application-components@24.13.0':
+    resolution: {integrity: sha512-H23r+Z8WtY4SvisoojtM64Z/qx0pdEBD1vyVpNv4g+ngqqXsDdRA2PrjfGqmEw93a/qL3/F5iLY/LUddXmb4mA==}
     peerDependencies:
       react: 19.x
       react-dom: 19.x
       react-intl: 7.x
       react-router-dom: 5.x
 
-  '@commercetools-frontend/application-config@24.12.0':
-    resolution: {integrity: sha512-POFo4dCovtXjWBQ1eBl73KHS7b00wJRwbQO9eAn4R0+pPzpYJCg8fHPdQTTeAP1M7AsOJkulpzI0FJHOiHopmQ==}
-    engines: {node: 18.x || 20.x || >=22.0.0}
-
   '@commercetools-frontend/application-config@24.13.0':
     resolution: {integrity: sha512-MPGFrdJ2dTTcGQOAsGL832R++BlT1zqsmltcY918mqrx/RusJu/HEsYBLV7kICxtU5kMXk7hKd8ylR4dTIDH1Q==}
     engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/application-shell-connectors@24.12.0':
-    resolution: {integrity: sha512-ElwQUZ3vBSD9nDcW1tsoKZAtUzPrGBDlD94AJBtnSgFQC03ldwW18OdYti+C3RbO7/ZhVHPYZ6MqrmNJAIFCbA==}
+  '@commercetools-frontend/application-shell-connectors@24.13.0':
+    resolution: {integrity: sha512-lcIJF2gKoT4Qck9OC0Y7YWBNHTC7mZDFhKCsBVIwQhGB6zwJO2RSl+2fidOlc09+AmMZKf1XEOG7wyoVGkphXQ==}
     engines: {node: 18.x || 20.x || >=22.0.0}
     peerDependencies:
       '@apollo/client': 3.x
       react: 19.x
 
-  '@commercetools-frontend/assets@24.12.0':
-    resolution: {integrity: sha512-0eR+62NXptjNhaH+VHsMa4kSCxQwlRO5bZODt4Swlmei+c2FHQeD/3Jm0qoDX+4b+lEyJpHOIQn8c8DI6qj/ew==}
+  '@commercetools-frontend/assets@24.13.0':
+    resolution: {integrity: sha512-J2AkCaf+BjGmR0+8Pxqsz7eg182XaPM2SeoqdWMWOPh9bZObB1OpSNZxO49/rNujvAjlJSsmQjmzDSuYeZpKYw==}
 
-  '@commercetools-frontend/babel-preset-mc-app@24.12.0':
-    resolution: {integrity: sha512-gaoXjxD4eX36G6t29PZlu0VpObOWYeGG4baTBxuxkpJRioawqYl8zDahThC7Nca470CZbMKCwjBE8I44FGXgTA==}
+  '@commercetools-frontend/babel-preset-mc-app@24.13.0':
+    resolution: {integrity: sha512-EJEztm85RKhMKhrYGncEwHxqlTV6qDFK1MaFCufg5ZdKlq7jbtDafbanaZxsB9DdaqmAgluXt+wZmZjA48+GVA==}
     engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/browser-history@24.12.0':
-    resolution: {integrity: sha512-YP7qq+OTiFAUmCiPKmFZh6p5qJC7LFAIyMLMWbECaEkN3+uw0glg2/qrO2xscHYmwPNZv91WWgRepAy7pRH6sQ==}
-
-  '@commercetools-frontend/constants@24.12.0':
-    resolution: {integrity: sha512-miDkrun5eaXk5VqNd0MAvzmoD3oauF5Bq+tzxmPm/M+cd3WAS1RZFlX2fwhuV66hkzB51pEuXiC7J3ufDmeAiw==}
+  '@commercetools-frontend/browser-history@24.13.0':
+    resolution: {integrity: sha512-G6yt52lRcUhD7LP/DCKSERnclu5zu9Q1Jug7niiIjwl0wrfsfmt6Zqq09qAQgi3x1/y99FKQoRWOYHZU44l3VA==}
 
   '@commercetools-frontend/constants@24.13.0':
     resolution: {integrity: sha512-6/zv6vLPXB/fdB9Qj1oe23Eabklpg/e4xyjaYQ6R+ZxUa2HoulNYfzd5NwqFd0n3Nm+gzwnt5nHlHiWkCVBoEg==}
 
-  '@commercetools-frontend/eslint-config-mc-app@24.12.0':
-    resolution: {integrity: sha512-vjkDPCZJ5tPbahOVvPFQajipgk6tM+JPQPpnW8r7bCFhu/TUw22bBmadjBVJHyi0IjSWqvmPpMmTLUI4UemmCQ==}
+  '@commercetools-frontend/eslint-config-mc-app@24.13.0':
+    resolution: {integrity: sha512-dXXptEfCnUmOema4XOieba2aLf7T2C3sftJa2GdmD9kGph+XdUDozbZ5sPc8p1Nn56n5ar6BUssmVjwY19MF3A==}
     engines: {node: 18.x || 20.x || >=22.0.0}
     peerDependencies:
       eslint: 8.x
 
-  '@commercetools-frontend/i18n@24.12.0':
-    resolution: {integrity: sha512-9+ARw7np5RBlE31IvsAPAgPOU6pT+fFA6P/3Rgkt4Jbw+neJRGCX0oPPxFDzO+mWKxIK5mueM/SH9bL4REJZwQ==}
+  '@commercetools-frontend/i18n@24.13.0':
+    resolution: {integrity: sha512-mU4bcoZcmRf4EOpk5YL+/mySbyK++QoloKM+YNC2NMrndoVPhDv5F76aO3oolz1AYYetXRLO1ZdyTBiNW/7ZmA==}
     peerDependencies:
       react: 19.x
       react-intl: 7.x
 
-  '@commercetools-frontend/l10n@24.12.0':
-    resolution: {integrity: sha512-vr+yipz68E1QLgjOqw1EUVSLBrNbi4Qrl6g72Pg2chDcqCEpIqN6qX0YjkHGnNfQwOwC2h4kl5r53nxr3aJ8mA==}
+  '@commercetools-frontend/l10n@24.13.0':
+    resolution: {integrity: sha512-sSjcYMMvxZEL5+NkEbNe1u81MhIFgJkLkD5kGIG3mpK9buuSX0nSfEBZW60ql0aRnkUiD3RG5EV/hPc3gnkRiA==}
     peerDependencies:
       react: 19.x
 
-  '@commercetools-frontend/mc-dev-authentication@24.12.0':
-    resolution: {integrity: sha512-P+1TWDHID0p4/zVD+zE1YNjSCF9NhwA4ykiReuAgckjq2gwhW56l/IC5cUU2vZQVp4X9CeBVYOxahuFuxpXZHw==}
+  '@commercetools-frontend/mc-dev-authentication@24.13.0':
+    resolution: {integrity: sha512-sLUFE2Ahr1HNHpFk8RNwXl/4mgWdhg/64MmwBf9tQkbH4Bp1tJb11P+LeHPRUVXi5BFx12Nta4tbB850as5Fng==}
     engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/mc-html-template@24.12.0':
-    resolution: {integrity: sha512-cwGuFO7P/rEWOJtwuo8o/pkoEARwzvES9FE7jMUToBi6A7yAPvY+Z1KVxjl/A9VnI9NKC/Zj3rNayv8ldzmbFA==}
+  '@commercetools-frontend/mc-html-template@24.13.0':
+    resolution: {integrity: sha512-cJKvMrCiyIT8Y00NgLVYLguQDxcF37b2NvkIMuQ5NEkOnjEUUGcnSGjjW1/S7Zh54qfV+zuQey8BVpW+MIOukQ==}
     engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/mc-scripts@24.12.0':
-    resolution: {integrity: sha512-Jr2AkLUwiL0kkXZ3cqOBoxK4kJfSH+gOJVSlaeVM503X0F6S0sWVgAIEsQgjQZfYZuj0V7Lw7TbeFiIvFoAlVQ==}
+  '@commercetools-frontend/mc-scripts@24.13.0':
+    resolution: {integrity: sha512-YrxZyxKpYRFXEkLL/CVUp5LBm00YY4UvjR1nYig7Begw9kyPfs64yOISfjalkAUwq6A7OMt+7h/1e66Q2I5alw==}
     engines: {node: 18.x || 20.x || >=22.0.0}
     hasBin: true
 
-  '@commercetools-frontend/notifications@24.12.0':
-    resolution: {integrity: sha512-Dz7/RyxH4RfB2XWw74wdxCwrPwNEOUianug7PHFyKZXjeaVvC53XpSnBEGs/AYvpBZKAW/2NczIhRuyue857CQ==}
+  '@commercetools-frontend/notifications@24.13.0':
+    resolution: {integrity: sha512-UWbjOZ2erBjwUBmotqPziKdbTgUMSijVopCUwoNkj9HnHc77eBAhvJ8kGr6lS3Bu7uqZs8rcDmj/rFdvzSv4XA==}
     peerDependencies:
       redux: 4.x || 5.x
 
-  '@commercetools-frontend/sentry@24.12.0':
-    resolution: {integrity: sha512-Kycmzu73aML7iD302zVj26OZnoHB5PYhdCoF5j4pxgIVu/ORe6iotA0/0L22ia2MM2CLG0aBEJqyquvubw+CQg==}
+  '@commercetools-frontend/sentry@24.13.0':
+    resolution: {integrity: sha512-3HOaAPHgvZanoED2TzIYyG7uoBxXWROVuMd6kUEkBY9haShwinO7ZSxatbIVOCEq3cOcEsqNm0ioU/0dr+LaVA==}
     peerDependencies:
       react: 19.x
 
@@ -9819,14 +9812,14 @@ snapshots:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
 
-  '@commercetools-frontend/actions-global@24.12.0(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react@19.2.4)(redux@4.2.1)':
+  '@commercetools-frontend/actions-global@24.13.0(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react@19.2.4)(redux@4.2.1)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/browser-history': 24.12.0
-      '@commercetools-frontend/constants': 24.12.0
-      '@commercetools-frontend/notifications': 24.12.0(redux@4.2.1)
-      '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
+      '@commercetools-frontend/browser-history': 24.13.0
+      '@commercetools-frontend/constants': 24.13.0
+      '@commercetools-frontend/notifications': 24.13.0(redux@4.2.1)
+      '@commercetools-frontend/sentry': 24.13.0(react@19.2.4)
       '@types/lodash': 4.17.21
       '@types/react': 19.2.14
       '@types/react-redux': 7.1.34
@@ -9836,18 +9829,18 @@ snapshots:
       redux: 4.2.1
       redux-thunk: 3.1.0(redux@4.2.1)
 
-  '@commercetools-frontend/application-components@24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(typescript@5.9.3)':
+  '@commercetools-frontend/application-components@24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(typescript@5.9.3)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/actions-global': 24.12.0(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react@19.2.4)(redux@4.2.1)
-      '@commercetools-frontend/application-config': 24.12.0(@types/node@24.10.9)(typescript@5.9.3)
-      '@commercetools-frontend/application-shell-connectors': 24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react@19.2.4)(typescript@5.9.3)
-      '@commercetools-frontend/assets': 24.12.0
-      '@commercetools-frontend/constants': 24.12.0
-      '@commercetools-frontend/i18n': 24.12.0(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react@19.2.4)
-      '@commercetools-frontend/l10n': 24.12.0(react@19.2.4)
-      '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
+      '@commercetools-frontend/actions-global': 24.13.0(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react@19.2.4)(redux@4.2.1)
+      '@commercetools-frontend/application-config': 24.13.0(@types/node@24.10.9)(typescript@5.9.3)
+      '@commercetools-frontend/application-shell-connectors': 24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react@19.2.4)(typescript@5.9.3)
+      '@commercetools-frontend/assets': 24.13.0
+      '@commercetools-frontend/constants': 24.13.0
+      '@commercetools-frontend/i18n': 24.13.0(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react@19.2.4)
+      '@commercetools-frontend/l10n': 24.13.0(react@19.2.4)
+      '@commercetools-frontend/sentry': 24.13.0(react@19.2.4)
       '@commercetools-uikit/accessible-button': 20.4.0(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@commercetools-uikit/card': 20.4.0(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)
       '@commercetools-uikit/constraints': 20.4.0(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -9896,31 +9889,6 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@commercetools-frontend/application-config@24.12.0(@types/node@24.10.9)(typescript@5.9.3)':
-    dependencies:
-      '@babel/core': 7.29.0
-      '@babel/register': 7.28.6(@babel/core@7.29.0)
-      '@babel/runtime': 7.28.4
-      '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/constants': 24.12.0
-      '@types/lodash': 4.17.21
-      '@types/react': 19.2.14
-      ajv: 8.17.1
-      core-js: 3.48.0
-      cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.10.9)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
-      dompurify: 3.3.2
-      jsdom: 21.1.2
-      lodash: 4.17.21
-      omit-empty-es: 1.2.0
-    transitivePeerDependencies:
-      - '@types/node'
-      - bufferutil
-      - canvas
-      - supports-color
-      - typescript
-      - utf-8-validate
-
   '@commercetools-frontend/application-config@24.13.0(@types/node@24.10.9)(typescript@5.9.3)':
     dependencies:
       '@babel/core': 7.29.0
@@ -9946,15 +9914,15 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@commercetools-frontend/application-shell-connectors@24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react@19.2.4)(typescript@5.9.3)':
+  '@commercetools-frontend/application-shell-connectors@24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react@19.2.4)(typescript@5.9.3)':
     dependencies:
       '@apollo/client': 3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/application-config': 24.12.0(@types/node@24.10.9)(typescript@5.9.3)
-      '@commercetools-frontend/browser-history': 24.12.0
-      '@commercetools-frontend/constants': 24.12.0
-      '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
+      '@commercetools-frontend/application-config': 24.13.0(@types/node@24.10.9)(typescript@5.9.3)
+      '@commercetools-frontend/browser-history': 24.13.0
+      '@commercetools-frontend/constants': 24.13.0
+      '@commercetools-frontend/sentry': 24.13.0(react@19.2.4)
       '@commercetools/http-user-agent': 3.0.0
       '@emotion/react': 11.14.0(@types/react@19.2.14)(react@19.2.4)
       '@types/lodash': 4.17.21
@@ -9978,9 +9946,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@commercetools-frontend/assets@24.12.0': {}
+  '@commercetools-frontend/assets@24.13.0': {}
 
-  '@commercetools-frontend/babel-preset-mc-app@24.12.0':
+  '@commercetools-frontend/babel-preset-mc-app@24.13.0':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-do-expressions': 7.28.6(@babel/core@7.29.0)
@@ -10013,7 +9981,7 @@ snapshots:
       - supports-color
       - ts-jest
 
-  '@commercetools-frontend/browser-history@24.12.0':
+  '@commercetools-frontend/browser-history@24.13.0':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
@@ -10022,21 +9990,16 @@ snapshots:
       history-query-enhancer: 1.0.4(history@4.10.1)
       qss: 2.0.3
 
-  '@commercetools-frontend/constants@24.12.0':
-    dependencies:
-      '@babel/runtime': 7.28.4
-      '@babel/runtime-corejs3': 7.28.4
-
   '@commercetools-frontend/constants@24.13.0':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
 
-  '@commercetools-frontend/eslint-config-mc-app@24.12.0(eslint@8.57.1)(jest@30.2.0(@types/node@24.10.9)(babel-plugin-macros@3.1.0))':
+  '@commercetools-frontend/eslint-config-mc-app@24.13.0(eslint@8.57.1)(jest@30.2.0(@types/node@24.10.9)(babel-plugin-macros@3.1.0))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@8.57.1)
-      '@commercetools-frontend/babel-preset-mc-app': 24.12.0
+      '@commercetools-frontend/babel-preset-mc-app': 24.13.0
       '@rushstack/eslint-patch': 1.16.1
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.1)(typescript@5.9.3)
@@ -10062,12 +10025,12 @@ snapshots:
       - supports-color
       - ts-jest
 
-  '@commercetools-frontend/i18n@24.12.0(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react@19.2.4)':
+  '@commercetools-frontend/i18n@24.13.0(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
       '@commercetools-community-kit/i18n': 0.3.0
-      '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
+      '@commercetools-frontend/sentry': 24.13.0(react@19.2.4)
       '@commercetools-uikit/i18n': 20.4.0
       '@emotion/react': 11.14.0(@types/react@19.2.14)(react@19.2.4)
       '@formatjs/icu-messageformat-parser': 2.11.2
@@ -10080,11 +10043,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@commercetools-frontend/l10n@24.12.0(react@19.2.4)':
+  '@commercetools-frontend/l10n@24.13.0(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/sentry': 24.12.0(react@19.2.4)
+      '@commercetools-frontend/sentry': 24.13.0(react@19.2.4)
       '@emotion/react': 11.14.0(@types/react@19.2.14)(react@19.2.4)
       '@types/lodash': 4.17.21
       '@types/prop-types': 15.7.15
@@ -10097,17 +10060,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@commercetools-frontend/mc-dev-authentication@24.12.0':
+  '@commercetools-frontend/mc-dev-authentication@24.13.0':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
 
-  '@commercetools-frontend/mc-html-template@24.12.0(@types/node@24.10.9)(typescript@5.9.3)':
+  '@commercetools-frontend/mc-html-template@24.13.0(@types/node@24.10.9)(typescript@5.9.3)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/application-config': 24.12.0(@types/node@24.10.9)(typescript@5.9.3)
-      '@commercetools-frontend/constants': 24.12.0
+      '@commercetools-frontend/application-config': 24.13.0(@types/node@24.10.9)(typescript@5.9.3)
+      '@commercetools-frontend/constants': 24.13.0
       serialize-javascript: 6.0.2
       uglify-js: 3.19.3
       uglifycss: 0.0.29
@@ -10119,19 +10082,19 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@commercetools-frontend/mc-scripts@24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(eslint@8.57.1)(jiti@2.6.1)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(rollup@2.80.0)(terser@5.46.0)(tsx@4.21.0)(type-fest@0.21.3)(typescript@5.9.3)(yaml@2.8.2)':
+  '@commercetools-frontend/mc-scripts@24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(eslint@8.57.1)(jiti@2.6.1)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(rollup@2.80.0)(terser@5.46.0)(tsx@4.21.0)(type-fest@0.21.3)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-do-expressions': 7.28.6(@babel/core@7.29.0)
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/application-components': 24.12.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(typescript@5.9.3)
-      '@commercetools-frontend/application-config': 24.12.0(@types/node@24.10.9)(typescript@5.9.3)
-      '@commercetools-frontend/assets': 24.12.0
-      '@commercetools-frontend/babel-preset-mc-app': 24.12.0
-      '@commercetools-frontend/constants': 24.12.0
-      '@commercetools-frontend/mc-dev-authentication': 24.12.0
-      '@commercetools-frontend/mc-html-template': 24.12.0(@types/node@24.10.9)(typescript@5.9.3)
+      '@commercetools-frontend/application-components': 24.13.0(@apollo/client@3.14.0(@types/react@19.2.14)(graphql-ws@6.0.7(graphql@16.11.0)(ws@8.19.0))(graphql@16.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/node@24.10.9)(react-dom@19.2.4(react@19.2.4))(react-intl@7.1.14(react@19.2.4)(typescript@5.9.3))(react-redux@9.2.0(@types/react@19.2.14)(react@19.2.4)(redux@4.2.1))(react-router-dom@5.3.4(react@19.2.4))(react@19.2.4)(redux@4.2.1)(typescript@5.9.3)
+      '@commercetools-frontend/application-config': 24.13.0(@types/node@24.10.9)(typescript@5.9.3)
+      '@commercetools-frontend/assets': 24.13.0
+      '@commercetools-frontend/babel-preset-mc-app': 24.13.0
+      '@commercetools-frontend/constants': 24.13.0
+      '@commercetools-frontend/mc-dev-authentication': 24.13.0
+      '@commercetools-frontend/mc-html-template': 24.13.0(@types/node@24.10.9)(typescript@5.9.3)
       '@commercetools/http-user-agent': 3.0.0
       '@emotion/babel-plugin': 11.13.5
       '@formatjs/cli-lib': 6.6.6
@@ -10251,18 +10214,18 @@ snapshots:
       - webpack-plugin-serve
       - yaml
 
-  '@commercetools-frontend/notifications@24.12.0(redux@4.2.1)':
+  '@commercetools-frontend/notifications@24.13.0(redux@4.2.1)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
       redux: 4.2.1
 
-  '@commercetools-frontend/sentry@24.12.0(react@19.2.4)':
+  '@commercetools-frontend/sentry@24.13.0(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
-      '@commercetools-frontend/browser-history': 24.12.0
-      '@commercetools-frontend/constants': 24.12.0
+      '@commercetools-frontend/browser-history': 24.13.0
+      '@commercetools-frontend/constants': 24.13.0
       '@sentry/browser': 7.120.4
       '@sentry/react': 7.120.4(react@19.2.4)
       '@sentry/types': 7.120.4
@@ -11593,7 +11556,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.11.0)':
     dependencies:
       graphql: 16.11.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/prisma-loader@8.0.17(@types/node@24.10.9)(graphql@16.11.0)':
     dependencies:
@@ -11628,7 +11591,7 @@ snapshots:
       '@ardatan/relay-compiler': 13.0.0(graphql@16.11.0)
       '@graphql-tools/utils': 11.0.0(graphql@16.11.0)
       graphql: 16.11.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/schema@10.0.31(graphql@16.11.0)':
     dependencies:
@@ -13907,7 +13870,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   chalk@4.1.2:
@@ -13943,7 +13906,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   char-regex@1.0.2: {}
 
@@ -14084,7 +14047,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@0.5.2: {}
@@ -15578,7 +15541,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   history-query-enhancer@1.0.4(history@4.10.1):
     dependencies:
@@ -15930,7 +15893,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-map@2.0.3: {}
 
@@ -16017,7 +15980,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-weakmap@2.0.2: {}
 
@@ -16854,11 +16817,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lru-cache@10.4.3: {}
 
@@ -17020,7 +16983,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   node-domexception@1.0.0: {}
 
@@ -17321,7 +17284,7 @@ snapshots:
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -18178,7 +18141,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@6.0.2:
@@ -18357,7 +18320,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sockjs@0.3.24:
     dependencies:
@@ -18415,7 +18378,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sprintf-js@1.0.3: {}
 
@@ -18599,7 +18562,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   symbol-observable@4.0.0: {}
 
@@ -18685,7 +18648,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   tmpl@1.0.5: {}
 
@@ -18878,11 +18841,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uri-js@4.4.1:
     dependencies:
