@@ -8,6 +8,8 @@ minimumReleaseAgeExclude:
   - '@commercetools-frontend/*'
   - '@commercetools-backend/*'
   - '@commercetools-uikit/*'
+  # Renovate security update: @babel/core@7.29.6
+  - "@babel/core@7.29.6"
 
 # Explicit minimumReleaseAge already makes pnpm hard-fail on a no-mature-match; true keeps that (no silent fall-back or auto-exclude).
 minimumReleaseAgeStrict: true
