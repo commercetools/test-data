@@ -26,6 +26,8 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryRest> = {
   fields: {
     ...commonFieldsConfig,
+    reservationExpirationInMinutes: null,
+    stockLevels: null,
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
