@@ -57,6 +57,7 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
     totalPrice: fake(() => CentPrecisionMoney.random()),
     supplyChannel: fake(() => ReferenceRest.presets.channelReference()),
     distributionChannel: fake(() => ReferenceRest.presets.channelReference()),
+    reservation: fake(() => ReferenceRest.random().typeId('reservation')),
   },
 };
 

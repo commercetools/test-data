@@ -43,6 +43,7 @@ const commonFieldsConfig = {
   itemShippingAddresses: [],
   discountCodes: fake((f) => [f.lorem.word()]),
   priceRoundingMode: oneOf(...Object.values(priceRoundingMode)),
+  purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartDraftRest> = {

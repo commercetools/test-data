@@ -20,6 +20,7 @@ import {
 } from '../index';
 import {
   cartState,
+  freezeStrategies,
   inventoryMode,
   origin,
   priceRoundingMode,
@@ -84,6 +85,10 @@ export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
     businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
     store: fake(() => KeyReference.random().typeId('store')),
     refusedGifts: fake(() => [ReferenceRest.presets.cartDiscountReference()]),
+    purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
+    freezeStrategy: oneOf(...freezeStrategies),
+    lock: null,
+    warnings: [],
   },
 };
 

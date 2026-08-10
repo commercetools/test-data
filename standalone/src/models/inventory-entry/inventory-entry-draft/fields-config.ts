@@ -24,6 +24,8 @@ export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryDraftRest> = {
   fields: {
     ...commonFieldsConfig,
     supplyChannel: fake(() => Reference.presets.channelReference()),
+    reservationExpirationInMinutes: null,
+    stockLevels: null,
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryDraftGraphql> =

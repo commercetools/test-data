@@ -39,6 +39,7 @@ const generator = Generator<TCustomer>({
     isEmailVerified: fake((f) => f.datatype.boolean()),
     externalId: fake((f) => f.string.uuid()),
     customerGroup: null,
+    customerGroupAssignments: [],
     custom: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),
     authenticationMode: oneOf(...Object.values(authenticationMode)),

@@ -1,4 +1,4 @@
-import { fake, sequence, type TModelFieldsConfig } from '@/core';
+import { fake, oneOf, sequence, type TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
 import * as MessagesConfiguration from './messages-configuration';
 import type { TProjectRest, TProjectGraphql } from './types';
@@ -24,6 +24,15 @@ const commonFieldsConfig = {
   externalOAuth: null,
   shippingRateInputType: null,
   shoppingLists: null,
+  discounts: {
+    discountCombinationMode: oneOf('BestDeal', 'Stacking'),
+  },
+  inventory: {
+    reservationExpirationInMinutes: fake((f) =>
+      f.number.int({ min: 1, max: 1440 })
+    ),
+    releaseExpiredReservations: fake((f) => f.datatype.boolean()),
+  },
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TProjectRest> = {
