@@ -100,7 +100,7 @@ describe('CustomLineItemDraft compatibility builders', () => {
   it('builds a GraphQL model', () => {
     const customLineItemDraftGraphql = CustomLineItemDraft.random()
       .custom(CustomFieldBooleanType.random())
-      .buildGraphql();
+      .buildGraphql<TCustomLineItemDraftGraphql>();
     validateGraphqlFields(customLineItemDraftGraphql);
   });
 });
