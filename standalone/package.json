@@ -131,7 +131,7 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "7.28.4",
+    "@babel/runtime": "7.29.7",
     "@babel/runtime-corejs3": "7.28.4",
     "@commercetools-frontend/application-config": "24.13.0",
     "@commercetools-frontend/constants": "24.13.0",
