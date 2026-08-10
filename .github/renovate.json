@@ -37,6 +37,11 @@
         "tsc-files"
       ],
       "groupName": "build and dev tools"
+    },
+    {
+      "description": "pnpm is pinned to 11.10.0 via packageManager. Versions past 11.14.0 have broken `deploy: legacy` support. We don't currently run `pnpm deploy --legacy` here, but holding as a precaution until that's fixed upstream, then remove this rule.",
+      "matchPackageNames": ["pnpm"],
+      "enabled": false
     }
   ]
 }
