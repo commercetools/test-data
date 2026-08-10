@@ -23,7 +23,7 @@ jobs:
           private_key: ${{ secrets.CT_CHANGESETS_APP_PEM }}
           
       - name: Checkout
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           # Pass a personal access token (using our `ct-changesets` app) to be able to trigger other workflows
           # https://help.github.com/en/actions/reference/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token
