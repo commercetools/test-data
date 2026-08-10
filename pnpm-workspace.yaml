@@ -23,3 +23,32 @@ allowBuilds:
   esbuild: false
   sharp: false
   unrs-resolver: false
+
+# TypeScript 7.0 dropped the classic JS "Strada" Program/type-checker API that
+# ships as the `typescript` package's public surface (only version metadata is
+# exported now). `typescript-eslint` v5 (pulled in transitively via
+# @commercetools-frontend/eslint-config-mc-app) still calls into that classic
+# API (e.g. `ts.TypeFlags`) for type-aware lint rules, so it must resolve an
+# older, API-compatible TypeScript instead of the repo's TS 7 devDependency.
+# 6.0.3 is the last TypeScript release built on the classic JS compiler.
+# `typescript` is declared as an *optional peer* (`typescript: '*'`) on these
+# packages, so a plain `overrides` entry doesn't pin it (peers are resolved
+# from the nearest matching instance in the graph, not from overrides).
+# `packageExtensions` promotes it to a hard dependency instead, which pnpm
+# always honors.
+packageExtensions:
+  '@typescript-eslint/eslint-plugin@5.62.0':
+    dependencies:
+      typescript: '6.0.3'
+  '@typescript-eslint/parser@5.62.0':
+    dependencies:
+      typescript: '6.0.3'
+  '@typescript-eslint/type-utils@5.62.0':
+    dependencies:
+      typescript: '6.0.3'
+  '@typescript-eslint/typescript-estree@5.62.0':
+    dependencies:
+      typescript: '6.0.3'
+  '@typescript-eslint/utils@5.62.0':
+    dependencies:
+      typescript: '6.0.3'

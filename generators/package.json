@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/lodash": "4.17.21",
     "@types/mustache": "4.2.6",
-    "@types/prompts": "2.4.9"
+    "@types/prompts": "2.4.9",
+    "typescript": "6.0.3"
   }
 }

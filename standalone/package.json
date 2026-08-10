@@ -140,5 +140,8 @@
     "@types/lodash": "4.17.21",
     "lodash": "4.17.23",
     "omit-deep": "0.3.0"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
   }
 }

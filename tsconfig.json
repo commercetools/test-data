@@ -11,6 +11,10 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "allowJs": false,
+    // TypeScript 6.0+ defaults `types` to `[]` instead of auto-discovering every
+    // package under node_modules/@types. Our spec files rely on Jest's ambient
+    // globals (describe/it/expect) and @types/node globals, so list them explicitly.
+    "types": ["jest", "node"],
     "paths": {
       "@/core": ["./standalone/src/core"],
       "@/core/test-utils": ["./standalone/src/core/test-utils"],
