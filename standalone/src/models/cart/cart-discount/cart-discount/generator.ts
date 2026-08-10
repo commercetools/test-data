@@ -1,5 +1,9 @@
 import { fake, Generator, sequence } from '@/core';
-import { ClientLogging, LocalizedString } from '@/models/commons';
+import {
+  ClientLogging,
+  LocalizedString,
+  ReferenceRest,
+} from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import * as CartDiscountValueAbsolute from '../cart-discount-value-absolute';
 import * as CartDiscountValueFixed from '../cart-discount-value-fixed';
@@ -32,6 +36,20 @@ const generator = Generator<TCartDiscount>({
     cartPredicate: '1=1',
     stores: [],
     target: null,
+    // https://docs.commercetools.com/api/projects/cartDiscounts#recurringorderscope
+    recurringOrderScope: fake((f) =>
+      f.helpers.arrayElement([
+        { type: 'AnyOrder' },
+        {
+          type: 'ApplicableRecurrencePolicies',
+          recurrencePolicies: [
+            ReferenceRest.presets.recurrencePolicyReference().build(),
+          ],
+        },
+        { type: 'NonRecurringOrdersOnly' },
+        { type: 'RecurringOrdersOnly' },
+      ])
+    ),
     // Faker `min` and `max` bounds are inclusive, we need between 0 and 1
     sortOrder: fake((f) =>
       String(f.number.float({ min: 0.00001, max: 0.99999 }))
