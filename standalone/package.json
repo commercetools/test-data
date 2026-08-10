@@ -136,7 +136,7 @@
     "@commercetools-frontend/application-config": "24.13.0",
     "@commercetools-frontend/constants": "24.13.0",
     "@commercetools/platform-sdk": "8.27.0",
-    "@faker-js/faker": "10.3.0",
+    "@faker-js/faker": "10.5.0",
     "@types/lodash": "4.17.25",
     "lodash": "4.18.1",
     "omit-deep": "0.3.0"
