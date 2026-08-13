@@ -175,8 +175,8 @@ importers:
         specifier: 24.13.0
         version: 24.13.0
       '@commercetools/platform-sdk':
-        specifier: 8.27.0
-        version: 8.27.0
+        specifier: 9.4.0
+        version: 9.4.0
       '@faker-js/faker':
         specifier: 10.5.0
         version: 10.5.0
@@ -1275,13 +1275,13 @@ packages:
     resolution: {integrity: sha512-kHlVST/Ax8GFpG9vpcUR5wKBGBoY2tZDA87kSC3nxhgk2+szZfv7MMMaAt0EIz2thpyO7oJv9NyPY/3XrrNIXQ==}
     engines: {node: '>=14'}
 
-  '@commercetools/platform-sdk@8.27.0':
-    resolution: {integrity: sha512-yjFrBnUo+WKuAuKueRwv6xha6mUEORxPfC78ZjF+hlX2URtsH2w8i0UowHYnvrgYY+WBEEYEb6UK412zWqU/sw==}
-    engines: {node: '>=18'}
+  '@commercetools/platform-sdk@9.4.0':
+    resolution: {integrity: sha512-XiTXfrIaV5yo+8JlgaQ4SoE5e6dVAXNGyxhY9tmo4xE8N7hy4aLngRsPs5nYwESgLmIIO4LQ3znfsaolKDI2Iw==}
+    engines: {node: '>=22'}
 
-  '@commercetools/ts-client@4.10.0':
-    resolution: {integrity: sha512-iFeibX+SBLgtkCUVEo83bO2LFZlSdeOqTGwpZ71dcQnfQ1IOVHAVLIG5Z60Qi+KLwWnH4Kp8vZZJU7EteNevRw==}
-    engines: {node: '>=18'}
+  '@commercetools/ts-client@5.0.2':
+    resolution: {integrity: sha512-HoPmgfXM+NAORmENvfXzxdB5EafBY6guQ7/8iigTpKcWEWP3m34W4bvmrPC+zBxrixCMMWXV3OZyHfJ2BN84/w==}
+    engines: {node: '>=22'}
 
   '@commitlint/cli@21.2.1':
     resolution: {integrity: sha512-blsZGe29hJ72VGEFVl72IVYX+1vsfINpjA9yWQA6i7OKD/McGEOXg08sKIRKjFk4JvzhV/9n0l3i6NooPLTNfg==}
@@ -5688,6 +5688,9 @@ packages:
     resolution: {integrity: sha512-2SPlun1JUPWoM6t3F0dw0FkCF/jWY8kttcY4f599GLTSjh2OCuuhdTkJQsEcZzBqbXZGKMK2OqW1oZsjtf/gQA==}
     engines: {node: '>=8'}
     hasBin: true
+
+  import-meta-resolve@4.2.0:
+    resolution: {integrity: sha512-Iqv2fzaTQN28s/FwZAoFq0ZSs/7hMAHJVX+w8PZl3cY19Pxk6jFFalxQoIfW2826i/fDLXv8IiEZRIT0lDuWcg==}
 
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -10809,11 +10812,11 @@ snapshots:
 
   '@commercetools/http-user-agent@3.0.0': {}
 
-  '@commercetools/platform-sdk@8.27.0':
+  '@commercetools/platform-sdk@9.4.0':
     dependencies:
-      '@commercetools/ts-client': 4.10.0
+      '@commercetools/ts-client': 5.0.2
 
-  '@commercetools/ts-client@4.10.0':
+  '@commercetools/ts-client@5.0.2':
     dependencies:
       buffer: 6.0.3
 
@@ -15922,6 +15925,8 @@ snapshots:
       pkg-dir: 4.2.0
       resolve-cwd: 3.0.0
 
+  import-meta-resolve@4.2.0: {}
+
   imurmurhash@0.1.4: {}
 
   indent-string@4.0.0: {}
@@ -16600,7 +16605,7 @@ snapshots:
       chalk: 4.1.2
       ci-info: 4.4.0
       graceful-fs: 4.2.11
-      picomatch: 4.0.3
+      picomatch: 4.0.5
 
   jest-validate@30.4.1:
     dependencies:
