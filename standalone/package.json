@@ -133,8 +133,8 @@
   "dependencies": {
     "@babel/runtime": "8.0.0",
     "@babel/runtime-corejs3": "8.0.0",
-    "@commercetools-frontend/application-config": "24.13.0",
-    "@commercetools-frontend/constants": "24.13.0",
+    "@commercetools-frontend/application-config": "27.9.3",
+    "@commercetools-frontend/constants": "27.9.3",
     "@commercetools/platform-sdk": "8.27.0",
     "@faker-js/faker": "10.5.0",
     "@types/lodash": "4.17.25",
