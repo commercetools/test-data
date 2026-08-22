@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@babel/core": "8.0.1",
-    "@changesets/changelog-github": "0.7.0",
-    "@changesets/cli": "2.31.1",
+    "@changesets/changelog-github": "1.0.0",
+    "@changesets/cli": "3.0.1",
     "@commercetools-frontend/babel-preset-mc-app": "24.13.0",
     "@commercetools-frontend/eslint-config-mc-app": "24.13.0",
     "@commercetools-frontend/mc-scripts": "24.13.0",
