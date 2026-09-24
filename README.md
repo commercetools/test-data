@@ -1,12 +1,12 @@
 <h2 align="center">commercetools Test Data 🤖</h2>
 <p align="center">
-  <i>✨ Monorepository with test data models for commercetools platform entities 🛠</i>
+  <i>✨ Test data models for generating commercetools platform entities 🛠</i>
 </p>
 <p align="center">
   <a href="https://github.com/commercetools/test-data/releases"><img src="https://badgen.net/github/release/commercetools/test-data" alt="Latest release" /></a> <a href="https://github.com/commercetools/test-data/blob/master/LICENSE"><img src="https://badgen.net/github/license/commercetools/test-data" alt="GitHub license" /></a>
 </p>
 
-This repository contains data models within the commercetools platform ecosystem.
+This repository provides test data builders for anyone at commercetools, their partners, or customers who needs to programatically generate realistic mock/test data for commercetools platform entities (both REST and GraphQL APIs) in JavaScript and TypeScript test workflows. It's provided as-is with no committed support. 
 
 > In time, we will continue to implement and open source test data models. If you are interested or missing a specific data model, feel free to open a feature request or try to contribute to the repository.
 
