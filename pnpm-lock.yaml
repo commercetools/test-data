@@ -175,8 +175,8 @@ importers:
         specifier: 24.13.0
         version: 24.13.0
       '@commercetools/platform-sdk':
-        specifier: 8.27.0
-        version: 8.27.0
+        specifier: 9.7.0
+        version: 9.7.0
       '@faker-js/faker':
         specifier: 10.5.0
         version: 10.5.0
@@ -1275,13 +1275,13 @@ packages:
     resolution: {integrity: sha512-kHlVST/Ax8GFpG9vpcUR5wKBGBoY2tZDA87kSC3nxhgk2+szZfv7MMMaAt0EIz2thpyO7oJv9NyPY/3XrrNIXQ==}
     engines: {node: '>=14'}
 
-  '@commercetools/platform-sdk@8.27.0':
-    resolution: {integrity: sha512-yjFrBnUo+WKuAuKueRwv6xha6mUEORxPfC78ZjF+hlX2URtsH2w8i0UowHYnvrgYY+WBEEYEb6UK412zWqU/sw==}
-    engines: {node: '>=18'}
+  '@commercetools/platform-sdk@9.7.0':
+    resolution: {integrity: sha512-zlnfMCoxjqkm5XWkyA++K3EEjK5KCGpQYonoVbW5rLSU3xyCYReAtKBa1PQ0TQ4dphSF1zZC2v9Ai4bDelLyAw==}
+    engines: {node: '>=22'}
 
-  '@commercetools/ts-client@4.10.0':
-    resolution: {integrity: sha512-iFeibX+SBLgtkCUVEo83bO2LFZlSdeOqTGwpZ71dcQnfQ1IOVHAVLIG5Z60Qi+KLwWnH4Kp8vZZJU7EteNevRw==}
-    engines: {node: '>=18'}
+  '@commercetools/ts-client@5.1.1':
+    resolution: {integrity: sha512-hV5SCms3f9kB3DDxpHcXthwoPS8wKazp4vThbXqvch9SVpvS/5Y/27b3epWUHHVNXY4QaWjiOf78yjS8eWxbEw==}
+    engines: {node: '>=22'}
 
   '@commitlint/cli@21.2.1':
     resolution: {integrity: sha512-blsZGe29hJ72VGEFVl72IVYX+1vsfINpjA9yWQA6i7OKD/McGEOXg08sKIRKjFk4JvzhV/9n0l3i6NooPLTNfg==}
@@ -10812,11 +10812,11 @@ snapshots:
 
   '@commercetools/http-user-agent@3.0.0': {}
 
-  '@commercetools/platform-sdk@8.27.0':
+  '@commercetools/platform-sdk@9.7.0':
     dependencies:
-      '@commercetools/ts-client': 4.10.0
+      '@commercetools/ts-client': 5.1.1
 
-  '@commercetools/ts-client@4.10.0':
+  '@commercetools/ts-client@5.1.1':
     dependencies:
       buffer: 6.0.3
 
