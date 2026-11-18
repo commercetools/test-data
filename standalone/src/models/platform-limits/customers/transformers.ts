@@ -8,20 +8,20 @@ const transformers = {
   default: Transformer<TCustomerLimitsProjection, TCustomerLimitsProjection>(
     'default',
     {
-      buildFields: ['total'],
+      buildFields: ['total', 'maxGroupsPerCustomer'],
     }
   ),
   rest: Transformer<TCustomerLimitsProjection, TCustomerLimitsProjection>(
     'rest',
     {
-      buildFields: ['total'],
+      buildFields: ['total', 'maxGroupsPerCustomer'],
     }
   ),
   graphql: Transformer<
     TCustomerLimitsProjection,
     TCustomerLimitsProjectionGraphql
   >('graphql', {
-    buildFields: ['total'],
+    buildFields: ['total', 'maxGroupsPerCustomer'],
     addFields: () => ({
       __typename: 'CustomerLimitsProjection',
     }),
